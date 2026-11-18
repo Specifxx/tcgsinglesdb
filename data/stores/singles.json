@@ -1,0 +1,3159 @@
+[
+ {
+  "key": "151collectables",
+  "name": "151Collectables",
+  "base": "https://151collectables.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "disney-lorcana",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:33.557Z"
+ },
+ {
+  "key": "1stcapitalgaming",
+  "name": "1st Capital Gaming",
+  "base": "https://1stcapitalgaming.com",
+  "market": "US",
+  "handles": [
+   "singles-magic-the-gathering",
+   "htown-magic-singles-for-online-kiosk",
+   "york-pkm-singles-for-online-kiosk",
+   "york-riftbound-singles-for-online-kiosk",
+   "ygo-singles-for-online-kiosk",
+   "york-gundam-singles-for-online-kiosk"
+  ],
+  "probedAt": "2026-11-18T03:19:37.013Z"
+ },
+ {
+  "key": "accidentallycoolgames",
+  "name": "Accidentally Cool Games",
+  "base": "https://accidentallycoolgames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-popular-in-stock",
+   "mtg-singles-instock",
+   "mtg-singles-recently-added",
+   "mtg-singles-rare-cards",
+   "mtg-singles-mythic-rare-cards"
+  ],
+  "probedAt": "2026-11-18T03:19:35.893Z"
+ },
+ {
+  "key": "alchemistsrefuge",
+  "name": "Alchemist's Refuge",
+  "base": "https://alchemistsrefuge.shop",
+  "market": "US",
+  "handles": [
+   "all-card-singles",
+   "magic-the-gathering-singles",
+   "audit-non-singles-in-stock",
+   "final-fantasy-fin-1",
+   "marvels-spider-man-singles-spm",
+   "disney-lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:40.969Z"
+ },
+ {
+  "key": "allaccesscardshop",
+  "name": "AllAccessCardshop",
+  "base": "https://allaccesscardshop.com",
+  "market": "US",
+  "handles": [
+   "all-tcg-singles",
+   "pokemon-singles-1",
+   "gundam-singles",
+   "riftbound-singles",
+   "yu-gi-oh-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:38.508Z"
+ },
+ {
+  "key": "alohacardshop",
+  "name": "Aloha Card Shop",
+  "base": "https://www.alohacardshop.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "magic-raw",
+   "one-piece-raw",
+   "lorcana-raw"
+  ],
+  "probedAt": "2026-11-18T03:19:40.577Z"
+ },
+ {
+  "key": "animeimports",
+  "name": "Anime Imports",
+  "base": "https://animeimports.net",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "digimon-singles-all",
+   "flesh-and-blood-singles-all",
+   "pokemon-singles-all",
+   "pokemon-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:19:41.101Z"
+ },
+ {
+  "key": "asgardkeep",
+  "name": "Asgard Keep",
+  "base": "https://asgardkeep.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-in-stock",
+   "pokemon-singles-in-stock",
+   "grand-archive-singles-in-stock",
+   "one-piece-singles",
+   "secret-lair-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:44.754Z"
+ },
+ {
+  "key": "astralgamesonline",
+  "name": "Astral Comics & Games",
+  "base": "https://astralgamesonline.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:46.193Z"
+ },
+ {
+  "key": "atlantiscomics",
+  "name": "Atlantis Games & Comics Norfolk",
+  "base": "https://atlantis-comics.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles-ccg",
+   "all-lorcana-singles",
+   "new-lorcana-singles",
+   "outlaws-at-thunder-junction-singles",
+   "mtg-x-avatar-the-last-airbender-singles",
+   "mtg-singles-mystical-archives-sta-soa"
+  ],
+  "probedAt": "2026-11-18T03:19:47.976Z"
+ },
+ {
+  "key": "atomilicollectables",
+  "name": "ATOMILI COLLECTABLES",
+  "base": "https://atomilicollectables.com",
+  "market": "US",
+  "handles": [
+   "cat-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:49.152Z"
+ },
+ {
+  "key": "awesomeccg",
+  "name": "awesomeccg",
+  "base": "https://awesomeccg.com",
+  "market": "US",
+  "handles": [
+   "tcg-singles-in-store"
+  ],
+  "probedAt": "2026-11-18T03:19:49.176Z"
+ },
+ {
+  "key": "balancegamingfl",
+  "name": "Balance Martial Arts & Gaming",
+  "base": "https://balancegamingfl.com",
+  "market": "US",
+  "handles": [
+   "all-singles-all-games",
+   "all-mtg-singles",
+   "all-pokemon-singles",
+   "one-piece-singles-1",
+   "mtg-edge-of-eternities-singles",
+   "mtg-spider-man-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:49.196Z"
+ },
+ {
+  "key": "bardsandcards",
+  "name": "Bards and Cards (singles)",
+  "base": "https://singles.bardsandcards.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "magic-the-gathering-singles",
+   "newest-mtg-singles-in-stock",
+   "lorcana-singles-all",
+   "commander-masters-singles",
+   "march-of-the-machine-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:52.003Z"
+ },
+ {
+  "key": "baxtersrealm",
+  "name": "Baxter's Cards & Games",
+  "base": "https://baxtersrealm.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "yugioh-singles-all",
+   "mtg-singles-instock",
+   "pokemon-singles-all",
+   "flesh-and-blood-singles-all",
+   "yugioh-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:19:52.728Z"
+ },
+ {
+  "key": "bentonville",
+  "name": "Gear Gaming Bentonville",
+  "base": "https://bentonville.geargamingstore.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "pokemon-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:19:52.704Z"
+ },
+ {
+  "key": "blackvaultgaming",
+  "name": "Black Vault Gaming",
+  "base": "https://blackvaultgaming.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "mtg-singles",
+   "pokemon-singles",
+   "one-piece-card-game-singles",
+   "one-piece-tcg-singles",
+   "gundam-card-game-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:57.370Z"
+ },
+ {
+  "key": "bluejayscauldron",
+  "name": "Blue Jay's Cauldron",
+  "base": "https://bluejayscauldron.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:57.360Z"
+ },
+ {
+  "key": "boardwipe",
+  "name": "Board Wipe",
+  "base": "https://boardwipe.com",
+  "market": "US",
+  "handles": [
+   "mtg-15",
+   "mtg-budget-singles",
+   "most-popular-magic-singles",
+   "standard-singles",
+   "mtg-8",
+   "yugioh-singles"
+  ],
+  "probedAt": "2026-11-18T03:19:59.808Z"
+ },
+ {
+  "key": "brickandboardgames",
+  "name": "Brick & Board Games and Cards",
+  "base": "https://brickandboardgames.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:04.646Z"
+ },
+ {
+  "key": "bricksandheroes",
+  "name": "Bricks And Heroes",
+  "base": "https://bricksandheroes.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "yugioh-singles-all",
+   "pokemon-singles-all",
+   "lorcana-singles",
+   "mtg-singles-instock",
+   "pokemon-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:20:05.092Z"
+ },
+ {
+  "key": "burbankcards",
+  "name": "Burbank Sportscards",
+  "base": "https://burbankcards.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "singles",
+   "all-sports-singles",
+   "boxing"
+  ],
+  "probedAt": "2026-11-18T03:20:08.789Z"
+ },
+ {
+  "key": "bytheboardgames",
+  "name": "By The Board Games & Entertainment",
+  "base": "https://bytheboardgames.com",
+  "market": "US",
+  "handles": [
+   "paint-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:07.039Z"
+ },
+ {
+  "key": "capefearcollectibles",
+  "name": "Cape Fear Collectibles",
+  "base": "https://www.capefearcollectibles.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "best-selling-mtg-singles",
+   "mtg-singles-instock",
+   "one-piece-singles",
+   "star-wars-unlimited-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:08.669Z"
+ },
+ {
+  "key": "cardandcollectibleguys",
+  "name": "Card and Collectible Guys",
+  "base": "https://cardandcollectibleguys.com",
+  "market": "US",
+  "handles": [
+   "mlb-singles",
+   "sword-shield-single-cards",
+   "trading-card-game-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:09.686Z"
+ },
+ {
+  "key": "cardboardanddie",
+  "name": "Cardboard and Die",
+  "base": "https://cardboardanddie.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-in-stock",
+   "pokemon-singles-in-stock",
+   "star-wars-singles-in-stock",
+   "lorcana-singles-in-stock",
+   "riftbound-singles",
+   "one-piece-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:20:13.365Z"
+ },
+ {
+  "key": "cardboardfiat",
+  "name": "cardboardfiat",
+  "base": "https://cardboardfiat.com",
+  "market": "US",
+  "handles": [
+   "wixoss-card-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:11.326Z"
+ },
+ {
+  "key": "cardboyz",
+  "name": "Card Boyz",
+  "base": "https://cardboyz.com",
+  "market": "US",
+  "handles": [
+   "single-card",
+   "pokemon-singles",
+   "dragon-ball-singles",
+   "one-piece-singles",
+   "magic-the-gathering-singles",
+   "lorcana-single"
+  ],
+  "probedAt": "2026-11-18T03:20:12.087Z"
+ },
+ {
+  "key": "cardcavern",
+  "name": "Card Cavern Trading Cards",
+  "base": "https://www.cardcaverntradingcards.com",
+  "market": "US",
+  "handles": [
+   "all-tcg-singles",
+   "pokemon-less-than-2",
+   "singles-under-0-40",
+   "pokemon-between-2-and-5",
+   "all-final-fantasy-singles-in-stock",
+   "singles-between-5-and-10"
+  ],
+  "probedAt": "2026-11-18T03:20:13.204Z"
+ },
+ {
+  "key": "cardfathertcg",
+  "name": "Card Father TCG",
+  "base": "https://cardfathertcg.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles-raw",
+   "gundam-card-game-singles",
+   "riftbound-league-of-legends-trading-card-game-singles",
+   "one-piece-singles",
+   "dragon-ball-z-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:15.602Z"
+ },
+ {
+  "key": "cardhavengames",
+  "name": "Cardhaven Games",
+  "base": "https://cardhaven-games.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-1",
+   "listed-magic-singles",
+   "one-piece-singles",
+   "listed-pokemon-singles",
+   "pokemon-singles",
+   "flesh-and-blood-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:16.944Z"
+ },
+ {
+  "key": "cardmonstergames",
+  "name": "CM Games (Card Monster Games)",
+  "base": "https://cardmonstergames.com",
+  "market": "US",
+  "handles": [
+   "magic-singles",
+   "only-fails-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:18.376Z"
+ },
+ {
+  "key": "cardpopusa",
+  "name": "CARDPOPUSA",
+  "base": "https://cardpopusa.com",
+  "market": "US",
+  "handles": [
+   "single-pack"
+  ],
+  "probedAt": "2026-11-18T03:20:18.087Z"
+ },
+ {
+  "key": "cardshopnear",
+  "name": "Card Shop Near Me",
+  "base": "https://cardshopnear.me",
+  "market": "US",
+  "handles": [
+   "singles",
+   "sports-singles",
+   "mtg-singles",
+   "pokemon-singles-1",
+   "basketball-singles",
+   "football-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:20.391Z"
+ },
+ {
+  "key": "cardsnmo",
+  "name": "Cards N MO",
+  "base": "https://cardsnmo.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "magic-the-gathering-singles",
+   "flesh-and-blood-singles",
+   "riftbound-singles",
+   "pokemon-singles",
+   "cyberpunk-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:20.809Z"
+ },
+ {
+  "key": "cashcardsunlimited",
+  "name": "Cash Cards Unlimited",
+  "base": "https://cashcardsunlimited.com",
+  "market": "US",
+  "handles": [
+   "singles-singles",
+   "mtg-singles",
+   "pokemon-singles",
+   "sports-singles",
+   "one-piece-singles-1",
+   "singles"
+  ],
+  "probedAt": "2026-11-18T03:20:22.829Z"
+ },
+ {
+  "key": "castlegameshoppe",
+  "name": "The Castle Games",
+  "base": "https://castlegameshoppe.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "mtg-singles-all-products",
+   "singles",
+   "mtg-singles-instock",
+   "one-piece-starter-decks-copy",
+   "riftbound-single"
+  ],
+  "probedAt": "2026-11-18T03:20:23.217Z"
+ },
+ {
+  "key": "championcardcollector",
+  "name": "Champion Card Collector",
+  "base": "https://championcardcollector.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "edge-of-eternities-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:27.825Z"
+ },
+ {
+  "key": "championtcg",
+  "name": "ChampionTCG",
+  "base": "https://championtcg.com",
+  "market": "US",
+  "handles": [
+   "single-packs"
+  ],
+  "probedAt": "2026-11-18T03:20:26.349Z"
+ },
+ {
+  "key": "collectbinghamton",
+  "name": "Collect Binghamton",
+  "base": "https://collectbinghamton.com",
+  "market": "US",
+  "handles": [
+   "sports-singles",
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:31.753Z"
+ },
+ {
+  "key": "collectionhousecafe",
+  "name": "Collection House Cafe",
+  "base": "https://collectionhousecafe.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "one-piece-singles",
+   "sports-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:32.611Z"
+ },
+ {
+  "key": "collectivecubed",
+  "name": "Collective Cubed",
+  "base": "https://collectivecubed.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "magic-singles",
+   "mtg-singles",
+   "popular-singles-rare-above",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:32.729Z"
+ },
+ {
+  "key": "collectorstore",
+  "name": "Collector Store",
+  "base": "https://collectorstore.com",
+  "market": "US",
+  "handles": [
+   "sports-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:34.572Z"
+ },
+ {
+  "key": "columbuscardshop",
+  "name": "Columbus Card Shop",
+  "base": "https://columbuscardshop.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles-english",
+   "magic-the-gathering-singles-1",
+   "one-piece-singles",
+   "disney-lorcana-singles",
+   "riftbound-league-of-legends-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:35.031Z"
+ },
+ {
+  "key": "constellationcollectivesac",
+  "name": "Constellation Collective Sacramento",
+  "base": "https://www.constellationcollectivesac.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "yu-gi-oh-singles",
+   "pokemon-singles",
+   "mtg-singles-in-stock",
+   "flesh-and-blood-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:37.263Z"
+ },
+ {
+  "key": "cosmicbham",
+  "name": "Cosmic Games",
+  "base": "https://cosmicbham.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "pokemon-singles-instock",
+   "star-wars-unlimited-singles",
+   "one-piece-tcg-singles",
+   "pokemon-singles-100"
+  ],
+  "probedAt": "2026-11-18T03:20:38.868Z"
+ },
+ {
+  "key": "cosmicgames",
+  "name": "Cosmic Games",
+  "base": "https://www.cosmicgames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "pokemon-singles-instock",
+   "star-wars-unlimited-singles",
+   "one-piece-tcg-singles",
+   "pokemon-singles-100"
+  ],
+  "probedAt": "2026-11-18T03:20:40.635Z"
+ },
+ {
+  "key": "darkholdgames",
+  "name": "Darkhold Games",
+  "base": "https://darkholdgames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-instock",
+   "yugioh-singles-instock",
+   "pokemon-singles-instock",
+   "star-wars-unlimited-instock",
+   "digimon-tcg-singles-instock",
+   "flesh-and-blood-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:20:42.752Z"
+ },
+ {
+  "key": "dealsndragons",
+  "name": "Deals N Dragons",
+  "base": "https://dealsndragons.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:43.689Z"
+ },
+ {
+  "key": "digitalheroes",
+  "name": "Digital Heroes",
+  "base": "https://digitalheroes.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "pokemon-singles-all",
+   "pokemon-singles-instock",
+   "non-sport-singles",
+   "mtg-singles-instock",
+   "yu-gi-oh-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:45.137Z"
+ },
+ {
+  "key": "dinoscardsandcollectibles",
+  "name": "Dino's Cards & Collectibles",
+  "base": "https://dinoscardsandcollectibles.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "swu-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:45.391Z"
+ },
+ {
+  "key": "dkscards",
+  "name": "DK's Cards",
+  "base": "https://dkscards.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "pokemon-trading-card-game-singles",
+   "riftbound-singles",
+   "yu-gi-oh-singles",
+   "one-piece-card-game-singles",
+   "gundam-card-game-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:46.068Z"
+ },
+ {
+  "key": "dragonegggames",
+  "name": "Dragon Egg Games",
+  "base": "https://www.dragon-egg-games.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-instock",
+   "pokemon-singles-instock",
+   "one-piece-single",
+   "union-arena-singles",
+   "yugioh-singles-instock",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:48.432Z"
+ },
+ {
+  "key": "dublin",
+  "name": "Littleroot Games - Dublin",
+  "base": "https://dublin.littlerootgames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-in-stock",
+   "mtg-singles-instock",
+   "pokemon-singles",
+   "pokemon-singles-instock",
+   "one-piece-singles",
+   "one-piece-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:20:50.360Z"
+ },
+ {
+  "key": "dxgamesllc",
+  "name": "Dx Games & More",
+  "base": "https://dxgamesllc.com",
+  "market": "US",
+  "handles": [
+   "single-cards",
+   "magic-the-gathering-singles",
+   "lorcana-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:53.735Z"
+ },
+ {
+  "key": "dynamiccardcollectors",
+  "name": "Dynamic Card Collectors",
+  "base": "https://dynamiccardcollectors.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "pokemon-singles-1-15",
+   "football-singles-copy",
+   "basketball-singles-copy",
+   "shadowverse-evolve-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:52.711Z"
+ },
+ {
+  "key": "eclipsecardsandhobby",
+  "name": "Eclipse Cards and Hobby",
+  "base": "https://www.eclipsecardsandhobby.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "digimon-singles-all",
+   "mtg-over-5",
+   "pokemon-singles-all",
+   "one-piece-singles-all",
+   "yugioh-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:20:53.974Z"
+ },
+ {
+  "key": "envycardstore",
+  "name": "Envy Cards",
+  "base": "https://envycardstore.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles-1",
+   "english-pokemon-singles",
+   "magic-singles",
+   "singles"
+  ],
+  "probedAt": "2026-11-18T03:20:54.650Z"
+ },
+ {
+  "key": "epictradingcollectibles",
+  "name": "Epic Trading Collectibles",
+  "base": "https://www.epictradingcollectibles.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "pokemon-vintage",
+   "scarlet-violet",
+   "sword-shield",
+   "sun-moon",
+   "xy-series"
+  ],
+  "probedAt": "2026-11-18T03:20:55.082Z"
+ },
+ {
+  "key": "epikcg",
+  "name": "Epik Cards And Games",
+  "base": "https://epikcg.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles-all",
+   "yu-gi-oh-singles-all",
+   "weiss-schwarz-singles-all",
+   "pokemon-singles-all",
+   "cardfight-vanguard-singles-all",
+   "dragon-ball-super-singles-all"
+  ],
+  "probedAt": "2026-11-18T03:20:56.177Z"
+ },
+ {
+  "key": "escollectible",
+  "name": "escollectible",
+  "base": "https://escollectible.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "english-otcg-single-cards",
+   "gundam-jp-singles",
+   "ua-sc",
+   "en-ptcg-single-cards"
+  ],
+  "probedAt": "2026-11-18T03:20:56.490Z"
+ },
+ {
+  "key": "eternalgameschesterfield",
+  "name": "Eternal Games Chesterfield",
+  "base": "https://eternalgameschesterfield.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "one-piece-singles",
+   "lorcana-singles",
+   "star-wars-unlimited-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:56.950Z"
+ },
+ {
+  "key": "ettingames",
+  "name": "Ettin Games",
+  "base": "https://ettingames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-instock",
+   "pokemon-trading-card-game"
+  ],
+  "probedAt": "2026-11-18T03:20:57.688Z"
+ },
+ {
+  "key": "evanstongames",
+  "name": "Evanston Games",
+  "base": "https://evanstongames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "pokemon-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:20:58.815Z"
+ },
+ {
+  "key": "evvgamingguild",
+  "name": "The Gaming Guild",
+  "base": "https://evvgamingguild.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "reality-fracture-singles",
+   "pokemon-singles",
+   "union-arena-singles",
+   "gundam-card-singles",
+   "singles"
+  ],
+  "probedAt": "2026-11-18T03:21:00.749Z"
+ },
+ {
+  "key": "fabfoundry",
+  "name": "FaB Foundry",
+  "base": "https://www.fabfoundry.co",
+  "market": "US",
+  "handles": [
+   "compendium-of-rathe-singles",
+   "high-seas-singles",
+   "mon-singles",
+   "super-slam-singles",
+   "the-hunted-singles",
+   "rosetta-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:01.488Z"
+ },
+ {
+  "key": "fabledtavern",
+  "name": "Fabled Tavern",
+  "base": "https://fabledtavern.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:02.463Z"
+ },
+ {
+  "key": "five6gaming",
+  "name": "FIVE6 Gaming",
+  "base": "https://www.five6gaming.com",
+  "market": "US",
+  "handles": [
+   "in-stock-magic-the-gathering-singles",
+   "in-stock-star-wars-singles",
+   "in-stock-pokemon-singles",
+   "in-stock-lorcana-singles",
+   "in-stock-riftbound-singles",
+   "in-stock-sorcery-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:05.036Z"
+ },
+ {
+  "key": "flipsidegaming",
+  "name": "Flipside Gaming",
+  "base": "https://flipsidegaming.com",
+  "market": "US",
+  "handles": [
+   "lorcana-singles",
+   "gundam-singles",
+   "hobby-paint-single"
+  ],
+  "probedAt": "2026-11-18T03:21:09.435Z"
+ },
+ {
+  "key": "forgottenpathgames",
+  "name": "Forgotten Path Games",
+  "base": "https://forgottenpathgames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "one-piece-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:21:06.576Z"
+ },
+ {
+  "key": "foxfablehaven",
+  "name": "Fox Fable Haven",
+  "base": "https://foxfablehaven.com",
+  "market": "US",
+  "handles": [
+   "riftbound-singles",
+   "yugioh-singles",
+   "digimon-singles",
+   "other-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:07.597Z"
+ },
+ {
+  "key": "frankscardshopnj",
+  "name": "Frank's Card Shop",
+  "base": "https://frankscardshopnj.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "football-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:07.364Z"
+ },
+ {
+  "key": "gachaboba",
+  "name": "Gacha Boba",
+  "base": "https://gachaboba.com",
+  "market": "US",
+  "handles": [
+   "one-piece-singles",
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "gundam-card-game-singles",
+   "one-piece-op01-singles",
+   "op-11-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:09.808Z"
+ },
+ {
+  "key": "galacticgamez",
+  "name": "Galactic Gamez",
+  "base": "https://galacticgamez.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "yugioh-singles-all",
+   "pokemon-singles-all",
+   "one-piece-singles-all",
+   "lorcana-singles-all",
+   "pokemon-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:21:09.944Z"
+ },
+ {
+  "key": "galaxygamesllc",
+  "name": "Galaxy Games",
+  "base": "https://galaxygamesllc.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "pokemon-singles-instock",
+   "mtg-singles-instock",
+   "yugioh-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:21:11.851Z"
+ },
+ {
+  "key": "gamecraftgamestore",
+  "name": "GameCraft",
+  "base": "https://gamecraftgamestore.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "mtg-singles",
+   "products-no-singles",
+   "riftbound-singles",
+   "lorcana-singles",
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:12.442Z"
+ },
+ {
+  "key": "gamegridif",
+  "name": "Game Grid Idaho Falls",
+  "base": "https://gamegridif.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-in-stock",
+   "flesh-and-blood-singles",
+   "star-wars-unlimited-singles",
+   "lorcana-singles",
+   "star-wars-unlimited-singles-in-stock",
+   "pokemon-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:21:15.434Z"
+ },
+ {
+  "key": "gamelandia",
+  "name": "Gamelandia",
+  "base": "https://gamelandia.fun",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "one-piece-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:15.846Z"
+ },
+ {
+  "key": "gameonarizona",
+  "name": "Game On Cottonwood",
+  "base": "https://gameonarizona.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:19.413Z"
+ },
+ {
+  "key": "gameostorus",
+  "name": "Game-O-Storus",
+  "base": "https://gameostorus.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "star-wars-unlimited-singles",
+   "pokemon-singles",
+   "lorcana-singles",
+   "mtg-aetherdrift-singles",
+   "mtg-doctor-who"
+  ],
+  "probedAt": "2026-11-18T03:21:17.748Z"
+ },
+ {
+  "key": "gamerealm",
+  "name": "Game Realm",
+  "base": "https://gamerealm.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "inventory-ordering-non-mtg-single",
+   "mtg-singles-instock",
+   "pokemon-singles",
+   "pokemon-singles-1",
+   "digimon-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:21:17.768Z"
+ },
+ {
+  "key": "gamersgauntlet",
+  "name": "Gamer's Gauntlet",
+  "base": "https://gamersgauntlet.net",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "lorcana-singles-instock",
+   "crimson-vow-singles",
+   "high-end-magic-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:18.356Z"
+ },
+ {
+  "key": "gamersgetawaykc",
+  "name": "Gamers Getaway KC",
+  "base": "https://gamersgetawaykc.com",
+  "market": "US",
+  "handles": [
+   "warlord-saga-of-the-storm-ccg-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:20.188Z"
+ },
+ {
+  "key": "gamersgrove",
+  "name": "Gamers Grove",
+  "base": "https://gamersgrove.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "mtg-singles-all-products",
+   "magic-singles-instock",
+   "star-wars-unlimited-singles",
+   "star-wars-unlimited-spark-of-rebellion-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:21.293Z"
+ },
+ {
+  "key": "gamersngeeks",
+  "name": "Gamers N Geeks",
+  "base": "https://gamersngeeks.com",
+  "market": "US",
+  "handles": [
+   "paints-copy",
+   "brushes-copy",
+   "paint-singles-copy",
+   "single-brushes-copy"
+  ],
+  "probedAt": "2026-11-18T03:21:22.533Z"
+ },
+ {
+  "key": "gamersparadisela",
+  "name": "Gamers Paradise",
+  "base": "https://gamersparadisela.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "lorcana-singles",
+   "flesh-blood-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:23.715Z"
+ },
+ {
+  "key": "gameskingstore",
+  "name": "Games King",
+  "base": "https://gameskingstore.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "yugioh-singles-all",
+   "pokemon-singles-instock",
+   "mtg-singles-d-d-adventures-in-the-forgotten-realms",
+   "mtg-singles-march-of-the-machine"
+  ],
+  "probedAt": "2026-11-18T03:21:26.401Z"
+ },
+ {
+  "key": "gamespacefl",
+  "name": "Game Space LLC",
+  "base": "https://gamespacefl.com",
+  "market": "US",
+  "handles": [
+   "black-friday-singles",
+   "riftbound-league-of-legends-trading-card-game-singles",
+   "singles-in-stock",
+   "one-piece-card-game-singles",
+   "disney-lorcana-singles",
+   "flesh-and-blood-tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:27.572Z"
+ },
+ {
+  "key": "gaminggiant",
+  "name": "Gaming Giant",
+  "base": "https://gaminggiant.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "digimon-singles",
+   "lorcana-singles",
+   "yugioh-singles",
+   "new-collection",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:29.058Z"
+ },
+ {
+  "key": "gatecitygames",
+  "name": "Gate City Games",
+  "base": "https://gatecitygames.us",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:21:28.845Z"
+ },
+ {
+  "key": "gatorscardden",
+  "name": "Gator's Card Den",
+  "base": "https://gatorscardden.com",
+  "market": "US",
+  "handles": [
+   "raw-singles",
+   "magic-singles",
+   "riftbound-singles",
+   "one-piece-singles",
+   "lorcana-singles",
+   "dragon-ball-single"
+  ],
+  "probedAt": "2026-11-18T03:21:31.741Z"
+ },
+ {
+  "key": "gclegion",
+  "name": "Gamers-Corps",
+  "base": "https://gclegion.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "mtg-msh",
+   "mtg-hob",
+   "mtg-msc",
+   "mtg-mar"
+  ],
+  "probedAt": "2026-11-18T03:21:31.211Z"
+ },
+ {
+  "key": "gglegends",
+  "name": "GG Legends",
+  "base": "https://store.gglehi.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "mtg-singles-more-than-8",
+   "in-stock-non-singles",
+   "magic-singles-last-1"
+  ],
+  "probedAt": "2026-11-18T03:21:38.672Z"
+ },
+ {
+  "key": "ginzamkt",
+  "name": "GinzaTCG",
+  "base": "https://ginzamkt.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:36.005Z"
+ },
+ {
+  "key": "gnomegames",
+  "name": "Gnome Games",
+  "base": "https://gnomegames.com",
+  "market": "US",
+  "handles": [
+   "card-singles",
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "yugioh-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:38.710Z"
+ },
+ {
+  "key": "graygauntletgames",
+  "name": "Gray Gauntlet Games",
+  "base": "https://graygauntletgames.com",
+  "market": "US",
+  "handles": [
+   "card-singles-all-games",
+   "mtg-singles",
+   "yugioh-singles-all",
+   "pokemon-singles-all",
+   "fab-singles-all",
+   "yugioh-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:21:42.323Z"
+ },
+ {
+  "key": "greendoorcollectibles",
+  "name": "Green Door Collectibles",
+  "base": "https://greendoorcollectibles.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "pokemon",
+   "tcg-singles",
+   "gundam-tcg-singles",
+   "one-piece-singles",
+   "digimon-tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:43.549Z"
+ },
+ {
+  "key": "grognardgames",
+  "name": "Grognard Games",
+  "base": "https://grognardgames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-instock",
+   "riftbound-singles",
+   "lorcana-singles",
+   "one-piece-singles",
+   "gundam-card-game-singles",
+   "star-wars-unlimited-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:43.485Z"
+ },
+ {
+  "key": "guubuu",
+  "name": "GuuBuu Hobby",
+  "base": "https://guubuu.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "one-piece-singles",
+   "magic-the-gathering-singles",
+   "lorcana-singles",
+   "foundations-singles",
+   "duskmourn-house-of-horror-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:44.734Z"
+ },
+ {
+  "key": "hastygoblingames",
+  "name": "Hasty Goblin Games",
+  "base": "https://hastygoblingames.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "newest-singles",
+   "mtg-singles",
+   "riftbound-singles",
+   "riftbound-radiance-singles",
+   "vendetta-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:46.123Z"
+ },
+ {
+  "key": "hoarditall",
+  "name": "Hoard",
+  "base": "https://www.hoarditall.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "one-piece",
+   "lorcana-singles",
+   "pokemon-singles",
+   "yu-gi-oh-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:49.436Z"
+ },
+ {
+  "key": "hobbyaddicts",
+  "name": "Hobby Addicts",
+  "base": "https://www.hobby-addicts.com",
+  "market": "US",
+  "handles": [
+   "fab-singles",
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:50.537Z"
+ },
+ {
+  "key": "hobbycardshop",
+  "name": "Hobby Card Shop",
+  "base": "https://hobbycardshop.com",
+  "market": "US",
+  "handles": [
+   "football-single-cards",
+   "baseball-single-cards",
+   "basketball-single-cards",
+   "hockey-single-cards"
+  ],
+  "probedAt": "2026-11-18T03:21:51.268Z"
+ },
+ {
+  "key": "hobbyvault",
+  "name": "Hobby Vault",
+  "base": "https://hobbyvault.com",
+  "market": "US",
+  "handles": [
+   "lorcana-singles",
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:51.790Z"
+ },
+ {
+  "key": "holohaven",
+  "name": "Holo Haven",
+  "base": "https://holohaven.com",
+  "market": "US",
+  "handles": [
+   "in-stock-singles-1",
+   "in-stock-singles",
+   "mtg-singles",
+   "pokemon-singles",
+   "one-piece-singles",
+   "digimon-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:53.347Z"
+ },
+ {
+  "key": "holohorsegames",
+  "name": "Holo Horse Games LLC",
+  "base": "https://holohorsegames.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "one-piece-card-game-singles",
+   "trading-card-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:53.766Z"
+ },
+ {
+  "key": "ihc",
+  "name": "IHC Cards",
+  "base": "https://ihc.cards",
+  "market": "US",
+  "handles": [
+   "singles"
+  ],
+  "probedAt": "2026-11-18T03:21:56.229Z"
+ },
+ {
+  "key": "impactgamingcenter",
+  "name": "Impact Gaming Center",
+  "base": "https://impactgamingcenter.gg",
+  "market": "US",
+  "handles": [
+   "best-selling-singles",
+   "magic-singles",
+   "pokemon-singles",
+   "gundam-card-game-singles",
+   "riftbound-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:21:57.943Z"
+ },
+ {
+  "key": "jandjgamingfactory",
+  "name": "J and J Gaming Factory",
+  "base": "https://jandjgamingfactory.com",
+  "market": "US",
+  "handles": [
+   "tcg-singles",
+   "magic-singles",
+   "pokemon-singles",
+   "comic-single-issues",
+   "star-trek-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:01.732Z"
+ },
+ {
+  "key": "jarocards",
+  "name": "Jaro Cards",
+  "base": "https://jarocards.com",
+  "market": "US",
+  "handles": [
+   "single",
+   "english-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:00.410Z"
+ },
+ {
+  "key": "jawbreakers",
+  "name": "jawbreakers",
+  "base": "https://jawbreakers.cards",
+  "market": "US",
+  "handles": [
+   "yugioh-single-packs",
+   "one-piece-single-packs",
+   "lorcana-single-packs",
+   "dragonball-single-packs",
+   "starwars-single-packs"
+  ],
+  "probedAt": "2026-11-18T03:22:01.999Z"
+ },
+ {
+  "key": "joshscards",
+  "name": "Josh's Cards",
+  "base": "https://joshscards.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "yugioh-singles",
+   "pokemon-singles",
+   "weiss-schwarz-singles-1",
+   "mtg-singles",
+   "latest-pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:06.723Z"
+ },
+ {
+  "key": "journeysendgames",
+  "name": "Journey’s End Games",
+  "base": "https://journeysendgames.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "marvel-super-heroes-singles-smart-collection",
+   "magic-the-gathering-spicy-singles",
+   "spicy-singles",
+   "avatar-the-last-airbender-magic-the-gathering-copy"
+  ],
+  "probedAt": "2026-11-18T03:22:06.911Z"
+ },
+ {
+  "key": "kngaming",
+  "name": "K&N Gaming",
+  "base": "https://kngamingllc.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "singles",
+   "high-dollar-mtg-singles",
+   "mtg-singles",
+   "buy-mtg-singles",
+   "magic-the-gathering-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:14.211Z"
+ },
+ {
+  "key": "knightandday",
+  "name": "Knight and Day Games",
+  "base": "https://knightanddaygames.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "one-piece-singles",
+   "riftbound-singles",
+   "one-piece-singles-copy"
+  ],
+  "probedAt": "2026-11-18T03:22:11.683Z"
+ },
+ {
+  "key": "kollectiblekings",
+  "name": "Kollectible Kings",
+  "base": "https://kollectiblekings.com",
+  "market": "US",
+  "handles": [
+   "pokemon-cards-singles",
+   "sports-singles",
+   "non-sports-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:11.797Z"
+ },
+ {
+  "key": "lakehartwellcollectibles",
+  "name": "Lake Hartwell Collectibles",
+  "base": "https://lakehartwellcollectibles.com",
+  "market": "US",
+  "handles": [
+   "singles"
+  ],
+  "probedAt": "2026-11-18T03:22:16.604Z"
+ },
+ {
+  "key": "landfalloutpost",
+  "name": "Landfall Outpost",
+  "base": "https://landfalloutpost.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "mtg-singles",
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:16.803Z"
+ },
+ {
+  "key": "larrysgamestore",
+  "name": "Larry's Game Store",
+  "base": "https://larrysgamestore.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-instock",
+   "swu-singles-instock",
+   "pokemon-singles-instock",
+   "yugioh-singles-instock",
+   "fab-singles-instock",
+   "weiss-schwarz-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:22:17.296Z"
+ },
+ {
+  "key": "lasportscards",
+  "name": "LA Sports Cards",
+  "base": "https://lasportscards.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "pokemon-singles-showcase",
+   "basketball-singles",
+   "football-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:17.570Z"
+ },
+ {
+  "key": "laytongaming",
+  "name": "Layton Gaming",
+  "base": "https://laytongaming.com",
+  "market": "US",
+  "handles": [
+   "online-mtg-singles",
+   "magic-the-gather-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:19.421Z"
+ },
+ {
+  "key": "legendsfanshop",
+  "name": "LegendsSportsGames",
+  "base": "https://legendsfanshop.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "2020s-football-card-singles",
+   "2020s-baseball-card-singles",
+   "1950s-baseball-card-singles",
+   "2020s-basketball-card-singles",
+   "1960s-baseball-card-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:21.742Z"
+ },
+ {
+  "key": "levelonegameshop",
+  "name": "Level One Game Shop",
+  "base": "https://levelonegameshop.com",
+  "market": "US",
+  "handles": [
+   "single-player"
+  ],
+  "probedAt": "2026-11-18T03:22:22.078Z"
+ },
+ {
+  "key": "levelupgamesmd",
+  "name": "Level Up Games MD",
+  "base": "https://www.levelupgamesmd.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "pokemon-singles-instock",
+   "pokemon-singles-all",
+   "one-piece-singles",
+   "high-end-mtg-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:22.685Z"
+ },
+ {
+  "key": "lingstergames",
+  "name": "LingSter Games",
+  "base": "https://lingstergames.com",
+  "market": "US",
+  "handles": [
+   "prepainted-minis-van-richtens-guide-to-ravenloft-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:24.592Z"
+ },
+ {
+  "key": "lspbstore",
+  "name": "lspbstore",
+  "base": "https://lspbstore.com",
+  "market": "US",
+  "handles": [
+   "digimon-english-single-packs"
+  ],
+  "probedAt": "2026-11-18T03:22:27.669Z"
+ },
+ {
+  "key": "lthobbies",
+  "name": "LTs Hobbies",
+  "base": "https://www.lthobbies.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "flesh-blood-singles",
+   "one-piece-singles",
+   "lorcana-singles",
+   "digimon-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:29.060Z"
+ },
+ {
+  "key": "madtownhobby",
+  "name": "Madtown Hobby",
+  "base": "https://madtownhobby.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "flesh-and-blood-singles",
+   "elestrals-singles",
+   "sorcery-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:30.078Z"
+ },
+ {
+  "key": "magessanctum",
+  "name": "Mage's Sanctum",
+  "base": "https://magessanctum.com",
+  "market": "US",
+  "handles": [
+   "trading-card-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:31.852Z"
+ },
+ {
+  "key": "magicandmonsters",
+  "name": "Magic and Monsters",
+  "base": "https://magicandmonsters.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "star-wars-unlimited-singles",
+   "yugioh-singles",
+   "one-piece-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:31.738Z"
+ },
+ {
+  "key": "magicdragonusa",
+  "name": "magicdragonusa",
+  "base": "https://magicdragonusa.com",
+  "market": "US",
+  "handles": [
+   "cookierun-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:32.180Z"
+ },
+ {
+  "key": "mainephasehobbies",
+  "name": "Maine Phase Hobbies & Games",
+  "base": "https://mainephasehobbies.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "riftbound-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:34.083Z"
+ },
+ {
+  "key": "manathril",
+  "name": "Manathril Cards and Collectibles",
+  "base": "https://manathril.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "pokemon-1",
+   "riftbound-singles",
+   "one-piece-singles",
+   "dragon-ball-super-fusion-world-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:34.274Z"
+ },
+ {
+  "key": "manyrealms",
+  "name": "Many Realms",
+  "base": "https://manyrealms.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "pokemon-singles-under-1",
+   "one-piece-singles",
+   "one-piece-singles-under-1"
+  ],
+  "probedAt": "2026-11-18T03:22:36.842Z"
+ },
+ {
+  "key": "meeplesandbeyond",
+  "name": "Meeples & Beyond",
+  "base": "https://meeplesandbeyond.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:36.421Z"
+ },
+ {
+  "key": "metagames",
+  "name": "MetaGames.toys",
+  "base": "https://metagames.toys",
+  "market": "US",
+  "handles": [
+   "all-single-cards",
+   "mtg-single-cards",
+   "pokemon-tcg-single-cards",
+   "one-piece-cg-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:36.771Z"
+ },
+ {
+  "key": "mindgamesandmagic",
+  "name": "Mindgames and Magic",
+  "base": "https://mindgamesandmagic.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "flesh-and-blood-single",
+   "mtg-singles-instock",
+   "lost-caverns-of-ixalan-singles",
+   "bloomburrow-singles",
+   "outlaws-of-thunder-junction-1"
+  ],
+  "probedAt": "2026-11-18T03:22:39.246Z"
+ },
+ {
+  "key": "mintedtcg",
+  "name": "Minted TCG",
+  "base": "https://mintedtcg.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "pokemon-singles-scarlet-violet",
+   "pokemon-singles-sword-shield",
+   "pokemon-singles-sun-moon",
+   "magic-the-gathering-singles",
+   "pokemon-singles-promos"
+  ],
+  "probedAt": "2026-11-18T03:22:40.698Z"
+ },
+ {
+  "key": "mojobreakgaming",
+  "name": "Mojobreak Gaming",
+  "base": "https://www.mojobreakgaming.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles-copy",
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:41.642Z"
+ },
+ {
+  "key": "moonshotgamestore",
+  "name": "Moonshot Games",
+  "base": "https://moonshotgamestore.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "standard-magic-the-gathering-singles",
+   "final-fantasy-magic-singles",
+   "marvel-super-heroes-singles",
+   "foundations-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:44.253Z"
+ },
+ {
+  "key": "mothershipatx",
+  "name": "Mothership Books and Games - Austin",
+  "base": "https://store.mothershipatx.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "pokemon-singles",
+   "lorcana-singles",
+   "lorcana-singles-in-stock",
+   "pokemon-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:22:43.260Z"
+ },
+ {
+  "key": "motorcitygaming",
+  "name": "Motor City Gaming",
+  "base": "https://motorcitygaming.net",
+  "market": "US",
+  "handles": [
+   "mtg-singles-instock",
+   "star-wars-unlimited-1",
+   "flesh-and-blood-singles",
+   "one-piece"
+  ],
+  "probedAt": "2026-11-18T03:22:44.664Z"
+ },
+ {
+  "key": "moxiecardshop",
+  "name": "Moxie Card Shop",
+  "base": "https://moxiecardshop.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "single-strike-master-s5i-一撃マスター"
+  ],
+  "probedAt": "2026-11-18T03:22:46.270Z"
+ },
+ {
+  "key": "mymintcards",
+  "name": "Mint Cards & Collectibles",
+  "base": "https://mymintcards.com",
+  "market": "US",
+  "handles": [
+   "pokemon-tcg-singles",
+   "magic-the-gathering-singles",
+   "one-piece-singles",
+   "yu-gi-oh",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:47.176Z"
+ },
+ {
+  "key": "mysterymtg",
+  "name": "Mystery MTG",
+  "base": "https://mysterymtg.com",
+  "market": "US",
+  "handles": [
+   "sortswift-singles",
+   "mtg-singles",
+   "gundam-card-game-singles",
+   "riftbound-singles",
+   "march-of-the-machine-product-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:47.195Z"
+ },
+ {
+  "key": "mystictcg",
+  "name": "Mystic TCG",
+  "base": "https://mystictcg.com",
+  "market": "US",
+  "handles": [
+   "singles-mtg",
+   "singles-dbs",
+   "singles-digimon",
+   "singles-pokemon",
+   "singles-vanguard",
+   "singles-ygo"
+  ],
+  "probedAt": "2026-11-18T03:22:48.634Z"
+ },
+ {
+  "key": "mythicforgegames",
+  "name": "Mythic Forge Gaming",
+  "base": "https://mythicforgegames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:49.689Z"
+ },
+ {
+  "key": "mythichobbies",
+  "name": "Mythic Hobbies",
+  "base": "https://mythic-hobbies.com",
+  "market": "US",
+  "handles": [
+   "cookierun-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:49.569Z"
+ },
+ {
+  "key": "n4ytcg",
+  "name": "N4YTCG",
+  "base": "https://www.n4ytcg.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:50.860Z"
+ },
+ {
+  "key": "nexuslgs",
+  "name": "NEXUS Games & Collectibles",
+  "base": "https://nexuslgs.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:52.070Z"
+ },
+ {
+  "key": "nexustabletopgames",
+  "name": "Nexus Tabletop Games",
+  "base": "https://nexustabletopgames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "pokemon-singles-all",
+   "dragon-ball-super-fusion-world-single",
+   "riftbound-league-of-legends-trading-card-game-single",
+   "mtg-singles-instock",
+   "mtg-single-over-1"
+  ],
+  "probedAt": "2026-11-18T03:22:53.410Z"
+ },
+ {
+  "key": "nolatcg",
+  "name": "NOLA TCG Experience",
+  "base": "https://nolatcg.com",
+  "market": "US",
+  "handles": [
+   "pokemon-tcg-all-singles",
+   "one-piece-tcg-all-singles",
+   "disney-lorcana-tcg-all-singles",
+   "riftbound-league-of-legends-tcg-all-singles",
+   "pokemon-tcg-ascended-heroes-singles",
+   "pokemon-tcg-miscellaneous-cards-product-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:55.511Z"
+ },
+ {
+  "key": "northwestcardcompany",
+  "name": "Northwest Card Company",
+  "base": "https://northwestcardco.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "magic-the-gathering-singles",
+   "pokemon-singles-1"
+  ],
+  "probedAt": "2026-11-18T03:22:54.666Z"
+ },
+ {
+  "key": "nutmeggames",
+  "name": "Nutmeg Games",
+  "base": "https://nutmeggames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "pokemon-singles-all",
+   "pokemon-singles-instock",
+   "lorcana-singles-all",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:22:57.986Z"
+ },
+ {
+  "key": "oldschoolgamesandcards",
+  "name": "Old School Games and Cards",
+  "base": "https://oldschoolgamesandcards.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:22:59.175Z"
+ },
+ {
+  "key": "onboardgaming",
+  "name": "On-Board Gaming",
+  "base": "https://on-boardgaming.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "all-singles",
+   "mtg-singles-in-stock",
+   "mtg-singles-instock",
+   "disney-lorcana-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:01.625Z"
+ },
+ {
+  "key": "onestoptcg",
+  "name": "OneStopTCG",
+  "base": "https://onestoptcg.com",
+  "market": "US",
+  "handles": [
+   "pokemon-trading-card-singles",
+   "riftbound-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:00.854Z"
+ },
+ {
+  "key": "papajoeys",
+  "name": "Papa Joey's Collectibles",
+  "base": "https://papajoeys.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "pokemon-tcg-singles",
+   "magic-the-gathering-singles",
+   "one-piece-card-game-singles",
+   "yugioh-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:04.003Z"
+ },
+ {
+  "key": "patsgames",
+  "name": "Pat's Games",
+  "base": "https://patsgames.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "singles-for-rewardify-rule"
+  ],
+  "probedAt": "2026-11-18T03:23:06.525Z"
+ },
+ {
+  "key": "pcatoys",
+  "name": "PCA Designer Toys",
+  "base": "https://pcatoys.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "riftbound-singles",
+   "gundam-singles",
+   "pokemon-singles-all",
+   "pokemon-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:23:07.412Z"
+ },
+ {
+  "key": "phantasma",
+  "name": "Phantasma",
+  "base": "https://phantasmalv.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "pokemon-singles",
+   "one-piece-singles",
+   "riftbound-singles",
+   "riftbound-origins-singles",
+   "magic-the-gathering-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:07.697Z"
+ },
+ {
+  "key": "phantomcardshop",
+  "name": "Phantom Card Shop",
+  "base": "https://phantomcardshop.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:08.848Z"
+ },
+ {
+  "key": "phatcatzgaming",
+  "name": "Phat Catz Gaming",
+  "base": "https://phatcatzgaming.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-instock",
+   "mtg-singles-all-products",
+   "pokemon-singles-instock",
+   "under-25-no-singles",
+   "planeswalkers",
+   "yugioh-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:23:10.161Z"
+ },
+ {
+  "key": "phoenixcomicsandgames",
+  "name": "Phoenix Comics and Games",
+  "base": "https://shop.phoenixseattle.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "magic-singles",
+   "mtg-singles-instock"
+  ],
+  "probedAt": "2026-11-18T03:23:12.320Z"
+ },
+ {
+  "key": "pieceofthegame",
+  "name": "Piece Of The Game",
+  "base": "https://shoppieceofthegame.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "sports-card-singles",
+   "singles-under-1-000",
+   "pokemon-singles",
+   "baseball-singles",
+   "football-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:12.551Z"
+ },
+ {
+  "key": "pixelthattcg",
+  "name": "PixelThat TCG",
+  "base": "https://pixelthattcg.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "all-singles",
+   "one-piece-singles",
+   "dragonball-singles",
+   "gundam-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:13.734Z"
+ },
+ {
+  "key": "pokeboxusa",
+  "name": "PokeBox USA",
+  "base": "https://www.pokeboxusa.com",
+  "market": "US",
+  "handles": [
+   "pokemon-tcg-single-cards",
+   "magic-the-gathering-singles",
+   "one-piece-card-game-single-cards-english",
+   "union-arena-single-cards",
+   "disney-lorcana-single-cards",
+   "gundam-tcg-single-cards"
+  ],
+  "probedAt": "2026-11-18T03:23:16.957Z"
+ },
+ {
+  "key": "pokecollect",
+  "name": "Poke-Collect",
+  "base": "https://poke-collect.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles-instock",
+   "mtg-singles",
+   "mega-evolution-singles",
+   "budget-singles",
+   "budget-singles-5",
+   "high-end-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:16.010Z"
+ },
+ {
+  "key": "pokemonplug",
+  "name": "Pokemon Plug",
+  "base": "https://pokemonplug.com",
+  "market": "US",
+  "handles": [
+   "view-all-single-cards",
+   "pokemon-singles-database",
+   "sword-shield-black-star-promos-single-cards",
+   "sword-shield-fusion-strike-single-cards",
+   "sun-moon-cosmic-eclipse",
+   "sun-moon-unified-minds-single-cards"
+  ],
+  "probedAt": "2026-11-18T03:23:17.447Z"
+ },
+ {
+  "key": "progressccg",
+  "name": "Progress CCG",
+  "base": "https://progressccg.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "yugioh-singles",
+   "pokemon-singles",
+   "grand-archive-singles",
+   "weiss-schwartz-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:20.481Z"
+ },
+ {
+  "key": "prosoulgames",
+  "name": "ProSoul Games",
+  "base": "https://prosoulgames.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "non-singles",
+   "flesh-and-blood-singles",
+   "lorcana-singles",
+   "card-singles-recently-re-stocked"
+  ],
+  "probedAt": "2026-11-18T03:23:22.579Z"
+ },
+ {
+  "key": "pullbighits",
+  "name": "Do Big Things Collectibles",
+  "base": "https://www.pullbighits.com",
+  "market": "US",
+  "handles": [
+   "tcg-singles-copy",
+   "pokemon-singles-copy",
+   "magic-the-gathering-singles-copy",
+   "one-piece-singles-copy",
+   "one-piece-singles-copy-3",
+   "one-piece-singles-copy-2"
+  ],
+  "probedAt": "2026-11-18T03:23:23.302Z"
+ },
+ {
+  "key": "punkouter",
+  "name": "PunkOuter Games",
+  "base": "https://punkouter.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles-0-50-and-over-in-stock-copy",
+   "pokemon-singles-all",
+   "mtg-singles-sub-3",
+   "flesh-blood-singles",
+   "yugioh-singles",
+   "digimon-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:25.490Z"
+ },
+ {
+  "key": "quicktcg",
+  "name": "QuickTCG",
+  "base": "https://quicktcg.com",
+  "market": "US",
+  "handles": [
+   "single-cards",
+   "singles-under-20",
+   "single-cards-20",
+   "singles-row-5-marked-down",
+   "single-cards-21",
+   "pokemon-single-cards-40"
+  ],
+  "probedAt": "2026-11-18T03:23:25.408Z"
+ },
+ {
+  "key": "realgoodeal",
+  "name": "Realgoodeal",
+  "base": "https://realgoodeal.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "mtg-singles",
+   "yu-gi-oh-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:27.561Z"
+ },
+ {
+  "key": "reapergamestore",
+  "name": "Reaper Game Store",
+  "base": "https://reapergamestore.com",
+  "market": "US",
+  "handles": [
+   "reaper-paints"
+  ],
+  "probedAt": "2026-11-18T03:23:27.822Z"
+ },
+ {
+  "key": "redfoxgamingonline",
+  "name": "Red Fox Gaming",
+  "base": "https://redfoxgamingonline.com",
+  "market": "US",
+  "handles": [
+   "weiss-schwarz-singles",
+   "mtg-singles",
+   "one-piece-singles",
+   "disney-lorcana-singles",
+   "pokemon-singles",
+   "yu-gi-oh-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:32.961Z"
+ },
+ {
+  "key": "redraccoongames",
+  "name": "Red Raccoon Games",
+  "base": "https://redraccoongames.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "magic-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:30.193Z"
+ },
+ {
+  "key": "retrogamingofdenver",
+  "name": "Retro Gaming of Denver",
+  "base": "https://retrogamingofdenver.com",
+  "market": "US",
+  "handles": [
+   "individual-tcg-cards",
+   "pokemon-single-cards",
+   "magic-the-gathering-single-cards",
+   "lorcana-singles",
+   "one-piece-single-cards",
+   "gundam-single-cards"
+  ],
+  "probedAt": "2026-11-18T03:23:34.625Z"
+ },
+ {
+  "key": "riftgate",
+  "name": "Riftgate",
+  "base": "https://riftgate.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-tcg-singles",
+   "tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:33.949Z"
+ },
+ {
+  "key": "rocketcitytoys",
+  "name": "Rocket City Toys",
+  "base": "https://rocketcitytoys.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:36.356Z"
+ },
+ {
+  "key": "shippintexas",
+  "name": "Shippin Texas",
+  "base": "https://shippintexas.com",
+  "market": "US",
+  "handles": [
+   "magic-singles",
+   "pokemon-singles",
+   "riftbound-singles",
+   "one-piece-singles",
+   "other-singles",
+   "sword-shield-era-singles-copy-1"
+  ],
+  "probedAt": "2026-11-18T03:23:38.730Z"
+ },
+ {
+  "key": "shufflenroll",
+  "name": "Shuffle N Roll",
+  "base": "https://shufflenroll.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "instock-singles",
+   "optcg-instock-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:42.649Z"
+ },
+ {
+  "key": "skyboxct",
+  "name": "Skybox Collectibles",
+  "base": "https://skyboxct.com",
+  "market": "US",
+  "handles": [
+   "all-single-cards",
+   "all-tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:44.088Z"
+ },
+ {
+  "key": "smokeandmirrorshobby",
+  "name": "Smoke and Mirrors Hobby",
+  "base": "https://www.smokeandmirrorshobby.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "one-piece-tcg-singles",
+   "pokemon-tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:47.271Z"
+ },
+ {
+  "key": "solacido",
+  "name": "Solacido",
+  "base": "https://solacido.com",
+  "market": "US",
+  "handles": [
+   "singles"
+  ],
+  "probedAt": "2026-11-18T03:23:45.368Z"
+ },
+ {
+  "key": "spacecoast",
+  "name": "Space Coast Games",
+  "base": "https://spacecoast.games",
+  "market": "US",
+  "handles": [
+   "trading-card-game-single",
+   "mtg-singles-in-stock",
+   "op-singles",
+   "pkm-singles-in-stock"
+  ],
+  "probedAt": "2026-11-18T03:23:46.792Z"
+ },
+ {
+  "key": "spankyscardshop",
+  "name": "Spanky's Card Shop",
+  "base": "https://spankyscardshop.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "pokemon-singles",
+   "lorcana-singles",
+   "riftbound-singles",
+   "marvel-super-heroes-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:47.572Z"
+ },
+ {
+  "key": "spankyslootstash",
+  "name": "Spanky's Loot Stash",
+  "base": "https://www.spankyslootstash.com",
+  "market": "US",
+  "handles": [
+   "tcg-singles",
+   "tcg-singles-20",
+   "mtg-singles",
+   "pokemon-tcg-singles",
+   "one-piece-tcg-singles",
+   "final-fantasy-tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:47.782Z"
+ },
+ {
+  "key": "stevensongames",
+  "name": "Stevenson Games",
+  "base": "https://stevensongames.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:51.719Z"
+ },
+ {
+  "key": "stompinggroundstcg",
+  "name": "Stomping Grounds TCG",
+  "base": "https://singles.stompinggroundstcg.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "flesh-and-blood-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:52.727Z"
+ },
+ {
+  "key": "superanimestore",
+  "name": "Super Anime Store",
+  "base": "https://superanimestore.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "magic-the-gathering",
+   "one-piece-tcg-singles",
+   "lorcana-singles",
+   "gundam-tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:55.075Z"
+ },
+ {
+  "key": "sweetsandgeeks",
+  "name": "Sweets and Geeks",
+  "base": "https://sweetsandgeeks.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-1",
+   "mtg-singles",
+   "one-piece-tcg-singles",
+   "one-piece-tcg-singles-1",
+   "lorcana-singles",
+   "digimon-tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:58.898Z"
+ },
+ {
+  "key": "swordsandspoons",
+  "name": "Swords and Spoons",
+  "base": "https://swordsandspoons.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "yu-gi-oh-singles",
+   "lorcana-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:57.658Z"
+ },
+ {
+  "key": "sydequest",
+  "name": "Sydequest Games LLC",
+  "base": "https://sydequest.games",
+  "market": "US",
+  "handles": [
+   "card-singles",
+   "mtg-singles",
+   "star-wars-unlimited-singles",
+   "pokemon-singles",
+   "lorcana-singles",
+   "fab-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:57.534Z"
+ },
+ {
+  "key": "syndicategames",
+  "name": "The Syndicate by Magic Buff",
+  "base": "https://syndicategames.store",
+  "market": "US",
+  "handles": [
+   "singles-under-50",
+   "singles",
+   "pokemon-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:59.133Z"
+ },
+ {
+  "key": "tabletcg",
+  "name": "Tabletop Cards and Games",
+  "base": "https://tabletcg.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "pokemon-singles",
+   "nfl",
+   "baseball",
+   "nba",
+   "football-card-singles"
+  ],
+  "probedAt": "2026-11-18T03:23:59.869Z"
+ },
+ {
+  "key": "tcghobby",
+  "name": "TCG Hobby",
+  "base": "https://www.tcghobby.com",
+  "market": "US",
+  "handles": [
+   "single-cards",
+   "pokemon-single-cards",
+   "sv10f-glory-of-team-rockets-single-cards",
+   "sv11wf-white-flare-single-cards",
+   "sv11bf-black-bolt-single-cards",
+   "m1s-mega-symphonia-single-cards"
+  ],
+  "probedAt": "2026-11-18T03:24:01.173Z"
+ },
+ {
+  "key": "tcgom",
+  "name": "tcgom",
+  "base": "https://tcgom.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "all-hololive-singles",
+   "fow-the-epic-of-the-dragon-lord-singles",
+   "hololive-super-expo-2022-singles",
+   "force-of-will-featured-singles",
+   "weiss-schwarz-complete-sets"
+  ],
+  "probedAt": "2026-11-18T03:24:02.180Z"
+ },
+ {
+  "key": "thebanditshideout",
+  "name": "Bandits Hideout",
+  "base": "https://thebanditshideout.com",
+  "market": "US",
+  "handles": [
+   "singles-1"
+  ],
+  "probedAt": "2026-11-18T03:24:03.985Z"
+ },
+ {
+  "key": "thecardboardbros",
+  "name": "The Cardboard Bros",
+  "base": "https://thecardboardbros.com",
+  "market": "US",
+  "handles": [
+   "singles"
+  ],
+  "probedAt": "2026-11-18T03:24:04.576Z"
+ },
+ {
+  "key": "theclubhousecards",
+  "name": "ClubhouseCards",
+  "base": "https://theclubhousecards.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles-151"
+  ],
+  "probedAt": "2026-11-18T03:24:04.721Z"
+ },
+ {
+  "key": "thecollectionrealm",
+  "name": "The Collection Realm",
+  "base": "https://thecollectionrealm.com",
+  "market": "US",
+  "handles": [
+   "lorcana-single-player-deck",
+   "single-card",
+   "pokemon-single-card",
+   "gundam-tcg-single-pack",
+   "mtg-single-card"
+  ],
+  "probedAt": "2026-11-18T03:24:08.168Z"
+ },
+ {
+  "key": "thefourthplace",
+  "name": "The Fourth Place",
+  "base": "https://thefourthplaceforgeeks.com",
+  "market": "US",
+  "handles": [
+   "single-player-games"
+  ],
+  "probedAt": "2026-11-18T03:24:08.535Z"
+ },
+ {
+  "key": "thegamecornergames",
+  "name": "The Game Corner",
+  "base": "https://www.thegamecornergames.com",
+  "market": "US",
+  "handles": [
+   "mtg-single",
+   "product-not-including-singles",
+   "product-not-including-singles-titles-q-z",
+   "product-not-including-singles-titles-a-h",
+   "product-not-including-singles-titles-i-p",
+   "pokemon-surging-sparks-1"
+  ],
+  "probedAt": "2026-11-18T03:24:06.870Z"
+ },
+ {
+  "key": "thehubtcg",
+  "name": "The Hub TCG",
+  "base": "https://thehubtcg.com",
+  "market": "US",
+  "handles": [
+   "trading-card-singles",
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "riftbound-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:10.513Z"
+ },
+ {
+  "key": "thenerdmerchant",
+  "name": "The Nerd Merchant",
+  "base": "https://thenerdmerchant.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "raw-deal-singles",
+   "spellfire-singles",
+   "world-of-warcraft-cze-singles",
+   "star-trek-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:13.564Z"
+ },
+ {
+  "key": "theperkcards",
+  "name": "The Perk",
+  "base": "https://theperkcards.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "other-tcg-singles",
+   "tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:13.818Z"
+ },
+ {
+  "key": "theportalcomicsandgaming",
+  "name": "The Portal Comics and Gaming",
+  "base": "https://theportalcomicsandgaming.com",
+  "market": "US",
+  "handles": [
+   "singles-miniatures"
+  ],
+  "probedAt": "2026-11-18T03:24:16.955Z"
+ },
+ {
+  "key": "thesportsroom",
+  "name": "The SportsRoom",
+  "base": "https://thesportsroompdx.com",
+  "market": "US",
+  "handles": [
+   "trading-cards"
+  ],
+  "probedAt": "2026-11-18T03:24:16.772Z"
+ },
+ {
+  "key": "thesportsshaq",
+  "name": "The Sports Shaq",
+  "base": "https://thesportsshaq.com",
+  "market": "US",
+  "handles": [
+   "tcg-singles",
+   "sports-singles",
+   "pokemon-singles",
+   "pokemon-singles-under-50",
+   "football-singles",
+   "basketball-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:17.741Z"
+ },
+ {
+  "key": "thetrainercourt",
+  "name": "The Trainer Court",
+  "base": "https://www.thetrainercourt.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "pokemon-english-singles",
+   "budget-pokemon-singles",
+   "pokemon-scarlet-violet-singles",
+   "pokemon-mega-evolution-singles",
+   "pokemon-sun-moon-and-older-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:19.270Z"
+ },
+ {
+  "key": "thewarpgate",
+  "name": "The Warp Gate",
+  "base": "https://thewarpgate.net",
+  "market": "US",
+  "handles": [
+   "tcg-singles-in-stock",
+   "mtg-singles-all-products",
+   "pokemon-singles-all",
+   "mtg-singles-instock",
+   "lorcana-singles",
+   "secret-lair-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:20.489Z"
+ },
+ {
+  "key": "tier1games",
+  "name": "Tier 1 Games",
+  "base": "https://tier1games.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "mtg-featured-singles",
+   "star-wars-unlimited-spark-of-rebellion-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:21.741Z"
+ },
+ {
+  "key": "timetravelersonline",
+  "name": "Time Travelers Online",
+  "base": "https://timetravelersonline.com",
+  "market": "US",
+  "handles": [
+   "cards-tcg-magic-the-gathering-singles",
+   "pokemon-singles",
+   "cards-sports-singles-basketball",
+   "cards-sports-singles-baseball",
+   "cards-sports-singles-football",
+   "cards-tcg-one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:24.249Z"
+ },
+ {
+  "key": "tofustrading",
+  "name": "Tofu's Trading",
+  "base": "https://tofustrading.com",
+  "market": "US",
+  "handles": [
+   "all-product-beside-singles",
+   "single"
+  ],
+  "probedAt": "2026-11-18T03:24:22.707Z"
+ },
+ {
+  "key": "topcutcomics",
+  "name": "Top Cut Comics",
+  "base": "https://topcutcomics.com",
+  "market": "US",
+  "handles": [
+   "me02-5-ascended-heroes-singles",
+   "attack-of-the-vine-singles",
+   "sv02-paldea-evolved-singles",
+   "sv08-5-prismatic-evolutions-singles",
+   "wilds-unknown-singles",
+   "winterspell-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:24.066Z"
+ },
+ {
+  "key": "topspot",
+  "name": "Topspot Cards",
+  "base": "https://topspot.cards",
+  "market": "US",
+  "handles": [
+   "pokemon-all-single-cards"
+  ],
+  "probedAt": "2026-11-18T03:24:26.230Z"
+ },
+ {
+  "key": "totalescapegames",
+  "name": "Total Escape Games",
+  "base": "https://totalescapegames.com",
+  "market": "US",
+  "handles": [
+   "riftbound-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:25.238Z"
+ },
+ {
+  "key": "tothetable",
+  "name": "To The Table Board Game Cafe",
+  "base": "https://tothetable.game",
+  "market": "US",
+  "handles": [
+   "mtg-singles",
+   "swu-singles",
+   "pokemon-singles",
+   "riftbound-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:26.699Z"
+ },
+ {
+  "key": "tradeshop",
+  "name": "Trade Shop",
+  "base": "https://tradeshop.com",
+  "market": "US",
+  "handles": [
+   "singles",
+   "pokemon-singles",
+   "one-piece-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:28.705Z"
+ },
+ {
+  "key": "tradingcardmarket",
+  "name": "Trading Card Market",
+  "base": "https://tradingcardmarket.com",
+  "market": "US",
+  "handles": [
+   "sports-singles",
+   "gaming-singles",
+   "newly-listed-singles",
+   "singles",
+   "football-singles",
+   "basketball-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:28.900Z"
+ },
+ {
+  "key": "tradingcardworld",
+  "name": "Trading Card World",
+  "base": "https://tradingcardworld.store",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "one-piece-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:29.964Z"
+ },
+ {
+  "key": "triadgroup",
+  "name": "Triad Cards and Gaming",
+  "base": "https://triadgroup.shop",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "magic-the-gathering-singles",
+   "one-piece-singles",
+   "pokemon-singles",
+   "riftbound-singles",
+   "disney-lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:31.109Z"
+ },
+ {
+  "key": "troveofcollectibles",
+  "name": "Trove of Collectibles",
+  "base": "https://troveofcollectibles.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles-1"
+  ],
+  "probedAt": "2026-11-18T03:24:31.413Z"
+ },
+ {
+  "key": "undiscoveredrealm",
+  "name": "Undiscovered Realm",
+  "base": "https://undiscoveredrealm.com",
+  "market": "US",
+  "handles": [
+   "all-items-excluding-card-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:33.563Z"
+ },
+ {
+  "key": "us",
+  "name": "Devastation Store Miami",
+  "base": "https://us.storedevastation.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "pokemon-singles-all",
+   "flesh-and-blood",
+   "singles-digimon",
+   "singles-one-piece"
+  ],
+  "probedAt": "2026-11-18T03:24:35.994Z"
+ },
+ {
+  "key": "vaultgamestore",
+  "name": "The Vault Game Store",
+  "base": "https://vaultgamestore.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all",
+   "one-piece-singles",
+   "mtg-singles-copy",
+   "riftbound-singles",
+   "newly-added-magic-singles",
+   "newly-added-pokemon-singles-copy"
+  ],
+  "probedAt": "2026-11-18T03:24:36.071Z"
+ },
+ {
+  "key": "vgmxthenerdemporium",
+  "name": "VGMX The Nerd Emporium",
+  "base": "https://vgmx.com",
+  "market": "US",
+  "handles": [
+   "pokemon-tcg-singles",
+   "magic-the-gathering-singles",
+   "yu-gi-oh-tcg-singles",
+   "sports-cards-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:39.051Z"
+ },
+ {
+  "key": "vrarestore",
+  "name": "vrarestore",
+  "base": "https://vrarestore.com",
+  "market": "US",
+  "handles": [
+   "singles"
+  ],
+  "probedAt": "2026-11-18T03:24:39.374Z"
+ },
+ {
+  "key": "wargamesusa",
+  "name": "War Games USA",
+  "base": "https://www.wargamesusa.com",
+  "market": "US",
+  "handles": [
+   "paint-singles",
+   "citadel-colour-paint-singles",
+   "citadel-colour-singles",
+   "the-army-painter-paint-singles",
+   "warpaints-fanatic-singles",
+   "monument-hobbies-pro-acryl-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:40.797Z"
+ },
+ {
+  "key": "wegeektogether",
+  "name": "We Geek Together",
+  "base": "https://wegeektogether.com",
+  "market": "US",
+  "handles": [
+   "magic-the-gathering-singles",
+   "tarkir-dragonstorm-mtg-singles",
+   "final-fantasy-mtg-singles",
+   "reality-fracture-mtg-singles",
+   "duskmourn-mtg-singles",
+   "final-fantasy-commander-mtg-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:42.389Z"
+ },
+ {
+  "key": "wilsontradingcardco",
+  "name": "Wilson Trading Card Co.",
+  "base": "https://wilsontradingcardco.com",
+  "market": "US",
+  "handles": [
+   "pokemon-singles",
+   "baseball-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:43.172Z"
+ },
+ {
+  "key": "wolfdentcg",
+  "name": "Wolf Den Gaming",
+  "base": "https://wolfdentcg.com",
+  "market": "US",
+  "handles": [
+   "all-single-cards",
+   "magic-the-gathering-singles",
+   "all-except-singles",
+   "pokemon-singles",
+   "new-products-no-singles",
+   "all-products-excl-singles-coffee-shop-3d-print-snacks"
+  ],
+  "probedAt": "2026-11-18T03:24:44.994Z"
+ },
+ {
+  "key": "wulfgaming",
+  "name": "Wulf Gaming",
+  "base": "https://wulfgaming.com",
+  "market": "US",
+  "handles": [
+   "all-trading-card-singles",
+   "hot-tcg-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:47.904Z"
+ },
+ {
+  "key": "zamliytcg",
+  "name": "Zamliy TCG",
+  "base": "https://zamliytcg.com",
+  "market": "US",
+  "handles": [
+   "trading-card-game-singles",
+   "magic-the-gathering-singles",
+   "pokemon-singles",
+   "one-piece-singles",
+   "riftbound-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:48.036Z"
+ },
+ {
+  "key": "zcgamestcg",
+  "name": "ZCGames",
+  "base": "https://zcgamestcg.com",
+  "market": "US",
+  "handles": [
+   "mtg-singles-all-products",
+   "mtg-singles-instock",
+   "yugioh-singles-all",
+   "yugioh-singles-instock",
+   "digimon-singles-all",
+   "digimon-single-instock"
+  ],
+  "probedAt": "2026-11-18T03:24:49.532Z"
+ },
+ {
+  "key": "zulusgames",
+  "name": "Zulus Games",
+  "base": "https://zulusgames.com",
+  "market": "US",
+  "handles": [
+   "all-singles",
+   "magic-single",
+   "pokemon-singles",
+   "one-piece-singles",
+   "star-wars-unlimited-singles",
+   "lorcana-singles"
+  ],
+  "probedAt": "2026-11-18T03:24:54.783Z"
+ }
+]
