@@ -102,3 +102,12 @@ carry one more row, "PSA 10 on eBay": a tagged eBay search (customid `tcgsdb-us-
 claimed, `GRADED_TEST_GAMES` in `lib/affiliate.ts`. The click event carries `kind: graded`. Read on 2 Dec 2026:
 EPN clicks and sales on `tcgsdb-us-graded` against `tcgsdb-us-card-ebay`. If it earns, propose the graded site
 (domain is Bill's spend); if not, remove the row. Plan: `/mnt/project-files/strategy/new-market-ranking-2026-11-18.html`.
+
+## 2026-11-18: Gundam and Cyberpunk singles noindex too (core update)
+
+Gundam Compare and Cyberpunk Compare serve the same single cards in search, from the same TCGplayer prices, and both lost
+most of their Google impressions in the November 2026 core update (Gundam about 327 a day to 2, Cyberpunk 287 to 28). A
+second host of ours offering the same card pages is the network duplication the quality push is removing, so these two games
+join the four `index: false` ones: every card stays live for visitors, none is released to Google or put in a sitemap. Turn one
+back on only with the owner, and only if its sister drops its card pages.
+
