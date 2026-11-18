@@ -181,7 +181,9 @@ export function matchListing(p: ShopifyProduct, cards: ReadonlyMap<number, CardR
 // ── Which collections hold singles ──────────────────────────────────────────
 
 const SINGLES = /single|\bcards?\b(?!\s*(sleeve|box|binder|storage))/i;
-const NOT_SINGLES = /sealed|booster|accessor|suppl|sleeve|binder|deck ?box|playmat|graded|slab|psa|bgs|cgc|lot|bulk|bundle|pre-?order|preorder|merch|apparel|figure|toy|board ?game|dice|new arrival|sale|clearance|gift|japan(ese)?\b|chinese|korean/i;
+const NOT_SINGLES = /non ?singles?|audit|kiosk|sealed|booster|accessor|suppl|sleeve|binder|deck ?box|playmat|graded|slab|psa|bgs|cgc|lot|bulk|bundle|pre-?order|preorder|merch|apparel|figure|toy|board ?game|dice|new arrival|sale|clearance|gift|japan(ese)?\b|chinese|korean/i;
+/** A collection handle the probe kept that the current rules refuse (the rules may have tightened since). */
+export const refusedHandle = (h: string) => NOT_SINGLES.test(h.replace(/-/g, " "));
 /** Most collections read per store, biggest first. A store's own "all singles" collection is usually one of them. */
 export const MAX_SINGLES_COLLECTIONS = 6;
 

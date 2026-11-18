@@ -82,6 +82,8 @@ test("singles collections: named singles, never sealed or supplies, biggest firs
     { handle: "graded-singles", title: "Graded Singles", products_count: 40 },
     { handle: "japanese-singles", title: "Japanese Singles", products_count: 40 },
     { handle: "empty-singles", title: "Singles", products_count: 0 },
+    { handle: "audit-non-singles-in-stock", title: "Audit non singles", products_count: 400 },
+    { handle: "york-pkm-singles-for-online-kiosk", title: "Kiosk", products_count: 400 },
   ]);
   assert.deepEqual(got, ["mtg-singles", "pokemon-singles"]);
 });

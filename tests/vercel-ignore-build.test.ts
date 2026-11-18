@@ -79,6 +79,9 @@ test("previews are off unless the subject carries [preview]", () => {
 
 test("the daily import's commit is the one release", () => {
   const wf = src(".github/workflows/card-prices.yml");
-  assert.match(wf, /git commit -q -m "Card prices: [^"]*\[deploy\]"/);
+  assert.match(wf, /git commit -q -m "Card prices: [^"]*\$MARK"/);
+  assert.match(wf, /MARK=""; \[ "\$BRANCH" = "main" \] && MARK=" \[deploy\]"/);
+  // [urgent] only through the owner-approved dispatch input, never on the schedule.
+  assert.match(wf, /\[ "\$\{\{ inputs\.urgent \}\}" = "true" \] && MARK=" \[deploy\] \[urgent\]"/);
   assert.equal((wf.match(/cron:/g) ?? []).length, 1, "one scheduled import a day");
 });

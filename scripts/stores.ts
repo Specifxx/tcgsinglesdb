@@ -18,6 +18,7 @@ import type { SetFile } from "../src/lib/cards";
 import { eachStore, RequestBudget, StopStore, StoreSession } from "../src/lib/stores/polite-http";
 import {
   matchListing,
+  refusedHandle,
   mergeState,
   singlesCollections,
   sortRows,
@@ -129,7 +130,10 @@ function catalogue(): Map<number, CardRef> {
 }
 
 async function crawl() {
-  const stores = readJson<SinglesStore[]>(path.join(STORES, "singles.json"), []).filter((s) => SAFE_KEY.test(s.key));
+  const stores = readJson<SinglesStore[]>(path.join(STORES, "singles.json"), [])
+    .filter((s) => SAFE_KEY.test(s.key))
+    .map((s) => ({ ...s, handles: s.handles.filter((h) => !refusedHandle(h)) }))
+    .filter((s) => s.handles.length);
   const blocklist = readJson<Record<string, string>>(path.join(STORES, "blocklist.json"), {});
   const metaFile = path.join(STORES, "meta.json");
   const prevMeta = readJson<Partial<StoresMeta>>(metaFile, {});
