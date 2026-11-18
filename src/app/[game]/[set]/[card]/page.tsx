@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { CardTiles } from "@/components/CardTiles";
 import { PriceChart } from "@/components/PriceChart";
-import { AFFILIATE_NOTE, REL_SPONSORED, ebayCardSearchUrl, storeProductUrl, tcgplayerOutUrl } from "@/lib/affiliate";
+import { AFFILIATE_NOTE, GRADED_TEST_GAMES, REL_SPONSORED, ebayCardSearchUrl, storeProductUrl, tcgplayerOutUrl } from "@/lib/affiliate";
 import { cardIndexable, cardTitle, cardValue, dayIndex, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
 import { cardImage, cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
@@ -52,6 +52,7 @@ export default async function CardPage({ params }: { params: { game: string; set
   const rows = printings(c);
   const pts = await readHistory(g.slug, set.slug, c.id);
   const ebay = ebayCardSearchUrl(`${g.short} ${c.n} ${set.name}${c.no ? ` ${c.no}` : ""}`, "card-ebay");
+  const psa10 = GRADED_TEST_GAMES.has(g.slug) ? ebayCardSearchUrl(`${g.short} ${c.n} ${set.name}${c.no ? ` ${c.no}` : ""} PSA 10`, "graded") : null;
   const tcg = tcgplayerOutUrl(tcgplayerCardUrl(c.id), "card-tcgplayer");
   // Store rows: independent US stores that list this card Near Mint and in stock, cheapest first (scripts/stores.ts). Unpaid.
   const names = readStoreNames();
@@ -136,6 +137,19 @@ export default async function CardPage({ params }: { params: { game: string; set
                 Check on eBay ↗
               </a>
             </li>
+            {psa10 && (
+              <li className="card">
+                <span>
+                  <b>Graded PSA 10</b>
+                  <span className="small" style={{ display: "block" }}>
+                    Search graded copies on eBay
+                  </span>
+                </span>
+                <a className="btn" href={psa10} rel={REL_SPONSORED} target="_blank" data-kind="graded">
+                  PSA 10 on eBay ↗
+                </a>
+              </li>
+            )}
             <li className="card">
               <span>
                 <b>TCGplayer</b>

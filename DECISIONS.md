@@ -93,3 +93,12 @@ shows a "Sell it: who pays most?" block (cash, Near Mint, share of market, copie
 offers. Links to the buyer are unpaid, `rel="nofollow"`. The ops monitor's "Card Kingdom buylist" check is red after 50 hours.
 Read the result on 9 Dec (clicks on "Sell to", `/sell` visits). More buyers (Star City Games, ABU, TCGplayer's buylist) join
 `BUYERS` only through a public list that carries an id we can map, never a title.
+
+## 2026-11-18: Graded-card demand test (PSA 10 on eBay)
+
+Every TCG in TCGplayer's Q3 2026 top 10 already has a site of ours; the open market is graded slabs (Collectr's
+June 2026 report: 60% of tracked TCG sales value, PSA 85% of it). Before building a graded site, Pokémon card pages
+carry one more row, "PSA 10 on eBay": a tagged eBay search (customid `tcgsdb-us-graded`), no API call, no price
+claimed, `GRADED_TEST_GAMES` in `lib/affiliate.ts`. The click event carries `kind: graded`. Read on 2 Dec 2026:
+EPN clicks and sales on `tcgsdb-us-graded` against `tcgsdb-us-card-ebay`. If it earns, propose the graded site
+(domain is Bill's spend); if not, remove the row. Plan: `/mnt/project-files/strategy/new-market-ranking-2026-11-18.html`.
