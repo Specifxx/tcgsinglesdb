@@ -17,14 +17,13 @@ const meta: Meta = (() => {
 
 for (const g of LIVE_GAMES) {
   const m = meta.games[g.slug];
-  if (!m) {
+  if (!m || m.cards < 50) {
     // A game TCGplayer has no cards for yet has no page (shownGames): nothing to watch.
-    ok.push(`${g.name}: no cards yet, hidden`);
+    ok.push(`${g.name}: ${m?.cards ?? 0} cards, hidden (under 50)`);
     continue;
   }
   const hours = (Date.now() - Date.parse(m.generatedAt)) / 3_600_000;
   if (!(hours < 36)) problems.push(`${g.name}: last import ${Math.round(hours)} h ago (daily expected)`);
-  else if (m.cards < 100) problems.push(`${g.name}: only ${m.cards} cards`);
   else ok.push(`${g.name}: ${m.cards} cards, ${m.indexed} released to Google, imported ${Math.round(hours)} h ago`);
 }
 
@@ -61,7 +60,7 @@ async function live(pathname: string, must: RegExp): Promise<void> {
   if (process.env.OPS_LIVE !== "0") {
     await live("/", /card worth/i);
     await live("/sitemap.xml", /<sitemapindex/);
-    for (const g of LIVE_GAMES.filter((x) => (meta.games[x.slug]?.cards ?? 0) > 0)) await live(`/${g.slug}`, /card prices/i);
+    for (const g of LIVE_GAMES.filter((x) => (meta.games[x.slug]?.cards ?? 0) >= 50)) await live(`/${g.slug}`, /card prices/i);
   }
   const text = ["### Ops monitor", "", ...ok.map((s) => `- OK ${s}`), ...problems.map((s) => `- RED ${s}`), ""].join("\n");
   if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, text);

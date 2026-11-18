@@ -39,7 +39,7 @@ export function generateMetadata({ params }: { params: { game: string; set: stri
   return pageMeta({ title: cardTitle(c, set, SITE.name), description: describe(g, set, c), path: cardPath(g.slug, set.slug, c.s), image: cardImage(c.id, 1000), noindex: !cardIndexable(c) });
 }
 
-export default function CardPage({ params }: { params: { game: string; set: string; card: string } }) {
+export default async function CardPage({ params }: { params: { game: string; set: string; card: string } }) {
   const x = load(params);
   if (x === "set") permanentRedirect(`/${params.game}/${params.set}`);
   if (!x) notFound();
@@ -48,7 +48,7 @@ export default function CardPage({ params }: { params: { game: string; set: stri
   const day = generatedAt.slice(0, 10);
   const value = cardValue(c.p);
   const rows = printings(c);
-  const pts = readHistory(g.slug, set.slug, c.id);
+  const pts = await readHistory(g.slug, set.slug, c.id);
   const ebay = ebayCardSearchUrl(`${g.short} ${c.n} ${set.name}${c.no ? ` ${c.no}` : ""}`, "card-ebay");
   const tcg = tcgplayerOutUrl(tcgplayerCardUrl(c.id), "card-tcgplayer");
   // Store rows: independent US stores that list this card Near Mint and in stock, cheapest first (scripts/stores.ts). Unpaid.

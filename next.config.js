@@ -14,8 +14,12 @@ module.exports = {
   poweredByHeader: false,
   reactStrictMode: true,
   images: { unoptimized: true },
-  // The card files are read with fs at request time: trace them into the functions that read them.
-  experimental: { outputFileTracingIncludes: { "/**": ["./data/**/*.json"] } },
+  // The card files are read with fs at request time: trace them into the functions that read them. Price history and the
+  // import's own state are NOT bundled (history grows daily; lib/store.ts reads it from the repository's raw file).
+  experimental: {
+    outputFileTracingIncludes: { "/**": ["./data/meta.json", "./data/cards/**/*.json", "./data/offers/**/*.json", "./data/stores/meta.json"] },
+    outputFileTracingExcludes: { "/**": ["./data/history/**", "./data/state/**", "./data/stores/state/**"] },
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

@@ -27,8 +27,9 @@ export interface Meta {
   games: Record<string, { sets: number; cards: number; priced: number; indexed: number; generatedAt: string }>;
 }
 export const readMeta = (): Meta => read<Meta>("meta.json", { generatedAt: "", games: {} });
-/** Live games the import has cards for, biggest catalogue first after the config's first three. A live game with no data has no page. */
-export const shownGames = (): Game[] => LIVE_GAMES.filter((g) => (readMeta().games[g.slug]?.cards ?? 0) > 0);
+/** Live games the import has cards for, biggest catalogue first after the config's first three. A live game with fewer than MIN_GAME_CARDS cards (none yet, or a stub like Naruto's 3 on 18 Nov) has no page. */
+export const MIN_GAME_CARDS = 50;
+export const shownGames = (): Game[] => LIVE_GAMES.filter((g) => (readMeta().games[g.slug]?.cards ?? 0) >= MIN_GAME_CARDS);
 export const shownGame = (slug: string): Game | null => shownGames().find((g) => g.slug === slug) ?? null;
 export const readSets = (game: string): SetsFile => (gameBySlug(game) ? read<SetsFile>(`cards/${game}/sets.json`, { generatedAt: "", source: "", sets: [] }) : { generatedAt: "", source: "", sets: [] });
 export const readTop = (game: string): TopFile => (gameBySlug(game) ? read<TopFile>(`cards/${game}/top.json`, { top: [], up: [], down: [] }) : { top: [], up: [], down: [] });
@@ -38,9 +39,28 @@ export function readSet(game: string, slug: string): CardRow[] {
   if (!gameBySlug(game) || !SAFE.test(slug)) return [];
   return read<SetFile>(`cards/${game}/sets/${slug}.json`, { slug, cards: [] }).cards;
 }
-export function readHistory(game: string, slug: string, id: number): Point[] {
+// Price history is NOT bundled into the functions (next.config.js): it grows every day and would push data/ past a function's
+// size. Locally (dev, tests, the import) it is read from disk; on Vercel from this repository's raw file at the deployed commit
+// (the repo is public, and the page is cached a day, so a set's file is fetched about once a day per page).
+const HISTORY_RAW = "https://raw.githubusercontent.com/Specifxx/tcgsinglesdb";
+const historyMemo = new Map<string, Promise<HistoryFile>>();
+async function historyFile(game: string, slug: string): Promise<HistoryFile> {
+  const rel = `history/${game}/${slug}.json`;
+  const local = path.join(root(), rel);
+  if (fs.existsSync(local)) return read<HistoryFile>(rel, {});
+  const key = `${process.env.VERCEL_GIT_COMMIT_SHA || "main"}/${rel}`;
+  if (!historyMemo.has(key)) {
+    const p = fetch(`${HISTORY_RAW}/${process.env.VERCEL_GIT_COMMIT_SHA || "main"}/data/${rel}`, { cache: "no-store", signal: AbortSignal.timeout(4000) })
+      .then((r) => (r.ok ? (r.json() as Promise<HistoryFile>) : {}))
+      .catch(() => ({}));
+    if (historyMemo.size > 200) historyMemo.clear();
+    historyMemo.set(key, p);
+  }
+  return historyMemo.get(key)!;
+}
+export async function readHistory(game: string, slug: string, id: number): Promise<Point[]> {
   if (!gameBySlug(game) || !SAFE.test(slug)) return [];
-  return read<HistoryFile>(`history/${game}/${slug}.json`, {})[String(id)] ?? [];
+  return (await historyFile(game, slug))[String(id)] ?? [];
 }
 /** Store rows for one set (data/offers/<game>/<set>.json, written by scripts/stores.ts crawl), and who the stores are. */
 export function readOffers(game: string, slug: string): OffersFile {
