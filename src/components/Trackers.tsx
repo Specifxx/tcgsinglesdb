@@ -1,7 +1,7 @@
 "use client";
 // Two Vercel Web Analytics events, ported from TCG Prices (DECISIONS.md, 2026-11-18):
 //   ai_referral: a visit from ChatGPT, Perplexity, Claude, Gemini, Copilot and the like, once per session (lib/ai-referral.ts);
-//   buy_click: a click on a paid row (eBay or TCGplayer), with the game and the assistant that sent the visit, if any.
+//   buy_click: a click on a paid row (eBay or TCGplayer), with the game (the plan keeps two properties per event).
 // Nothing is stored beyond sessionStorage; no address or text is read.
 import { useEffect } from "react";
 import { track } from "@vercel/analytics";
