@@ -60,3 +60,15 @@ and `Trackers` sends `share_visit { medium }` once per session for a visit a sha
 growth report reads for every site. robots.txt allows `/*utm_source=share` so X's and Reddit's preview fetchers can read a
 shared link. The preview stays the card's own TCGplayer image: no image is drawn, so sharing costs nothing. No share-for-a-deal
 offer here yet: this site has no deals page.
+
+## 2026-11-18: a return-visit beacon, so retention has a number on every site
+
+Owner, 2026-11-18: "we want new visitors and we want to retain those visitors". Vercel Web Analytics cannot tell a returning
+visitor from a new one, and Google Analytics runs on only four of the sites (consent-gated on two). `lib/return-visit.ts` keeps one
+small localStorage record (`rv`: first day, last day, visit days) and `components/ReturnBeacon.tsx` (root layout, renders nothing)
+sends ONE `return_visit` event the first time a returning visitor opens the site on a new day. New visitors send nothing (Vercel's
+visitor count is the denominator), so it costs at most one event per returning visitor per day. Properties are buckets only:
+`k` = "<days since last visit>:<page type>", `age` = days since first visit, `n` = visit days, `via` (direct, search, email, share,
+social, ai, other), plus the arm of each live 50/50 test (`rn`, `ln`, `share`, `cart`, `watch`) so every retention lever reads its
+return rate on against off. No id, date or URL leaves the browser. The identical file is in every Compare repo; read weekly by the
+retention thread. Rollback: remove `<ReturnBeacon />` from the layout.
