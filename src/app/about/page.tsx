@@ -12,6 +12,7 @@ export default function About() {
       <h2>Where the prices come from</h2>
       <p>Every price is TCGplayer&rsquo;s market price in US dollars: what copies of that printing recently sold for on TCGplayer, not what a seller is asking. We read TCGplayer&rsquo;s public price files once a day. A card with no recent sale shows no price.</p>
       <p>Under the TCGplayer price, a card page can list independent US stores that have the card Near Mint and in stock, cheapest first, at each store&rsquo;s own price as we last read it. A store is listed only when its listing carries TCGplayer&rsquo;s own id for that card and names the printing clearly; we never guess from a title. Store links are not paid.</p>
+      <p>On Magic cards, a &ldquo;Sell it&rdquo; block shows what Card Kingdom pays in cash for a Near Mint copy, from its public buylist, matched to the card through Scryfall&rsquo;s record of TCGplayer&rsquo;s id. Those links are not paid.</p>
       <h2>Price history</h2>
       <p>We keep each card&rsquo;s price from the day this site first read it, and add a point whenever it moves. The history cannot go back further than that.</p>
       <h2>How the site earns</h2>

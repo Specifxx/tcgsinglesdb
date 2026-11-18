@@ -49,6 +49,7 @@ export default function RootLayout({
         <footer className="ftr">
           <div className="page">
             <nav aria-label="Site">
+              <a href="/sell">Sell your cards</a>
               <a href="/about">About</a>
               <a href="/terms">Terms</a>
               <a href="/privacy">Privacy</a>

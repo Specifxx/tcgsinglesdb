@@ -77,3 +77,19 @@ retention thread. Rollback: remove `<ReturnBeacon />` from the layout.
 
 Retention lever 2 ("Since your last visit", on the sister sites) is a 50/50 test under `since-arm`; `ARM_KEYS` in
 `lib/return-visit.ts` gains `since` so the file stays the same in every repo. Nothing changes on this site until it runs the lever.
+
+## 2026-11-18 — "Who pays most?": Card Kingdom's cash buylist on Magic card pages (growth test #1)
+
+Owner's go (18 Nov, growth ideas list, item 1): a seller-side comparison, starting with Card Kingdom. `scripts/buylist.ts` runs
+in `card-prices.yml` after the store crawl and never stops the release. It reads Card Kingdom's public price list
+(`api.cardkingdom.com/api/v2/pricelist`, one request through `polite-http`; that host's robots.txt allows every path, while
+www.cardkingdom.com's disallows `/api/`, which we never ask) and Scryfall's bulk `default_cards` file, streamed
+(`JsonArraySplitter`, about half a gigabyte, never held whole). A row reaches a card ONLY by id: Card Kingdom's `scryfall_id` →
+Scryfall's `tcgplayer_id` → our card. Never by title. `matchCk` only refuses: not buying, no id, not our card, etched and other
+special finishes (TCGplayer files them under another id), a card under US$1, or a cash price under 10% or over 125% of the
+printing's TCGplayer market (a mismatch, not a bargain). Output: `data/buylist/magic/<set>.json`, `top.json` (the 200 best
+offers, for `/sell`) and `meta.json`; after 3 days without a good read the rows are dropped, never shown stale. The card page
+shows a "Sell it: who pays most?" block (cash, Near Mint, share of market, copies wanted, date); `/sell` lists the 100 best
+offers. Links to the buyer are unpaid, `rel="nofollow"`. The ops monitor's "Card Kingdom buylist" check is red after 50 hours.
+Read the result on 9 Dec (clicks on "Sell to", `/sell` visits). More buyers (Star City Games, ABU, TCGplayer's buylist) join
+`BUYERS` only through a public list that carries an id we can map, never a title.

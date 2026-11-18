@@ -7,8 +7,9 @@ import { AFFILIATE_NOTE, REL_SPONSORED, ebayCardSearchUrl, storeProductUrl, tcgp
 import { cardIndexable, cardTitle, cardValue, dayIndex, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
 import { cardImage, cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
-import { readHistory, readOffers, readSet, readSets, readStoreNames, setBySlug, shownGame, shownGames } from "@/lib/store";
+import { readBuylist, readBuylistMeta, readHistory, readOffers, readSet, readSets, readStoreNames, setBySlug, shownGame, shownGames } from "@/lib/store";
 import { SITE, type Game } from "@/site.config";
+import { BUYERS, payShare } from "@/lib/buylist";
 
 // One card's price page. The price is TCGplayer's market price only (recent sales, US$), never a seller's ask. Rows: "Check on
 // eBay" first (a tagged search; no eBay API call and no price claimed), TCGplayer second. Indexable once the import has released
@@ -55,6 +56,9 @@ export default async function CardPage({ params }: { params: { game: string; set
   // Store rows: independent US stores that list this card Near Mint and in stock, cheapest first (scripts/stores.ts). Unpaid.
   const names = readStoreNames();
   const storeRows = (readOffers(g.slug, set.slug)[c.s] ?? []).filter((r) => names[r[0]]);
+  // "Who pays most?": cash buy prices (scripts/buylist.ts), matched to this card by TCGplayer id only. Unpaid links.
+  const buyRows = readBuylist(g.slug, set.slug)[c.s] ?? [];
+  const buyDay = readBuylistMeta().buyers.ck?.readAt?.slice(0, 10) ?? "";
   const i = cards.indexOf(c);
   const prev = i > 0 ? cards[i - 1] : null;
   const next = i < cards.length - 1 ? cards[i + 1] : null;
@@ -161,6 +165,32 @@ export default async function CardPage({ params }: { params: { game: string; set
             {AFFILIATE_NOTE}
             {storeRows.length > 0 ? " Store prices are each store's own Near Mint price in US$, as last read; check the store for the current price and shipping." : ""}
           </p>
+
+          {buyRows.length > 0 && (
+            <section>
+              <h2>Sell it: who pays most?</h2>
+              <ul className="rows">
+                {buyRows.map(([b, printing, cents, qty]) => (
+                  <li className="card" key={`${b}|${printing}`}>
+                    <span>
+                      <b>{BUYERS[b].name} pays {usd(cents)}</b>
+                      <span className="small" style={{ display: "block" }}>
+                        Cash, Near Mint{rows.length > 1 ? ` · ${printing}` : ""}
+                        {c.p[printing] ? ` · ${payShare(cents, c.p[printing])}% of market` : ""} · buying up to {qty}
+                        {buyDay ? `, checked ${shortDate(buyDay)}` : ""}
+                      </span>
+                    </span>
+                    <a className="btn" href={BUYERS[b].sellUrl(c.n)} rel="nofollow noopener" target="_blank">
+                      Sell to {BUYERS[b].name} ↗
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p className="small">
+                The store&apos;s own buylist price for a Near Mint copy, as last read; store credit usually pays more, and the store grades what arrives. <a href="/sell">Best cash offers today</a>
+              </p>
+            </section>
+          )}
 
           {pts.length >= 2 && day && (
             <section>
