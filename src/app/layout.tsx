@@ -5,6 +5,7 @@ import { SearchBox } from "@/components/SearchBox";
 import { Trackers } from "@/components/Trackers";
 import { SITE } from "@/site.config";
 import "./globals.css";
+import { ReturnBeacon } from "@/components/ReturnBeacon";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -62,6 +63,7 @@ export default function RootLayout({
         </footer>
         <Analytics />
         <Trackers />
+        <ReturnBeacon />
       </body>
     </html>
   );
