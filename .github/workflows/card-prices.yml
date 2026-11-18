@@ -12,6 +12,11 @@ on:
       games:
         description: "Comma-separated game slugs (empty: every live game)"
         required: false
+      urgent:
+        description: "Add [urgent] to the release commit (only when the owner says so: it skips the 12-hour gap)"
+        type: boolean
+        required: false
+        default: false
 
 concurrency:
   group: tcgsinglesdb-card-prices
@@ -53,6 +58,7 @@ jobs:
           git config user.email "tcgsinglesdb-data@users.noreply.github.com"
           [ -f data/meta.json ] || { echo "No data."; exit 1; }
           MARK=""; [ "$BRANCH" = "main" ] && MARK=" [deploy]"
+          [ -n "$MARK" ] && [ "${{ inputs.urgent }}" = "true" ] && MARK=" [deploy] [urgent]"
           STAMP="$(date -u +%Y-%m-%dT%H:%MZ)"
           rm -rf "$RUNNER_TEMP/data" && cp -r data "$RUNNER_TEMP/data"
           for attempt in 1 2 3 4 5; do
@@ -62,7 +68,7 @@ jobs:
             git add -A data
             if git diff --cached --quiet; then echo "Unchanged."; exit 0; fi
             if [ -n "$MARK" ]; then
-              git commit -q -m "Card prices: $STAMP (run ${{ github.run_id }}) [deploy]"
+              git commit -q -m "Card prices: $STAMP (run ${{ github.run_id }})$MARK"
             else
               git commit -q -m "Card prices trial: $STAMP (run ${{ github.run_id }})"
             fi
