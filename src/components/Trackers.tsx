@@ -41,7 +41,6 @@ export function Trackers() {
       track("buy_click", {
         network,
         game: location.pathname.split("/")[1] || "home",
-        ai: src ?? "none",
       });
     };
     document.addEventListener("click", onClick, true);
