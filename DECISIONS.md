@@ -111,3 +111,9 @@ second host of ours offering the same card pages is the network duplication the 
 join the four `index: false` ones: every card stays live for visitors, none is released to Google or put in a sitemap. Turn one
 back on only with the owner, and only if its sister drops its card pages.
 
+
+## Who runs it and what it costs, on /about (2026-11-19)
+
+Core-update quality pass (owner, 2026-11-19). The site has no banner ads and a four-link footer, so nothing moved. /about
+now says who runs it (Bill and George), how AI tools are used, and what the sites cost (about A$790 a month, our books,
+30 days to 15 Nov 2026).
