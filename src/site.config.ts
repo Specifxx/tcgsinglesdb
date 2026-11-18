@@ -10,6 +10,8 @@ export interface Game {
   short: string;
   category: number;
   live: boolean;
+  /** false: every page is live for visitors but no card is released to Google (a sister site serves these cards in search). */
+  index?: boolean;
   /** Why a game is not live yet (shown nowhere; for the next reader). */
   note?: string;
 }
@@ -25,16 +27,39 @@ export const SITE = {
 } as const;
 
 export const GAMES: Game[] = [
+  // Every game live at once (owner, 2026-11-18: "get all these singles in"). Google still sees cards only as the per-game
+  // index ramp releases them (1,000 a game, then CARD_INDEX_GROWTH a day). Category ids are TCG Prices' (tcgcompare site.config).
   { slug: "pokemon", name: "Pokémon", short: "Pokemon", category: 3, live: true },
-  { slug: "yugioh", name: "Yu-Gi-Oh!", short: "Yugioh", category: 2, live: false, note: "second: after Pokémon passes its three-week indexing gate" },
-  { slug: "star-wars-unlimited", name: "Star Wars: Unlimited", short: "Star Wars Unlimited", category: 79, live: false },
-  { slug: "flesh-and-blood", name: "Flesh and Blood", short: "Flesh and Blood", category: 62, live: false },
-  { slug: "digimon", name: "Digimon Card Game", short: "Digimon", category: 63, live: false },
-  { slug: "dragon-ball-fusion-world", name: "Dragon Ball Super Fusion World", short: "Dragon Ball Fusion World", category: 80, live: false },
-  { slug: "union-arena", name: "Union Arena", short: "Union Arena", category: 81, live: false },
-  { slug: "magic", name: "Magic: The Gathering", short: "MTG", category: 1, live: false, note: "MTG Compare has every Magic card; decided after its indexing read (about 9 Dec 2026)" },
-  { slug: "one-piece", name: "One Piece Card Game", short: "One Piece", category: 68, live: false, note: "OP Compare has its cards; last" },
-  { slug: "lorcana", name: "Disney Lorcana", short: "Lorcana", category: 71, live: false, note: "Lorcana Compare has its cards; last" },
+  { slug: "magic", index: false, name: "Magic: The Gathering", short: "MTG", category: 1, live: true },
+  { slug: "yugioh", name: "Yu-Gi-Oh!", short: "Yugioh", category: 2, live: true },
+  { slug: "one-piece", index: false, name: "One Piece Card Game", short: "One Piece", category: 68, live: true },
+  { slug: "lorcana", index: false, name: "Disney Lorcana", short: "Lorcana", category: 71, live: true },
+  { slug: "riftbound", index: false, name: "Riftbound", short: "Riftbound", category: 89, live: true },
+  { slug: "pokemon-japan", name: "Pokémon Japan", short: "Pokemon Japanese", category: 85, live: true },
+  { slug: "star-wars-unlimited", name: "Star Wars: Unlimited", short: "Star Wars Unlimited", category: 79, live: true },
+  { slug: "gundam", name: "Gundam Card Game", short: "Gundam Card Game", category: 86, live: true },
+  { slug: "flesh-and-blood", name: "Flesh and Blood", short: "Flesh and Blood", category: 62, live: true },
+  { slug: "digimon", name: "Digimon Card Game", short: "Digimon", category: 63, live: true },
+  { slug: "dragon-ball-fusion-world", name: "Dragon Ball Super Fusion World", short: "Dragon Ball Fusion World", category: 80, live: true },
+  { slug: "union-arena", name: "Union Arena", short: "Union Arena", category: 81, live: true },
+  { slug: "weiss-schwarz", name: "Weiß Schwarz", short: "Weiss Schwarz", category: 20, live: true },
+  { slug: "cardfight-vanguard", name: "Cardfight!! Vanguard", short: "Cardfight Vanguard", category: 16, live: true },
+  { slug: "sorcery", name: "Sorcery: Contested Realm", short: "Sorcery Contested Realm", category: 77, live: true },
+  { slug: "grand-archive", name: "Grand Archive", short: "Grand Archive", category: 74, live: true },
+  { slug: "hololive", name: "hololive OFFICIAL CARD GAME", short: "hololive card game", category: 87, live: true },
+  { slug: "godzilla", name: "Godzilla Card Game", short: "Godzilla Card Game", category: 88, live: true },
+  { slug: "cyberpunk", name: "Cyberpunk TCG", short: "Cyberpunk TCG", category: 92, live: true },
+  { slug: "final-fantasy", name: "Final Fantasy TCG", short: "Final Fantasy TCG", category: 24, live: true },
+  { slug: "dragon-ball-super-masters", name: "Dragon Ball Super Masters", short: "Dragon Ball Super Card Game", category: 27, live: true },
+  { slug: "shadowverse-evolve", name: "Shadowverse: Evolve", short: "Shadowverse Evolve", category: 73, live: true },
+  { slug: "universus", name: "UniVersus", short: "UniVersus", category: 25, live: true },
+  { slug: "naruto", name: "Naruto Card Game", short: "Naruto Card Game", category: 93, live: true },
+  { slug: "elestrals", name: "Elestrals", short: "Elestrals", category: 83, live: true },
+  { slug: "cookierun-braverse", name: "CookieRun: Braverse", short: "CookieRun Braverse", category: 90, live: true },
+  { slug: "palworld", name: "Palworld Card Game", short: "Palworld Card Game", category: 91, live: true },
+  { slug: "wixoss", name: "WIXOSS", short: "WIXOSS", category: 67, live: true },
+  { slug: "battle-spirits-saga", name: "Battle Spirits Saga", short: "Battle Spirits Saga", category: 72, live: true },
+  { slug: "alpha-clash", name: "Alpha Clash", short: "Alpha Clash", category: 78, live: true },
 ];
 
 export const LIVE_GAMES = GAMES.filter((g) => g.live);

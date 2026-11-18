@@ -3,8 +3,8 @@ import { notFound } from "next/navigation";
 import { cardValue, type CardRow } from "@/lib/cards";
 import { cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
-import { readSet, readSets, setBySlug } from "@/lib/store";
-import { SITE, gameBySlug } from "@/site.config";
+import { readSet, readSets, setBySlug, shownGame, shownGames } from "@/lib/store";
+import { SITE} from "@/site.config";
 
 // One set's price list: every card in collector-number order, PER_PAGE a page (a set of thousands would be a multi-megabyte page).
 // Page 1 is indexable once the set has a released card; ?page=N is noindex and not crawled (robots.txt).
@@ -12,7 +12,7 @@ export const dynamic = "force-dynamic";
 const PER_PAGE = 300;
 
 function load(params: { game: string; set: string }) {
-  const g = gameBySlug(params.game);
+  const g = shownGame(params.game);
   const set = g && setBySlug(g.slug, params.set);
   return g && set ? { g, set, cards: readSet(g.slug, set.slug) } : null;
 }

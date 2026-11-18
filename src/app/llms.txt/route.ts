@@ -1,5 +1,5 @@
-import { readMeta } from "@/lib/store";
-import { LIVE_GAMES, SITE } from "@/site.config";
+import { readMeta, shownGame, shownGames } from "@/lib/store";
+import { SITE } from "@/site.config";
 
 export const dynamic = "force-dynamic";
 // A plain description for AI answer engines: what the site is, where the prices come from, how the URLs are built.
@@ -11,7 +11,7 @@ export function GET() {
     `> ${SITE.tagline}. Each card has one page with TCGplayer's market price in US dollars (what copies recently sold for), per printing, updated once a day, with its price history.`,
     "",
     "## Games",
-    ...LIVE_GAMES.map((g) => `- [${g.name}](${SITE.url}/${g.slug}): ${meta.games[g.slug]?.cards ?? 0} cards in ${meta.games[g.slug]?.sets ?? 0} sets`),
+    ...shownGames().map((g) => `- [${g.name}](${SITE.url}/${g.slug}): ${meta.games[g.slug]?.cards ?? 0} cards in ${meta.games[g.slug]?.sets ?? 0} sets`),
     "",
     "## How to read a page",
     "- URL: /<game>/<set>/<card-name>-<collector-number>",

@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { CardRow, CardSet, HistoryFile, Point, SearchRow, SetFile, SetsFile, TopFile } from "./cards";
-import { gameBySlug } from "../site.config";
+import { gameBySlug, LIVE_GAMES, type Game } from "../site.config";
 
 const root = () => process.env.TSDB_DATA_DIR || path.join(process.cwd(), "data");
 const memo = new Map<string, unknown>();
@@ -26,6 +26,9 @@ export interface Meta {
   games: Record<string, { sets: number; cards: number; priced: number; indexed: number; generatedAt: string }>;
 }
 export const readMeta = (): Meta => read<Meta>("meta.json", { generatedAt: "", games: {} });
+/** Live games the import has cards for, biggest catalogue first after the config's first three. A live game with no data has no page. */
+export const shownGames = (): Game[] => LIVE_GAMES.filter((g) => (readMeta().games[g.slug]?.cards ?? 0) > 0);
+export const shownGame = (slug: string): Game | null => shownGames().find((g) => g.slug === slug) ?? null;
 export const readSets = (game: string): SetsFile => (gameBySlug(game) ? read<SetsFile>(`cards/${game}/sets.json`, { generatedAt: "", source: "", sets: [] }) : { generatedAt: "", source: "", sets: [] });
 export const readTop = (game: string): TopFile => (gameBySlug(game) ? read<TopFile>(`cards/${game}/top.json`, { top: [], up: [], down: [] }) : { top: [], up: [], down: [] });
 export const readSearch = (game: string): SearchRow[] => (gameBySlug(game) ? read<SearchRow[]>(`cards/${game}/search.json`, []) : []);

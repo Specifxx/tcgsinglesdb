@@ -25,3 +25,13 @@ The owner asked for a new site just for TCG singles covering every game ("tcgsin
   150 MB; `lib/store.ts` is the one place to change then.
 - **US only.** TCGplayer's price is one US-dollar figure; the eBay row is eBay.com. Regions are not built.
 - **Not built yet:** the one footer link to `/our-sites` (needs `lib/family-network.ts`), a per-card JSON endpoint, share images.
+
+## 2026-11-18: every game live at once, Google still rationed
+
+The owner, on launch day: "we need to get all these singles and stores in." Every game TCG Prices lists (31, its TCGplayer
+category ids) is live, instead of one game per three-week gate. What protects the site from a thin-content verdict is not the
+catalogue but what Google is shown, and that stays rationed per game: 1,000 cards on a game's first run, then 250 a day, US$1
+and up. The four games a sister site already serves in search (Magic, One Piece, Riftbound, Lorcana) are `index: false`:
+visitors get every card, Google gets none of them, so two of our hosts never compete for one card. A game with no data yet has
+no page, menu entry or sitemap file. The tripwire stays: under 30% of a game's released cards indexed three weeks after its
+launch pauses that game's growth.

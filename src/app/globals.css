@@ -53,3 +53,6 @@ table.list td.r,table.list th.r{text-align:right;font-variant-numeric:tabular-nu
 .chart{width:100%;max-width:30rem;height:auto;display:block;margin-top:8px}
 .hero{padding:28px 0 8px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+.games{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin:12px 0 24px}
+.games .card{display:flex;flex-direction:column;gap:4px;padding:12px;text-decoration:none}

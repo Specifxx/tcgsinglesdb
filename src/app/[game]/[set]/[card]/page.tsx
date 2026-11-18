@@ -6,8 +6,8 @@ import { AFFILIATE_NOTE, REL_SPONSORED, ebayCardSearchUrl, tcgplayerOutUrl } fro
 import { cardIndexable, cardTitle, cardValue, dayIndex, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
 import { cardImage, cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
-import { readHistory, readSet, readSets, setBySlug } from "@/lib/store";
-import { SITE, gameBySlug, type Game } from "@/site.config";
+import { readHistory, readSet, readSets, setBySlug, shownGame, shownGames } from "@/lib/store";
+import { SITE, type Game } from "@/site.config";
 
 // One card's price page. The price is TCGplayer's market price only (recent sales, US$), never a seller's ask. Rows: "Check on
 // eBay" first (a tagged search; no eBay API call and no price claimed), TCGplayer second. Indexable once the import has released
@@ -16,7 +16,7 @@ export const dynamic = "force-dynamic";
 
 type Loaded = { g: Game; set: CardSet; c: CardRow; cards: CardRow[] };
 function load(params: { game: string; set: string; card: string }): Loaded | "set" | null {
-  const g = gameBySlug(params.game);
+  const g = shownGame(params.game);
   const set = g && setBySlug(g.slug, params.set);
   if (!g || !set) return null;
   const cards = readSet(g.slug, set.slug);

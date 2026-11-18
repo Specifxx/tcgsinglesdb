@@ -3,14 +3,14 @@ import { notFound } from "next/navigation";
 import { CardTiles } from "@/components/CardTiles";
 import { shortDate } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
-import { readMeta, readSets, readTop } from "@/lib/store";
-import { SITE, gameBySlug } from "@/site.config";
+import { readMeta, readSets, readTop, shownGame, shownGames } from "@/lib/store";
+import { SITE} from "@/site.config";
 
 // A game's hub: the week's movers, the most valuable cards, every set. Indexable once the game has a released card.
 export const dynamic = "force-dynamic";
 
 export function generateMetadata({ params }: { params: { game: string } }): Metadata {
-  const g = gameBySlug(params.game);
+  const g = shownGame(params.game);
   if (!g) return {};
   const m = readMeta().games[g.slug];
   return pageMeta({
@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: { game: string } }): Meta
 }
 
 export default function GamePage({ params }: { params: { game: string } }) {
-  const g = gameBySlug(params.game);
+  const g = shownGame(params.game);
   if (!g) notFound();
   const { sets, generatedAt } = readSets(g.slug);
   const top = readTop(g.slug);

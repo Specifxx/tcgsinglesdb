@@ -74,7 +74,7 @@ async function importGame(game: Game, day: string, growth: number): Promise<Meta
   const dir = path.join(DATA, "cards", game.slug);
   const histDir = path.join(DATA, "history", game.slug);
   const groups = (await getJson<{ results: TcgcsvGroup[] }>(`${base}/groups`)).results;
-  if (!Array.isArray(groups) || groups.length < (FIXTURES ? 1 : 5)) throw new Error(`the groups list has ${groups?.length ?? 0} entries`);
+  if (!Array.isArray(groups) || groups.length < 1) throw new Error(`the groups list has ${groups?.length ?? 0} entries`);
 
   const slugByGroup = new Map<number, string>();
   const cardsByGroup = new Map<number, CardRow[]>();
@@ -119,7 +119,7 @@ async function importGame(game: Game, day: string, growth: number): Promise<Meta
   if (failed.length > ordered.length / 4) throw new Error(`${failed.length} of ${ordered.length} groups failed: ${failed.slice(0, 5).join(", ")}`);
 
   const flat = all.flatMap((x) => x.cards);
-  const releasedToday = releaseForIndexing(flat, growth);
+  const releasedToday = releaseForIndexing(flat, game.index === false ? 0 : growth);
   for (const x of all) x.set.indexed = x.cards.filter(cardIndexable).length;
 
   // History: add today's points per set, and gather them for the movers.

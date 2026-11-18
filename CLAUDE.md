@@ -1,16 +1,16 @@
 # Working in this repo
 
-TCG Singles DB: single-card prices, price history and movers for trading card games, one game at a time (owner, 2026-11-17:
+TCG Singles DB: single-card prices, price history and movers for every trading card game (owner, 2026-11-17:
 "a new website dedicated just for TCG singles … every TCG game"). The card engine is MTG Compare's (`Specifxx/mtgcompare`,
 `lib/cards.ts`) made game-agnostic. It is a copy, not a synced sister: change this repo on its own. Read `README.md`, then
 `DECISIONS.md`. Game and brand facts live only in `src/site.config.ts`; engine code never names a game.
 
-## One game at a time
+## Every game, Google rationed per game (owner, 2026-11-18)
 
-A game is imported and routed only while `live: true` in `site.config.ts`. Order (DECISIONS.md, 2026-11-18): Pokémon, Yu-Gi-Oh!,
-the games no sister site covers, Magic only after MTG Compare's indexing read (about 9 Dec 2026), then One Piece, Riftbound,
-Lorcana and Gundam last. Turn a game on only when the one before it passed its gate: 30% of its released cards indexed three
-weeks after launch. Never copy Magic here while MTG Compare serves the same cards: two of our hosts must not compete for one card.
+Every game in `site.config.ts` is live (owner: "get all these singles in"); a game shows only once the import has cards for it
+(`shownGames`, `lib/store.ts`). Magic, One Piece, Riftbound and Lorcana carry `index: false`: their pages are live for visitors
+and noindex, and none of their cards is released to Google, because MTG Compare, OP Compare, Rift Compare and Lorcana Compare
+serve those cards in search. Turn one on only with the owner, after that sister's indexing read (MTG Compare: about 9 Dec 2026).
 
 ## Google is rationed, not the catalogue
 
