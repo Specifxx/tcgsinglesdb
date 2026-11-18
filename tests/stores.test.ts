@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { idsInListing, matchListing, mergeState, pickPrinting, singlesCollections, tooCheap, type CardRef, type ShopifyProduct } from "../src/lib/stores/match";
+import { idsInListing, listingId, matchListing, mergeState, pickPrinting, singlesCollections, tooCheap, type CardRef, type ShopifyProduct } from "../src/lib/stores/match";
 
 const cards = new Map<number, CardRef>([
   [42346, { game: "pokemon", set: "base-set", slug: "alakazam-001-102", p: { Holofoil: 7603 } }],
@@ -14,8 +14,11 @@ const listing = (o: Partial<ShopifyProduct> & { variants: ShopifyProduct["varian
 test("ids come from the photo, the SKU and the handle; two different ids are doubt", () => {
   assert.deepEqual(idsInListing(listing({ images: img(42346), variants: [{ id: 1, sku: "42346-NM" }] })), [42346]);
   assert.deepEqual(idsInListing(listing({ handle: "alakazam-base-set-42346", variants: [{ id: 1 }] })), [42346]);
-  const r = matchListing(listing({ images: img(42346), variants: [{ id: 1, sku: "500001", price: "80.00", available: true, title: "Near Mint" }] }), cards);
-  assert.deepEqual(r, { refuse: "ids-differ" });
+  // TCGplayer's photo names the product; a SKU with another number (TCGplayer's per-condition SKU id) is ignored.
+  assert.equal(listingId(listing({ images: img(42346), variants: [{ id: 1, sku: "5123456" }] })), 42346);
+  // A handle that names another id, or two ids and no photo, is doubt.
+  assert.equal(listingId(listing({ handle: "card-500001", images: img(42346), variants: [{ id: 1 }] })), "ids-differ");
+  assert.equal(listingId(listing({ handle: "card-500001", variants: [{ id: 1, sku: "500003" }] })), "ids-differ");
 });
 
 test("a Near Mint copy in the price band is an offer on its printing", () => {

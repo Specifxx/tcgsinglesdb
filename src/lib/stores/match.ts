@@ -138,10 +138,24 @@ export interface StoreOffer {
 export type MatchResult = StoreOffer | { refuse: "no-id" | "ids-differ" | "not-ours" | "cheap-card" | "not-single" | "no-near-mint" | "printing-unclear" | "no-price" | "out-of-band" };
 
 /** One listing → one Near Mint offer on one printing of one card, or the reason it is refused. */
-export function matchListing(p: ShopifyProduct, cards: ReadonlyMap<number, CardRef>): MatchResult {
+/**
+ * The listing's one TCGplayer product id, or the reason there is none. TCGplayer's own product photo (`<id>_in_1000x1000`, or
+ * its CDN) names the product; point-of-sale systems often put TCGplayer's per-condition SKU id (another number) in the SKU,
+ * so a SKU that differs from the photo is ignored. A handle that names another id is still doubt.
+ */
+export function listingId(p: Pick<ShopifyProduct, "handle" | "variants" | "images">): number | "no-id" | "ids-differ" {
+  const photo = idsInListing({ handle: "", variants: (p.variants ?? []).map((v) => ({ id: v.id, featured_image: v.featured_image })), images: p.images });
+  const handle = HANDLE_ID.exec(p.handle ?? "");
+  if (photo.length === 1 && (!handle || Number(handle[1]) === photo[0])) return photo[0];
   const ids = idsInListing(p);
-  if (!ids.length) return { refuse: "no-id" };
-  if (ids.length > 1) return { refuse: "ids-differ" };
+  if (!ids.length) return "no-id";
+  return ids.length === 1 ? ids[0] : "ids-differ";
+}
+
+export function matchListing(p: ShopifyProduct, cards: ReadonlyMap<number, CardRef>): MatchResult {
+  const one = listingId(p);
+  if (one === "no-id" || one === "ids-differ") return { refuse: one };
+  const ids = [one];
   const c = cards.get(ids[0]);
   if (!c) return { refuse: "not-ours" };
   const printings = Object.keys(c.p).filter((k) => c.p[k] > 0);
