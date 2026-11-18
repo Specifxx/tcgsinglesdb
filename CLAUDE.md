@@ -45,6 +45,17 @@ rides the next one. `[urgent]` overrides the 12-hour gap only when the owner say
 Pages are `force-dynamic` and cached by Vercel's CDN for a day (`next.config.js`), never ISR; no `generateStaticParams`; no page
 reads a cookie or header; plain `<a>` and `<img>` (no prefetch, no image optimisation); no database; no accounts; no mail key.
 
+## Store prices for singles (owner, 2026-11-18: "get all these singles and stores in")
+
+`scripts/stores.ts`: `probe` (weekly, `stores-probe.yml`) finds the singles collections of the US Shopify stores in
+`data/stores/candidates.json` (TCG Prices' US list minus its blocklist); `crawl` (in `card-prices.yml`, after the import) reads
+them through `src/lib/stores/polite-http.ts` (robots.txt, honest User-Agent, one request a second per store, a 401/403/429 or
+challenge stops the store, never worked around) and writes `data/offers/<game>/<set>.json`. A listing is a card ONLY by the
+TCGplayer id it carries (photo, SKU, handle), exactly one; then Near Mint only, the printing named without doubt, 40-250% of
+that printing's market price, cards of US$1+ only, in stock only (`src/lib/stores/match.ts`, `tests/stores.test.ts`). Rules
+may only refuse; never match by title. A store too cheap to be true is left out whole. Rows are each store's own US$ price,
+unpaid, below eBay and TCGplayer, never "the cheapest" claim in metadata or JSON-LD.
+
 ## Money
 
 "Check on eBay" first (a tagged search, campaign 5339155912, customid prefix `tcgsdb`; no price claimed), TCGplayer second,

@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { CardRow, CardSet, HistoryFile, Point, SearchRow, SetFile, SetsFile, TopFile } from "./cards";
+import type { OffersFile } from "./stores/match";
 import { gameBySlug, LIVE_GAMES, type Game } from "../site.config";
 
 const root = () => process.env.TSDB_DATA_DIR || path.join(process.cwd(), "data");
@@ -41,5 +42,11 @@ export function readHistory(game: string, slug: string, id: number): Point[] {
   if (!gameBySlug(game) || !SAFE.test(slug)) return [];
   return read<HistoryFile>(`history/${game}/${slug}.json`, {})[String(id)] ?? [];
 }
+/** Store rows for one set (data/offers/<game>/<set>.json, written by scripts/stores.ts crawl), and who the stores are. */
+export function readOffers(game: string, slug: string): OffersFile {
+  if (!gameBySlug(game) || !SAFE.test(slug)) return {};
+  return read<OffersFile>(`offers/${game}/${slug}.json`, {});
+}
+export const readStoreNames = (): Record<string, { name: string; base: string }> => read<{ stores?: Record<string, { name: string; base: string }> }>("stores/meta.json", {}).stores ?? {};
 /** For tests: forget what was read. */
 export const resetStore = () => memo.clear();

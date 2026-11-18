@@ -35,3 +35,19 @@ and up. The four games a sister site already serves in search (Magic, One Piece,
 visitors get every card, Google gets none of them, so two of our hosts never compete for one card. A game with no data yet has
 no page, menu entry or sitemap file. The tripwire stays: under 30% of a game's released cards indexed three weeks after its
 launch pauses that game's growth.
+
+## 2026-11-18: Store prices for singles, by TCGplayer id only
+
+Owner, 18 Nov: "we need to get all these singles and stores in". Card pages now list independent US stores that have the card
+Near Mint and in stock, under the eBay and TCGplayer rows. Why this shape:
+
+- **By id, never by title.** Stores on TCGplayer-linked point-of-sale systems put TCGplayer's product id in the photo file name
+  or the SKU; that id is the card. A title-only match would put a reverse holo's price on a holo, so a listing without exactly
+  one id is skipped. The printing must then be named without doubt, else skipped.
+- **US stores, US$ only, for now.** The site's reference price is TCGplayer's US$ market price and the band (40-250%) compares
+  like with like; prices are never converted. Other markets can follow with their own band once the US rows prove out.
+- **Rotation, not a full read.** A big store lists tens of thousands of singles. Each run reads up to 60 pages a store from a
+  saved cursor, least recently read stores first, within 110 minutes; a matched listing is shown for 4 days after its last read.
+- **Candidates from TCG Prices.** `data/stores/candidates.json` is a one-time copy of TCG Prices' US store list (its blocklist
+  and refused stores left out, `data/stores/blocklist.json` copied too). Refresh it by hand from that repo when it grows.
+

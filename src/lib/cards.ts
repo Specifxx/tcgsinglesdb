@@ -2,7 +2,7 @@
 // The engine is MTG Compare's card engine (Specifxx/mtgcompare, lib/cards.ts, 2026-11-17) made game-agnostic.
 //
 // Every card TCGplayer lists for a live game gets a page at /<game>/<set>/<card>, priced by TCGplayer's market price (US$, recent
-// sales) per printing. No store prices, no eBay API, no database: scripts/import.ts reads TCGplayer's public price files (as TCGCSV
+// sales) per printing. Store prices are a separate layer (lib/stores/, scripts/stores.ts). No eBay API, no database: scripts/import.ts reads TCGplayer's public price files (as TCGCSV
 // mirrors them daily) in GitHub Actions and commits data/; pages read the files.
 //
 // GOOGLE, NOT THE CATALOGUE, IS RATIONED. Two earlier card sites put tens of thousands of card URLs in a sitemap and Google indexed

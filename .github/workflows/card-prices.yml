@@ -23,7 +23,7 @@ permissions:
 jobs:
   cards:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -37,6 +37,11 @@ jobs:
           CARD_INDEX_GROWTH: ${{ vars.CARD_INDEX_GROWTH }}
           IMPORT_GAMES: ${{ inputs.games }}
         run: npx tsx scripts/import.ts
+      - name: Store prices (singles at US stores; a failure keeps yesterday's rows and never stops the release)
+        if: github.ref_name == 'main'
+        env:
+          STORES_MAX_MINUTES: "110"
+        run: npx tsx scripts/stores.ts crawl || echo "::warning::store crawl failed"
       - name: IndexNow (pages newly released to search engines; never fails the run)
         if: github.ref_name == 'main'
         run: npx tsx scripts/indexnow.ts || true

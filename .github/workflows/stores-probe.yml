@@ -1,0 +1,49 @@
+name: Store probe
+
+# Weekly: which US stores (data/stores/candidates.json) have singles collections (scripts/stores.ts probe). Reads robots.txt,
+# /meta.json and /collections.json only, never a product. Commits data/stores/singles.json to main WITHOUT a deploy marker; the
+# daily card-prices run reads those collections. Same concurrency group as card-prices: both write data/.
+on:
+  schedule:
+    - cron: "41 9 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: tcgsinglesdb-card-prices
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install
+        run: npm ci --no-audit --no-fund --ignore-scripts
+      - name: Probe stores
+        run: npx tsx scripts/stores.ts probe
+      - name: Commit the singles collections
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "tcgsinglesdb-data[bot]"
+          git config user.email "tcgsinglesdb-data@users.noreply.github.com"
+          cp data/stores/singles.json "$RUNNER_TEMP/singles.json"
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin "$BRANCH"
+            git reset -q --hard "origin/$BRANCH"
+            cp "$RUNNER_TEMP/singles.json" data/stores/singles.json
+            git add data/stores/singles.json
+            if git diff --cached --quiet; then echo "Unchanged."; exit 0; fi
+            git commit -q -m "Store probe: singles collections (run ${{ github.run_id }})"
+            if git push -q origin "HEAD:$BRANCH"; then echo "Pushed on attempt $attempt."; exit 0; fi
+            sleep $((attempt * 5))
+          done
+          exit 1

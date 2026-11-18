@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { CardTiles } from "@/components/CardTiles";
 import { PriceChart } from "@/components/PriceChart";
-import { AFFILIATE_NOTE, REL_SPONSORED, ebayCardSearchUrl, tcgplayerOutUrl } from "@/lib/affiliate";
+import { AFFILIATE_NOTE, REL_SPONSORED, ebayCardSearchUrl, storeProductUrl, tcgplayerOutUrl } from "@/lib/affiliate";
 import { cardIndexable, cardTitle, cardValue, dayIndex, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
 import { cardImage, cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
-import { readHistory, readSet, readSets, setBySlug, shownGame, shownGames } from "@/lib/store";
+import { readHistory, readOffers, readSet, readSets, readStoreNames, setBySlug, shownGame, shownGames } from "@/lib/store";
 import { SITE, type Game } from "@/site.config";
 
 // One card's price page. The price is TCGplayer's market price only (recent sales, US$), never a seller's ask. Rows: "Check on
@@ -51,6 +51,9 @@ export default function CardPage({ params }: { params: { game: string; set: stri
   const pts = readHistory(g.slug, set.slug, c.id);
   const ebay = ebayCardSearchUrl(`${g.short} ${c.n} ${set.name}${c.no ? ` ${c.no}` : ""}`, "card-ebay");
   const tcg = tcgplayerOutUrl(tcgplayerCardUrl(c.id), "card-tcgplayer");
+  // Store rows: independent US stores that list this card Near Mint and in stock, cheapest first (scripts/stores.ts). Unpaid.
+  const names = readStoreNames();
+  const storeRows = (readOffers(g.slug, set.slug)[c.s] ?? []).filter((r) => names[r[0]]);
   const i = cards.indexOf(c);
   const prev = i > 0 ? cards[i - 1] : null;
   const next = i < cards.length - 1 ? cards[i + 1] : null;
@@ -138,8 +141,24 @@ export default function CardPage({ params }: { params: { game: string; set: stri
                 View on TCGplayer ↗
               </a>
             </li>
+            {storeRows.map(([key, printing, cents, , productPath, seen]) => (
+              <li className="card" key={`${key}|${printing}`}>
+                <span>
+                  <b>{names[key].name}</b>
+                  <span className="small" style={{ display: "block" }}>
+                    {usd(cents)} · Near Mint{rows.length > 1 ? ` · ${printing}` : ""} · in stock, checked {shortDate(seen)}
+                  </span>
+                </span>
+                <a className="btn" href={storeProductUrl(names[key].base, productPath)} rel="nofollow noopener" target="_blank">
+                  View at store ↗
+                </a>
+              </li>
+            ))}
           </ul>
-          <p className="small">{AFFILIATE_NOTE}</p>
+          <p className="small">
+            {AFFILIATE_NOTE}
+            {storeRows.length > 0 ? " Store prices are each store's own Near Mint price in US$, as last read; check the store for the current price and shipping." : ""}
+          </p>
 
           {pts.length >= 2 && day && (
             <section>

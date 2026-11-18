@@ -34,3 +34,10 @@ export function tcgplayerOutUrl(tcgplayerUrl: string, placement: Placement): str
 export function impactUrl(plainTcgplayerUrl: string, sharedId: string): string {
   return `${TCGPLAYER_IMPACT_LINK}?u=${encodeURIComponent(plainTcgplayerUrl)}&sharedid=${encodeURIComponent(sharedId)}`;
 }
+
+/** A store's own product page (unpaid): the listing path the crawl kept, tagged so the store sees where the visit came from. */
+export function storeProductUrl(base: string, productPath: string): string {
+  const u = new URL(`${base.replace(/\/+$/, "")}/products/${productPath}`);
+  u.searchParams.set("utm_source", "tcgsinglesdb.com");
+  return u.toString();
+}
