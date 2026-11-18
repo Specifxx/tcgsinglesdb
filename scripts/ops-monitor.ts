@@ -43,6 +43,21 @@ if (stores) {
   else ok.push(`Store prices: ${n} stores with rows, last crawl read ${stores.run.read} stores and matched ${stores.run.matched} listings, ${Math.round(hours)} h ago`);
 } else ok.push("Store prices: no crawl yet");
 
+// Cash buy prices (scripts/buylist.ts, in the daily import): read within two days, and enough rows matched.
+const buy = (() => {
+  try {
+    return JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "buylist", "meta.json"), "utf8")) as { buyers: Record<string, { readAt: string; matched: number; rows: number }> };
+  } catch {
+    return null;
+  }
+})();
+const ck = buy?.buyers?.ck;
+if (ck) {
+  const hours = (Date.now() - Date.parse(ck.readAt)) / 3_600_000;
+  if (!(hours < 50)) problems.push(`Card Kingdom buylist: last read ${Math.round(hours)} h ago (daily expected; rows drop after 3 days)`);
+  else ok.push(`Card Kingdom buylist: ${ck.matched} of ${ck.rows} rows matched, read ${Math.round(hours)} h ago`);
+} else ok.push("Card Kingdom buylist: no read yet");
+
 async function live(pathname: string, must: RegExp): Promise<void> {
   try {
     const res = await fetch(`${SITE.url}${pathname}`, { headers: { "User-Agent": "TCGSinglesDB-ops/1.0" }, signal: AbortSignal.timeout(20_000) });

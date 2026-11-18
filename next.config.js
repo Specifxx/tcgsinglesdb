@@ -2,7 +2,7 @@
 // the data only changes with the daily release, which empties the CDN). Safe because no page reads a cookie, a header
 // or the session (tests/cost-rules.test.ts). Query-string pages (/search) are not cached here; the search API caches itself.
 const CDN_CACHE = "public, s-maxage=86400, stale-while-revalidate=86400";
-const CDN_PAGES = ["/", "/about", "/terms", "/privacy", "/:game", "/:game/:set", "/:game/:set/:card", "/sitemap.xml", "/sitemaps/:file", "/llms.txt"];
+const CDN_PAGES = ["/", "/about", "/terms", "/privacy", "/:game", "/:game/:set", "/:game/:set/:card", "/sitemap.xml", "/sitemaps/:file", "/llms.txt", "/sell"];
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
@@ -17,7 +17,7 @@ module.exports = {
   // The card files are read with fs at request time: trace them into the functions that read them. Price history and the
   // import's own state are NOT bundled (history grows daily; lib/store.ts reads it from the repository's raw file).
   experimental: {
-    outputFileTracingIncludes: { "/**": ["./data/meta.json", "./data/cards/**/*.json", "./data/offers/**/*.json", "./data/stores/meta.json"] },
+    outputFileTracingIncludes: { "/**": ["./data/meta.json", "./data/cards/**/*.json", "./data/offers/**/*.json", "./data/stores/meta.json", "./data/buylist/**/*.json"] },
     outputFileTracingExcludes: { "/**": ["./data/history/**", "./data/state/**", "./data/stores/state/**"] },
   },
   async headers() {

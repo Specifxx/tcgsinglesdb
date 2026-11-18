@@ -47,6 +47,9 @@ jobs:
         env:
           STORES_MAX_MINUTES: "110"
         run: npx tsx scripts/stores.ts crawl || echo "::warning::store crawl failed"
+      - name: Cash buy prices (Card Kingdom's buylist for Magic singles, matched by TCGplayer id via Scryfall; never stops the release)
+        if: github.ref_name == 'main'
+        run: npx tsx scripts/buylist.ts || echo "::warning::buylist read failed"
       - name: IndexNow (pages newly released to search engines; never fails the run)
         if: github.ref_name == 'main'
         run: npx tsx scripts/indexnow.ts || true

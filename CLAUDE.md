@@ -56,6 +56,13 @@ that printing's market price, cards of US$1+ only, in stock only (`src/lib/store
 may only refuse; never match by title. A store too cheap to be true is left out whole. Rows are each store's own US$ price,
 unpaid, below eBay and TCGplayer, never "the cheapest" claim in metadata or JSON-LD.
 
+## Cash buylist prices (growth test #1, 2026-11-18)
+
+`scripts/buylist.ts` (in `card-prices.yml`, never fatal): Card Kingdom's public price list (one request through `polite-http`)
+matched to Magic cards ONLY by id, Card Kingdom's `scryfall_id` → Scryfall's bulk `tcgplayer_id` → our card (`lib/buylist.ts`,
+`tests/buylist.test.ts`). Rules only refuse; never by title. Rows drop after 3 days without a read. Shown as the card page's
+"Sell it" block and `/sell`; unpaid, nofollow links. DECISIONS.md, 2026-11-18.
+
 ## Money
 
 "Check on eBay" first (a tagged search, campaign 5339155912, customid prefix `tcgsdb`; no price claimed), TCGplayer second,

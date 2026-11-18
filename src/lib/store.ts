@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { CardRow, CardSet, HistoryFile, Point, SearchRow, SetFile, SetsFile, TopFile } from "./cards";
 import type { OffersFile } from "./stores/match";
+import type { BuylistFile } from "./buylist";
 import { gameBySlug, LIVE_GAMES, type Game } from "../site.config";
 
 const root = () => process.env.TSDB_DATA_DIR || path.join(process.cwd(), "data");
@@ -68,5 +69,12 @@ export function readOffers(game: string, slug: string): OffersFile {
   return read<OffersFile>(`offers/${game}/${slug}.json`, {});
 }
 export const readStoreNames = (): Record<string, { name: string; base: string }> => read<{ stores?: Record<string, { name: string; base: string }> }>("stores/meta.json", {}).stores ?? {};
+/** Cash buy prices for one set (data/buylist/<game>/<set>.json, written by scripts/buylist.ts). */
+export function readBuylist(game: string, slug: string): BuylistFile {
+  if (!gameBySlug(game) || !SAFE.test(slug)) return {};
+  return read<BuylistFile>(`buylist/${game}/${slug}.json`, {});
+}
+export const readBuylistTop = () => read<{ set: string; setName: string; slug: string; n: string; no?: string; id: number; row: import("./buylist").BuyRow; market: number }[]>("buylist/top.json", []);
+export const readBuylistMeta = () => read<{ at: string; buyers: Record<string, { readAt: string; matched: number }> }>("buylist/meta.json", { at: "", buyers: {} });
 /** For tests: forget what was read. */
 export const resetStore = () => memo.clear();
