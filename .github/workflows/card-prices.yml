@@ -37,6 +37,9 @@ jobs:
           CARD_INDEX_GROWTH: ${{ vars.CARD_INDEX_GROWTH }}
           IMPORT_GAMES: ${{ inputs.games }}
         run: npx tsx scripts/import.ts
+      - name: IndexNow (pages newly released to search engines; never fails the run)
+        if: github.ref_name == 'main'
+        run: npx tsx scripts/indexnow.ts || true
       - name: Commit to the branch it ran on
         env:
           BRANCH: ${{ github.ref_name }}

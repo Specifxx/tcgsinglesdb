@@ -2,6 +2,7 @@ import { shownGame, shownGames } from "@/lib/store";
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { SearchBox } from "@/components/SearchBox";
+import { Trackers } from "@/components/Trackers";
 import { SITE } from "@/site.config";
 import "./globals.css";
 
@@ -60,6 +61,7 @@ export default function RootLayout({
           </div>
         </footer>
         <Analytics />
+        <Trackers />
       </body>
     </html>
   );
