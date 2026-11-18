@@ -51,3 +51,12 @@ Near Mint and in stock, under the eBay and TCGplayer rows. Why this shape:
 - **Candidates from TCG Prices.** `data/stores/candidates.json` is a one-time copy of TCG Prices' US store list (its blocklist
   and refused stores left out, `data/stores/blocklist.json` copied too). Refresh it by hand from that repo when it grows.
 
+
+## 2026-11-18: A share button, counted like the sister sites' (owner)
+
+Owner: a share feature on every site so links spread by word of mouth. Card and set pages carry `ShareButton` (the phone's share
+sheet, else copy link) sharing the canonical path plus `utm_source=share&utm_medium=card|set`; each tap sends `share { medium }`
+and `Trackers` sends `share_visit { medium }` once per session for a visit a shared link brings, the same events RiftCompare's
+growth report reads for every site. robots.txt allows `/*utm_source=share` so X's and Reddit's preview fetchers can read a
+shared link. The preview stays the card's own TCGplayer image: no image is drawn, so sharing costs nothing. No share-for-a-deal
+offer here yet: this site has no deals page.

@@ -56,3 +56,5 @@ table.list td.r,table.list th.r{text-align:right;font-variant-numeric:tabular-nu
 
 .games{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin:12px 0 24px}
 .games .card{display:flex;flex-direction:column;gap:4px;padding:12px;text-decoration:none}
+
+.share{display:inline-flex;align-items:center;margin-top:12px}
