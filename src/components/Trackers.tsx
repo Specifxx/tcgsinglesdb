@@ -49,6 +49,7 @@ export function Trackers() {
       track("buy_click", {
         network,
         game: location.pathname.split("/")[1] || "home",
+        ...(a.dataset.kind ? { kind: a.dataset.kind.slice(0, 20) } : {}),
       });
     };
     document.addEventListener("click", onClick, true);

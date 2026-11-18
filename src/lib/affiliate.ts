@@ -9,7 +9,10 @@ export const OUT_TCGPLAYER_PATH = "/out/tcgplayer";
 export const REL_SPONSORED = "sponsored nofollow noopener";
 export const AFFILIATE_NOTE = "Paid links: we may earn a commission when you buy through eBay or TCGplayer. It never changes a price shown here.";
 
-export type Placement = "card-ebay" | "card-tcgplayer" | "tile-ebay" | "set-ebay";
+export type Placement = "card-ebay" | "card-tcgplayer" | "tile-ebay" | "set-ebay" | "graded";
+
+/** Graded-card demand test (18 Nov 2026, read 2 Dec): a tagged "PSA 10" search on Pokémon card pages only. No API call, no price claimed. */
+export const GRADED_TEST_GAMES = new Set(["pokemon"]);
 export const subId = (placement: Placement) => `${SITE.tag}-us-${placement}`;
 
 /** A tagged eBay.com Buy It Now search for one card: "<game> <name> <set> <number>". */
