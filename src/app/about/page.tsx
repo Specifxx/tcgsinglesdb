@@ -17,6 +17,9 @@ export default function About() {
       <p>We keep each card&rsquo;s price from the day this site first read it, and add a point whenever it moves. The history cannot go back further than that.</p>
       <h2>How the site earns</h2>
       <p>The eBay and TCGplayer buttons are paid links: we may earn a commission when you buy. It never changes a price shown here, and no seller pays to be listed.</p>
+      <h2>Who runs it, and what it costs</h2>
+      <p>{SITE.name} is run and owned by two people, Bill and George, who also run a few sealed-product price sites. No publisher, store or marketplace has a stake in it. We use AI tools to help write the code; prices are never written by them, but read by a program from TCGplayer&rsquo;s own files.</p>
+      <p>Hosting, the daily imports and the tools we build with come to about A$790 a month for this site and our other price sites together (our own books, the 30 days to 15 November 2026). The paid links above are what pay for it.</p>
       <h2>Not affiliated</h2>
       <p>{SITE.disclaimer}</p>
     </div>
