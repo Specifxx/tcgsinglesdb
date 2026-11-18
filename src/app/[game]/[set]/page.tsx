@@ -1,3 +1,4 @@
+import { ShareButton } from "@/components/ShareButton";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { cardValue, type CardRow } from "@/lib/cards";
@@ -47,6 +48,7 @@ export default function SetPage({ params, searchParams }: { params: { game: stri
         <a href="/">{SITE.name}</a> <span>›</span> <a href={`/${g.slug}`}>{g.name}</a> <span>›</span> <span>{set.name}</span>
       </nav>
       <h1>{set.name} card prices</h1>
+      <ShareButton path={`/${g.slug}/${set.slug}`} title={`${set.name} card prices`} medium="set" text={`Every ${set.name} card price, on ${SITE.name}`} />
       <p className="lede">
         All {cards.length} {g.name} cards in {set.name}
         {set.released ? `, released ${shortDate(set.released)}` : ""}, with TCGplayer&rsquo;s market price for the most valuable printing of each.

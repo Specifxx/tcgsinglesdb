@@ -1,3 +1,4 @@
+import { ShareButton } from "@/components/ShareButton";
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { CardTiles } from "@/components/CardTiles";
@@ -96,6 +97,7 @@ export default async function CardPage({ params }: { params: { game: string; set
             {c.r ? ` · ${c.r}` : ""}
           </div>
           <h1>{c.n} price</h1>
+          <ShareButton path={cardPath(g.slug, set.slug, c.s)} title={`${c.n} price`} medium="card" text={value != null ? `${c.n} (${g.short} ${set.name}): ${usd(value)} TCGplayer market price, with price history, on ${SITE.name}` : `${c.n} (${g.short} ${set.name}) on ${SITE.name}`} />
           {value != null ? (
             <p style={{ margin: "12px 0 0" }}>
               <span className="price">{usd(value)}</span> <span className="small">TCGplayer market price{rows.length > 1 ? ` (${rows[0][0].toLowerCase()})` : ""}</span>
