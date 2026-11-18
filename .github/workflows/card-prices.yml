@@ -1,0 +1,65 @@
+name: Card prices
+
+# The daily import and the ONE production release a day: scripts/import.ts reads TCGplayer's public price files (TCGCSV, no key)
+# for every live game and commits data/ to main with [deploy] in the subject. A manual run on another branch commits there
+# without the marker (a trial). No eBay call, no database, no secret.
+# Variable: CARD_INDEX_GROWTH (default 250): cards released to Google per game per day; 0 pauses the release (pages stay).
+on:
+  schedule:
+    - cron: "23 21 * * *"
+  workflow_dispatch:
+    inputs:
+      games:
+        description: "Comma-separated game slugs (empty: every live game)"
+        required: false
+
+concurrency:
+  group: tcgsinglesdb-card-prices
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install
+        run: npm ci --no-audit --no-fund --ignore-scripts
+      - name: Read card prices
+        env:
+          CARD_INDEX_GROWTH: ${{ vars.CARD_INDEX_GROWTH }}
+          IMPORT_GAMES: ${{ inputs.games }}
+        run: npx tsx scripts/import.ts
+      - name: Commit to the branch it ran on
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          git config user.name "tcgsinglesdb-data[bot]"
+          git config user.email "tcgsinglesdb-data@users.noreply.github.com"
+          [ -f data/meta.json ] || { echo "No data."; exit 1; }
+          MARK=""; [ "$BRANCH" = "main" ] && MARK=" [deploy]"
+          STAMP="$(date -u +%Y-%m-%dT%H:%MZ)"
+          rm -rf "$RUNNER_TEMP/data" && cp -r data "$RUNNER_TEMP/data"
+          for attempt in 1 2 3 4 5; do
+            git fetch -q origin "$BRANCH"
+            git reset -q --hard "origin/$BRANCH"
+            rm -rf data && cp -r "$RUNNER_TEMP/data" data
+            git add -A data
+            if git diff --cached --quiet; then echo "Unchanged."; exit 0; fi
+            if [ -n "$MARK" ]; then
+              git commit -q -m "Card prices: $STAMP (run ${{ github.run_id }}) [deploy]"
+            else
+              git commit -q -m "Card prices trial: $STAMP (run ${{ github.run_id }})"
+            fi
+            if git push -q origin "HEAD:$BRANCH"; then echo "Pushed on attempt $attempt."; exit 0; fi
+            sleep $((attempt * 5))
+          done
+          echo "Could not push after 5 attempts." >&2
+          exit 1

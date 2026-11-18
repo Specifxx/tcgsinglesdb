@@ -1,0 +1,23 @@
+name: Ops monitor
+# Every six hours: import freshness and the live site. A red run emails the owner (GitHub's own notification).
+# Variable OPS_LIVE=0 skips the live checks until the domain is connected.
+on:
+  schedule:
+    - cron: "41 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund --ignore-scripts
+      - run: npx tsx scripts/ops-monitor.ts
+        env:
+          OPS_LIVE: ${{ vars.OPS_LIVE }}
