@@ -2,12 +2,13 @@ import { ShareButton } from "@/components/ShareButton";
 import type { Metadata } from "next";
 import { notFound, permanentRedirect } from "next/navigation";
 import { CardTiles } from "@/components/CardTiles";
-import { PriceChart } from "@/components/PriceChart";
+import { PriceHistory } from "@/components/PriceHistory";
+import { historyLines } from "@/lib/history-chart";
 import { AFFILIATE_NOTE, GRADED_TEST_GAMES, REL_SPONSORED, ebayCardSearchUrl, storeProductUrl, tcgplayerOutUrl } from "@/lib/affiliate";
 import { cardIndexable, cardTitle, cardValue, dayIndex, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
 import { cardImage, cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
-import { readBuylist, readBuylistMeta, readHistory, readOffers, readSet, readSets, readStoreNames, setBySlug, shownGame, shownGames } from "@/lib/store";
+import { readBuylist, readBuylistMeta, readHistory, readOffers, readStoreHistory, readSet, readSets, readStoreNames, setBySlug, shownGame, shownGames } from "@/lib/store";
 import { SITE, type Game } from "@/site.config";
 import { BUYERS, payShare } from "@/lib/buylist";
 
@@ -50,7 +51,9 @@ export default async function CardPage({ params }: { params: { game: string; set
   const day = generatedAt.slice(0, 10);
   const value = cardValue(c.p);
   const rows = printings(c);
-  const pts = await readHistory(g.slug, set.slug, c.id);
+  const [pts, lows] = await Promise.all([readHistory(g.slug, set.slug, c.id), readStoreHistory(g.slug, set.slug, c.id)]);
+  const through = day ? dayIndex(day) : 0;
+  const chart = day ? historyLines(pts, lows, 1, through) != null : false;
   const ebay = ebayCardSearchUrl(`${g.short} ${c.n} ${set.name}${c.no ? ` ${c.no}` : ""}`, "card-ebay");
   const psa10 = GRADED_TEST_GAMES.has(g.slug) ? ebayCardSearchUrl(`${g.short} ${c.n} ${set.name}${c.no ? ` ${c.no}` : ""} PSA 10`, "graded") : null;
   const tcg = tcgplayerOutUrl(tcgplayerCardUrl(c.id), "card-tcgplayer");
@@ -206,10 +209,10 @@ export default async function CardPage({ params }: { params: { game: string; set
             </section>
           )}
 
-          {pts.length >= 2 && day && (
+          {chart && (
             <section>
               <h2>Price history</h2>
-              <PriceChart pts={pts} today={dayIndex(day)} />
+              <PriceHistory tcg={pts} lows={lows} through={through} />
             </section>
           )}
 

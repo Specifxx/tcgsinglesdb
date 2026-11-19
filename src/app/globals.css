@@ -68,3 +68,23 @@ table.list td.r,table.list th.r{text-align:right;font-variant-numeric:tabular-nu
 .strip-x{background:none;border:0;color:var(--mute);font-size:1rem;width:32px;height:40px;cursor:pointer}
 @media (min-width:720px){.strip{display:none}}
 @media (prefers-reduced-motion:reduce){.strip,.strip[data-shown]{transition:none}}
+
+/* The two-line price history (components/PriceHistory.tsx): cheapest US store listing against TCGplayer's market price. */
+.ph{margin:0;max-width:46rem}
+.ph .m{color:var(--mute)}
+.ph-kicker{margin:0 0 6px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.ph-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 16px;margin-bottom:8px}
+.ph-stats{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0;font-size:.9rem;font-variant-numeric:tabular-nums}
+.ph-tabs{display:flex;gap:4px}
+.ph-tabs button{min-height:32px;padding:0 10px;border-radius:6px;border:0;background:none;color:var(--mute);font:inherit;font-size:.78rem;font-weight:700;cursor:pointer}
+.ph-tabs button[aria-pressed=true]{background:var(--raised);color:var(--brand)}
+.ph-plot{position:relative;user-select:none;touch-action:pan-y;border-radius:6px;font-variant-numeric:tabular-nums}
+.ph-plot:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.ph-tip{position:absolute;top:4px;z-index:5;max-width:calc(100% - 8px);pointer-events:none;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 10px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.ph-tip p{display:flex;align-items:center;gap:6px;margin:0;white-space:nowrap;font-size:.78rem}
+.ph-tip p.m{font-size:.7rem;font-weight:700}
+.ph-tip i{width:8px;height:8px;border-radius:50%;flex:none}
+.ph-tip b{margin-left:auto;padding-left:8px}
+.ph-legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:8px;font-size:.78rem;color:var(--mute)}
+.ph-legend span{display:flex;align-items:center;gap:6px}
+.ph-legend i{display:inline-block;width:16px}
