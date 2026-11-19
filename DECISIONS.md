@@ -144,3 +144,11 @@ change, 7D / 30D / 90D / All tabs once the history is longer than them, and a ho
   and is read from the raw file like the TCGplayer history. It starts with the next crawl; until then the gold line draws alone.
 - No new request to any store or API: the rows are the ones the store table already shows. Nothing reads the line to rank,
   badge or claim a cheapest.
+
+## 2026-11-19: a per-game Google ramp, for Pokémon after the 8 Dec read
+
+Owner, 19 Nov (boardroom plan, move N1): Pokémon singles may release to Google faster than 250 a day after the 8 Dec read, if
+the cards released so far bring 150+ Google clicks a week. `Game.growth` overrides `CARD_INDEX_GROWTH` for one game; `0` in the
+variable still pauses every game. Nothing is set yet: on 8 Dec, pass sets Pokémon's `growth` (proposed 1,000 a day, which
+releases its 17,069 US$1+ cards in about two weeks); a miss keeps 250 and the 9 Dec 30%-indexed tripwire still applies.
+

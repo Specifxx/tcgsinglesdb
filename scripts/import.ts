@@ -121,7 +121,7 @@ async function importGame(game: Game, day: string, growth: number): Promise<Meta
   const flat = all.flatMap((x) => x.cards);
   // A game a sister site serves in search releases nothing, and takes back any card it released before it was turned off.
   if (game.index === false) for (const c of flat) c.ix = 0;
-  const releasedToday = releaseForIndexing(flat, game.index === false ? 0 : growth);
+  const releasedToday = releaseForIndexing(flat, game.index === false || growth === 0 ? 0 : (game.growth ?? growth));
   for (const x of all) x.set.indexed = x.cards.filter(cardIndexable).length;
 
   // History: add today's points per set, and gather them for the movers.

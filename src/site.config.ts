@@ -12,6 +12,9 @@ export interface Game {
   live: boolean;
   /** false: every page is live for visitors but no card is released to Google (a sister site serves these cards in search). */
   index?: boolean;
+  /** Cards released to Google per day for this game instead of CARD_INDEX_GROWTH. Only with the owner's go: Pokémon may get a
+   *  faster ramp after the 8 Dec 2026 read if its released cards pass 150+ Google clicks a week (owner, 2026-11-19). */
+  growth?: number;
   /** Why a game is not live yet (shown nowhere; for the next reader). */
   note?: string;
 }
