@@ -128,3 +128,19 @@ price, under their own placements (`dock-ebay`, `dock-tcgplayer`). On a card pag
 path. Browser only (nothing in the server HTML), never on the first screen, hidden near the card page's buy rows, the footer and
 while typing, ✕ for the visit, moved on transform only (CLS 0), never Amazon, never a pop-up. `tests/phone-strip.test.ts` pins it.
 CLAUDE.md's "No banner ads" line is the owner's to amend.
+
+## 2026-11-19: Price history draws the cheapest US store listing against TCGplayer's market price
+
+Owner: "I really really like opcompare's price history where you have the tcgplayer market price as well as the cheapest price
+locally. Can we pls copy it across all our tcg websites?" The card page's chart (`components/PriceHistory.tsx`, maths in
+`lib/history-chart.ts`, the same helpers as TCG Prices and the engine sites) now draws two lines in US$: the cheapest in-stock
+store row of the card's headline printing (solid red) and TCGplayer's market price (dashed gold), with Now / Low / High, the
+change, 7D / 30D / 90D / All tabs once the history is longer than them, and a hover, touch or arrow-key tooltip reading both.
+
+- The red line is new data: `scripts/stores.ts crawl` folds each card's cheapest in-stock row of the HEADLINE printing (the one
+  `cardValue` reads, so both lines price the same copy) into `data/history/_stores/<game>/<set>.json`, change-points as
+  `data/history`, followed from the day a store first has the card, 0 on a day none has it (a gap, never a price)
+  (`lib/store-history.ts`, `tests/store-history.test.ts`). It sits under `data/history/` so it is never bundled into a function
+  and is read from the raw file like the TCGplayer history. It starts with the next crawl; until then the gold line draws alone.
+- No new request to any store or API: the rows are the ones the store table already shows. Nothing reads the line to rank,
+  badge or claim a cheapest.

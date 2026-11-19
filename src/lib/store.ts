@@ -5,6 +5,7 @@ import path from "node:path";
 import type { CardRow, CardSet, HistoryFile, Point, SearchRow, SetFile, SetsFile, TopFile } from "./cards";
 import type { OffersFile } from "./stores/match";
 import type { BuylistFile } from "./buylist";
+import { STORE_HISTORY_DIR } from "./store-history";
 import { gameBySlug, LIVE_GAMES, type Game } from "../site.config";
 
 const root = () => process.env.TSDB_DATA_DIR || path.join(process.cwd(), "data");
@@ -62,6 +63,11 @@ async function historyFile(game: string, slug: string): Promise<HistoryFile> {
 export async function readHistory(game: string, slug: string, id: number): Promise<Point[]> {
   if (!gameBySlug(game) || !SAFE.test(slug)) return [];
   return (await historyFile(game, slug))[String(id)] ?? [];
+}
+/** The card's cheapest in-stock US store price history (data/history/_stores, lib/store-history.ts), read like the history. */
+export async function readStoreHistory(game: string, slug: string, id: number): Promise<Point[]> {
+  if (!gameBySlug(game) || !SAFE.test(slug)) return [];
+  return (await historyFile(`${STORE_HISTORY_DIR}/${game}`, slug))[String(id)] ?? [];
 }
 /** Store rows for one set (data/offers/<game>/<set>.json, written by scripts/stores.ts crawl), and who the stores are. */
 export function readOffers(game: string, slug: string): OffersFile {

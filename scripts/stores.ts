@@ -14,7 +14,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { GAMES } from "../src/site.config";
-import type { SetFile } from "../src/lib/cards";
+import type { HistoryFile, SetFile } from "../src/lib/cards";
+import { addStoreLows, STORE_HISTORY_DIR, storeLow } from "../src/lib/store-history";
 import { eachStore, RequestBudget, StopStore, StoreSession } from "../src/lib/stores/polite-http";
 import {
   matchListing,
@@ -202,6 +203,7 @@ async function crawl() {
 
   // Every store's matches → one offers file per set. A store too cheap to be true is left out whole.
   const byFile = new Map<string, OffersFile>();
+  const refOf = new Map<string, { id: number; p: Record<string, number> }>();
   const refused: StoresMeta["refused"] = [];
   const shown: StoresMeta["stores"] = {};
   for (const st of live) {
@@ -218,6 +220,7 @@ async function crawl() {
       const key = `${c.game}/${c.set}`;
       if (!byFile.has(key)) byFile.set(key, {});
       const f = byFile.get(key)!;
+      refOf.set(`${key}|${c.slug}`, { id: card, p: c.p });
       (f[c.slug] ??= []).push([st.key, printing, cents, inStock, `${handle}?variant=${variant}`, seenDay] as OfferRow);
       shown[st.key] = { name: st.name, base: st.base };
     }
@@ -234,6 +237,31 @@ async function crawl() {
     }
     writeJson(path.join(DATA, "offers", `${key}.json`), f);
   }
+  // The red line of the card page's price history: each card's cheapest in-stock row of its headline printing, a point a day
+  // when it moved (lib/store-history.ts). Sets with no rows today still get their followed cards' 0.
+  const histRoot = path.join(DATA, "history", STORE_HISTORY_DIR);
+  const lowsBySet = new Map<string, Map<number, number>>();
+  for (const [key, f] of byFile) {
+    const m = new Map<number, number>();
+    for (const [slug, rows] of Object.entries(f)) {
+      const ref = refOf.get(`${key}|${slug}`);
+      const low = ref ? storeLow(ref.p, rows) : null;
+      if (ref && low) m.set(ref.id, low);
+    }
+    lowsBySet.set(key, m);
+  }
+  for (const g of GAMES) {
+    const dir = path.join(histRoot, g.slug);
+    if (fs.existsSync(dir)) for (const f of fs.readdirSync(dir)) if (f.endsWith(".json") && !lowsBySet.has(`${g.slug}/${f.slice(0, -5)}`)) lowsBySet.set(`${g.slug}/${f.slice(0, -5)}`, new Map());
+  }
+  let followed = 0;
+  for (const [key, lows] of lowsBySet) {
+    const file = path.join(histRoot, `${key}.json`);
+    const next = addStoreLows(readJson<HistoryFile>(file, {}), lows, day);
+    followed += Object.keys(next).length;
+    if (Object.keys(next).length) writeJson(file, next);
+  }
+  console.log(`[stores crawl] store-low history: ${followed} cards followed`);
   writeJson(path.join(STORES, "cursor.json"), cursor, true);
   writeJson(metaFile, { at: new Date().toISOString(), stores: shown, refused, run, read: readAt } satisfies StoresMeta, true);
   console.log(`[stores crawl] ${run.read} stores read, ${run.listings} listings, ${run.matched} matched, ${run.requests} requests; ${cardsWithRows} cards have store rows from ${Object.keys(shown).length} stores; refused ${JSON.stringify(run.refused)}; stopped ${JSON.stringify(run.stopped)}`);
