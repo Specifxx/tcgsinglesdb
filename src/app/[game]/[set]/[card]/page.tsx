@@ -85,7 +85,7 @@ export default async function CardPage({ params }: { params: { game: string; set
     ],
   };
   return (
-    <div className="page">
+    <div className="page" data-strip-q={`${g.short} ${c.n} ${set.name}${c.no ? ` ${c.no}` : ""}`} data-strip-tcg={tcgplayerCardUrl(c.id)}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumbLd(crumbs)) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(ld) }} />
       <nav className="crumbs" aria-label="Breadcrumb">

@@ -117,3 +117,14 @@ back on only with the owner, and only if its sister drops its card pages.
 Core-update quality pass (owner, 2026-11-19). The site has no banner ads and a four-link footer, so nothing moved. /about
 now says who runs it (Bill and George), how AI tools are used, and what the sites cost (about A$790 a month, our books,
 30 days to 15 Nov 2026).
+
+## 2026-11-19: A phone ad strip, on the owner's word (owner)
+
+The owner, 2026-11-19, of the sister sites' phone dock: "I want it for all the sites, so people have like an ad on their phone right
+there … we can have eBay as a strip banner there." This site had no ad unit at all (CLAUDE.md, "Money": no banner ads), so the
+owner's ask is the exception, and only this one unit: `components/PhoneStrip.tsx`, a slim bar at the foot of a phone screen (below
+720px) with a tagged eBay search and a TCGplayer link (through `/out/tcgplayer`), both labelled Ad, rel sponsored, claiming no
+price, under their own placements (`dock-ebay`, `dock-tcgplayer`). On a card page it searches that card; elsewhere the game in the
+path. Browser only (nothing in the server HTML), never on the first screen, hidden near the card page's buy rows, the footer and
+while typing, ✕ for the visit, moved on transform only (CLS 0), never Amazon, never a pop-up. `tests/phone-strip.test.ts` pins it.
+CLAUDE.md's "No banner ads" line is the owner's to amend.

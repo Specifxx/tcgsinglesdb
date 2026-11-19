@@ -6,6 +6,7 @@ import { Trackers } from "@/components/Trackers";
 import { SITE } from "@/site.config";
 import "./globals.css";
 import { ReturnBeacon } from "@/components/ReturnBeacon";
+import { PhoneStrip } from "@/components/PhoneStrip";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -65,6 +66,8 @@ export default function RootLayout({
         <Analytics />
         <Trackers />
         <ReturnBeacon />
+        {/* The phone ad strip (owner, 2026-11-19): browser only, phones only, after a scroll; components/PhoneStrip.tsx. */}
+        <PhoneStrip games={Object.fromEntries(shownGames().map((g) => [g.slug, g.short]))} />
       </body>
     </html>
   );
