@@ -202,3 +202,27 @@ for every game, kept true without him (he knows only Riftbound). `coverage.yml` 
 
 First run (20 Nov): TCGplayer's catalogue is mirrored in full here (gaps only cards TCGplayer added after the 19 Nov import);
 MTG Compare lacked 22 numbered "Emblem" cards (fixed, mtgcompare #242).
+
+## 2026-11-20 — Card scanner: Rift reads the photo, we match it, the visitor picks look-alikes
+
+**Decision (owner's brief: "I really like the card scanner in Rift Compare … is it good for this site?").** `/scan` (noindex,
+app screen) brings Rift Compare's auto-detect camera here for Pokémon, Yu-Gi-Oh! and One Piece first.
+
+- **No accounts, no key, no database here.** The browser sends the capture once to Rift's `POST /api/scan/read`
+  (`SITE.scanReadUrl`, exact-origin CORS), which makes ONE Haiku 5.5 read (name, set code, number, 1st Edition and promo
+  stamps) and returns only that. Rift holds the key and the caps: 5 free reads a visitor a day (salted IP hash; per visitor,
+  not per account, because this site has none) and 500 a day for this site (about US$0.15). The photo is never stored.
+- **The match is ours** (`lib/scan/match.ts`, pure, `/api/scan/match` over the committed card files): the printed number is
+  the key, the name must agree. Printings that share number and name (One Piece parallels and reprints, Yu-Gi-Oh! rarities
+  and reprints, Pokémon stamped promos, Shadowless) are never guessed: they come back as a pick list with pictures and the
+  visitor taps one. A set code read off a modern Pokémon card settles a reprint. Non-English cards and name-only reads of a
+  common name are refused. A perfect reading of every US$1+ card of the three games returns no wrong card as the match
+  (`tests/scan.test.ts`).
+- **A game goes live only after its eval passes** (`Game.scan`; TCGEmpire's `singles-scan-eval.yml` measures image coverage
+  and accuracy on 150 cards a game in five phone-photo conditions): found (the match or in the pick list) at least 95% and a
+  wrong card as THE match at most 1%. The verdict is copied to `scan-eval/verdict.json`; `tests/scan.test.ts` fails a game
+  set to `scan` without a passing verdict.
+- **My Collection** is browser-local (`lib/scan/collection.ts`): localStorage `sdb_collection_v1`, `{ v: 1, items: [{ id,
+  game, set, s, printing, qty, addedAt, src }] }`, one item per (id, printing) with `printing` exactly a key of the card's
+  prices ("Normal" when it has none), and an `sdb:collection` window event after each write. The /collection page reads it.
+- DON!! cards and other cards with no printed number cannot be scanned; search finds them.
