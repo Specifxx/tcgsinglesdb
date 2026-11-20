@@ -2,7 +2,7 @@
 // where these read from, not the pages. A missing or unreadable file gives the empty value, never an error page.
 import fs from "node:fs";
 import path from "node:path";
-import type { CardRow, CardSet, HistoryFile, Point, SearchRow, SetFile, SetsFile, TopFile } from "./cards";
+import type { CardRow, CardSet, DetailsFile, HistoryFile, Point, SearchRow, SetFile, SetsFile, TopFile } from "./cards";
 import type { OffersFile } from "./stores/match";
 import type { BuylistFile } from "./buylist";
 import { STORE_HISTORY_DIR } from "./store-history";
@@ -45,20 +45,27 @@ export function readSet(game: string, slug: string): CardRow[] {
 // size. Locally (dev, tests, the import) it is read from disk; on Vercel from this repository's raw file at the deployed commit
 // (the repo is public, and the page is cached a day, so a set's file is fetched about once a day per page).
 const HISTORY_RAW = "https://raw.githubusercontent.com/Specifxx/tcgsinglesdb";
-const historyMemo = new Map<string, Promise<HistoryFile>>();
-async function historyFile(game: string, slug: string): Promise<HistoryFile> {
-  const rel = `history/${game}/${slug}.json`;
+const rawMemo = new Map<string, Promise<unknown>>();
+/** One unbundled data file (history, details): from disk when present, else this repository's raw copy at the deployed commit. */
+async function rawFile<T extends object>(rel: string): Promise<T> {
   const local = path.join(root(), rel);
-  if (fs.existsSync(local)) return read<HistoryFile>(rel, {});
-  const key = `${process.env.VERCEL_GIT_COMMIT_SHA || "main"}/${rel}`;
-  if (!historyMemo.has(key)) {
-    const p = fetch(`${HISTORY_RAW}/${process.env.VERCEL_GIT_COMMIT_SHA || "main"}/data/${rel}`, { cache: "no-store", signal: AbortSignal.timeout(4000) })
-      .then((r) => (r.ok ? (r.json() as Promise<HistoryFile>) : {}))
-      .catch(() => ({}));
-    if (historyMemo.size > 200) historyMemo.clear();
-    historyMemo.set(key, p);
+  if (fs.existsSync(local)) return read<T>(rel, {} as T);
+  const sha = process.env.VERCEL_GIT_COMMIT_SHA || "main";
+  const key = `${sha}/${rel}`;
+  if (!rawMemo.has(key)) {
+    const p = fetch(`${HISTORY_RAW}/${sha}/data/${rel}`, { cache: "no-store", signal: AbortSignal.timeout(4000) })
+      .then((r) => (r.ok ? (r.json() as Promise<T>) : ({} as T)))
+      .catch(() => ({}) as T);
+    if (rawMemo.size > 200) rawMemo.clear();
+    rawMemo.set(key, p);
   }
-  return historyMemo.get(key)!;
+  return rawMemo.get(key) as Promise<T>;
+}
+const historyFile = (game: string, slug: string) => rawFile<HistoryFile>(`history/${game}/${slug}.json`);
+/** TCGplayer's own fields for one card (type, HP, attacks, text, artist…), written by the import (lib/cards.ts detailsOfGroup). */
+export async function readDetails(game: string, slug: string, id: number): Promise<[string, string][]> {
+  if (!gameBySlug(game) || !SAFE.test(slug)) return [];
+  return (await rawFile<DetailsFile>(`details/${game}/${slug}.json`))[String(id)] ?? [];
 }
 export async function readHistory(game: string, slug: string, id: number): Promise<Point[]> {
   if (!gameBySlug(game) || !SAFE.test(slug)) return [];

@@ -31,8 +31,9 @@ test("no database and no eBay API anywhere", () => {
 
 test("the bundled part of data/ still fits a server function (150 MB): past this, move the reads behind lib/store.ts", () => {
   // History and the import's state are not bundled (next.config.js outputFileTracingExcludes).
-  const bundled = walk(join(ROOT, "data")).filter((f) => !/[\\/]data[\\/](history|state)[\\/]|[\\/]stores[\\/]state[\\/]/.test(f));
+  const bundled = walk(join(ROOT, "data")).filter((f) => !/[\\/]data[\\/](history|details|state)[\\/]|[\\/]stores[\\/]state[\\/]/.test(f));
   assert.match(text(join(ROOT, "next.config.js")), /outputFileTracingExcludes[^}]*data\/history/);
+  assert.match(text(join(ROOT, "next.config.js")), /outputFileTracingExcludes[^}]*data\/details/);
   const bytes = bundled.reduce((n, f) => n + statSync(f).size, 0);
   assert.ok(bytes < 150 * 1024 * 1024, `data/ is ${(bytes / 1048576).toFixed(1)} MB`);
 });
