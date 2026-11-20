@@ -12,6 +12,7 @@ import {
   cardIndexable,
   cardValue,
   cardsOfGroup,
+  detailsOfGroup,
   mergeSet,
   movers,
   releaseForIndexing,
@@ -73,6 +74,7 @@ async function importGame(game: Game, day: string, growth: number): Promise<Meta
   const base = `https://tcgcsv.com/tcgplayer/${game.category}`;
   const dir = path.join(DATA, "cards", game.slug);
   const histDir = path.join(DATA, "history", game.slug);
+  const detDir = path.join(DATA, "details", game.slug);
   const groups = (await getJson<{ results: TcgcsvGroup[] }>(`${base}/groups`)).results;
   if (!Array.isArray(groups) || groups.length < 1) throw new Error(`the groups list has ${groups?.length ?? 0} entries`);
 
@@ -94,6 +96,7 @@ async function importGame(game: Game, day: string, growth: number): Promise<Meta
     slugByGroup.set(g.groupId, slug);
   }
 
+  fs.mkdirSync(detDir, { recursive: true });
   const failed: string[] = [];
   const all: { set: CardSet; cards: CardRow[] }[] = [];
   for (const g of ordered) {
@@ -105,6 +108,11 @@ async function importGame(game: Game, day: string, growth: number): Promise<Meta
         getJson<{ results: TcgcsvPrice[] }>(`${base}/${g.groupId}/prices`),
       ]);
       cards = mergeSet(prev, cardsOfGroup(p.results ?? [], pr.results ?? []), day);
+      // Card details (TCGplayer's own fields): rewritten whenever the group was read; a failed read keeps yesterday's file.
+      const details = detailsOfGroup(p.results ?? [], new Set(cards.map((c) => c.id)));
+      const dfile = path.join(detDir, `${slugByGroup.get(g.groupId)}.json`);
+      if (Object.keys(details).length) fs.writeFileSync(dfile, JSON.stringify(details));
+      else fs.rmSync(dfile, { force: true });
     } catch (e) {
       failed.push(`${g.name} (${(e as Error).message})`);
       cards = prev;
