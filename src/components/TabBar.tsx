@@ -1,4 +1,4 @@
-// The phone tab bar (owner, 2026-11-20: "easier navigation on our mobile web app"): four plain links, server-rendered, shown
+// The phone tab bar (owner, 2026-11-20: "easier navigation on our mobile web app"): five plain links (Scan in the middle, 2026-11-20), server-rendered, shown
 // only below 720px (globals.css .tabbar). No script. The ad strip (PhoneStrip) sits above it.
 const I = {
   home: <path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />,
@@ -14,11 +14,18 @@ const I = {
       <path d="m20 20-3.5-3.5" />
     </>
   ),
+  scan: (
+    <>
+      <path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3" />
+      <rect x="9" y="7.5" width="6" height="9" rx="1" />
+    </>
+  ),
   sell: <path d="M12 3v18M16.5 7.5c0-1.9-2-3-4.5-3s-4.5 1.2-4.5 3 1.6 2.6 4.5 3.3 4.5 1.5 4.5 3.4-2 3.3-4.5 3.3-4.5-1.2-4.5-3.1" />,
 };
 const TABS: [string, string, keyof typeof I][] = [
   ["/", "Home", "home"],
   ["/#games", "Games", "games"],
+  ["/scan", "Scan", "scan"],
   ["/search", "Search", "search"],
   ["/sell", "Sell", "sell"],
 ];
