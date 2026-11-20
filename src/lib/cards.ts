@@ -162,6 +162,7 @@ export interface TcgcsvGroup {
   name: string;
   abbreviation?: string | null;
   publishedOn?: string | null;
+  modifiedOn?: string | null;
 }
 export interface TcgcsvProduct {
   productId: number;
