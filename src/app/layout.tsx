@@ -8,6 +8,8 @@ import "./globals.css";
 import { ReturnBeacon } from "@/components/ReturnBeacon";
 import { PhoneStrip } from "@/components/PhoneStrip";
 import { christmasOn } from "@/lib/season";
+import { TabBar } from "@/components/TabBar";
+import { shortName } from "@/lib/format";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -32,18 +34,21 @@ export default function RootLayout({
       <body>
         <header className="hdr xmas-garland">
           <div className="hdr-in">
-            <a className="logo xmas-cap" href="/">
-              TCG <b>Singles</b> DB
+            <a className="logo xmas-cap" href="/" aria-label={SITE.name}>
+              <img src="/logo.svg" alt="" width={30} height={30} />
+              <span className="w">
+                TCG <b>Singles</b> DB
+              </span>
             </a>
             <nav className="nav" aria-label="Games">
               {shownGames()
                 .slice(0, 5)
                 .map((g) => (
                   <a key={g.slug} href={`/${g.slug}`}>
-                    {g.name}
+                    {shortName(g.name)}
                   </a>
                 ))}
-              <a href="/#games">All games</a>
+              <a href="/#games">All {shownGames().length} games</a>
             </nav>
             <SearchBox />
           </div>
@@ -51,6 +56,12 @@ export default function RootLayout({
         <main>{children}</main>
         <footer className="ftr">
           <div className="page">
+            <a className="logo" href="/">
+              <img src="/logo.svg" alt="" width={24} height={24} />
+              <span>
+                TCG <b>Singles</b> DB
+              </span>
+            </a>
             <nav aria-label="Site">
               <a href="/sell">Sell your cards</a>
               <a href="/about">About</a>
@@ -65,6 +76,7 @@ export default function RootLayout({
             <p>{SITE.disclaimer}</p>
           </div>
         </footer>
+        <TabBar />
         <Analytics />
         <Trackers />
         <ReturnBeacon />
