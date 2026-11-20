@@ -85,3 +85,37 @@ test("printingFor: the 1st Edition stamp, a single printing, or ask", () => {
   assert.equal(printingFor({ "1st Edition": 900, Unlimited: 100 }, false), "Unlimited");
   assert.equal(printingFor({ Normal: 10, "Reverse Holofoil": 30 }, false), null);
 });
+
+test("a game is offered by the scanner only with a passing accuracy eval on file", async () => {
+  const { existsSync, readFileSync } = await import("node:fs");
+  const { GAMES } = await import("../src/site.config");
+  const file = "scan-eval/verdict.json";
+  const v = existsSync(file) ? (JSON.parse(readFileSync(file, "utf8")) as { games: Record<string, { pass: boolean; found: number; wrongMatch: number; images: number }> }) : { games: {} };
+  for (const g of GAMES.filter((g) => g.scan)) {
+    const r = v.games[g.slug];
+    assert.ok(r?.pass && r.found >= 0.95 && r.wrongMatch <= 0.01 && r.images >= 100, `${g.slug} has no passing eval in ${file}`);
+  }
+});
+
+test("My Collection: one item per (card, printing), copies summed, broken storage starts again", async () => {
+  const { parseCollection, withItem } = await import("../src/lib/scan/collection");
+  const empty = parseCollection("not json");
+  assert.deepEqual(empty, { v: 1, items: [] });
+  const base = { id: 42382, game: "pokemon", set: "base-set", s: "charizard-004-102", printing: "Holofoil", src: "scan" as const };
+  const once = withItem(empty, base, new Date("2026-11-20T00:00:00Z"));
+  const twice = withItem(once, base);
+  assert.equal(twice.items.length, 1);
+  assert.equal(twice.items[0].qty, 2);
+  assert.equal(twice.items[0].addedAt, "2026-11-20T00:00:00.000Z");
+  assert.equal(withItem(twice, { ...base, printing: "Normal" }).items.length, 2);
+  assert.equal(parseCollection(JSON.stringify(twice)).items[0].qty, 2);
+});
+
+test("the scanner page reads no cookie or header, is noindex and never stores a photo", async () => {
+  const { readFileSync } = await import("node:fs");
+  const page = readFileSync("src/app/scan/page.tsx", "utf8");
+  assert.match(page, /noindex: true/);
+  assert.ok(!/cookies\(|headers\(/.test(page));
+  const route = readFileSync("src/app/api/scan/match/route.ts", "utf8");
+  assert.ok(!/writeFile|image/i.test(route.split("\n").filter((l) => !l.trim().startsWith("//")).join("\n")));
+});

@@ -2,7 +2,7 @@
 // the data only changes with the daily release, which empties the CDN). Safe because no page reads a cookie, a header
 // or the session (tests/cost-rules.test.ts). Query-string pages (/search) are not cached here; the search API caches itself.
 const CDN_CACHE = "public, s-maxage=86400, stale-while-revalidate=86400";
-const CDN_PAGES = ["/", "/about", "/terms", "/privacy", "/:game", "/:game/:set", "/:game/:set/:card", "/sitemap.xml", "/sitemaps/:file", "/llms.txt", "/sell"];
+const CDN_PAGES = ["/", "/about", "/terms", "/privacy", "/:game", "/:game/:set", "/:game/:set/:card", "/sitemap.xml", "/sitemaps/:file", "/llms.txt", "/sell", "/scan"];
 const securityHeaders = [
   { key: "X-Content-Type-Options", value: "nosniff" },
   { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },

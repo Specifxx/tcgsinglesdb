@@ -15,6 +15,9 @@ export interface Game {
   /** Cards released to Google per day for this game instead of CARD_INDEX_GROWTH. Only with the owner's go: Pokémon may get a
    *  faster ramp after the 8 Dec 2026 read if its released cards pass 150+ Google clicks a week (owner, 2026-11-19). */
   growth?: number;
+  /** The card scanner (/scan) reads this game. Set only once the game's accuracy eval passed (scan-eval/<game>.json,
+   *  tests/scan.test.ts; DECISIONS.md 2026-11-20 "Card scanner"). */
+  scan?: boolean;
   /** Why a game is not live yet (shown nowhere; for the next reader). */
   note?: string;
 }
@@ -25,6 +28,8 @@ export const SITE = {
   tagline: "Single-card prices for every trading card game",
   /** EPN customid and Impact sharedid prefix: tells this site apart in the networks' reports. */
   tag: "tcgsdb",
+  /** Rift Compare reads the scanner's photo (one model call; it holds the key, the caps and the counters). */
+  scanReadUrl: "https://riftcompare.com/api/scan/read",
   disclaimer:
     "TCG Singles DB is an independent price guide. It is not affiliated with, endorsed by or sponsored by The Pokémon Company, Nintendo, Konami, Wizards of the Coast, TCGplayer, eBay or any card game publisher. Card names and images belong to their owners.",
 } as const;
