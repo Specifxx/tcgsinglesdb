@@ -152,3 +152,19 @@ the cards released so far bring 150+ Google clicks a week. `Game.growth` overrid
 variable still pauses every game. Nothing is set yet: on 8 Dec, pass sets Pokémon's `growth` (proposed 1,000 a day, which
 releases its 17,069 US$1+ cards in about two weeks); a miss keeps 250 and the 9 Dec 30%-indexed tripwire still applies.
 
+
+## 2026-11-20: A Santa hat on the logo and lights under the header
+
+**Owner, 2026-11-20:** "change the logo for all of our websites so that it's Christmas themed now. Put a Santa hat on top
+of the logos … and add some decorations here and there, like some Christmas lights … and yeah, Santa Claus." The owner
+asked for hats and lights by name, so they come back after the 2026-11-08 tone-down, kept to the header.
+
+- The logo mark wears a Santa hat (class `xmas-cap` on its wrapper), a string of lights hangs under the sticky header
+  (`xmas-garland`), and the home page's gift-guide line, where there is one, gets a small Santa. All of it is the
+  `xmas-logo` block in `globals.css`, the same block on every Compare site (RiftCompare's DECISIONS has the history).
+- CSS only: three inline SVG data URIs (~2.5 KB of stylesheet), no request, no script, no animation. Every piece is
+  `position: absolute` and `pointer-events: none`: no layout shift, no tap caught, nothing in the server HTML changes
+  but two class names, so titles, metadata and structured data are untouched. Favicons and share images are unchanged.
+- Off switch: `CHRISTMAS_FESTIVE_LAYER` in the new `lib/season.ts`. This site has no boot script, so the layout sets
+  `data-season` and `data-festive` from the UTC date (1 Nov to 26 Dec); with pages held a day by the CDN it ends by
+  28 December at the latest. The hat sits on the "T" of the word logo, sized in em. Remove after New Year: delete the block and the two classes.

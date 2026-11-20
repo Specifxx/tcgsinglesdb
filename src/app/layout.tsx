@@ -7,6 +7,7 @@ import { SITE } from "@/site.config";
 import "./globals.css";
 import { ReturnBeacon } from "@/components/ReturnBeacon";
 import { PhoneStrip } from "@/components/PhoneStrip";
+import { christmasOn } from "@/lib/season";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -25,12 +26,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const xmas = christmasOn();
   return (
-    <html lang="en">
+    <html lang="en" data-season={xmas ? "christmas" : undefined} data-festive={xmas ? "" : undefined}>
       <body>
-        <header className="hdr">
+        <header className="hdr xmas-garland">
           <div className="hdr-in">
-            <a className="logo" href="/">
+            <a className="logo xmas-cap" href="/">
               TCG <b>Singles</b> DB
             </a>
             <nav className="nav" aria-label="Games">
