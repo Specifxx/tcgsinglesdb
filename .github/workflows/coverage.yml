@@ -1,0 +1,81 @@
+name: Card coverage
+# Does every card TCGplayer and the independent card databases list have a page, here and on the sister site of its game?
+# (owner, 2026-11-20: every set, promo and special printing, kept true for every new set). scripts/coverage.ts.
+# Daily 23:47 UTC (after the 21:23 import): the release watch, every group TCGplayer published in the last 21 days or
+# dates in the next 45. Mondays: the full audit, every group of every game plus Scryfall, YGOPRODeck, pokemontcg.io,
+# Lorcast and OPTCG API. The report is committed to data/coverage/ with no deploy marker; a gap opens (or updates) the
+# issue "Card coverage gaps", and the ops monitor turns red while one stands.
+on:
+  schedule:
+    - cron: "47 23 * * *"
+  push:
+    branches: [claude/project-thread-82ws94]
+    paths: [.github/workflows/coverage.yml, scripts/coverage.ts]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "full or release"
+        default: full
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: coverage
+  cancel-in-progress: false
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      # The sister sites' public data (their repositories are public), only the card files.
+      - uses: actions/checkout@v4
+        with:
+          repository: Specifxx/OpCompare
+          ref: snapshot
+          path: sisters/OpCompare-snapshot
+          sparse-checkout: /cards.json.gz
+          sparse-checkout-cone-mode: false
+      - uses: actions/checkout@v4
+        with:
+          repository: Specifxx/mtgcompare
+          path: sisters/mtgcompare
+          sparse-checkout: data/cards/sets
+      - uses: actions/checkout@v4
+        with:
+          repository: Specifxx/lorcanacompare
+          path: sisters/lorcanacompare
+          sparse-checkout: data/public
+      - uses: actions/checkout@v4
+        with:
+          repository: Specifxx/GundamCompare
+          path: sisters/GundamCompare
+          sparse-checkout: data/public
+      - uses: actions/checkout@v4
+        with:
+          repository: Specifxx/cyberpunkcompare
+          path: sisters/cyberpunkcompare
+          sparse-checkout: data/public
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci --no-audit --no-fund --ignore-scripts
+      - name: Audit
+        run: npx tsx scripts/coverage.ts
+        env:
+          # Empty on a schedule: Mondays (UTC) full, other days release.
+          COVERAGE_MODE: ${{ inputs.mode || (github.event_name == 'push' && 'full') || '' }}
+      - name: Open or update the gaps issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: npx tsx scripts/coverage-issue.ts
+      - name: Commit the report (no deploy marker)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/coverage
+          if git diff --cached --quiet; then echo "No change"; exit 0; fi
+          git commit -m "data: card coverage report ($(date -u +%F))"
+          for i in 1 2 3 4; do git pull --rebase -q origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && exit 0; sleep $((i * 10)); done
+          exit 1
