@@ -1,0 +1,5760 @@
+{
+ "generatedAt": "2026-11-20T03:01:22.491Z",
+ "mode": "full",
+ "counts": {
+  "pokemon": {
+   "tcg": 28876,
+   "ours": 28875
+  },
+  "magic": {
+   "tcg": 106661,
+   "ours": 106661,
+   "sister": {
+    "site": "MTG Compare",
+    "cards": 106649
+   }
+  },
+  "yugioh": {
+   "tcg": 46701,
+   "ours": 46701
+  },
+  "one-piece": {
+   "tcg": 7519,
+   "ours": 7519,
+   "sister": {
+    "site": "OP Compare",
+    "cards": 7528
+   }
+  },
+  "lorcana": {
+   "tcg": 3794,
+   "ours": 3794,
+   "sister": {
+    "site": "Lorcana Compare",
+    "cards": 1285
+   }
+  },
+  "riftbound": {
+   "tcg": 1804,
+   "ours": 1804
+  },
+  "pokemon-japan": {
+   "tcg": 30450,
+   "ours": 30450
+  },
+  "star-wars-unlimited": {
+   "tcg": 9783,
+   "ours": 9783
+  },
+  "gundam": {
+   "tcg": 2033,
+   "ours": 2033,
+   "sister": {
+    "site": "Gundam Compare",
+    "cards": 1301
+   }
+  },
+  "flesh-and-blood": {
+   "tcg": 10403,
+   "ours": 10378
+  },
+  "digimon": {
+   "tcg": 9571,
+   "ours": 9559
+  },
+  "dragon-ball-fusion-world": {
+   "tcg": 4375,
+   "ours": 4375
+  },
+  "union-arena": {
+   "tcg": 7228,
+   "ours": 7228
+  },
+  "weiss-schwarz": {
+   "tcg": 31866,
+   "ours": 31866
+  },
+  "cardfight-vanguard": {
+   "tcg": 26899,
+   "ours": 26599
+  },
+  "sorcery": {
+   "tcg": 3124,
+   "ours": 3124
+  },
+  "grand-archive": {
+   "tcg": 5449,
+   "ours": 5357
+  },
+  "hololive": {
+   "tcg": 2304,
+   "ours": 2304
+  },
+  "godzilla": {
+   "tcg": 935,
+   "ours": 935
+  },
+  "cyberpunk": {
+   "tcg": 527,
+   "ours": 527,
+   "sister": {
+    "site": "Cyberpunk Compare",
+    "cards": 527
+   }
+  },
+  "final-fantasy": {
+   "tcg": 5746,
+   "ours": 5746
+  },
+  "dragon-ball-super-masters": {
+   "tcg": 11946,
+   "ours": 11946
+  },
+  "shadowverse-evolve": {
+   "tcg": 7960,
+   "ours": 7960
+  },
+  "universus": {
+   "tcg": 8548,
+   "ours": 8548
+  },
+  "naruto": {
+   "tcg": 3,
+   "ours": 3
+  },
+  "elestrals": {
+   "tcg": 3224,
+   "ours": 3224
+  },
+  "cookierun-braverse": {
+   "tcg": 2287,
+   "ours": 2283
+  },
+  "palworld": {
+   "tcg": 647,
+   "ours": 647
+  },
+  "wixoss": {
+   "tcg": 4448,
+   "ours": 4448
+  },
+  "battle-spirits-saga": {
+   "tcg": 1842,
+   "ours": 1842
+  },
+  "alpha-clash": {
+   "tcg": 2296,
+   "ours": 2296
+  }
+ },
+ "sites": [
+  {
+   "site": "TCG Singles DB",
+   "game": "pokemon",
+   "tcgCards": 28876,
+   "ourCards": 28875,
+   "missing": 1,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24451,
+     "name": "ME: Mega Evolution Promo",
+     "released": "2025-09-26",
+     "tcg": 153,
+     "ours": 152,
+     "missing": [
+      734563
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "magic",
+   "tcgCards": 106661,
+   "ourCards": 106661,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "MTG Compare",
+   "game": "magic",
+   "tcgCards": 106661,
+   "ourCards": 106649,
+   "missing": 22,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 23317,
+     "name": "Universes Beyond: Jurassic World Collection",
+     "released": "2023-11-17",
+     "tcg": 45,
+     "ours": 26,
+     "missing": [
+      524291,
+      524293,
+      524294,
+      524295,
+      524297,
+      524298,
+      524299,
+      524346,
+      524347,
+      525384,
+      525385,
+      525386,
+      526393,
+      526394,
+      526400,
+      526409,
+      526412,
+      526413,
+      526416
+     ]
+    },
+    {
+     "groupId": 39,
+     "name": "Eventide",
+     "released": "2008-07-25",
+     "tcg": 180,
+     "ours": 179,
+     "missing": [
+      27148
+     ]
+    },
+    {
+     "groupId": 51,
+     "name": "Future Sight",
+     "released": "2007-05-04",
+     "tcg": 180,
+     "ours": 179,
+     "missing": [
+      14881
+     ]
+    },
+    {
+     "groupId": 2576,
+     "name": "Secret Lair Drop Series",
+     "released": "2026-11-19",
+     "tcg": 3369,
+     "ours": 3368,
+     "missing": [
+      587975
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "yugioh",
+   "tcgCards": 46701,
+   "ourCards": 46701,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "one-piece",
+   "tcgCards": 7519,
+   "ourCards": 7519,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "OP Compare",
+   "game": "one-piece",
+   "tcgCards": 7519,
+   "ourCards": 7528,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "lorcana",
+   "tcgCards": 3794,
+   "ourCards": 3794,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Lorcana Compare",
+   "game": "lorcana",
+   "tcgCards": 3794,
+   "ourCards": 1285,
+   "missing": 36,
+   "byFloor": 2473,
+   "groups": [
+    {
+     "groupId": 24258,
+     "name": "Reign of Jafar",
+     "released": "2025-05-30",
+     "tcg": 270,
+     "ours": 60,
+     "missing": [
+      706256,
+      706257,
+      706266,
+      706268,
+      710943,
+      710945,
+      711002,
+      711216,
+      711230
+     ]
+    },
+    {
+     "groupId": 24011,
+     "name": "Archazia's Island",
+     "released": "2025-03-07",
+     "tcg": 245,
+     "ours": 52,
+     "missing": [
+      706127,
+      706128,
+      710995
+     ]
+    },
+    {
+     "groupId": 23474,
+     "name": "Ursula's Return",
+     "released": "2024-05-17",
+     "tcg": 232,
+     "ours": 44,
+     "missing": [
+      552251
+     ]
+    },
+    {
+     "groupId": 24500,
+     "name": "Winterspell",
+     "released": "2026-02-13",
+     "tcg": 266,
+     "ours": 85,
+     "missing": [
+      682933,
+      706382
+     ]
+    },
+    {
+     "groupId": 24348,
+     "name": "Fabled",
+     "released": "2025-08-29",
+     "tcg": 253,
+     "ours": 82,
+     "missing": [
+      706217
+     ]
+    },
+    {
+     "groupId": 23234,
+     "name": "Disney Lorcana Promo Cards",
+     "released": "2023-07-01",
+     "tcg": 221,
+     "ours": 165,
+     "missing": [
+      650211,
+      652646
+     ]
+    },
+    {
+     "groupId": 24257,
+     "name": "Illumineer's Quest: Palace Heist",
+     "released": "2025-06-06",
+     "tcg": 43,
+     "ours": 5,
+     "missing": [
+      639460,
+      639461,
+      639901,
+      639904
+     ]
+    },
+    {
+     "groupId": 23528,
+     "name": "Illumineer's Quest: Deep Trouble",
+     "released": "2024-05-17",
+     "tcg": 39,
+     "ours": 6,
+     "missing": [
+      552741
+     ]
+    },
+    {
+     "groupId": 24740,
+     "name": "Hyperia City",
+     "released": "2026-10-16",
+     "tcg": 254,
+     "ours": 242,
+     "missing": [
+      722932,
+      722933,
+      723665,
+      724311,
+      724312,
+      724313,
+      724314,
+      724315,
+      724316,
+      724317,
+      724318,
+      724319
+     ]
+    },
+    {
+     "groupId": 24734,
+     "name": "Illumineer's Quest: The Great Hunny Rescue",
+     "released": "2026-10-02",
+     "tcg": 44,
+     "ours": 43,
+     "missing": [
+      722695
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "riftbound",
+   "tcgCards": 1804,
+   "ourCards": 1804,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "pokemon-japan",
+   "tcgCards": 30450,
+   "ourCards": 30450,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "star-wars-unlimited",
+   "tcgCards": 9783,
+   "ourCards": 9783,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "gundam",
+   "tcgCards": 2033,
+   "ourCards": 2033,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Gundam Compare",
+   "game": "gundam",
+   "tcgCards": 2033,
+   "ourCards": 1301,
+   "missing": 0,
+   "byFloor": 869,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "flesh-and-blood",
+   "tcgCards": 10403,
+   "ourCards": 10378,
+   "missing": 25,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 2732,
+     "name": "Flesh and Blood: Promo Cards",
+     "released": "2019-10-11",
+     "tcg": 1257,
+     "ours": 1233,
+     "missing": [
+      705414,
+      706918,
+      723470,
+      723471,
+      723472,
+      723473,
+      723474,
+      723475,
+      723476,
+      723477,
+      723478,
+      723479,
+      723480,
+      723483,
+      725890,
+      726155,
+      726172,
+      726182,
+      731201,
+      731202,
+      731203,
+      734564,
+      734565,
+      734566
+     ]
+    },
+    {
+     "groupId": 24914,
+     "name": "Outbreak",
+     "released": "2027-02-12",
+     "tcg": 65,
+     "ours": 64,
+     "missing": [
+      734567
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "digimon",
+   "tcgCards": 9571,
+   "ourCards": 9559,
+   "missing": 12,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24865,
+     "name": "Ignition of X",
+     "released": "2026-12-11",
+     "tcg": 125,
+     "ours": 113,
+     "missing": [
+      734589,
+      734590,
+      734591,
+      734592,
+      734593,
+      734594,
+      734595,
+      734596,
+      734597,
+      734598,
+      734599,
+      734600
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "dragon-ball-fusion-world",
+   "tcgCards": 4375,
+   "ourCards": 4375,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "union-arena",
+   "tcgCards": 7228,
+   "ourCards": 7228,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "weiss-schwarz",
+   "tcgCards": 31866,
+   "ourCards": 31866,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cardfight-vanguard",
+   "tcgCards": 26899,
+   "ourCards": 26599,
+   "missing": 300,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24799,
+     "name": "DZ-TB03: Future Card Buddyfight - Disaster Force",
+     "released": "2026-11-20",
+     "tcg": 279,
+     "ours": 0,
+     "missing": [
+      734604,
+      734605,
+      734606,
+      734607,
+      734608,
+      734609,
+      734610,
+      734611,
+      734612,
+      734613,
+      734614,
+      734615,
+      734616,
+      734617,
+      734618,
+      734619,
+      734620,
+      734621,
+      734622,
+      734623,
+      734624,
+      734625,
+      734626,
+      734627,
+      734628,
+      734629,
+      734630,
+      734631,
+      734632,
+      734633,
+      734634,
+      734635,
+      734636,
+      734637,
+      734638,
+      734639,
+      734640,
+      734641,
+      734642,
+      734643,
+      734644,
+      734645,
+      734646,
+      734647,
+      734648,
+      734649,
+      734650,
+      734651,
+      734652,
+      734653,
+      734654,
+      734655,
+      734656,
+      734657,
+      734658,
+      734659,
+      734660,
+      734661,
+      734662,
+      734663
+     ]
+    },
+    {
+     "groupId": 2797,
+     "name": "D Promo Cards",
+     "released": "2021-04-02",
+     "tcg": 1079,
+     "ours": 1058,
+     "missing": [
+      734568,
+      734569,
+      734570,
+      734571,
+      734572,
+      734573,
+      734574,
+      734575,
+      734576,
+      734577,
+      734578,
+      734579,
+      734580,
+      734581,
+      734582,
+      734583,
+      734584,
+      734585,
+      734586,
+      734587,
+      734588
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "sorcery",
+   "tcgCards": 3124,
+   "ourCards": 3124,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "grand-archive",
+   "tcgCards": 5449,
+   "ourCards": 5357,
+   "missing": 92,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24953,
+     "name": "Pantheon Pack 1",
+     "released": "2026-11-01",
+     "tcg": 64,
+     "ours": 0,
+     "missing": [
+      734884,
+      734885,
+      734886,
+      734887,
+      734888,
+      734889,
+      734890,
+      734891,
+      734892,
+      734893,
+      734894,
+      734895,
+      734896,
+      734897,
+      734898,
+      734899,
+      734900,
+      734901,
+      734902,
+      734903,
+      734904,
+      734905,
+      734906,
+      734907,
+      734908,
+      734909,
+      734910,
+      734911,
+      734912,
+      734913,
+      734914,
+      734915,
+      734916,
+      734917,
+      734918,
+      734919,
+      734920,
+      734921,
+      734922,
+      734923,
+      734924,
+      734925,
+      734926,
+      734927,
+      734928,
+      734929,
+      734930,
+      734931,
+      734932,
+      734933,
+      734934,
+      734935,
+      734936,
+      734937,
+      734938,
+      734939,
+      734940,
+      734941,
+      734942,
+      734943
+     ]
+    },
+    {
+     "groupId": 23133,
+     "name": "Promotional Cards",
+     "released": "2023-04-28",
+     "tcg": 433,
+     "ours": 407,
+     "missing": [
+      734948,
+      735023,
+      735024,
+      735025,
+      735026,
+      735027,
+      735028,
+      735029,
+      735030,
+      735031,
+      735032,
+      735088,
+      735089,
+      735090,
+      735092,
+      735093,
+      735094,
+      735097,
+      735099,
+      735100,
+      735102,
+      735103,
+      735105,
+      735106,
+      735108,
+      735110
+     ]
+    },
+    {
+     "groupId": 23456,
+     "name": "Mercurial Heart",
+     "released": "2024-05-17",
+     "tcg": 208,
+     "ours": 207,
+     "missing": [
+      735095
+     ]
+    },
+    {
+     "groupId": 24457,
+     "name": "Phantom Monarchs",
+     "released": "2025-12-05",
+     "tcg": 319,
+     "ours": 318,
+     "missing": [
+      735091
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "hololive",
+   "tcgCards": 2304,
+   "ourCards": 2304,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "godzilla",
+   "tcgCards": 935,
+   "ourCards": 935,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cyberpunk",
+   "tcgCards": 527,
+   "ourCards": 527,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Cyberpunk Compare",
+   "game": "cyberpunk",
+   "tcgCards": 527,
+   "ourCards": 527,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "final-fantasy",
+   "tcgCards": 5746,
+   "ourCards": 5746,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "dragon-ball-super-masters",
+   "tcgCards": 11946,
+   "ourCards": 11946,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "shadowverse-evolve",
+   "tcgCards": 7960,
+   "ourCards": 7960,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "universus",
+   "tcgCards": 8548,
+   "ourCards": 8548,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "naruto",
+   "tcgCards": 3,
+   "ourCards": 3,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "elestrals",
+   "tcgCards": 3224,
+   "ourCards": 3224,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cookierun-braverse",
+   "tcgCards": 2287,
+   "ourCards": 2283,
+   "missing": 4,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24731,
+     "name": "Promotion Cards",
+     "released": "2026-06-15",
+     "tcg": 350,
+     "ours": 346,
+     "missing": [
+      735033,
+      735034,
+      735036,
+      735037
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "palworld",
+   "tcgCards": 647,
+   "ourCards": 647,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "wixoss",
+   "tcgCards": 4448,
+   "ourCards": 4448,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "battle-spirits-saga",
+   "tcgCards": 1842,
+   "ourCards": 1842,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "alpha-clash",
+   "tcgCards": 2296,
+   "ourCards": 2296,
+   "missing": 0,
+   "byFloor": 0,
+   "groups": []
+  }
+ ],
+ "external": [
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Base",
+   "code": "BS",
+   "released": "1999-01-09",
+   "expected": 102,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Base)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Wizards Black Star Promos",
+   "code": "PR",
+   "released": "1999-07-01",
+   "expected": 53,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Base)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Expedition Base Set",
+   "code": "EX",
+   "released": "2002-09-15",
+   "expected": 165,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (E-Card)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Ruby & Sapphire",
+   "code": "RS",
+   "released": "2003-07-01",
+   "expected": 109,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Sandstorm",
+   "code": "SS",
+   "released": "2003-09-18",
+   "expected": 100,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Dragon",
+   "code": "DR",
+   "released": "2003-11-24",
+   "expected": 100,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Nintendo Black Star Promos",
+   "code": "PR-NP",
+   "released": "2003-10-01",
+   "expected": 40,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (NP)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Team Magma vs Team Aqua",
+   "code": "MA",
+   "released": "2004-03-01",
+   "expected": 97,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Hidden Legends",
+   "code": "HL",
+   "released": "2004-06-01",
+   "expected": 102,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "FireRed & LeafGreen",
+   "code": "RG",
+   "released": "2004-09-01",
+   "expected": 116,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Team Rocket Returns",
+   "code": "TRR",
+   "released": "2004-11-01",
+   "expected": 111,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Deoxys",
+   "code": "DX",
+   "released": "2005-02-01",
+   "expected": 108,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Emerald",
+   "code": "EM",
+   "released": "2005-05-01",
+   "expected": 107,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Unseen Forces",
+   "code": "UF",
+   "released": "2005-08-01",
+   "expected": 145,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Delta Species",
+   "code": "DS",
+   "released": "2005-10-31",
+   "expected": 114,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Legend Maker",
+   "code": "LM",
+   "released": "2006-02-01",
+   "expected": 93,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Holon Phantoms",
+   "code": "HP",
+   "released": "2006-05-01",
+   "expected": 111,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Crystal Guardians",
+   "code": "CG",
+   "released": "2006-08-01",
+   "expected": 100,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Dragon Frontiers",
+   "code": "DF",
+   "released": "2006-11-01",
+   "expected": 101,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Power Keepers",
+   "code": "PK",
+   "released": "2007-02-02",
+   "expected": 108,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "DP Black Star Promos",
+   "code": "PR-DPP",
+   "released": "2007-05-01",
+   "expected": 56,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Diamond & Pearl)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "HeartGold & SoulSilver",
+   "code": "HS",
+   "released": "2010-02-10",
+   "expected": 124,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (HeartGold & SoulSilver)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "HGSS Black Star Promos",
+   "code": "PR-HS",
+   "released": "2010-02-10",
+   "expected": 25,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (HeartGold & SoulSilver)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "HS—Unleashed",
+   "code": "UL",
+   "released": "2010-05-12",
+   "expected": 96,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (HeartGold & SoulSilver)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "HS—Undaunted",
+   "code": "UD",
+   "released": "2010-08-18",
+   "expected": 91,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (HeartGold & SoulSilver)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "HS—Triumphant",
+   "code": "TM",
+   "released": "2010-11-03",
+   "expected": 103,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (HeartGold & SoulSilver)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "BW Black Star Promos",
+   "code": "PR-BLW",
+   "released": "2011-03-01",
+   "expected": 101,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Black & White)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2011",
+   "code": "mcd11",
+   "released": "2011-06-17",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2012",
+   "code": "mcd12",
+   "released": "2012-06-15",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "XY Black Star Promos",
+   "code": "PR-XY",
+   "released": "2013-10-12",
+   "expected": 216,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Legendary Treasures",
+   "code": "LTR",
+   "released": "2013-11-06",
+   "expected": 140,
+   "ours": 115,
+   "note": "TCGplayer lists 115"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "XY",
+   "code": "XY",
+   "released": "2014-02-05",
+   "expected": 146,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Flashfire",
+   "code": "FLF",
+   "released": "2014-05-07",
+   "expected": 110,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Furious Fists",
+   "code": "FFI",
+   "released": "2014-08-13",
+   "expected": 114,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Phantom Forces",
+   "code": "PHF",
+   "released": "2014-11-05",
+   "expected": 124,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Primal Clash",
+   "code": "PRC",
+   "released": "2015-02-04",
+   "expected": 164,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Roaring Skies",
+   "code": "ROS",
+   "released": "2015-05-06",
+   "expected": 112,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Ancient Origins",
+   "code": "AOR",
+   "released": "2015-08-12",
+   "expected": 100,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "BREAKthrough",
+   "code": "BKT",
+   "released": "2015-11-04",
+   "expected": 165,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "BREAKpoint",
+   "code": "BKP",
+   "released": "2016-02-03",
+   "expected": 126,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Generations",
+   "code": "GEN",
+   "released": "2016-02-22",
+   "expected": 117,
+   "ours": 84,
+   "note": "TCGplayer lists 84"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Fates Collide",
+   "code": "FCO",
+   "released": "2016-05-02",
+   "expected": 129,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Steam Siege",
+   "code": "STS",
+   "released": "2016-08-03",
+   "expected": 116,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2016",
+   "code": "mcd16",
+   "released": "2016-08-19",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Evolutions",
+   "code": "EVO",
+   "released": "2016-11-02",
+   "expected": 113,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (XY)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Sun & Moon",
+   "code": "SUM",
+   "released": "2017-02-03",
+   "expected": 173,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "SM Black Star Promos",
+   "code": "PR-SM",
+   "released": "2017-02-03",
+   "expected": 250,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Guardians Rising",
+   "code": "GRI",
+   "released": "2017-05-05",
+   "expected": 180,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Burning Shadows",
+   "code": "BUS",
+   "released": "2017-08-05",
+   "expected": 177,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Crimson Invasion",
+   "code": "CIN",
+   "released": "2017-11-03",
+   "expected": 126,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Ultra Prism",
+   "code": "UPR",
+   "released": "2018-02-02",
+   "expected": 178,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Forbidden Light",
+   "code": "FLI",
+   "released": "2018-05-04",
+   "expected": 150,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Celestial Storm",
+   "code": "CES",
+   "released": "2018-08-03",
+   "expected": 187,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Lost Thunder",
+   "code": "LOT",
+   "released": "2018-11-02",
+   "expected": 240,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Team Up",
+   "code": "TEU",
+   "released": "2019-02-01",
+   "expected": 198,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Unbroken Bonds",
+   "code": "UNB",
+   "released": "2019-05-03",
+   "expected": 234,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Unified Minds",
+   "code": "UNM",
+   "released": "2019-08-02",
+   "expected": 260,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2019",
+   "code": "mcd19",
+   "released": "2019-10-15",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Cosmic Eclipse",
+   "code": "CEC",
+   "released": "2019-11-01",
+   "expected": 272,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sun & Moon)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "SWSH Black Star Promos",
+   "code": "PR-SW",
+   "released": "2019-11-15",
+   "expected": 304,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sword & Shield)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Sword & Shield",
+   "code": "SSH",
+   "released": "2020-02-07",
+   "expected": 216,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Sword & Shield)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2014",
+   "code": "mcd14",
+   "released": "2014-05-23",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2015",
+   "code": "mcd15",
+   "released": "2015-11-27",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2018",
+   "code": "mcd18",
+   "released": "2018-10-16",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2017",
+   "code": "mcd17",
+   "released": "2017-11-07",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2021",
+   "code": "mcd21",
+   "released": "2021-02-09",
+   "expected": 25,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Best of Game",
+   "code": "BP",
+   "released": "2002-12-01",
+   "expected": 9,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Pokémon Futsal Collection",
+   "code": "FUT20",
+   "released": "2020-09-11",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "EX Trainer Kit Latias",
+   "code": "tk1a",
+   "released": "2004-06-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "EX Trainer Kit Latios",
+   "code": "tk1b",
+   "released": "2004-06-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "EX Trainer Kit 2 Plusle",
+   "code": "tk2a",
+   "released": "2006-03-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "EX Trainer Kit 2 Minun",
+   "code": "tk2b",
+   "released": "2006-03-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (EX)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "McDonald's Collection 2022",
+   "code": "mcd22",
+   "released": "2022-08-03",
+   "expected": 15,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Other)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Scarlet & Violet",
+   "code": "SVI",
+   "released": "2023-03-31",
+   "expected": 258,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Scarlet & Violet)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "Scarlet & Violet Black Star Promos",
+   "code": "PR-SV",
+   "released": "2023-01-01",
+   "expected": 196,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Scarlet & Violet)"
+  },
+  {
+   "source": "pokemontcg.io",
+   "game": "pokemon",
+   "set": "151",
+   "code": "MEW",
+   "released": "2023-09-22",
+   "expected": 207,
+   "ours": 0,
+   "note": "no TCGplayer group of the same name (Scarlet & Violet)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2027",
+   "code": "PW27",
+   "released": "2027-01-01",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2027",
+   "code": "PF27",
+   "released": "2027-01-01",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Prismatic Pride",
+   "code": "PUNK",
+   "released": "2026-11-13",
+   "expected": 20,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Reality Fracture Promos",
+   "code": "PFRA",
+   "released": "2026-10-02",
+   "expected": 90,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Secrets of Strixhaven Promos",
+   "code": "PSOS",
+   "released": "2026-04-24",
+   "expected": 80,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Horse 2026",
+   "code": "PL26",
+   "released": "2026-02-17",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Lorwyn Eclipsed Promos",
+   "code": "PECL",
+   "released": "2026-01-23",
+   "expected": 80,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2026",
+   "code": "PW26",
+   "released": "2026-01-01",
+   "expected": 24,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2026",
+   "code": "PF26",
+   "released": "2026-01-01",
+   "expected": 19,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Avatar: The Last Airbender Promos",
+   "code": "PTLA",
+   "released": "2025-11-21",
+   "expected": 80,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Marvel Legends Series Inserts",
+   "code": "LMAR",
+   "released": "2025-09-30",
+   "expected": 8,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Marvel's Spider-Man Promos",
+   "code": "PSPM",
+   "released": "2025-09-26",
+   "expected": 68,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2023 Heroes of the Realm",
+   "code": "PH23",
+   "released": "2025-08-24",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Edge of Eternities Promos",
+   "code": "PEOE",
+   "released": "2025-08-01",
+   "expected": 160,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "The Big Score Promos",
+   "code": "PBIG",
+   "released": "2025-08-01",
+   "expected": 30,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Final Fantasy Regional Promos",
+   "code": "RFIN",
+   "released": "2025-06-13",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Final Fantasy Promos",
+   "code": "PFIN",
+   "released": "2025-06-13",
+   "expected": 94,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "FIN Standard Showdown",
+   "code": "PSS5",
+   "released": "2025-06-13",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Tarkir: Dragonstorm Promos",
+   "code": "PTDM",
+   "released": "2025-04-11",
+   "expected": 160,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Love Your LGS 2025",
+   "code": "PLG25",
+   "released": "2025-03-26",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Aetherdrift Promos",
+   "code": "PDFT",
+   "released": "2025-02-14",
+   "expected": 160,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Snake 2025",
+   "code": "PL25",
+   "released": "2025-02-14",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Japan Standard Cup",
+   "code": "PJSC",
+   "released": "2025-02-09",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Spotlight Series",
+   "code": "PSPL",
+   "released": "2025-01-03",
+   "expected": 15,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2025",
+   "code": "PF25",
+   "released": "2025-01-01",
+   "expected": 19,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2025",
+   "code": "PW25",
+   "released": "2025-01-01",
+   "expected": 16,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Foundations Promos",
+   "code": "PFDN",
+   "released": "2024-11-15",
+   "expected": 106,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Tales of Middle-earth Deluxe Commander Kit",
+   "code": "PLTC",
+   "released": "2024-10-16",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duskmourn: House of Horror Promos",
+   "code": "PDSK",
+   "released": "2024-09-27",
+   "expected": 160,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duskmourn: House of Horror Commander",
+   "code": "DSC",
+   "released": "2024-09-27",
+   "expected": 373,
+   "ours": 334,
+   "note": "TCGplayer lists 334"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Love Your LGS 2024",
+   "code": "PLG24",
+   "released": "2024-08-06",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Bloomburrow Promos",
+   "code": "PBLB",
+   "released": "2024-08-02",
+   "expected": 160,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Mystery Booster 2",
+   "code": "MB2",
+   "released": "2024-08-02",
+   "expected": 385,
+   "ours": 264,
+   "note": "TCGplayer lists 264"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Cowboy Bebop",
+   "code": "PCBB",
+   "released": "2024-08-02",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Modern Horizons 3 Promos",
+   "code": "PMH3",
+   "released": "2024-06-14",
+   "expected": 92,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Modern Horizons 2 Timeshifts",
+   "code": "H2R",
+   "released": "2024-06-14",
+   "expected": 16,
+   "ours": 0,
+   "note": "no TCGplayer group (draft_innovation)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Outlaws of Thunder Junction Promos",
+   "code": "POTJ",
+   "released": "2024-04-19",
+   "expected": 160,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Black Lotus Unknown Planechase",
+   "code": "OUNK",
+   "released": "2024-02-24",
+   "expected": 52,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MKM Standard Showdown",
+   "code": "PSS4",
+   "released": "2024-02-10",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Murders at Karlov Manor Promos",
+   "code": "PMKM",
+   "released": "2024-02-09",
+   "expected": 180,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Dragon 2024",
+   "code": "PL24",
+   "released": "2024-02-08",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2024",
+   "code": "PW24",
+   "released": "2024-01-01",
+   "expected": 18,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2024",
+   "code": "PF24",
+   "released": "2024-01-01",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "The Lost Caverns of Ixalan Promos",
+   "code": "PLCI",
+   "released": "2023-11-17",
+   "expected": 136,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "March of the Machine: The Aftermath Promos",
+   "code": "PMAT",
+   "released": "2023-11-17",
+   "expected": 8,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wilds of Eldraine Promos",
+   "code": "PWOE",
+   "released": "2023-09-08",
+   "expected": 160,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Time Spiral Remastered Promos",
+   "code": "PTSR",
+   "released": "2023-09-08",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic × Duel Masters Promos",
+   "code": "PMDA",
+   "released": "2023-09-08",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "30th Anniversary Celebration Tokyo",
+   "code": "P30T",
+   "released": "2023-09-01",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2022 Heroes of the Realm",
+   "code": "PH22",
+   "released": "2023-08-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2023",
+   "code": "PF23",
+   "released": "2023-07-01",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Tales of Middle-earth Promos",
+   "code": "PLTR",
+   "released": "2023-06-23",
+   "expected": 86,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "March of the Machine Commander",
+   "code": "MOC",
+   "released": "2023-04-21",
+   "expected": 450,
+   "ours": 394,
+   "note": "TCGplayer lists 394"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "March of the Machine Promos",
+   "code": "PMOM",
+   "released": "2023-04-21",
+   "expected": 134,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Unknown Event",
+   "code": "UNK",
+   "released": "2023-02-15",
+   "expected": 557,
+   "ours": 433,
+   "note": "TCGplayer lists 433"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Rabbit 2023",
+   "code": "PL23",
+   "released": "2023-02-10",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Phyrexia: All Will Be One Promos",
+   "code": "PONE",
+   "released": "2023-02-10",
+   "expected": 160,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Regional Championship Qualifiers 2023",
+   "code": "PR23",
+   "released": "2023-01-07",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2023",
+   "code": "PW23",
+   "released": "2023-01-01",
+   "expected": 11,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Judge Gift Cards 2023",
+   "code": "P23",
+   "released": "2023-01-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Eternal Weekend",
+   "code": "PEWK",
+   "released": "2022-11-26",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "The Brothers' War Promos",
+   "code": "PBRO",
+   "released": "2022-11-18",
+   "expected": 171,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "The List (Unfinity Foil Edition)",
+   "code": "ULST",
+   "released": "2022-10-07",
+   "expected": 62,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Unfinity Sticker Sheets",
+   "code": "SUNF",
+   "released": "2022-10-07",
+   "expected": 48,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Regional Championship Qualifiers 2022",
+   "code": "PRCQ",
+   "released": "2022-10-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "30th Anniversary History Promos",
+   "code": "P30H",
+   "released": "2022-09-09",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Dominaria United Promos",
+   "code": "PDMU",
+   "released": "2022-09-09",
+   "expected": 161,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "30th Anniversary Misc Promos",
+   "code": "P30M",
+   "released": "2022-09-02",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2021 Heroes of the Realm",
+   "code": "PH21",
+   "released": "2022-08-01",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Summer Vacation Promos 2022",
+   "code": "PSVC",
+   "released": "2022-08-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Store Championships",
+   "code": "SCH",
+   "released": "2022-07-09",
+   "expected": 56,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Love Your LGS 2022",
+   "code": "PLG22",
+   "released": "2022-07-01",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Battle for Baldur's Gate Promos",
+   "code": "PCLB",
+   "released": "2022-06-10",
+   "expected": 104,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Streets of New Capenna Southeast Asia Tokens",
+   "code": "PTSNC",
+   "released": "2022-04-30",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "New Capenna Commander Promos",
+   "code": "PNCC",
+   "released": "2022-04-29",
+   "expected": 75,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Streets of New Capenna Promos",
+   "code": "PSNC",
+   "released": "2022-04-29",
+   "expected": 161,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Game Day Promos",
+   "code": "GDY",
+   "released": "2022-04-08",
+   "expected": 9,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Challenger Decks 2022",
+   "code": "Q07",
+   "released": "2022-04-01",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (box)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2022",
+   "code": "PW22",
+   "released": "2022-03-05",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Tiger 2022",
+   "code": "PL22",
+   "released": "2022-02-25",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Kamigawa: Neon Dynasty Promos",
+   "code": "PNEO",
+   "released": "2022-02-18",
+   "expected": 148,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Judge Gift Cards 2022",
+   "code": "P22",
+   "released": "2022-01-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Innistrad: Crimson Vow Promos",
+   "code": "PVOW",
+   "released": "2021-11-19",
+   "expected": 121,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Pioneer Challenger Decks 2021",
+   "code": "Q06",
+   "released": "2021-10-15",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (box)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Innistrad: Midnight Hunt Promos",
+   "code": "PMID",
+   "released": "2021-09-24",
+   "expected": 155,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2020 Heroes of the Realm",
+   "code": "PH20",
+   "released": "2021-08-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Adventures in the Forgotten Realms Promos",
+   "code": "PAFR",
+   "released": "2021-07-23",
+   "expected": 241,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Love Your LGS 2021",
+   "code": "PLG21",
+   "released": "2021-06-22",
+   "expected": 11,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Modern Horizons 2 Promos",
+   "code": "PMH2",
+   "released": "2021-06-18",
+   "expected": 86,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2021",
+   "code": "PW21",
+   "released": "2021-06-18",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Strixhaven: School of Mages Promos",
+   "code": "PSTX",
+   "released": "2021-04-23",
+   "expected": 164,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Kaldheim Promos",
+   "code": "PKHM",
+   "released": "2021-02-05",
+   "expected": 158,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Ox 2021",
+   "code": "PL21",
+   "released": "2021-01-25",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Judge Gift Cards 2021",
+   "code": "PJ21",
+   "released": "2021-01-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Commander Legends Promos",
+   "code": "PCMR",
+   "released": "2020-11-20",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Zendikar Rising Promos",
+   "code": "PZNR",
+   "released": "2020-09-25",
+   "expected": 153,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2019 Heroes of the Realm",
+   "code": "PH19",
+   "released": "2020-08-01",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Core Set 2021 Promos",
+   "code": "PM21",
+   "released": "2020-07-03",
+   "expected": 137,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Love Your LGS 2020",
+   "code": "PLG20",
+   "released": "2020-05-18",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Ikoria: Lair of Behemoths Promos",
+   "code": "PIKO",
+   "released": "2020-04-24",
+   "expected": 137,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Theros Beyond Death Promos",
+   "code": "PTHB",
+   "released": "2020-01-24",
+   "expected": 137,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Judge Gift Cards 2020",
+   "code": "J20",
+   "released": "2020-01-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2020",
+   "code": "PF20",
+   "released": "2020-01-01",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Throne of Eldraine Promos",
+   "code": "PELD",
+   "released": "2019-10-04",
+   "expected": 138,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Planeswalker Championship Promos",
+   "code": "PWCS",
+   "released": "2019-10-01",
+   "expected": 46,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2018 Heroes of the Realm",
+   "code": "PH18",
+   "released": "2019-08-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "San Diego Comic-Con 2019",
+   "code": "PS19",
+   "released": "2019-07-18",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "M20 Promo Packs",
+   "code": "PPP1",
+   "released": "2019-07-12",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Modern Horizons Promos",
+   "code": "PMH1",
+   "released": "2019-06-14",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "War of the Spark Promos",
+   "code": "PWAR",
+   "released": "2019-05-03",
+   "expected": 176,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Judge Gift Cards 2019",
+   "code": "J19",
+   "released": "2019-04-10",
+   "expected": 8,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "RNA Ravnica Weekend",
+   "code": "PRW2",
+   "released": "2019-02-16",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Ravnica Allegiance Promos",
+   "code": "PRNA",
+   "released": "2019-01-25",
+   "expected": 81,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2019",
+   "code": "PF19",
+   "released": "2019-01-01",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "M19 Gift Pack",
+   "code": "G18",
+   "released": "2018-11-16",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (box)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "GRN Ravnica Weekend",
+   "code": "PRWK",
+   "released": "2018-11-09",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Guilds of Ravnica Promos",
+   "code": "PGRN",
+   "released": "2018-10-05",
+   "expected": 84,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Mythic Edition",
+   "code": "MED",
+   "released": "2018-10-05",
+   "expected": 24,
+   "ours": 8,
+   "note": "TCGplayer lists 8"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2017 Heroes of the Realm",
+   "code": "PH17",
+   "released": "2018-08-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "San Diego Comic-Con 2018",
+   "code": "PS18",
+   "released": "2018-07-19",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Core Set 2019 Promos",
+   "code": "PM19",
+   "released": "2018-07-13",
+   "expected": 95,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "M19 Standard Showdown",
+   "code": "PSS3",
+   "released": "2018-07-13",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Battlebond Promos",
+   "code": "PBBD",
+   "released": "2018-06-08",
+   "expected": 22,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Dominaria Promos",
+   "code": "PDOM",
+   "released": "2018-04-27",
+   "expected": 118,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Lunar New Year 2018",
+   "code": "PLNY",
+   "released": "2018-02-16",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Nationals Promos",
+   "code": "PNAT",
+   "released": "2018-01-25",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Rivals of Ixalan Promos",
+   "code": "PRIX",
+   "released": "2018-01-19",
+   "expected": 98,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2018",
+   "code": "F18",
+   "released": "2017-12-27",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Unstable Promos",
+   "code": "PUST",
+   "released": "2017-12-08",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "XLN Treasure Chest",
+   "code": "PXTC",
+   "released": "2017-11-24",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2017 Gift Pack",
+   "code": "G17",
+   "released": "2017-10-20",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (box)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Ixalan Promos",
+   "code": "PXLN",
+   "released": "2017-09-29",
+   "expected": 120,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "XLN Standard Showdown",
+   "code": "PSS2",
+   "released": "2017-09-29",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "HasCon 2017",
+   "code": "H17",
+   "released": "2017-09-20",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2016 Heroes of the Realm",
+   "code": "PHTR",
+   "released": "2017-09-20",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "San Diego Comic-Con 2017",
+   "code": "PS17",
+   "released": "2017-07-20",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Hour of Devastation Promos",
+   "code": "PHOU",
+   "released": "2017-07-14",
+   "expected": 62,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Archenemy: Nicol Bolas Schemes",
+   "code": "OE01",
+   "released": "2017-06-16",
+   "expected": 20,
+   "ours": 0,
+   "note": "no TCGplayer group (archenemy)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Amonkhet Promos",
+   "code": "PAKH",
+   "released": "2017-04-28",
+   "expected": 77,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Aether Revolt Promos",
+   "code": "PAER",
+   "released": "2017-01-20",
+   "expected": 65,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2017",
+   "code": "F17",
+   "released": "2017-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Planechase Anthology Planes",
+   "code": "OPCA",
+   "released": "2016-11-25",
+   "expected": 86,
+   "ours": 0,
+   "note": "no TCGplayer group (planechase)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "San Diego Comic-Con 2016",
+   "code": "PS16",
+   "released": "2016-10-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Kaladesh Promos",
+   "code": "PKLD",
+   "released": "2016-09-30",
+   "expected": 83,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Eldritch Moon Promos",
+   "code": "PEMN",
+   "released": "2016-07-22",
+   "expected": 77,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Shadows over Innistrad Promos",
+   "code": "PSOI",
+   "released": "2016-04-08",
+   "expected": 90,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Oath of the Gatewatch Promos",
+   "code": "POGW",
+   "released": "2016-01-22",
+   "expected": 65,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2016",
+   "code": "F16",
+   "released": "2016-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Battle for Zendikar Promos",
+   "code": "PBFZ",
+   "released": "2015-10-02",
+   "expected": 90,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "BFZ Standard Series",
+   "code": "PSS1",
+   "released": "2015-10-02",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Origins Clash Pack",
+   "code": "CP3",
+   "released": "2015-07-17",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (starter)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Origins Promos",
+   "code": "PORI",
+   "released": "2015-07-17",
+   "expected": 54,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "San Diego Comic-Con 2015",
+   "code": "PS15",
+   "released": "2015-07-09",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Dragons of Tarkir Promos",
+   "code": "PDTK",
+   "released": "2015-03-27",
+   "expected": 51,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Fate Reforged Promos",
+   "code": "PFRF",
+   "released": "2015-01-23",
+   "expected": 43,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Fate Reforged Clash Pack",
+   "code": "CP2",
+   "released": "2015-01-23",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (starter)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2015",
+   "code": "F15",
+   "released": "2015-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duel Decks Anthology: Garruk vs. Liliana",
+   "code": "GVL",
+   "released": "2014-12-05",
+   "expected": 63,
+   "ours": 0,
+   "note": "no TCGplayer group (duel_deck)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duel Decks Anthology: Jace vs. Chandra",
+   "code": "JVC",
+   "released": "2014-12-05",
+   "expected": 62,
+   "ours": 0,
+   "note": "no TCGplayer group (duel_deck)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duel Decks Anthology: Divine vs. Demonic",
+   "code": "DVD",
+   "released": "2014-12-05",
+   "expected": 62,
+   "ours": 0,
+   "note": "no TCGplayer group (duel_deck)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Khans of Tarkir Promos",
+   "code": "PKTK",
+   "released": "2014-09-26",
+   "expected": 56,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic 2015 Clash Pack",
+   "code": "CP1",
+   "released": "2014-07-18",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (starter)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic 2015 Promos",
+   "code": "PM15",
+   "released": "2014-07-17",
+   "expected": 14,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duels of the Planeswalkers 2015 Promos",
+   "code": "PDP15",
+   "released": "2014-07-09",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "San Diego Comic-Con 2014",
+   "code": "PS14",
+   "released": "2014-07-08",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Conspiracy Promos",
+   "code": "PCNS",
+   "released": "2014-06-06",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Journey into Nyx Promos",
+   "code": "PJOU",
+   "released": "2014-04-26",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Born of the Gods Promos",
+   "code": "PBNG",
+   "released": "2014-02-01",
+   "expected": 9,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2014",
+   "code": "F14",
+   "released": "2014-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Theros Promos",
+   "code": "PTHS",
+   "released": "2013-09-21",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic 2014 Promos",
+   "code": "PM14",
+   "released": "2013-07-18",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "San Diego Comic-Con 2013",
+   "code": "PSDC",
+   "released": "2013-07-18",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Dragon's Maze Promos",
+   "code": "PDGM",
+   "released": "2013-04-27",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "World Magic Cup Qualifiers",
+   "code": "WMC",
+   "released": "2013-04-06",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Gatecrash Promos",
+   "code": "PGTC",
+   "released": "2013-01-26",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duels of the Planeswalkers 2014 Promos",
+   "code": "PDP14",
+   "released": "2013-01-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2013",
+   "code": "F13",
+   "released": "2013-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Return to Ravnica Promos",
+   "code": "PRTR",
+   "released": "2012-10-05",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic 2013 Promos",
+   "code": "PM13",
+   "released": "2012-07-12",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Planechase 2012 Planes",
+   "code": "OPC2",
+   "released": "2012-06-01",
+   "expected": 40,
+   "ours": 0,
+   "note": "no TCGplayer group (planechase)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Avacyn Restored Promos",
+   "code": "PAVR",
+   "released": "2012-04-28",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Dark Ascension Promos",
+   "code": "PDKA",
+   "released": "2012-01-28",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2012",
+   "code": "PW12",
+   "released": "2012-01-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duels of the Planeswalkers 2013 Promos",
+   "code": "PDP13",
+   "released": "2012-01-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "IDW Comics Inserts",
+   "code": "PIDW",
+   "released": "2012-01-01",
+   "expected": 17,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2012",
+   "code": "F12",
+   "released": "2012-01-01",
+   "expected": 13,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Innistrad Promos",
+   "code": "PISD",
+   "released": "2011-09-24",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic 2012 Promos",
+   "code": "PM12",
+   "released": "2011-07-14",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "New Phyrexia Promos",
+   "code": "PNPH",
+   "released": "2011-05-12",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Mirrodin Besieged Promos",
+   "code": "PMBS",
+   "released": "2011-02-03",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Premiere Shop 2011",
+   "code": "PMPS11",
+   "released": "2011-01-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2011",
+   "code": "PW11",
+   "released": "2011-01-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duels of the Planeswalkers 2012 Promos",
+   "code": "PDP12",
+   "released": "2011-01-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2011",
+   "code": "P11",
+   "released": "2011-01-01",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2011",
+   "code": "F11",
+   "released": "2011-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Scars of Mirrodin Promos",
+   "code": "PSOM",
+   "released": "2010-09-30",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic 2011 Promos",
+   "code": "PM11",
+   "released": "2010-07-15",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Archenemy Schemes",
+   "code": "OARC",
+   "released": "2010-06-18",
+   "expected": 45,
+   "ours": 0,
+   "note": "no TCGplayer group (archenemy)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Rise of the Eldrazi Promos",
+   "code": "PROE",
+   "released": "2010-04-23",
+   "expected": 4,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Worldwake Promos",
+   "code": "PWWK",
+   "released": "2010-02-05",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duels of the Planeswalkers 2010 Promos",
+   "code": "PDP10",
+   "released": "2010-01-01",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Premiere Shop 2010",
+   "code": "PMPS10",
+   "released": "2010-01-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2010",
+   "code": "P10",
+   "released": "2010-01-01",
+   "expected": 13,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2010",
+   "code": "F10",
+   "released": "2010-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Zendikar Promos",
+   "code": "PZEN",
+   "released": "2009-10-02",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Planechase Planes",
+   "code": "OHOP",
+   "released": "2009-09-04",
+   "expected": 40,
+   "ours": 0,
+   "note": "no TCGplayer group (planechase)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Planechase Promos",
+   "code": "PHOP",
+   "released": "2009-09-04",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic 2010 Promos",
+   "code": "PM10",
+   "released": "2009-07-16",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Alara Reborn Promos",
+   "code": "PARB",
+   "released": "2009-04-30",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "URL/Convention Promos",
+   "code": "PURL",
+   "released": "2009-02-08",
+   "expected": 18,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Conflux Promos",
+   "code": "PCON",
+   "released": "2009-02-06",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Duels of the Planeswalkers 2009 Promos",
+   "code": "PDTP",
+   "released": "2009-01-01",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Premiere Shop 2009",
+   "code": "PMPS09",
+   "released": "2009-01-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2009",
+   "code": "F09",
+   "released": "2009-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2009",
+   "code": "P09",
+   "released": "2009-01-01",
+   "expected": 13,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Shards of Alara Promos",
+   "code": "PALA",
+   "released": "2008-10-03",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Eventide Promos",
+   "code": "PEVE",
+   "released": "2008-07-25",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Shadowmoor Promos",
+   "code": "PSHM",
+   "released": "2008-05-02",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "15th Anniversary Cards",
+   "code": "P15A",
+   "released": "2008-04-01",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Morningtide Promos",
+   "code": "PMOR",
+   "released": "2008-02-01",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Premiere Shop 2008",
+   "code": "PMPS08",
+   "released": "2008-01-01",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2008",
+   "code": "P08",
+   "released": "2008-01-01",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2008",
+   "code": "F08",
+   "released": "2008-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Lorwyn Promos",
+   "code": "PLRW",
+   "released": "2007-10-12",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Tenth Edition",
+   "code": "10E",
+   "released": "2007-07-13",
+   "expected": 510,
+   "ours": 383,
+   "note": "TCGplayer lists 383"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Tenth Edition Promos",
+   "code": "P10E",
+   "released": "2007-07-13",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Future Sight Promos",
+   "code": "PFUT",
+   "released": "2007-05-04",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Planar Chaos Promos",
+   "code": "PPLC",
+   "released": "2007-02-02",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Premiere Shop 2007",
+   "code": "PMPS07",
+   "released": "2007-01-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2007",
+   "code": "P07",
+   "released": "2007-01-01",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2007",
+   "code": "F07",
+   "released": "2007-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Happy Holidays",
+   "code": "HHO",
+   "released": "2006-12-31",
+   "expected": 23,
+   "ours": 0,
+   "note": "no TCGplayer group (funny)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Time Spiral Promos",
+   "code": "PTSP",
+   "released": "2006-10-06",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Coldsnap Promos",
+   "code": "PCSP",
+   "released": "2006-07-21",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Dissension Promos",
+   "code": "PDIS",
+   "released": "2006-05-05",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Guildpact Promos",
+   "code": "PGPT",
+   "released": "2006-02-03",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Premiere Shop 2006",
+   "code": "PMPS06",
+   "released": "2006-01-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 2006",
+   "code": "PAL06",
+   "released": "2006-01-01",
+   "expected": 9,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Junior APAC Series",
+   "code": "PJAS",
+   "released": "2006-01-01",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Hachette UK",
+   "code": "PHUK",
+   "released": "2006-01-01",
+   "expected": 60,
+   "ours": 0,
+   "note": "no TCGplayer group (box)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2006",
+   "code": "F06",
+   "released": "2006-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "DCI Promos",
+   "code": "DCI",
+   "released": "2006-01-01",
+   "expected": 80,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2006",
+   "code": "P06",
+   "released": "2006-01-01",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Two-Headed Giant Tournament",
+   "code": "P2HG",
+   "released": "2005-12-09",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Ravnica: City of Guilds Promos",
+   "code": "PRAV",
+   "released": "2005-10-07",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Ninth Edition Promos",
+   "code": "P9ED",
+   "released": "2005-07-29",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Ninth Edition",
+   "code": "9ED",
+   "released": "2005-07-29",
+   "expected": 710,
+   "ours": 359,
+   "note": "TCGplayer lists 359"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Saviors of Kamigawa Promos",
+   "code": "PSOK",
+   "released": "2005-06-03",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Betrayers of Kamigawa Promos",
+   "code": "PBOK",
+   "released": "2005-02-04",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 2005",
+   "code": "PAL05",
+   "released": "2005-01-01",
+   "expected": 8,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Junior Series Europe",
+   "code": "PJSE",
+   "released": "2005-01-01",
+   "expected": 8,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2005",
+   "code": "F05",
+   "released": "2005-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2005",
+   "code": "P05",
+   "released": "2005-01-01",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Unhinged Promos",
+   "code": "PUNH",
+   "released": "2004-11-19",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Champions of Kamigawa Promos",
+   "code": "PCHK",
+   "released": "2004-10-01",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Mirrodin Promos",
+   "code": "PMRD",
+   "released": "2004-06-04",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Fifth Dawn Promos",
+   "code": "P5DN",
+   "released": "2004-06-04",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Darksteel Promos",
+   "code": "PDST",
+   "released": "2004-02-06",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 2004",
+   "code": "PAL04",
+   "released": "2004-01-01",
+   "expected": 14,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2004",
+   "code": "F04",
+   "released": "2004-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2004",
+   "code": "P04",
+   "released": "2004-01-01",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Eighth Edition Promos",
+   "code": "P8ED",
+   "released": "2003-07-28",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Eighth Edition",
+   "code": "8ED",
+   "released": "2003-07-28",
+   "expected": 711,
+   "ours": 357,
+   "note": "TCGplayer lists 357"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Scourge Promos",
+   "code": "PSCG",
+   "released": "2003-05-26",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Legions Promos",
+   "code": "PLGN",
+   "released": "2003-02-03",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Japan Junior Tournament",
+   "code": "PJJT",
+   "released": "2003-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 2003",
+   "code": "PAL03",
+   "released": "2003-01-01",
+   "expected": 8,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2003",
+   "code": "P03",
+   "released": "2003-01-01",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2003",
+   "code": "F03",
+   "released": "2003-01-01",
+   "expected": 13,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Onslaught Promos",
+   "code": "PONS",
+   "released": "2002-09-28",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Hobby Japan Promos",
+   "code": "JP1",
+   "released": "2002-07-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Judgment Promos",
+   "code": "PJUD",
+   "released": "2002-05-27",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Torment Promos",
+   "code": "PTOR",
+   "released": "2002-02-04",
+   "expected": 3,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 2002",
+   "code": "PAL02",
+   "released": "2002-01-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2002",
+   "code": "F02",
+   "released": "2002-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2002",
+   "code": "PR2",
+   "released": "2002-01-01",
+   "expected": 6,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Odyssey Promos",
+   "code": "PODY",
+   "released": "2001-10-01",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Apocalypse Promos",
+   "code": "PAPC",
+   "released": "2001-06-04",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Seventh Edition",
+   "code": "7ED",
+   "released": "2001-04-11",
+   "expected": 708,
+   "ours": 350,
+   "note": "TCGplayer lists 350"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Planeshift Promos",
+   "code": "PPLS",
+   "released": "2001-02-05",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 2001",
+   "code": "PAL01",
+   "released": "2001-01-01",
+   "expected": 12,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2001",
+   "code": "MPR",
+   "released": "2001-01-01",
+   "expected": 8,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2001",
+   "code": "F01",
+   "released": "2001-01-01",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Invasion Promos",
+   "code": "PINV",
+   "released": "2000-10-02",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Prophecy Promos",
+   "code": "PPCY",
+   "released": "2000-06-05",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Nemesis Promos",
+   "code": "PNEM",
+   "released": "2000-02-14",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 2000",
+   "code": "PAL00",
+   "released": "2000-01-01",
+   "expected": 11,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Mercadian Masques Promos",
+   "code": "PMMQ",
+   "released": "1999-10-04",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards of the Coast Online Store",
+   "code": "PWOS",
+   "released": "1999-09-04",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "World Championship Promos",
+   "code": "PWOR",
+   "released": "1999-08-04",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Urza's Destiny Promos",
+   "code": "PUDS",
+   "released": "1999-06-07",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Portal Three Kingdoms Promos",
+   "code": "PPTK",
+   "released": "1999-05-01",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Urza's Legacy Promos",
+   "code": "PULG",
+   "released": "1999-02-15",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 1999",
+   "code": "PAL99",
+   "released": "1999-01-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Urza's Saga Promos",
+   "code": "PUSG",
+   "released": "1998-10-12",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Exodus Promos",
+   "code": "PEXO",
+   "released": "1998-06-15",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Stronghold Promos",
+   "code": "PSTH",
+   "released": "1998-03-02",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Tempest Promos",
+   "code": "PTMP",
+   "released": "1997-10-14",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Multiverse Gift Box",
+   "code": "MGB",
+   "released": "1996-11-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "no TCGplayer group (box)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Redemption Program",
+   "code": "PRED",
+   "released": "1996-10-01",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 1996",
+   "code": "PARL",
+   "released": "1996-08-02",
+   "expected": 7,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Rivals Quick Start Set",
+   "code": "RQS",
+   "released": "1996-07-01",
+   "expected": 65,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "DCI Legend Membership",
+   "code": "PLGM",
+   "released": "1996-07-01",
+   "expected": 2,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Rinascimento",
+   "code": "RIN",
+   "released": "1995-08-01",
+   "expected": 69,
+   "ours": 0,
+   "note": "no TCGplayer group (masters)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Chronicles Foreign Black Border",
+   "code": "BCHR",
+   "released": "1995-07-01",
+   "expected": 125,
+   "ours": 0,
+   "note": "no TCGplayer group (masters)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "HarperPrism Book Promos",
+   "code": "PHPR",
+   "released": "1994-09-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Dragon Con",
+   "code": "PDRC",
+   "released": "1994-07-15",
+   "expected": 1,
+   "ours": 0,
+   "note": "no TCGplayer group (promo)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "2-Player Starter Deck: Yuya & Declan",
+   "code": "YS15",
+   "released": "2015-05-28",
+   "expected": 42,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "2-Player Starter Set",
+   "code": "STAS",
+   "released": "2024-01-26",
+   "expected": 88,
+   "ours": 44,
+   "note": "TCGplayer lists 44"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Dark Beginning 2",
+   "code": "DB",
+   "released": "2005-07-27",
+   "expected": 264,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Dark Legion Starter Deck",
+   "code": "YS15",
+   "released": "2015-05-29",
+   "expected": 29,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Duelist Pack Collection Tin 2010",
+   "code": "DPCT",
+   "released": "2010-03-05",
+   "expected": 10,
+   "ours": 6,
+   "note": "TCGplayer lists 6"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Duelist Pack: Special Edition",
+   "code": "DPK",
+   "released": "2006-03-09",
+   "expected": 3,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Glorious Victors",
+   "code": "GLVI",
+   "released": "2026-12-03",
+   "expected": 3,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Labyrinth of Nightmare",
+   "code": "LON",
+   "released": "2003-03-01",
+   "expected": 315,
+   "ours": 210,
+   "note": "TCGplayer lists 210"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legendary 5D&apos;s Decks",
+   "code": "L5DD",
+   "released": "2025-11-06",
+   "expected": 111,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legendary Arc-V Decks",
+   "code": "LAVD",
+   "released": "2026-08-06",
+   "expected": 115,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legendary Collection 4: Joey's World",
+   "code": "LC04",
+   "released": "2013-10-11",
+   "expected": 6,
+   "ours": 3,
+   "note": "TCGplayer lists 3"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legendary Decks II",
+   "code": "LDK2",
+   "released": "2016-10-06",
+   "expected": 130,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legendary Dragon Decks",
+   "code": "LEDD",
+   "released": "2017-10-05",
+   "expected": 111,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legendary Hero Decks",
+   "code": "LEHD",
+   "released": "2018-10-04",
+   "expected": 117,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legendary Modern Decks 2026",
+   "code": "L26D",
+   "released": "2026-04-23",
+   "expected": 111,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Magic Ruler",
+   "code": "MRL",
+   "released": "2002-09-16",
+   "expected": 235,
+   "ours": 131,
+   "note": "TCGplayer lists 131"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 10 (POR)",
+   "code": "OP10",
+   "released": "2019-04-18",
+   "expected": 35,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 11 (POR)",
+   "code": "OP11",
+   "released": "2019-08-15",
+   "expected": 30,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 12 (POR)",
+   "code": "OP12",
+   "released": "2019-12-05",
+   "expected": 35,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 13 (POR)",
+   "code": "OP13",
+   "released": "2020-06-15",
+   "expected": 34,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 14 (POR)",
+   "code": "OP14",
+   "released": "2020-10-08",
+   "expected": 35,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 15 (POR)",
+   "code": "OP15",
+   "released": "2021-02-18",
+   "expected": 36,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 16 (POR)",
+   "code": "OP16",
+   "released": "2021-06-09",
+   "expected": 36,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 17 (POR)",
+   "code": "OP17",
+   "released": "2021-10-14",
+   "expected": 35,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 18 (POR)",
+   "code": "OP18",
+   "released": "2022-02-17",
+   "expected": 35,
+   "ours": 24,
+   "note": "TCGplayer lists 24"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 19 (POR)",
+   "code": "OP19",
+   "released": "2022-06-15",
+   "expected": 39,
+   "ours": 27,
+   "note": "TCGplayer lists 27"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 7 (POR)",
+   "code": "OP07",
+   "released": "2018-04-13",
+   "expected": 34,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 8 (POR)",
+   "code": "OP08",
+   "released": "2018-08-17",
+   "expected": 36,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 9 (POR)",
+   "code": "OP09",
+   "released": "2018-12-06",
+   "expected": 36,
+   "ours": 25,
+   "note": "TCGplayer lists 25"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Saber Force Starter Deck",
+   "code": "YS15",
+   "released": "2015-05-29",
+   "expected": 28,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "San Diego Comic-Con promotional cards",
+   "code": "TKN1",
+   "released": "2006-07-20",
+   "expected": 4,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel GX: Duel Academy Box",
+   "code": "SGX1",
+   "released": "2022-03-17",
+   "expected": 218,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel GX: Duelists of Shadows",
+   "code": "SGX3",
+   "released": "2023-03-30",
+   "expected": 221,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel GX: Midterm Paradox",
+   "code": "SGX2",
+   "released": "2022-10-06",
+   "expected": 110,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel Starter Decks: Destiny Masters",
+   "code": "SS01",
+   "released": "2019-01-24",
+   "expected": 64,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel Starter Decks: Duelists of Tomorrow",
+   "code": "SS02",
+   "released": "2019-01-24",
+   "expected": 69,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel Starter Decks: Match of the Millennium",
+   "code": "SS04",
+   "released": "2020-05-15",
+   "expected": 67,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel Starter Decks: Twisted Nightmares",
+   "code": "SS05",
+   "released": "2020-05-15",
+   "expected": 66,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel Starter Decks: Ultimate Predators",
+   "code": "SS03",
+   "released": "2019-08-01",
+   "expected": 63,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel Tournament Pack 4",
+   "code": "STP4",
+   "released": "2022-09-29",
+   "expected": 35,
+   "ours": 29,
+   "note": "TCGplayer lists 29"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel Tournament Pack 6",
+   "code": "STP6",
+   "released": "2023-09-06",
+   "expected": 35,
+   "ours": 30,
+   "note": "TCGplayer lists 30"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Speed Duel: Streets of Battle City",
+   "code": "SBC1",
+   "released": "2023-08-24",
+   "expected": 193,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Starter Deck: Kaiba",
+   "code": "SDK",
+   "released": "2002-03-29",
+   "expected": 96,
+   "ours": 50,
+   "note": "TCGplayer lists 50"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Starter Deck: Yugi",
+   "code": "SDY",
+   "released": "2002-03-29",
+   "expected": 95,
+   "ours": 51,
+   "note": "TCGplayer lists 51"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Tournament Pack: 1st Season",
+   "code": "TP1",
+   "released": "2002-09-01",
+   "expected": 60,
+   "ours": 30,
+   "note": "TCGplayer lists 30"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "War of the Giants Reinforcements",
+   "code": "WGRT",
+   "released": "2014-01-17",
+   "expected": 104,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! Championship Series 2025 prize cards",
+   "code": "25YC",
+   "released": "2025-07-27",
+   "expected": 13,
+   "ours": 2,
+   "note": "TCGplayer lists 2"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! GX Card Almanac promotional cards",
+   "code": "YDB1",
+   "released": "2007-11-30",
+   "expected": 3,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! Power of Chaos: Kaiba the Revenge promotional cards",
+   "code": "PCK",
+   "released": "2004-04-06",
+   "expected": 6,
+   "ours": 3,
+   "note": "TCGplayer lists 3"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards",
+   "code": "PCY",
+   "released": "2003-11-18",
+   "expected": 10,
+   "ours": 5,
+   "note": "TCGplayer lists 5"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! The Duelists of the Roses promotional cards",
+   "code": "DOR",
+   "released": "2003-02-16",
+   "expected": 6,
+   "ours": 3,
+   "note": "TCGplayer lists 3"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! World Championship Qualifier National Championships 2011 prize cards",
+   "code": "WQ11",
+   "released": "2011-05-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yugi's Legendary Decks",
+   "code": "YGLD",
+   "released": "2015-11-12",
+   "expected": 126,
+   "ours": 0,
+   "note": "TCGplayer lists 0"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Zexal Collection Tin",
+   "code": "ZTIN",
+   "released": "2013-03-07",
+   "expected": 24,
+   "ours": 21,
+   "note": "TCGplayer lists 21"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Starter Deck 17: BLUE Donquixote Doflamingo",
+   "code": "P-030_R1",
+   "released": null,
+   "expected": 1,
+   "ours": 0,
+   "note": "numbers we lack: P-030_R1"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "ST-25: Starter Deck 25 BLUE Buggy",
+   "code": "ST25",
+   "released": null,
+   "expected": 8,
+   "ours": 5,
+   "note": "fewer printings than listed"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Starter Deck 16: GREEN Uta",
+   "code": "P-029_R1",
+   "released": null,
+   "expected": 1,
+   "ours": 0,
+   "note": "numbers we lack: P-029_R1"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Starter Deck 16: GREEN Uta",
+   "code": "P-061_R1",
+   "released": null,
+   "expected": 1,
+   "ours": 0,
+   "note": "numbers we lack: P-061_R1"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Starter Deck 16: GREEN Uta",
+   "code": "P-059_P1",
+   "released": null,
+   "expected": 1,
+   "ours": 0,
+   "note": "numbers we lack: P-059_P1"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Starter Deck 16: GREEN Uta",
+   "code": "P-057_P1",
+   "released": null,
+   "expected": 1,
+   "ours": 0,
+   "note": "numbers we lack: P-057_P1"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Starter Deck 16: GREEN Uta",
+   "code": "P-060_P1",
+   "released": null,
+   "expected": 1,
+   "ours": 0,
+   "note": "numbers we lack: P-060_P1"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Starter Deck 16: GREEN Uta",
+   "code": "P-058_P1",
+   "released": null,
+   "expected": 1,
+   "ours": 0,
+   "note": "numbers we lack: P-058_P1"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Starter Deck 18: PURPLE Monkey.D.Luffy",
+   "code": "P-041_R1",
+   "released": null,
+   "expected": 1,
+   "ours": 0,
+   "note": "numbers we lack: P-041_R1"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "D23 Collection",
+   "code": "D23",
+   "released": "2024-08-09",
+   "expected": 16,
+   "ours": 6,
+   "note": "0 with a TCGplayer id we lack; 10 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "Promo Set 2",
+   "code": "P2",
+   "released": "2024-08-09",
+   "expected": 39,
+   "ours": 34,
+   "note": "0 with a TCGplayer id we lack; 5 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "Promo Set 3",
+   "code": "P3",
+   "released": "2025-08-18",
+   "expected": 56,
+   "ours": 32,
+   "note": "0 with a TCGplayer id we lack; 24 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "Lorcana Challenge Year 3",
+   "code": "C2",
+   "released": "2026-01-16",
+   "expected": 14,
+   "ours": 8,
+   "note": "0 with a TCGplayer id we lack; 6 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "Curator's Collection: Heroines Edition",
+   "code": "CC1",
+   "released": "2026-07-17",
+   "expected": 6,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 6 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "Promo Set 4",
+   "code": "P4",
+   "released": "2026-07-17",
+   "expected": 10,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 10 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "Format Coconut",
+   "code": "Coconut",
+   "released": "2026-07-28",
+   "expected": 24,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 24 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "PD1",
+   "code": "PD1",
+   "released": "2026-07-28",
+   "expected": 15,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 15 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "Hunny Rescue – Illumineer's Quest",
+   "code": "Q3",
+   "released": "2026-10-02",
+   "expected": 37,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 37 with no TCGplayer id"
+  },
+  {
+   "source": "Lorcast",
+   "game": "lorcana",
+   "set": "RPH",
+   "code": "RPH",
+   "released": "2026-10-16",
+   "expected": 7,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 7 with no TCGplayer id"
+  }
+ ],
+ "skippedGroups": [
+  {
+   "game": "magic",
+   "group": "Art Series: Star Trek",
+   "cards": 104
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Reality Fracture",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Hobbit",
+   "cards": 120
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Marvel Super Heroes",
+   "cards": 111
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Secrets of Strixhaven",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Teenage Mutant Ninja Turtles",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Lorwyn Eclipsed",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Avatar: The Last Airbender",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Marvel's Spider-Man",
+   "cards": 109
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Edge of Eternities",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: FINAL FANTASY",
+   "cards": 130
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Tarkir: Dragonstorm",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Aetherdrift",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad Remastered",
+   "cards": 50
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Foundations",
+   "cards": 109
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Duskmourn: House of Horror",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Bloomburrow",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Universes Beyond: Assassin's Creed",
+   "cards": 40
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons 3",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Outlaws of Thunder Junction",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Murders at Karlov Manor",
+   "cards": 98
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Lost Caverns of Ixalan",
+   "cards": 158
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Wilds of Eldraine",
+   "cards": 160
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Commander Masters",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Universes Beyond: The Lord of the Rings: Tales of Middle-earth",
+   "cards": 184
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: March of the Machine",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Phyrexia: All Will Be One",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Brothers' War",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Dominaria United",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Commander Legends: Battle for Baldur's Gate",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Streets of New Capenna",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Kamigawa: Neon Dynasty",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad: Crimson Vow",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad: Midnight Hunt",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Adventures in the Forgotten Realms",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons 2",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Strixhaven",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Kaldheim",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Zendikar Rising",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons",
+   "cards": 54
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional EX Base Tokens",
+   "cards": 30
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional EX Resource Tokens",
+   "cards": 15
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional Resource Tokens",
+   "cards": 65
+  }
+ ],
+ "errors": [
+  "OPTCG API https://optcgapi.com/api/allPromoCards/: https://optcgapi.com/api/allPromoCards/: HTTP 404"
+ ]
+}
