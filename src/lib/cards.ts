@@ -413,3 +413,103 @@ export function movers(cards: readonly (CardLite & { pts: readonly Point[] })[],
   const down = rows.filter((r) => r.pct < 0).sort((a, b) => a.pct - b.pct || b.was - a.was).slice(0, limit).map(strip);
   return { up, down };
 }
+
+// ─── Card details ─────────────────────────────────────────────────────────────
+// TCGplayer's own fields for each card (extendedData: type, HP, attacks, text, artist…), kept in data/details/<game>/<set>.json
+// as { id: [[label, value], …] }. Like history they are not bundled into the functions (next.config.js): pages fetch the file.
+
+export type DetailsFile = Record<string, [string, string][]>;
+/** Fields the page already shows, or that say nothing to a collector. */
+const DETAIL_SKIP = /^(?:number|rarity|upc|sku|productid|tcgplayer.*|description|flavor ?text)$/i;
+export const DETAIL_MAX_FIELDS = 14;
+export const DETAIL_MAX_CHARS = 600;
+
+/** One field value as plain text: TCGplayer's HTML (<br>, <strong>, entities) folded to text, capped. */
+export function plainDetail(v: string): string {
+  const t = v
+    .replace(/<br\s*\/?>/gi, " · ")
+    .replace(/<\/(?:p|div|li)>/gi, " · ")
+    .replace(/<[^>]*>/g, "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;|&apos;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
+    .replace(/\s+/g, " ")
+    .replace(/(?:\s*·\s*)+/g, " · ")
+    .replace(/^\s*·\s*|\s*·\s*$/g, "")
+    .trim();
+  return t.length <= DETAIL_MAX_CHARS ? t : t.slice(0, DETAIL_MAX_CHARS - 1).replace(/\s+\S*$/, "") + "…";
+}
+/** "CardText" → "Card text", "RetreatCost" → "Retreat cost", "Attack 1" stays. */
+export function detailLabel(k: string): string {
+  const s = k.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/_/g, " ").replace(/\s+/g, " ").trim();
+  return (s.charAt(0).toUpperCase() + s.slice(1).toLowerCase()).replace(/\bhp\b/i, "HP").replace(/\b(atk|def|dp|bp)\b/gi, (w) => w.toUpperCase());
+}
+/** The details of the cards among one group's products (ids from `cards`): only fields with text, at most DETAIL_MAX_FIELDS. */
+export function detailsOfGroup(products: readonly TcgcsvProduct[], ids: ReadonlySet<number>): DetailsFile {
+  const out: DetailsFile = {};
+  for (const p of products) {
+    if (!ids.has(p.productId) || !p.extendedData?.length) continue;
+    const rows: [string, string][] = [];
+    for (const e of p.extendedData) {
+      if (!e?.name || DETAIL_SKIP.test(e.name.replace(/\s+/g, ""))) continue;
+      const v = plainDetail(String(e.value ?? ""));
+      if (!v || rows.some(([k]) => k === detailLabel(e.name))) continue;
+      rows.push([detailLabel(e.name), v]);
+      if (rows.length >= DETAIL_MAX_FIELDS) break;
+    }
+    if (rows.length) out[String(p.productId)] = rows;
+  }
+  return out;
+}
+
+// ─── Card insights ────────────────────────────────────────────────────────────
+
+export interface CardStats {
+  /** Highest and lowest value since tracking began, with their days. */
+  high: { v: number; d: number } | null;
+  low: { v: number; d: number } | null;
+  since: number | null;
+  /** Change over 7 and 30 days, in percent, when the history reaches that far back. */
+  ch7: number | null;
+  ch30: number | null;
+}
+export function cardStats(pts: readonly Point[], now: number | null, today: number): CardStats {
+  if (!pts.length) return { high: null, low: null, since: null, ch7: null, ch30: null };
+  const all: Point[] = [...pts];
+  if (now != null && pts[pts.length - 1][0] < today) all.push([today, now]);
+  let high = all[0];
+  let low = all[0];
+  for (const p of all) {
+    if (p[1] > high[1]) high = p;
+    if (p[1] < low[1]) low = p;
+  }
+  const cur = now ?? all[all.length - 1][1];
+  const ch = (days: number) => {
+    if (all[0][0] > today - days) return null;
+    const then = valueAt(all, today - days);
+    return then ? Math.round(((cur - then) / then) * 1000) / 10 : null;
+  };
+  return { high: { v: high[1], d: high[0] }, low: { v: low[1], d: low[0] }, since: all[0][0], ch7: ch(7), ch30: ch(30) };
+}
+
+/** Where a card sits in its set by value: rank (1 = most valuable), of how many priced cards, and its share of the set's total. */
+export function setRank(cards: readonly CardRow[], id: number): { rank: number; of: number; share: number; total: number } | null {
+  const priced = cards.map((c) => ({ id: c.id, v: cardValue(c.p) ?? 0 })).filter((x) => x.v > 0).sort((a, b) => b.v - a.v || a.id - b.id);
+  const i = priced.findIndex((x) => x.id === id);
+  if (i < 0) return null;
+  const total = priced.reduce((s, x) => s + x.v, 0);
+  return { rank: i + 1, of: priced.length, share: Math.round((priced[i].v / total) * 1000) / 10, total };
+}
+
+/** The same card in other sets: the exact name (case and spacing aside), most valuable first. */
+export function reprintsOf(rows: readonly SearchRow[], name: string, id: number, limit = 12): SearchRow[] {
+  const key = name.toLowerCase().replace(/\s+/g, " ").trim();
+  return rows
+    .filter((r) => r[6] !== id && r[2].toLowerCase().replace(/\s+/g, " ").trim() === key)
+    .sort((a, b) => b[4] - a[4] || a[6] - b[6])
+    .slice(0, limit);
+}

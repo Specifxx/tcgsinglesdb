@@ -168,3 +168,15 @@ asked for hats and lights by name, so they come back after the 2026-11-08 tone-d
 - Off switch: `CHRISTMAS_FESTIVE_LAYER` in the new `lib/season.ts`. This site has no boot script, so the layout sets
   `data-season` and `data-festive` from the UTC date (1 Nov to 26 Dec); with pages held a day by the CDN it ends by
   28 December at the latest. The hat sits on the "T" of the word logo, sized in em. Remove after New Year: delete the block and the two classes.
+
+## 2026-11-20: Card pages v2: details, tracked highs and lows, rank in set, reprints, insights
+
+Owner's brief (20 Nov): card pages should hold as much as a collector wants to know. The import now keeps TCGplayer's own
+fields for each card (`extendedData` minus number and rarity: type, HP, attacks, text, artist…), as plain text, capped at 14
+fields of 600 characters, in `data/details/<game>/<set>.json` (`detailsOfGroup`, `lib/cards.ts`). Like history it is NOT bundled
+(next.config.js excludes it; `tests/cost-rules.test.ts`): the card page fetches the set's file from this public repo's raw copy at
+the deployed commit (`rawFile` in `lib/store.ts`), so data/ stays well under the function limit. A failed group read keeps
+yesterday's file. The page adds "at a glance" (tracked high and low once the price has moved, 7- and 30-day change once the
+history reaches that far, rank in set and share of the set's value), plain-English insights (`lib/insights.ts`: each one a
+number the page already shows; never a forecast or advice to buy or sell), a card details table and other printings of the same
+name (exact name, from search.json). Highs and lows are "since we began reading the card": history is never backfilled.

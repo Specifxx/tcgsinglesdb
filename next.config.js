@@ -18,7 +18,7 @@ module.exports = {
   // import's own state are NOT bundled (history grows daily; lib/store.ts reads it from the repository's raw file).
   experimental: {
     outputFileTracingIncludes: { "/**": ["./data/meta.json", "./data/cards/**/*.json", "./data/offers/**/*.json", "./data/stores/meta.json", "./data/buylist/**/*.json"] },
-    outputFileTracingExcludes: { "/**": ["./data/history/**", "./data/state/**", "./data/stores/state/**"] },
+    outputFileTracingExcludes: { "/**": ["./data/history/**", "./data/details/**", "./data/state/**", "./data/stores/state/**"] },
   },
   async headers() {
     return [

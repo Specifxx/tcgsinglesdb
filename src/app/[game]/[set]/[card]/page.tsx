@@ -5,10 +5,11 @@ import { CardTiles } from "@/components/CardTiles";
 import { PriceHistory } from "@/components/PriceHistory";
 import { historyLines } from "@/lib/history-chart";
 import { AFFILIATE_NOTE, GRADED_TEST_GAMES, REL_SPONSORED, ebayCardSearchUrl, storeProductUrl, tcgplayerOutUrl } from "@/lib/affiliate";
-import { cardIndexable, cardTitle, cardValue, dayIndex, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
+import { cardIndexable, cardStats, cardTitle, cardValue, dayIndex, dayOfIndex, reprintsOf, setRank, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
+import { cardInsights } from "@/lib/insights";
 import { cardImage, cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
-import { readBuylist, readBuylistMeta, readHistory, readOffers, readStoreHistory, readSet, readSets, readStoreNames, setBySlug, shownGame, shownGames } from "@/lib/store";
+import { readBuylist, readBuylistMeta, readDetails, readHistory, readSearch, readOffers, readStoreHistory, readSet, readSets, readStoreNames, setBySlug, shownGame, shownGames } from "@/lib/store";
 import { SITE, type Game } from "@/site.config";
 import { BUYERS, payShare } from "@/lib/buylist";
 
@@ -51,7 +52,7 @@ export default async function CardPage({ params }: { params: { game: string; set
   const day = generatedAt.slice(0, 10);
   const value = cardValue(c.p);
   const rows = printings(c);
-  const [pts, lows] = await Promise.all([readHistory(g.slug, set.slug, c.id), readStoreHistory(g.slug, set.slug, c.id)]);
+  const [pts, lows, details] = await Promise.all([readHistory(g.slug, set.slug, c.id), readStoreHistory(g.slug, set.slug, c.id), readDetails(g.slug, set.slug, c.id)]);
   const through = day ? dayIndex(day) : 0;
   const chart = day ? historyLines(pts, lows, 1, through) != null : false;
   const ebay = ebayCardSearchUrl(`${g.short} ${c.n} ${set.name}${c.no ? ` ${c.no}` : ""}`, "card-ebay");
@@ -70,6 +71,41 @@ export default async function CardPage({ params }: { params: { game: string; set
     .filter((o) => o.id !== c.id && (cardValue(o.p) ?? 0) > 0)
     .sort((a, b) => (cardValue(b.p) ?? 0) - (cardValue(a.p) ?? 0) || a.id - b.id)
     .slice(0, 12);
+  // Card facts and insights: our own history since we began reading the card, its place in its set, and the same name elsewhere.
+  const stats = cardStats(pts, value, through);
+  const rank = setRank(cards, c.id);
+  const setNames = new Map(readSets(g.slug).sets.map((x) => [x.slug, x.name]));
+  const reprints = reprintsOf(readSearch(g.slug), c.n, c.id).filter((r) => r[0] !== set.slug || r[3] !== c.no);
+  const rpv = reprints.map((r) => r[4]).filter((v) => v > 0);
+  const insights = cardInsights({
+    name: c.n,
+    setName: set.name,
+    value,
+    printings: rows,
+    stats,
+    rank,
+    reprints: { count: reprints.length, cheapest: rpv.length ? Math.min(...rpv) : null, dearest: rpv.length ? Math.max(...rpv) : null },
+    storeLow: storeRows.length ? Math.min(...storeRows.map((r) => r[2])) : null,
+    buyTop: buyRows.length ? ((b) => ({ name: BUYERS[b[0]].name, cents: b[2] }))(buyRows.reduce((a, b) => (b[2] > a[2] ? b : a))) : null,
+  });
+  const change = (n: number | null) => (n == null ? "–" : `${n > 0 ? "+" : ""}${Math.abs(n) < 10 ? n.toFixed(1) : Math.round(n)}%`);
+  const moved = !!(stats.high && stats.low && stats.high.v !== stats.low.v);
+  const facts: [string, string, string?][] = [
+    ...(moved && stats.high ? [["Tracked high", usd(stats.high.v), shortDate(dayOfIndex(stats.high.d))] as [string, string, string]] : []),
+    ...(moved && stats.low ? [["Tracked low", usd(stats.low.v), shortDate(dayOfIndex(stats.low.d))] as [string, string, string]] : []),
+    ...(stats.ch7 != null ? [["7 days", change(stats.ch7)] as [string, string]] : []),
+    ...(stats.ch30 != null ? [["30 days", change(stats.ch30)] as [string, string]] : []),
+    ...(rank ? [["Rank in set", `#${rank.rank}`, `of ${rank.of} priced`] as [string, string, string], ["Share of set value", `${rank.share}%`, `set total ${usd(rank.total)}`] as [string, string, string]] : []),
+  ];
+  const detailRows: [string, string][] = [
+    ["Game", g.name],
+    ["Set", `${set.name}${set.abbr ? ` (${set.abbr})` : ""}`],
+    ...(c.no ? [["Number", c.no] as [string, string]] : []),
+    ...(c.r ? [["Rarity", c.r] as [string, string]] : []),
+    ...(set.released ? [["Set released", shortDate(set.released)] as [string, string]] : []),
+    ...(rows.length ? [["Printings", rows.map(([k]) => k).join(", ")] as [string, string]] : []),
+    ...details,
+  ];
   const crumbs = [{ label: SITE.name, href: "/" }, { label: g.name, href: `/${g.slug}` }, { label: set.name, href: `/${g.slug}/${set.slug}` }, { label: c.n }];
   const url = `${SITE.url}${cardPath(g.slug, set.slug, c.s)}`;
   // What an answer engine can quote: the card, the figure, the source and the date. No Offer: we do not sell the card.
@@ -209,6 +245,33 @@ export default async function CardPage({ params }: { params: { game: string; set
             </section>
           )}
 
+          {(insights.length > 0 || facts.length > 0) && (
+            <section>
+              <h2>{c.n} at a glance</h2>
+              {facts.length > 0 && (
+                <dl className="facts">
+                  {facts.map(([k, v, sub]) => (
+                    <div key={k}>
+                      <dt>{k}</dt>
+                      <dd>
+                        <b className={k.endsWith("days") ? (v.startsWith("+") ? "up" : v.startsWith("-") ? "down" : "") : ""}>{v}</b>
+                        {sub ? <span className="small">{sub}</span> : null}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
+              {insights.length > 0 && (
+                <ul className="insights">
+                  {insights.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+              )}
+              {stats.since != null && <p className="small">Highs, lows and changes are TCGplayer&apos;s market price as we have read it each day since {shortDate(dayOfIndex(stats.since))}; we do not backfill older prices.</p>}
+            </section>
+          )}
+
           {chart && (
             <section>
               <h2>Price history</h2>
@@ -222,6 +285,40 @@ export default async function CardPage({ params }: { params: { game: string; set
             {c.r ? `, rarity ${c.r}` : ""}.{" "}
             {value != null ? `Its TCGplayer market price is ${usd(value)}${day ? ` as of ${shortDate(day)}` : ""}: what copies have recently sold for on TCGplayer, in US dollars.` : "It has no recent sales on TCGplayer."}
           </p>
+
+          <section>
+            <h2>Card details</h2>
+            <table className="list details">
+              <tbody>
+                {detailRows.map(([k, v]) => (
+                  <tr key={k}>
+                    <th scope="row">{k}</th>
+                    <td>{v}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            {details.length > 0 && <p className="small">Card details as TCGplayer lists them.</p>}
+          </section>
+
+          {reprints.length > 0 && (
+            <section>
+              <h2>Other printings of {c.n}</h2>
+              <table className="list">
+                <tbody>
+                  {reprints.map((r) => (
+                    <tr key={r[6]}>
+                      <th scope="row">
+                        <a href={cardPath(g.slug, r[0], r[1])}>{setNames.get(r[0]) ?? r[0]}</a>
+                        {r[3] ? <span className="small"> #{r[3]}</span> : null}
+                      </th>
+                      <td className="r">{r[4] > 0 ? <b>{usd(r[4])}</b> : <span className="small">no recent sales</span>}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </section>
+          )}
 
           {(prev || next) && (
             <nav aria-label="Next and previous card" className="pager">
