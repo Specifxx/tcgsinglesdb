@@ -118,27 +118,40 @@ function order(rows: ScanRow[], r: ScanReading): ScanRow[] {
 }
 
 function finish(rows: ScanRow[], r: ScanReading, why: string): ScanResult {
-  const ranked = order(rows, r);
-  const abbr = (r.setCode ?? "").toUpperCase().replace(/[^A-Z0-9]/g, "");
-  // A set code we could read and that only one candidate carries settles look-alikes from different sets (Pokémon reprints).
-  const inSet = abbr ? ranked.filter((x) => x.setAbbr?.toUpperCase() === abbr) : [];
-  const pool = inSet.length === 1 ? inSet : ranked;
-  if (pool.length === 1) return { kind: "match", ids: [pool[0].id], why: inSet.length === 1 && ranked.length > 1 ? `${why}; set code ${abbr}` : why };
-  return { kind: "pick", ids: ranked.slice(0, MAX_PICK).map((x) => x.id), why: `${why}; ${rows.length} printings look alike` };
+  // Only a card with no look-alike at all is THE match. Printings that share number and name (a pre-release or staff copy with
+  // the same art, a deck exclusive, a reprint) cannot be told apart from a photo even when the set code is read (eval run 1,
+  // 2026-11-20: 16% of One Piece and 1% of Pokémon scans returned the booster copy of a stamped promo as the match). They
+  // come back as a pick, the likeliest first.
+  if (rows.length === 1) return { kind: "match", ids: [rows[0].id], why };
+  return { kind: "pick", ids: order(rows, r).slice(0, MAX_PICK).map((x) => x.id), why: `${why}; ${rows.length} printings look alike` };
 }
 
-type Index = { byKey: Map<string, ScanRow[]>; byNumerator: Map<string, ScanRow[]> };
+function editDistance(a: string, b: string): number {
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    for (let j = 1; j <= b.length; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    prev = cur;
+  }
+  return prev[b.length];
+}
+
+type Index = { byKey: Map<string, ScanRow[]>; byNumerator: Map<string, ScanRow[]>; byDigits: Map<string, ScanRow[]> };
+/** The number's last digit run before any total: "SWSH110" -> "110", "3/53" -> "3", "OP1-120" -> "120". */
+const tailDigits = (k: string) => numerator(k).match(/(\d+)\D*$/)?.[1] ?? null;
 const indexes = new WeakMap<ScanRow[], Index>();
 function indexOf(catalog: ScanRow[]): Index {
   let ix = indexes.get(catalog);
   if (!ix) {
-    ix = { byKey: new Map(), byNumerator: new Map() };
+    ix = { byKey: new Map(), byNumerator: new Map(), byDigits: new Map() };
     for (const x of catalog) {
       const k = numberKey(x.no);
       if (!k) continue;
       (ix.byKey.get(k) ?? ix.byKey.set(k, []).get(k)!).push(x);
       const n = numerator(k);
       (ix.byNumerator.get(n) ?? ix.byNumerator.set(n, []).get(n)!).push(x);
+      const t = tailDigits(k);
+      if (t) (ix.byDigits.get(t) ?? ix.byDigits.set(t, []).get(t)!).push(x);
     }
     indexes.set(catalog, ix);
   }
@@ -153,23 +166,33 @@ export function matchScan(r: ScanReading, catalog: ScanRow[], opts: { foreignOk?
   const read = normName(r.name);
   const key = numberKey(r.collectorNumber);
 
+  let sameNumber: ScanRow[] = [];
   if (key) {
     const ix = indexOf(catalog);
-    let same = ix.byKey.get(key) ?? [];
-    if (!same.length && key.includes("/")) same = ix.byNumerator.get(numerator(key)) ?? [];
-    if (same.length) {
+    sameNumber = ix.byKey.get(key) ?? [];
+    if (!sameNumber.length && key.includes("/")) sameNumber = ix.byNumerator.get(numerator(key)) ?? [];
+    // Digits only ("110" off a "SWSH110" promo, "3" off "03/53"): the cards whose number ends in them; the name must agree.
+    if (/^\d+$/.test(key)) sameNumber = [...new Set([...sameNumber, ...(ix.byDigits.get(key) ?? [])])];
+    if (sameNumber.length) {
       // No legible name to confirm the number: never "match", the visitor checks the picture.
-      if (!read) return { kind: "pick", ids: order(same, r).slice(0, MAX_PICK).map((x) => x.id), why: "number only, the name was not legible" };
-      const agree = same.filter((x) => nameAgrees(read, x, 0.75));
+      if (!read) return { kind: "pick", ids: order(sameNumber, r).slice(0, MAX_PICK).map((x) => x.id), why: "number only, the name was not legible" };
+      const agree = sameNumber.filter((x) => nameAgrees(read, x, 0.75));
       if (agree.length) return finish(agree, r, "number and name agree");
     }
   }
   if (!read) return none("neither a name nor a number could be read");
-  // The number was missing, or pointed at another card: go by the name, and never call that certain.
   const byName = catalog.filter((x) => nameAgrees(read, x, 0.9));
+  // A number one character off (a 0 read as 8, ST08 for ST06) on a card of the name we read: offered first, never the match.
+  const near = key ? byName.filter((x) => { const k = numberKey(x.no); return !!k && editDistance(k, key) <= 1; }) : [];
+  // A number that exists under another name: the model misread the name, or made the number up (eval run 1: it wrote
+  // "LOB-EN001" on Yu-Gi-Oh! cards whose code it could not read). Near numbers first, then the name, then that number's cards.
+  if (near.length || (sameNumber.length && !byName.length)) {
+    const ids = [...order(near, r), ...order(byName, r), ...order(sameNumber, r)].map((x) => x.id);
+    return { kind: "pick", ids: [...new Set(ids)].slice(0, MAX_PICK), why: near.length ? "the number was one character off" : "the number and the name disagree" };
+  }
+  // The number was missing or matches nothing: go by the name, set code and value first, and never call that certain.
   if (!byName.length) return none("nothing in the catalogue matches what was read");
-  if (byName.length > MAX_PICK * 2) return none(`${byName.length} printings carry that name; the number decides`);
-  return { kind: "pick", ids: order(byName, r).slice(0, MAX_PICK).map((x) => x.id), why: "matched by name only" };
+  return { kind: "pick", ids: order(byName, r).slice(0, MAX_PICK).map((x) => x.id), why: `matched by name only (${byName.length} printings)` };
 }
 
 /**

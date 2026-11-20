@@ -39,6 +39,13 @@ test("Pokémon: Base Set Charizard offers Shadowless and the reprints; the set c
   const names = m.ids.map((id) => cat.find((c) => c.id === id)!.setName);
   assert.ok(names.includes("Base Set") && names.includes("Base Set (Shadowless)"), names.join(", "));
   assert.ok(!/jumbo/i.test(names[0]));
+  // A printing whose twin shares the art (the booster copy and its staff-stamped promo) is a pick even with the set code read.
+  const turo = matchScan(R({ name: "Professor Turo's Scenario", collectorNumber: "171/182", setCode: "PAR" }), cat);
+  assert.equal(turo.kind, "pick");
+  assert.equal(cat.find((c) => c.id === turo.ids[0])!.setAbbr, "PAR");
+  // A promo number read without its letters ("110" off SWSH110) still finds the card when the name agrees.
+  const crobat = matchScan(R({ name: "Crobat V", collectorNumber: "110" }), cat);
+  assert.ok(crobat.ids.some((id) => cat.find((c) => c.id === id)!.no === "SWSH110"));
   const drapion = matchScan(R({ name: "Drapion", collectorNumber: "4/102" }), cat);
   assert.equal(drapion.kind, "match");
   assert.equal(cat.find((c) => c.id === drapion.ids[0])!.n, "Drapion");
@@ -50,6 +57,10 @@ test("Yu-Gi-Oh!: LOB-001 and LOB-EN001 are the same English card, its reprints o
   const b = matchScan(R({ name: "Blue-Eyes White Dragon", collectorNumber: "LOB-001" }), cat);
   assert.deepEqual(a.ids, b.ids);
   assert.ok(a.ids.length >= 2);
+  // A made-up code under a real name (eval run 1: "LOB-EN056" on a Dark Legends Heavy Storm) falls back to the name.
+  const storm = matchScan(R({ name: "Heavy Storm", collectorNumber: "LOB-EN056" }), cat);
+  assert.equal(storm.kind, "pick");
+  assert.ok(storm.ids.every((id) => cat.find((c) => c.id === id)!.n.startsWith("Heavy Storm")));
   const kaiba = matchScan(R({ name: "Blue-Eyes White Dragon", collectorNumber: "SDK-001" }), cat);
   assert.equal(kaiba.kind, "match");
 });
@@ -58,7 +69,7 @@ test("refuses rather than guesses", () => {
   const cat = scanCatalog("pokemon");
   assert.equal(matchScan(R({ isTradingCard: false }), cat).kind, "none");
   assert.equal(matchScan(R({ name: "Charizard", collectorNumber: "4/102", language: "ja" }), cat).kind, "none");
-  assert.equal(matchScan(R({ name: "Pikachu" }), cat).kind, "none"); // hundreds of Pikachus: the number decides
+  assert.equal(matchScan(R({ name: "Pikachu" }), cat).kind, "pick"); // hundreds of Pikachus: offered, never the match
   // A number read without a legible name is only ever a "check the picture" pick.
   assert.equal(matchScan(R({ collectorNumber: "4/102" }), cat).kind, "pick");
   // The name disagrees with the number: name-only, never a match.
