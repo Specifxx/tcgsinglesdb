@@ -27,6 +27,21 @@ for (const g of LIVE_GAMES) {
   else ok.push(`${g.name}: ${m.cards} cards, ${m.indexed} released to Google, imported ${Math.round(hours)} h ago`);
 }
 
+// Card coverage (coverage.yml): the Monday audit is under nine days old, the daily release watch under two, and neither found
+// a card TCGplayer lists that this site or a sister site lacks (independent databases' gaps are shown, not alerted).
+for (const [file, maxH, label] of [["report.json", 9 * 24, "full audit"], ["release.json", 50, "release watch"]] as const) {
+  try {
+    const r = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "coverage", file), "utf8")) as { generatedAt: string; sites: { site: string; game: string; missing: number; stale: number }[]; external: unknown[] };
+    const hours = (Date.now() - Date.parse(r.generatedAt)) / 3_600_000;
+    const gaps = r.sites.filter((s) => s.stale > 0);
+    if (!(hours < maxH)) problems.push(`Card coverage ${label}: last run ${Math.round(hours)} h ago`);
+    else if (gaps.length) problems.push(`Card coverage ${label}: ${gaps.map((s) => `${s.site} ${s.game} ${s.stale}`).join(", ")} cards TCGplayer lists have no page (data/coverage/${file.replace(".json", ".md")})`);
+    else ok.push(`Card coverage ${label}: no card missing against TCGplayer, ${r.external.length} notes from card databases, ${Math.round(hours)} h ago`);
+  } catch {
+    ok.push(`Card coverage ${label}: no run yet`);
+  }
+}
+
 // Store prices (scripts/stores.ts crawl, in the daily import): read within two days, and some stores matched.
 const stores = (() => {
   try {

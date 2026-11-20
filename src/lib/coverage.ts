@@ -21,6 +21,8 @@ export interface SiteGaps {
   ourCards: number;
   /** Cards TCGplayer lists that the site lacks. */
   missing: number;
+  /** Of the missing, cards missing for two days or more (the import has had its chance): what turns the ops monitor red. */
+  stale: number;
   /** Of the missing, cards the site's own price floor leaves out on purpose (under the floor, set older than its fresh window). */
   byFloor: number;
   groups: GroupGap[];
@@ -46,11 +48,12 @@ export function groupGaps(
   tcg: ReadonlyMap<number, { name: string; released: string | null; ids: readonly number[] }>,
   have: ReadonlySet<number>,
   excused: ReadonlySet<number> = new Set(),
-): { groups: GroupGap[]; tcgCards: number; missing: number; byFloor: number } {
+): { groups: GroupGap[]; tcgCards: number; missing: number; byFloor: number; all: number[] } {
   const groups: GroupGap[] = [];
   let tcgCards = 0;
   let missing = 0;
   let byFloor = 0;
+  const all: number[] = [];
   for (const [groupId, g] of tcg) {
     tcgCards += g.ids.length;
     const lack = g.ids.filter((id) => !have.has(id));
@@ -58,10 +61,11 @@ export function groupGaps(
     byFloor += lack.length - real.length;
     if (!real.length) continue;
     missing += real.length;
+    all.push(...real);
     groups.push({ groupId, name: g.name, released: g.released, tcg: g.ids.length, ours: g.ids.length - lack.length, missing: real.slice(0, MAX_IDS) });
   }
   groups.sort((a, b) => b.tcg - b.ours - (a.tcg - a.ours) || a.groupId - b.groupId);
-  return { groups, tcgCards, missing, byFloor };
+  return { groups, tcgCards, missing, byFloor, all };
 }
 
 /** A set name as two sources can agree on it: lower case, accents, punctuation and a leading "SV08:"-style code removed. */
@@ -85,7 +89,7 @@ export function isShort(expected: number, ours: number): boolean {
 
 /** The prefix of a Yu-Gi-Oh!-style set code ("LOB-EN001" → "LOB", "SDK-001" → "SDK"); null when the number has none. */
 export function ygoPrefix(number: string): string | null {
-  const m = /^([A-Z0-9]{2,6})-[A-Z]{0,2}\d{2,4}[a-z]?$/i.exec(number.trim());
+  const m = /^([A-Z0-9]{2,6})-[A-Z]{0,3}\d{1,4}[a-z]?$/i.exec(number.trim());
   return m ? m[1].toUpperCase() : null;
 }
 
@@ -96,4 +100,20 @@ export function inReleaseWindow(publishedOn: string | null | undefined, now: Dat
   if (!Number.isFinite(t)) return false;
   const days = (t - now.getTime()) / 86_400_000;
   return days >= -back && days <= ahead;
+}
+
+/**
+ * Carry the day each missing card was first seen missing (key "site|id"). Cards of the groups read this run that are no longer
+ * missing leave; cards of groups not read keep their day. Returns how many of today's missing cards are two days old or more.
+ */
+export function ageMissing(state: Record<string, string>, site: string, read: readonly number[], missing: readonly number[], day: string): number {
+  const lack = new Set(missing);
+  for (const id of read) if (!lack.has(id)) delete state[`${site}|${id}`];
+  let stale = 0;
+  for (const id of missing) {
+    const k = `${site}|${id}`;
+    state[k] ??= day;
+    if (Date.parse(day) - Date.parse(state[k]) >= 2 * 86_400_000) stale++;
+  }
+  return stale;
 }

@@ -13,7 +13,7 @@ import path from "node:path";
 import zlib from "node:zlib";
 import { cardsOfGroup, skipGroup, type SetFile, type SetsFile, type TcgcsvGroup, type TcgcsvPrice, type TcgcsvProduct } from "../src/lib/cards";
 import { LIVE_GAMES, SITE, type Game } from "../src/site.config";
-import { groupGaps, inReleaseWindow, isShort, setKey, ygoPrefix, type ExternalGap, type SiteGaps } from "../src/lib/coverage";
+import { ageMissing, groupGaps, inReleaseWindow, isShort, setKey, ygoPrefix, type ExternalGap, type SiteGaps } from "../src/lib/coverage";
 
 const MODE = process.env.COVERAGE_MODE === "release" || process.env.COVERAGE_MODE === "full" ? process.env.COVERAGE_MODE : new Date().getUTCDay() === 1 ? "full" : "release";
 const DATA = process.env.DATA_DIR || path.join(process.cwd(), "data");
@@ -87,8 +87,9 @@ interface Sister {
   floorCents?: number;
 }
 const catalogIds = (repo: string) => () => {
-  const c = readJson<{ products: { id: number; kind: string }[] } | null>(path.join(SISTERS, repo, "data/public/catalog.json"), null);
-  return c ? new Set(c.products.filter((p) => p.kind === "card").map((p) => p.id)) : null;
+  // Every product with a page: the engine files numberless inserts and oversized cards as sealed product, still a page.
+  const c = readJson<{ products: { id: number }[] } | null>(path.join(SISTERS, repo, "data/public/catalog.json"), null);
+  return c ? new Set(c.products.map((p) => p.id)) : null;
 };
 const SISTER_OF: Record<string, Sister> = {
   "one-piece": {
@@ -126,7 +127,8 @@ interface TcgGroupCards {
 async function tcgCards(game: Game, withPrices: boolean): Promise<{ groups: Map<number, TcgGroupCards>; cheap: Set<number>; all: TcgcsvGroup[] }> {
   const all = (await tcgcsv<{ results: TcgcsvGroup[] }>(game.category, "groups")).results ?? [];
   const ours = new Set(readJson<SetsFile>(path.join(DATA, "cards", game.slug, "sets.json"), { sets: [] } as unknown as SetsFile).sets?.map((s) => s.groupId) ?? []);
-  const pick = MODE === "full" ? all : all.filter((g) => inReleaseWindow(g.publishedOn, now) || !ours.has(g.groupId));
+  // A promo or event group keeps its first date for years and gains cards every month: TCGplayer's modifiedOn catches it.
+  const pick = MODE === "full" ? all : all.filter((g) => inReleaseWindow(g.publishedOn, now) || inReleaseWindow(g.modifiedOn, now, 3, 1) || !ours.has(g.groupId));
   const groups = new Map<number, TcgGroupCards>();
   const cheap = new Set<number>();
   for (const g of pick) {
@@ -181,59 +183,121 @@ async function scryfall(groups: Map<number, TcgGroupCards>, ours: Ours): Promise
       out.push({ source: "Scryfall", game: "magic", set: s.name, code: s.code.toUpperCase(), released: s.released_at ?? null, expected: s.card_count, ours: have, note: tcgHas == null ? "TCGplayer group not read" : `TCGplayer lists ${tcgHas}` });
     }
   }
-  return out;
+  // A short set, or one TCGplayer files under another group (most promo sets): card by card, by Scryfall's TCGplayer id.
+  const tcgIds = new Set([...groups.values()].flatMap((g) => g.ids));
+  const checked: ExternalGap[] = [];
+  for (const gap of out) {
+    const cards: { name: string; collector_number: string; tcgplayer_id?: number; tcgplayer_etched_id?: number }[] = [];
+    let url: string | null = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(`e:${gap.code!.toLowerCase()}`)}&unique=prints&include_extras=true&include_variations=true`;
+    try {
+      while (url) {
+        await sleep(120);
+        const page: { data: typeof cards; has_more: boolean; next_page?: string } = await getJson(url);
+        cards.push(...page.data);
+        url = page.has_more && page.next_page ? page.next_page : null;
+      }
+    } catch (e) {
+      errors.push(`Scryfall ${gap.code}: ${(e as Error).message}`);
+      continue;
+    }
+    const ids = cards.flatMap((c) => [c.tcgplayer_id, c.tcgplayer_etched_id]).filter((x): x is number => !!x);
+    const lack = cards.filter((c) => [c.tcgplayer_id, c.tcgplayer_etched_id].some((id) => id && !ours.ids.has(id)));
+    const noId = cards.filter((c) => !c.tcgplayer_id && !c.tcgplayer_etched_id).length;
+    if (!lack.length && !noId) continue;
+    checked.push({
+      ...gap,
+      expected: cards.length,
+      ours: ids.filter((id) => ours.ids.has(id)).length,
+      note: `${lack.length} with a TCGplayer id we lack${lack.length ? ` (${lack.slice(0, 6).map((c) => `${c.collector_number} ${c.name}${[c.tcgplayer_id, c.tcgplayer_etched_id].some((id) => id && tcgIds.has(id)) ? "" : " [not in TCGplayer's catalogue]"}`).join("; ")})` : ""}; ${noId} not sold on TCGplayer`,
+    });
+  }
+  return checked;
 }
 
 async function ygoprodeck(ours: Ours, groups: Map<number, TcgGroupCards>): Promise<ExternalGap[]> {
-  const sets = await getJson<{ set_name: string; set_code: string; num_of_cards: number; tcg_date?: string }[]>("https://db.ygoprodeck.com/api/v7/cardsets.php");
-  const have = new Map<string, number>();
-  for (const [no, n] of ours.numbers) {
-    const p = ygoPrefix(no);
-    if (p) have.set(p, (have.get(p) ?? 0) + n);
-  }
-  const tcgHave = new Map<string, number>();
-  for (const g of groups.values()) for (const no of g.numbers) {
-    const p = ygoPrefix(no);
-    if (p) tcgHave.set(p, (tcgHave.get(p) ?? 0) + 1);
-  }
+  // Every printing's code (LOB-EN001) from the full card list: distinct codes per set, so a card printed in two rarities is one.
+  const cards = (await getJson<{ data: { name: string; card_sets?: { set_name: string; set_code: string }[] }[] }>("https://db.ygoprodeck.com/api/v7/cardinfo.php")).data;
+  const sets = await getJson<{ set_name: string; set_code: string; tcg_date?: string }[]>("https://db.ygoprodeck.com/api/v7/cardsets.php");
+  const date = new Map(sets.map((x) => [x.set_name, x.tcg_date ?? null]));
+  const codes = new Map<string, { prefix: string; codes: Map<string, string> }>();
+  for (const c of cards)
+    for (const p of c.card_sets ?? []) {
+      const code = p.set_code.trim().toUpperCase();
+      const prefix = ygoPrefix(code);
+      if (!prefix) continue;
+      const e = codes.get(p.set_name) ?? { prefix, codes: new Map() };
+      e.codes.set(code, c.name);
+      codes.set(p.set_name, e);
+    }
+  const tcgNumbers = new Set([...groups.values()].flatMap((g) => g.numbers));
   const out: ExternalGap[] = [];
-  for (const s of sets) {
-    if (!s.set_code || !(s.num_of_cards > 0)) continue;
-    if (s.tcg_date && Date.parse(s.tcg_date) > now.getTime() + 45 * 86_400_000) continue;
-    const code = s.set_code.toUpperCase();
-    const n = have.get(code) ?? 0;
-    if (isShort(s.num_of_cards, n)) out.push({ source: "YGOPRODeck", game: "yugioh", set: s.set_name, code, released: s.tcg_date ?? null, expected: s.num_of_cards, ours: n, note: `TCGplayer lists ${tcgHave.get(code) ?? 0}` });
+  for (const [name, e] of codes) {
+    const d = date.get(name);
+    if (d && Date.parse(d) > now.getTime() + 45 * 86_400_000) continue;
+    const lack = [...e.codes].filter(([code]) => !ours.numbers.has(code));
+    if (!lack.length || !isShort(e.codes.size, e.codes.size - lack.length)) continue;
+    const onTcg = lack.filter(([code]) => tcgNumbers.has(code)).length;
+    out.push({ source: "YGOPRODeck", game: "yugioh", set: name, code: e.prefix, released: d ?? null, expected: e.codes.size, ours: e.codes.size - lack.length, note: `${lack.length} codes we lack, ${onTcg} of them on TCGplayer (${lack.slice(0, 6).map(([code, n]) => `${code} ${n}`).join("; ")})` });
   }
   return out;
 }
 
+/** Pokémon set names as both lists can agree: TCGplayer's "SV08: ", "SM - ", "EX " and "Base Set" go, promos are "promos". */
+function pokeKey(name: string): string {
+  return setKey(
+    name
+      .replace(/^(?:SWSH|SV|SM|XY|ME)[0-9.]*\s*[:-]\s*/i, "")
+      .replace(/^(?:EX|HS|HGSS)\s*[—–-]?\s+(?=\S)/i, "")
+      .replace(/^(?:McDonald's Collection)/i, "McDonald's Promos")
+      .replace(/\b(?:Black Star Promos|Promo Cards|Promos|Promo)\b/i, "promos")
+      .replace(/\bBase Set\b/i, ""),
+  )
+    .replace(/^wizards promos$/, "wotc promos")
+    .replace(/^expedition$/, "expedition")
+    .replace(/^bw promos$/, "black and white promos")
+    .replace(/^dp promos$/, "diamond and pearl promos")
+    .replace(/^swsh promos$/, "sword and shield promos")
+    .replace(/^scarlet and violet promos$/, "scarlet and violet promos")
+    .trim();
+}
+const POKE_SUBSET = /trainer gallery|galarian gallery|shiny vault|radiant collection|classic collection/i;
 async function pokemontcg(groups: Map<number, TcgGroupCards>, ours: Ours): Promise<ExternalGap[]> {
   const sets = (await getJson<{ data: { id: string; name: string; series: string; total: number; printedTotal: number; releaseDate?: string; ptcgoCode?: string }[] }>("https://api.pokemontcg.io/v2/sets?pageSize=250")).data;
   const byKey = new Map<string, number[]>();
+  const byAbbr = new Map<string, number[]>();
   for (const [id, g] of groups) {
-    const k = setKey(g.name);
+    if (POKE_SUBSET.test(g.name)) continue;
+    const k = pokeKey(g.name);
     byKey.set(k, [...(byKey.get(k) ?? []), id]);
+    if (g.abbr && !/^pr$/i.test(g.abbr)) byAbbr.set(g.abbr.toUpperCase(), [...(byAbbr.get(g.abbr.toUpperCase()) ?? []), id]);
   }
   const out: ExternalGap[] = [];
   for (const s of sets) {
-    const ids = byKey.get(setKey(s.name)) ?? [];
+    const abbr = s.ptcgoCode ? byAbbr.get(s.ptcgoCode.toUpperCase()) : undefined;
+    const main = (abbr?.length === 1 ? abbr : null) ?? byKey.get(pokeKey(s.name)) ?? [];
+    // TCGplayer files a set's gallery or vault as its own group; pokemontcg.io counts it in the set.
+    const ids = [...main, ...main.flatMap((m) => [...groups].filter(([, g]) => POKE_SUBSET.test(g.name) && g.name.startsWith(groups.get(m)!.name.replace(/\s*Base Set$/, ""))).map(([id]) => id))];
     const n = ids.reduce((sum, id) => sum + (ours.byGroup.get(id)?.size ?? 0), 0);
     const tcgN = ids.reduce((sum, id) => sum + (groups.get(id)?.ids.length ?? 0), 0);
     const released = s.releaseDate ? s.releaseDate.replace(/\//g, "-") : null;
-    if (!ids.length) out.push({ source: "pokemontcg.io", game: "pokemon", set: s.name, code: s.ptcgoCode ?? s.id, released, expected: s.total, ours: 0, note: `no TCGplayer group of the same name (${s.series})` });
-    else if (isShort(s.total, n)) out.push({ source: "pokemontcg.io", game: "pokemon", set: s.name, code: s.ptcgoCode ?? s.id, released, expected: s.total, ours: n, note: `TCGplayer lists ${tcgN}` });
+    if (!ids.length) out.push({ source: "pokemontcg.io", game: "pokemon", set: s.name, code: s.ptcgoCode ?? s.id, released, expected: s.total, ours: 0, note: `no TCGplayer group matched by code or name (${s.series})` });
+    else if (isShort(s.total, n)) out.push({ source: "pokemontcg.io", game: "pokemon", set: s.name, code: s.ptcgoCode ?? s.id, released, expected: s.total, ours: n, note: `TCGplayer lists ${tcgN} in ${ids.map((id) => groups.get(id)!.name).join(" + ")}` });
   }
   return out;
 }
 
-async function lorcast(ours: Ours, groups: Map<number, TcgGroupCards>): Promise<{ gaps: ExternalGap[]; notOnTcgplayer: number }> {
+const lorName = (c: { name: string; version?: string | null }) => setKey(`${c.name}${c.version ? ` ${c.version}` : ""}`);
+async function lorcast(ours: Ours, groups: Map<number, TcgGroupCards>, game: Game): Promise<{ gaps: ExternalGap[]; notOnTcgplayer: number }> {
+  const names = new Set<string>();
+  const dir = path.join(DATA, "cards", game.slug, "sets");
+  for (const f of fs.existsSync(dir) ? fs.readdirSync(dir) : []) for (const c of readJson<SetFile>(path.join(dir, f), { slug: "", cards: [] }).cards) names.add(setKey(c.n.replace(/\s*\([^)]*\)/g, "")));
   const sets = (await getJson<{ results: { id: string; code: string; name: string; released_at?: string }[] }>("https://api.lorcast.com/v0/sets")).results;
   const tcgIds = new Set([...groups.values()].flatMap((g) => g.ids));
   const out: ExternalGap[] = [];
   let notOnTcgplayer = 0;
   for (const s of sets) {
     await sleep(120);
-    let cards: { tcgplayer_id?: number | null; name: string; collector_number: string }[];
+    let cards: { tcgplayer_id?: number | null; name: string; version?: string | null; collector_number: string }[];
     try {
       cards = await getJson(`https://api.lorcast.com/v0/sets/${encodeURIComponent(s.id)}/cards`);
     } catch (e) {
@@ -242,8 +306,10 @@ async function lorcast(ours: Ours, groups: Map<number, TcgGroupCards>): Promise<
     }
     const withId = cards.filter((c) => c.tcgplayer_id);
     const lack = withId.filter((c) => !ours.ids.has(c.tcgplayer_id!));
-    notOnTcgplayer += cards.length - withId.length;
-    if (lack.length || cards.length - withId.length >= 3)
+    // Lorcast gives no TCGplayer id for many promos: look for the card by name ("Name - Version") among our Lorcana cards.
+    const noId = cards.filter((c) => !c.tcgplayer_id && !names.has(lorName(c)));
+    notOnTcgplayer += noId.length;
+    if (lack.length || noId.length)
       out.push({
         source: "Lorcast",
         game: "lorcana",
@@ -252,14 +318,14 @@ async function lorcast(ours: Ours, groups: Map<number, TcgGroupCards>): Promise<
         released: s.released_at ?? null,
         expected: cards.length,
         ours: withId.length - lack.length,
-        note: `${lack.length} with a TCGplayer id we lack${lack.length ? ` (${lack.slice(0, 8).map((c) => `${c.collector_number} ${c.name}${tcgIds.has(c.tcgplayer_id!) ? "" : " [not in TCGCSV]"}`).join("; ")})` : ""}; ${cards.length - withId.length} with no TCGplayer id`,
+        note: `${lack.length} with a TCGplayer id we lack${lack.length ? ` (${lack.slice(0, 8).map((c) => `${c.collector_number} ${c.name}${tcgIds.has(c.tcgplayer_id!) ? "" : " [not in TCGplayer's catalogue]"}`).join("; ")})` : ""}; ${noId.length} with no TCGplayer id and no card of that name here${noId.length ? ` (${noId.slice(0, 8).map(lorName).join("; ")})` : ""}`,
       });
   }
   return { gaps: out, notOnTcgplayer };
 }
 
 async function optcg(ours: Ours): Promise<ExternalGap[]> {
-  const urls = ["allSetCards", "allSTCards", "allPromoCards"].map((u) => `https://optcgapi.com/api/${u}/`);
+  const urls = ["allSetCards", "allSTCards", "allPromos", "allPromoCards"].map((u) => `https://optcgapi.com/api/${u}/`);
   const cards: { card_set_id?: string; card_image_id?: string; set_name?: string; set_id?: string }[] = [];
   for (const u of urls) {
     try {
@@ -274,7 +340,7 @@ async function optcg(ours: Ours): Promise<ExternalGap[]> {
   // Per set: card numbers (and printings: one image id each) the source lists vs the printings we have of those numbers.
   const bySet = new Map<string, { name: string; numbers: Map<string, number> }>();
   for (const c of cards) {
-    const no = (c.card_set_id ?? "").trim().toUpperCase();
+    const no = (c.card_set_id ?? "").trim().toUpperCase().replace(/_[A-Z]*\d*$/, "");
     if (!no) continue;
     const key = no.replace(/-\d+$/, "") || "?";
     const s = bySet.get(key) ?? { name: c.set_name ?? key, numbers: new Map() };
@@ -307,6 +373,9 @@ async function main(): Promise<void> {
   const external: ExternalGap[] = [];
   const skippedGroups: { game: string; group: string; cards: number }[] = [];
   const counts: Record<string, { tcg: number; ours: number; sister?: { site: string; cards: number } }> = {};
+  const statePath = path.join(DATA, "coverage", "state.json");
+  const state = readJson<Record<string, string>>(statePath, {});
+  const day = now.toISOString().slice(0, 10);
 
   for (const game of games) {
     const sister = SISTER_OF[game.slug];
@@ -321,14 +390,16 @@ async function main(): Promise<void> {
     for (const g of tcg.groups.values()) if (g.skipped && g.ids.length) skippedGroups.push({ game: game.slug, group: g.name, cards: g.ids.length });
     const ours = ourCards(game);
     const mine = groupGaps(kept, ours.ids);
-    sites.push({ site: SITE.name, game: game.slug, tcgCards: mine.tcgCards, ourCards: ours.ids.size, missing: mine.missing, byFloor: 0, groups: mine.groups });
+    const read = [...kept.values()].flatMap((g) => g.ids);
+    const mineStale = ageMissing(state, SITE.name, read, mine.all, day);
+    sites.push({ site: SITE.name, game: game.slug, tcgCards: mine.tcgCards, ourCards: ours.ids.size, missing: mine.missing, stale: mineStale, byFloor: 0, groups: mine.groups });
     counts[game.slug] = { tcg: mine.tcgCards, ours: ours.ids.size };
     if (sister) {
       const ids = sister.ids();
       if (!ids) errors.push(`${sister.site}: data not checked out`);
       else {
         const s = groupGaps(kept, ids, sister.floorCents ? floorExcused(kept, tcg.cheap) : new Set());
-        sites.push({ site: sister.site, game: game.slug, tcgCards: s.tcgCards, ourCards: ids.size, missing: s.missing, byFloor: s.byFloor, groups: s.groups });
+        sites.push({ site: sister.site, game: game.slug, tcgCards: s.tcgCards, ourCards: ids.size, missing: s.missing, stale: ageMissing(state, sister.site, read, s.all, day), byFloor: s.byFloor, groups: s.groups });
         counts[game.slug].sister = { site: sister.site, cards: ids.size };
       }
     }
@@ -337,7 +408,7 @@ async function main(): Promise<void> {
       magic: () => scryfall(tcg.groups, ours),
       yugioh: () => ygoprodeck(ours, tcg.groups),
       pokemon: () => pokemontcg(tcg.groups, ours),
-      lorcana: async () => (await lorcast(ours, tcg.groups)).gaps,
+      lorcana: async () => (await lorcast(ours, tcg.groups, game)).gaps,
       "one-piece": () => optcg(ours),
     };
     if (ext[game.slug])
@@ -349,6 +420,8 @@ async function main(): Promise<void> {
     console.log(`${game.name}: TCGplayer ${mine.tcgCards}, ours ${ours.ids.size}, missing ${mine.missing}`);
   }
 
+  fs.mkdirSync(path.dirname(statePath), { recursive: true });
+  fs.writeFileSync(statePath, JSON.stringify(state) + "\n");
   const report = { generatedAt: now.toISOString(), mode: MODE, counts, sites, external, skippedGroups, errors };
   const dir = path.join(DATA, "coverage");
   fs.mkdirSync(dir, { recursive: true });
@@ -362,8 +435,8 @@ async function main(): Promise<void> {
 
 function markdown(r: { generatedAt: string; mode: string; sites: SiteGaps[]; external: ExternalGap[]; skippedGroups: { game: string; group: string; cards: number }[]; errors: string[] }): string {
   const L: string[] = [`# Card coverage (${r.mode}, ${r.generatedAt.slice(0, 16).replace("T", " ")} UTC)`, ""];
-  L.push("## Against TCGplayer's catalogue", "", "| Site | Game | TCGplayer cards | Our cards | Missing | Left out by the US$1 floor |", "|---|---|---:|---:|---:|---:|");
-  for (const s of r.sites) L.push(`| ${s.site} | ${s.game} | ${s.tcgCards} | ${s.ourCards} | ${s.missing} | ${s.byFloor || ""} |`);
+  L.push("A card TCGplayer added since a site's last import shows as missing for a day; only one missing two days or more is a gap.", "", "## Against TCGplayer's catalogue", "", "| Site | Game | TCGplayer cards | Our cards | Missing | Missing 2+ days | Left out by the US$1 floor |", "|---|---|---:|---:|---:|---:|---:|");
+  for (const s of r.sites) L.push(`| ${s.site} | ${s.game} | ${s.tcgCards} | ${s.ourCards} | ${s.missing} | ${s.stale || ""} | ${s.byFloor || ""} |`);
   L.push("");
   for (const s of r.sites.filter((x) => x.missing))
     L.push(`### ${s.site} / ${s.game}: ${s.missing} missing`, "", ...s.groups.slice(0, 25).map((g) => `- ${g.name} (${g.released ?? "no date"}): ${g.ours} of ${g.tcg}; e.g. ${g.missing.slice(0, 6).join(", ")}`), "");

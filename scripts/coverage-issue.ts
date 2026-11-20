@@ -17,7 +17,7 @@ const file = ["release.json", "report.json"]
   .sort((a, b) => fs.statSync(b).mtimeMs - fs.statSync(a).mtimeMs)[0];
 if (!file) process.exit(0);
 const r = JSON.parse(fs.readFileSync(file, "utf8")) as { mode: string; sites: SiteGaps[]; external: ExternalGap[] };
-const gaps = r.sites.filter((s) => s.missing > 0);
+const gaps = r.sites.filter((s) => s.stale > 0);
 const md = fs.readFileSync(file.replace(/\.json$/, ".md"), "utf8");
 const gh = (...args: string[]) => execFileSync("gh", args, { encoding: "utf8" }).trim();
 const open = gh("issue", "list", "--state", "open", "--search", `"${TITLE}" in:title`, "--json", "number", "--jq", ".[0].number");
@@ -28,7 +28,7 @@ if (!gaps.length) {
   process.exit(0);
 }
 const body = [
-  `${gaps.reduce((n, s) => n + s.missing, 0)} cards TCGplayer lists have no page (${r.mode} audit). The sites import every TCGplayer group daily, so a gap that stays two days means an import is failing or a filter drops real cards: fix the filter, never hand-edit data/.`,
+  `${gaps.reduce((n, s) => n + s.stale, 0)} cards TCGplayer lists have had no page for two days or more (${r.mode} audit). The sites import every TCGplayer group daily, so a gap that stays two days means an import is failing or a filter drops real cards: fix the filter, never hand-edit data/.`,
   "",
   md.slice(0, 60_000),
 ].join("\n");
