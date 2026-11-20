@@ -40,7 +40,7 @@ export const GAMES: Game[] = [
   { slug: "pokemon", name: "Pokémon", short: "Pokemon", category: 3, live: true },
   { slug: "magic", index: false, name: "Magic: The Gathering", short: "MTG", category: 1, live: true },
   { slug: "yugioh", name: "Yu-Gi-Oh!", short: "Yugioh", category: 2, live: true },
-  { slug: "one-piece", index: false, name: "One Piece Card Game", short: "One Piece", category: 68, live: true },
+  { slug: "one-piece", scan: true, index: false, name: "One Piece Card Game", short: "One Piece", category: 68, live: true },
   { slug: "lorcana", index: false, name: "Disney Lorcana", short: "Lorcana", category: 71, live: true },
   { slug: "riftbound", index: false, name: "Riftbound", short: "Riftbound", category: 89, live: true },
   { slug: "pokemon-japan", name: "Pokémon Japan", short: "Pokemon Japanese", category: 85, live: true },

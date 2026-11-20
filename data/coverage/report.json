@@ -1,0 +1,2009 @@
+{
+ "generatedAt": "2026-11-20T03:21:56.638Z",
+ "mode": "full",
+ "counts": {
+  "pokemon": {
+   "tcg": 28876,
+   "ours": 28875
+  },
+  "magic": {
+   "tcg": 106661,
+   "ours": 106661,
+   "sister": {
+    "site": "MTG Compare",
+    "cards": 106649
+   }
+  },
+  "yugioh": {
+   "tcg": 46701,
+   "ours": 46701
+  },
+  "one-piece": {
+   "tcg": 7519,
+   "ours": 7519,
+   "sister": {
+    "site": "OP Compare",
+    "cards": 7528
+   }
+  },
+  "lorcana": {
+   "tcg": 3794,
+   "ours": 3794,
+   "sister": {
+    "site": "Lorcana Compare",
+    "cards": 1661
+   }
+  },
+  "riftbound": {
+   "tcg": 1804,
+   "ours": 1804
+  },
+  "pokemon-japan": {
+   "tcg": 30450,
+   "ours": 30450
+  },
+  "star-wars-unlimited": {
+   "tcg": 9783,
+   "ours": 9783
+  },
+  "gundam": {
+   "tcg": 2033,
+   "ours": 2033,
+   "sister": {
+    "site": "Gundam Compare",
+    "cards": 1435
+   }
+  },
+  "flesh-and-blood": {
+   "tcg": 10403,
+   "ours": 10378
+  },
+  "digimon": {
+   "tcg": 9571,
+   "ours": 9559
+  },
+  "dragon-ball-fusion-world": {
+   "tcg": 4375,
+   "ours": 4375
+  },
+  "union-arena": {
+   "tcg": 7228,
+   "ours": 7228
+  },
+  "weiss-schwarz": {
+   "tcg": 31866,
+   "ours": 31866
+  },
+  "cardfight-vanguard": {
+   "tcg": 26899,
+   "ours": 26599
+  },
+  "sorcery": {
+   "tcg": 3124,
+   "ours": 3124
+  },
+  "grand-archive": {
+   "tcg": 5449,
+   "ours": 5357
+  },
+  "hololive": {
+   "tcg": 2304,
+   "ours": 2304
+  },
+  "godzilla": {
+   "tcg": 935,
+   "ours": 935
+  },
+  "cyberpunk": {
+   "tcg": 527,
+   "ours": 527,
+   "sister": {
+    "site": "Cyberpunk Compare",
+    "cards": 545
+   }
+  },
+  "final-fantasy": {
+   "tcg": 5746,
+   "ours": 5746
+  },
+  "dragon-ball-super-masters": {
+   "tcg": 11946,
+   "ours": 11946
+  },
+  "shadowverse-evolve": {
+   "tcg": 7960,
+   "ours": 7960
+  },
+  "universus": {
+   "tcg": 8548,
+   "ours": 8548
+  },
+  "naruto": {
+   "tcg": 3,
+   "ours": 3
+  },
+  "elestrals": {
+   "tcg": 3224,
+   "ours": 3224
+  },
+  "cookierun-braverse": {
+   "tcg": 2287,
+   "ours": 2283
+  },
+  "palworld": {
+   "tcg": 647,
+   "ours": 647
+  },
+  "wixoss": {
+   "tcg": 4448,
+   "ours": 4448
+  },
+  "battle-spirits-saga": {
+   "tcg": 1842,
+   "ours": 1842
+  },
+  "alpha-clash": {
+   "tcg": 2296,
+   "ours": 2296
+  }
+ },
+ "sites": [
+  {
+   "site": "TCG Singles DB",
+   "game": "pokemon",
+   "tcgCards": 28876,
+   "ourCards": 28875,
+   "missing": 1,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24451,
+     "name": "ME: Mega Evolution Promo",
+     "released": "2025-09-26",
+     "tcg": 153,
+     "ours": 152,
+     "missing": [
+      734563
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "magic",
+   "tcgCards": 106661,
+   "ourCards": 106661,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "MTG Compare",
+   "game": "magic",
+   "tcgCards": 106661,
+   "ourCards": 106649,
+   "missing": 22,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 23317,
+     "name": "Universes Beyond: Jurassic World Collection",
+     "released": "2023-11-17",
+     "tcg": 45,
+     "ours": 26,
+     "missing": [
+      524291,
+      524293,
+      524294,
+      524295,
+      524297,
+      524298,
+      524299,
+      524346,
+      524347,
+      525384,
+      525385,
+      525386,
+      526393,
+      526394,
+      526400,
+      526409,
+      526412,
+      526413,
+      526416
+     ]
+    },
+    {
+     "groupId": 39,
+     "name": "Eventide",
+     "released": "2008-07-25",
+     "tcg": 180,
+     "ours": 179,
+     "missing": [
+      27148
+     ]
+    },
+    {
+     "groupId": 51,
+     "name": "Future Sight",
+     "released": "2007-05-04",
+     "tcg": 180,
+     "ours": 179,
+     "missing": [
+      14881
+     ]
+    },
+    {
+     "groupId": 2576,
+     "name": "Secret Lair Drop Series",
+     "released": "2026-11-19",
+     "tcg": 3369,
+     "ours": 3368,
+     "missing": [
+      587975
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "yugioh",
+   "tcgCards": 46701,
+   "ourCards": 46701,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "one-piece",
+   "tcgCards": 7519,
+   "ourCards": 7519,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "OP Compare",
+   "game": "one-piece",
+   "tcgCards": 7519,
+   "ourCards": 7528,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "lorcana",
+   "tcgCards": 3794,
+   "ourCards": 3794,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Lorcana Compare",
+   "game": "lorcana",
+   "tcgCards": 3794,
+   "ourCards": 1661,
+   "missing": 1,
+   "stale": 0,
+   "byFloor": 2339,
+   "groups": [
+    {
+     "groupId": 23234,
+     "name": "Disney Lorcana Promo Cards",
+     "released": "2023-07-01",
+     "tcg": 221,
+     "ours": 168,
+     "missing": [
+      650211
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "riftbound",
+   "tcgCards": 1804,
+   "ourCards": 1804,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "pokemon-japan",
+   "tcgCards": 30450,
+   "ourCards": 30450,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "star-wars-unlimited",
+   "tcgCards": 9783,
+   "ourCards": 9783,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "gundam",
+   "tcgCards": 2033,
+   "ourCards": 2033,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Gundam Compare",
+   "game": "gundam",
+   "tcgCards": 2033,
+   "ourCards": 1435,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 869,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "flesh-and-blood",
+   "tcgCards": 10403,
+   "ourCards": 10378,
+   "missing": 25,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 2732,
+     "name": "Flesh and Blood: Promo Cards",
+     "released": "2019-10-11",
+     "tcg": 1257,
+     "ours": 1233,
+     "missing": [
+      705414,
+      706918,
+      723470,
+      723471,
+      723472,
+      723473,
+      723474,
+      723475,
+      723476,
+      723477,
+      723478,
+      723479,
+      723480,
+      723483,
+      725890,
+      726155,
+      726172,
+      726182,
+      731201,
+      731202,
+      731203,
+      734564,
+      734565,
+      734566
+     ]
+    },
+    {
+     "groupId": 24914,
+     "name": "Outbreak",
+     "released": "2027-02-12",
+     "tcg": 65,
+     "ours": 64,
+     "missing": [
+      734567
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "digimon",
+   "tcgCards": 9571,
+   "ourCards": 9559,
+   "missing": 12,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24865,
+     "name": "Ignition of X",
+     "released": "2026-12-11",
+     "tcg": 125,
+     "ours": 113,
+     "missing": [
+      734589,
+      734590,
+      734591,
+      734592,
+      734593,
+      734594,
+      734595,
+      734596,
+      734597,
+      734598,
+      734599,
+      734600
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "dragon-ball-fusion-world",
+   "tcgCards": 4375,
+   "ourCards": 4375,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "union-arena",
+   "tcgCards": 7228,
+   "ourCards": 7228,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "weiss-schwarz",
+   "tcgCards": 31866,
+   "ourCards": 31866,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cardfight-vanguard",
+   "tcgCards": 26899,
+   "ourCards": 26599,
+   "missing": 300,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24799,
+     "name": "DZ-TB03: Future Card Buddyfight - Disaster Force",
+     "released": "2026-11-20",
+     "tcg": 279,
+     "ours": 0,
+     "missing": [
+      734604,
+      734605,
+      734606,
+      734607,
+      734608,
+      734609,
+      734610,
+      734611,
+      734612,
+      734613,
+      734614,
+      734615,
+      734616,
+      734617,
+      734618,
+      734619,
+      734620,
+      734621,
+      734622,
+      734623,
+      734624,
+      734625,
+      734626,
+      734627,
+      734628,
+      734629,
+      734630,
+      734631,
+      734632,
+      734633,
+      734634,
+      734635,
+      734636,
+      734637,
+      734638,
+      734639,
+      734640,
+      734641,
+      734642,
+      734643,
+      734644,
+      734645,
+      734646,
+      734647,
+      734648,
+      734649,
+      734650,
+      734651,
+      734652,
+      734653,
+      734654,
+      734655,
+      734656,
+      734657,
+      734658,
+      734659,
+      734660,
+      734661,
+      734662,
+      734663
+     ]
+    },
+    {
+     "groupId": 2797,
+     "name": "D Promo Cards",
+     "released": "2021-04-02",
+     "tcg": 1079,
+     "ours": 1058,
+     "missing": [
+      734568,
+      734569,
+      734570,
+      734571,
+      734572,
+      734573,
+      734574,
+      734575,
+      734576,
+      734577,
+      734578,
+      734579,
+      734580,
+      734581,
+      734582,
+      734583,
+      734584,
+      734585,
+      734586,
+      734587,
+      734588
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "sorcery",
+   "tcgCards": 3124,
+   "ourCards": 3124,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "grand-archive",
+   "tcgCards": 5449,
+   "ourCards": 5357,
+   "missing": 92,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24953,
+     "name": "Pantheon Pack 1",
+     "released": "2026-11-01",
+     "tcg": 64,
+     "ours": 0,
+     "missing": [
+      734884,
+      734885,
+      734886,
+      734887,
+      734888,
+      734889,
+      734890,
+      734891,
+      734892,
+      734893,
+      734894,
+      734895,
+      734896,
+      734897,
+      734898,
+      734899,
+      734900,
+      734901,
+      734902,
+      734903,
+      734904,
+      734905,
+      734906,
+      734907,
+      734908,
+      734909,
+      734910,
+      734911,
+      734912,
+      734913,
+      734914,
+      734915,
+      734916,
+      734917,
+      734918,
+      734919,
+      734920,
+      734921,
+      734922,
+      734923,
+      734924,
+      734925,
+      734926,
+      734927,
+      734928,
+      734929,
+      734930,
+      734931,
+      734932,
+      734933,
+      734934,
+      734935,
+      734936,
+      734937,
+      734938,
+      734939,
+      734940,
+      734941,
+      734942,
+      734943
+     ]
+    },
+    {
+     "groupId": 23133,
+     "name": "Promotional Cards",
+     "released": "2023-04-28",
+     "tcg": 433,
+     "ours": 407,
+     "missing": [
+      734948,
+      735023,
+      735024,
+      735025,
+      735026,
+      735027,
+      735028,
+      735029,
+      735030,
+      735031,
+      735032,
+      735088,
+      735089,
+      735090,
+      735092,
+      735093,
+      735094,
+      735097,
+      735099,
+      735100,
+      735102,
+      735103,
+      735105,
+      735106,
+      735108,
+      735110
+     ]
+    },
+    {
+     "groupId": 23456,
+     "name": "Mercurial Heart",
+     "released": "2024-05-17",
+     "tcg": 208,
+     "ours": 207,
+     "missing": [
+      735095
+     ]
+    },
+    {
+     "groupId": 24457,
+     "name": "Phantom Monarchs",
+     "released": "2025-12-05",
+     "tcg": 319,
+     "ours": 318,
+     "missing": [
+      735091
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "hololive",
+   "tcgCards": 2304,
+   "ourCards": 2304,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "godzilla",
+   "tcgCards": 935,
+   "ourCards": 935,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cyberpunk",
+   "tcgCards": 527,
+   "ourCards": 527,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Cyberpunk Compare",
+   "game": "cyberpunk",
+   "tcgCards": 527,
+   "ourCards": 545,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "final-fantasy",
+   "tcgCards": 5746,
+   "ourCards": 5746,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "dragon-ball-super-masters",
+   "tcgCards": 11946,
+   "ourCards": 11946,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "shadowverse-evolve",
+   "tcgCards": 7960,
+   "ourCards": 7960,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "universus",
+   "tcgCards": 8548,
+   "ourCards": 8548,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "naruto",
+   "tcgCards": 3,
+   "ourCards": 3,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "elestrals",
+   "tcgCards": 3224,
+   "ourCards": 3224,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cookierun-braverse",
+   "tcgCards": 2287,
+   "ourCards": 2283,
+   "missing": 4,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24731,
+     "name": "Promotion Cards",
+     "released": "2026-06-15",
+     "tcg": 350,
+     "ours": 346,
+     "missing": [
+      735033,
+      735034,
+      735036,
+      735037
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "palworld",
+   "tcgCards": 647,
+   "ourCards": 647,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "wixoss",
+   "tcgCards": 4448,
+   "ourCards": 4448,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "battle-spirits-saga",
+   "tcgCards": 1842,
+   "ourCards": 1842,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "alpha-clash",
+   "tcgCards": 2296,
+   "ourCards": 2296,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  }
+ ],
+ "external": [
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2027",
+   "code": "PW27",
+   "released": "2027-01-01",
+   "expected": 4,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 4 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2027",
+   "code": "PF27",
+   "released": "2027-01-01",
+   "expected": 1,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Prismatic Pride",
+   "code": "PUNK",
+   "released": "2026-11-13",
+   "expected": 20,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 20 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Horse 2026",
+   "code": "PL26",
+   "released": "2026-02-17",
+   "expected": 5,
+   "ours": 4,
+   "note": "1 with a TCGplayer id we lack (2 Treasure [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Wizards Play Network 2026",
+   "code": "PW26",
+   "released": "2026-01-01",
+   "expected": 24,
+   "ours": 17,
+   "note": "0 with a TCGplayer id we lack; 7 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "MagicFest 2026",
+   "code": "PF26",
+   "released": "2026-01-01",
+   "expected": 19,
+   "ours": 13,
+   "note": "0 with a TCGplayer id we lack; 6 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Marvel Legends Series Inserts",
+   "code": "LMAR",
+   "released": "2025-09-30",
+   "expected": 8,
+   "ours": 4,
+   "note": "0 with a TCGplayer id we lack; 4 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2023 Heroes of the Realm",
+   "code": "PH23",
+   "released": "2025-08-24",
+   "expected": 2,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 2 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "The Big Score Promos",
+   "code": "PBIG",
+   "released": "2025-08-01",
+   "expected": 30,
+   "ours": 17,
+   "note": "0 with a TCGplayer id we lack; 13 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Snake 2025",
+   "code": "PL25",
+   "released": "2025-02-14",
+   "expected": 6,
+   "ours": 5,
+   "note": "1 with a TCGplayer id we lack (2 Snake [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Spotlight Series",
+   "code": "PSPL",
+   "released": "2025-01-03",
+   "expected": 15,
+   "ours": 12,
+   "note": "0 with a TCGplayer id we lack; 3 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Love Your LGS 2024",
+   "code": "PLG24",
+   "released": "2024-08-06",
+   "expected": 7,
+   "ours": 5,
+   "note": "0 with a TCGplayer id we lack; 2 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Black Lotus Unknown Planechase",
+   "code": "OUNK",
+   "released": "2024-02-24",
+   "expected": 52,
+   "ours": 16,
+   "note": "1 with a TCGplayer id we lack (PLA008 Sky Deck [not in TCGplayer's catalogue]); 35 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Dragon 2024",
+   "code": "PL24",
+   "released": "2024-02-08",
+   "expected": 7,
+   "ours": 6,
+   "note": "1 with a TCGplayer id we lack (3 Dragon [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2022 Heroes of the Realm",
+   "code": "PH22",
+   "released": "2023-08-01",
+   "expected": 5,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 5 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Unknown Event",
+   "code": "UNK",
+   "released": "2023-02-15",
+   "expected": 557,
+   "ours": 426,
+   "note": "3 with a TCGplayer id we lack (CA02 A Container of Booster Packs [not in TCGplayer's catalogue]; CR14a My Deck is About a Seven [not in TCGplayer's catalogue]; RW04f Try-My-Deck Elemental [not in TCGplayer's catalogue]); 128 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Rabbit 2023",
+   "code": "PL23",
+   "released": "2023-02-10",
+   "expected": 6,
+   "ours": 5,
+   "note": "1 with a TCGplayer id we lack (2 Food [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Eternal Weekend",
+   "code": "PEWK",
+   "released": "2022-11-26",
+   "expected": 10,
+   "ours": 8,
+   "note": "0 with a TCGplayer id we lack; 2 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "The Brothers' War Promos",
+   "code": "PBRO",
+   "released": "2022-11-18",
+   "expected": 171,
+   "ours": 166,
+   "note": "0 with a TCGplayer id we lack; 5 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Unfinity Sticker Sheets",
+   "code": "SUNF",
+   "released": "2022-10-07",
+   "expected": 48,
+   "ours": 0,
+   "note": "48 with a TCGplayer id we lack (23 Ancestral Hot Dog Minotaur [not in TCGplayer's catalogue]; 7 Carnival Elephant Meteor [not in TCGplayer's catalogue]; 15 Contortionist Otter Storm [not in TCGplayer's catalogue]; 28 Cool Fluffy Loxodon [not in TCGplayer's catalogue]; 22 Cursed Firebreathing Yogurt [not in TCGplayer's catalogue]; 14 Deep-Fried Plague Myr [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2021 Heroes of the Realm",
+   "code": "PH21",
+   "released": "2022-08-01",
+   "expected": 4,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 4 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Store Championships",
+   "code": "SCH",
+   "released": "2022-07-09",
+   "expected": 56,
+   "ours": 52,
+   "note": "0 with a TCGplayer id we lack; 4 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Streets of New Capenna Southeast Asia Tokens",
+   "code": "PTSNC",
+   "released": "2022-04-30",
+   "expected": 6,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 6 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Challenger Decks 2022",
+   "code": "Q07",
+   "released": "2022-04-01",
+   "expected": 1,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2020 Heroes of the Realm",
+   "code": "PH20",
+   "released": "2021-08-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 3 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Year of the Ox 2021",
+   "code": "PL21",
+   "released": "2021-01-25",
+   "expected": 6,
+   "ours": 5,
+   "note": "1 with a TCGplayer id we lack (2★ Minotaur [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "2019 Heroes of the Realm",
+   "code": "PH19",
+   "released": "2020-08-01",
+   "expected": 7,
+   "ours": 5,
+   "note": "0 with a TCGplayer id we lack; 2 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Lunar New Year 2018",
+   "code": "PLNY",
+   "released": "2018-02-16",
+   "expected": 1,
+   "ours": 0,
+   "note": "1 with a TCGplayer id we lack (1 Treasure [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2018",
+   "code": "F18",
+   "released": "2017-12-27",
+   "expected": 3,
+   "ours": 0,
+   "note": "3 with a TCGplayer id we lack (2 City's Blessing // Elemental [not in TCGplayer's catalogue]; 3 Illusion // Saproling [not in TCGplayer's catalogue]; 1 Merfolk // Treasure [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "HasCon 2017",
+   "code": "H17",
+   "released": "2017-09-20",
+   "expected": 4,
+   "ours": 3,
+   "note": "1 with a TCGplayer id we lack (4 Dragon [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2017",
+   "code": "F17",
+   "released": "2017-01-01",
+   "expected": 12,
+   "ours": 9,
+   "note": "3 with a TCGplayer id we lack (11 Dinosaur // Treasure [not in TCGplayer's catalogue]; 12 Pirate // Treasure [not in TCGplayer's catalogue]; 10 Vampire // Treasure [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Eldritch Moon Promos",
+   "code": "PEMN",
+   "released": "2016-07-22",
+   "expected": 77,
+   "ours": 74,
+   "note": "1 with a TCGplayer id we lack (1Z Zombie // Zombie [not in TCGplayer's catalogue]); 2 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Friday Night Magic 2012",
+   "code": "F12",
+   "released": "2012-01-01",
+   "expected": 13,
+   "ours": 12,
+   "note": "1 with a TCGplayer id we lack (1a Human // Wolf [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Rise of the Eldrazi Promos",
+   "code": "PROE",
+   "released": "2010-04-23",
+   "expected": 4,
+   "ours": 3,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Worldwake Promos",
+   "code": "PWWK",
+   "released": "2010-02-05",
+   "expected": 6,
+   "ours": 5,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "URL/Convention Promos",
+   "code": "PURL",
+   "released": "2009-02-08",
+   "expected": 18,
+   "ours": 16,
+   "note": "0 with a TCGplayer id we lack; 2 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2009",
+   "code": "P09",
+   "released": "2009-01-01",
+   "expected": 13,
+   "ours": 12,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Premiere Shop 2008",
+   "code": "PMPS08",
+   "released": "2008-01-01",
+   "expected": 6,
+   "ours": 5,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Happy Holidays",
+   "code": "HHO",
+   "released": "2006-12-31",
+   "expected": 23,
+   "ours": 21,
+   "note": "0 with a TCGplayer id we lack; 2 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Coldsnap Promos",
+   "code": "PCSP",
+   "released": "2006-07-21",
+   "expected": 2,
+   "ours": 1,
+   "note": "1 with a TCGplayer id we lack (1 Marit Lage [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Hachette UK",
+   "code": "PHUK",
+   "released": "2006-01-01",
+   "expected": 60,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 60 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "DCI Promos",
+   "code": "DCI",
+   "released": "2006-01-01",
+   "expected": 80,
+   "ours": 79,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2004",
+   "code": "P04",
+   "released": "2004-01-01",
+   "expected": 6,
+   "ours": 1,
+   "note": "5 with a TCGplayer id we lack (2 Angel [not in TCGplayer's catalogue]; 5 Beast [not in TCGplayer's catalogue]; 4 Myr [not in TCGplayer's catalogue]; 3 Pentavite [not in TCGplayer's catalogue]; 6 Spirit [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Eighth Edition",
+   "code": "8ED",
+   "released": "2003-07-28",
+   "expected": 711,
+   "ours": 707,
+   "note": "0 with a TCGplayer id we lack; 4 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Japan Junior Tournament",
+   "code": "PJJT",
+   "released": "2003-01-01",
+   "expected": 12,
+   "ours": 11,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2003",
+   "code": "P03",
+   "released": "2003-01-01",
+   "expected": 7,
+   "ours": 1,
+   "note": "6 with a TCGplayer id we lack (4 Bear [not in TCGplayer's catalogue]; 6 Demon [not in TCGplayer's catalogue]; 5 Goblin [not in TCGplayer's catalogue]; 2 Insect [not in TCGplayer's catalogue]; 7 Rukh [not in TCGplayer's catalogue]; 3 Sliver [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Torment Promos",
+   "code": "PTOR",
+   "released": "2002-02-04",
+   "expected": 3,
+   "ours": 1,
+   "note": "0 with a TCGplayer id we lack; 2 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2002",
+   "code": "PR2",
+   "released": "2002-01-01",
+   "expected": 6,
+   "ours": 0,
+   "note": "6 with a TCGplayer id we lack (7 Dragon [not in TCGplayer's catalogue]; 5 Elephant [not in TCGplayer's catalogue]; 8 Soldier [not in TCGplayer's catalogue]; 3 Squirrel [not in TCGplayer's catalogue]; 6 Wurm [not in TCGplayer's catalogue]; 4 Zombie [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Seventh Edition",
+   "code": "7ED",
+   "released": "2001-04-11",
+   "expected": 708,
+   "ours": 700,
+   "note": "0 with a TCGplayer id we lack; 8 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Magic Player Rewards 2001",
+   "code": "MPR",
+   "released": "2001-01-01",
+   "expected": 8,
+   "ours": 1,
+   "note": "7 with a TCGplayer id we lack (7 Bear [not in TCGplayer's catalogue]; 8 Beast [not in TCGplayer's catalogue]; 4 Bird [not in TCGplayer's catalogue]; 3 Elephant [not in TCGplayer's catalogue]; 6 Goblin Soldier [not in TCGplayer's catalogue]; 2 Saproling [not in TCGplayer's catalogue]); 0 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Arena League 1999",
+   "code": "PAL99",
+   "released": "1999-01-01",
+   "expected": 10,
+   "ours": 9,
+   "note": "0 with a TCGplayer id we lack; 1 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Multiverse Gift Box",
+   "code": "MGB",
+   "released": "1996-11-01",
+   "expected": 10,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 10 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Rivals Quick Start Set",
+   "code": "RQS",
+   "released": "1996-07-01",
+   "expected": 65,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 65 not sold on TCGplayer"
+  },
+  {
+   "source": "Scryfall",
+   "game": "magic",
+   "set": "Chronicles Foreign Black Border",
+   "code": "BCHR",
+   "released": "1995-07-01",
+   "expected": 125,
+   "ours": 0,
+   "note": "0 with a TCGplayer id we lack; 125 not sold on TCGplayer"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Pharaoh's Servant",
+   "code": "PSV",
+   "released": "2002-10-20",
+   "expected": 315,
+   "ours": 210,
+   "note": "105 codes we lack, 0 of them on TCGplayer (PSV-E088 4-Starred Ladybug of Doom; PSV-E004 7 Completed; PSV-E024 Appropriate; PSV-E019 Armored Glass; PSV-E054 Attack and Receive; PSV-E028 Backup Soldier)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Metal Raiders",
+   "code": "MRD",
+   "released": "2002-06-26",
+   "expected": 432,
+   "ours": 288,
+   "note": "144 codes we lack, 0 of them on TCGplayer (MRD-E098 7 Colored Fish; MRD-E082 Ancient Brain; MRD-E037 Ancient Elf; MRD-E050 Ancient Lizard Warrior; MRD-E005 Armored Lizard; MRD-E013 Armored Zombie)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "War of the Giants Reinforcements",
+   "code": "WGRT",
+   "released": "2014-01-17",
+   "expected": 104,
+   "ours": 0,
+   "note": "104 codes we lack, 0 of them on TCGplayer (WGRT-EN032 A/D Changer; WGRT-EN083 Adhesion Trap Hole; WGRT-EN015 Adhesive Explosive; WGRT-EN020 Archfiend of Gilfer; WGRT-EN090 Attention!; WGRT-EN072 Back to Square One)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 13 (POR)",
+   "code": "OP13",
+   "released": "2020-06-15",
+   "expected": 34,
+   "ours": 0,
+   "note": "34 codes we lack, 0 of them on TCGplayer (OP13-PT006 ABC-Dragon Buster; OP13-PT002 Abyss Dweller; OP13-PT009 Bahamut Shark; OP13-PT001 Book of Moon; OP13-PT022 Bottomless Trap Hole; OP13-PT008 Crystal Wing Synchro Dragon)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "2-Player Starter Deck: Yuya & Declan",
+   "code": "YS15",
+   "released": "2015-05-28",
+   "expected": 42,
+   "ours": 0,
+   "note": "42 codes we lack, 0 of them on TCGplayer (YS15-ENY01 Alexandrite Dragon; YS15-ENY08 Ancient Dragon; YS15-END02 Archfiend Soldier; YS15-END05 Axe Dragonute; YS15-END14 Axe of Despair; YS15-END15 Banner of Courage)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 16 (POR)",
+   "code": "OP16",
+   "released": "2021-06-09",
+   "expected": 36,
+   "ours": 0,
+   "note": "36 codes we lack, 0 of them on TCGplayer (OP16-PT021 Alien Brain; OP16-PT026 Breath of Acclamation; OP16-PT024 Cosmic Flare; OP16-PT001 Cyber Dragon; OP16-PT014 Cyber Saurus; OP16-PT004 Cyber-Stein)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 11 (POR)",
+   "code": "OP11",
+   "released": "2019-08-15",
+   "expected": 30,
+   "ours": 0,
+   "note": "30 codes we lack, 0 of them on TCGplayer (OP11-PT022 All-Out Attacks; OP11-PT009 Aloof Lupine; OP11-PT006 Altergeist Kunquery; OP11-PT031 Bending Destiny; OP11-PT014 Boot-Up Soldier - Dread Dynamo; OP11-PT013 Cyber Dragon)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! The Duelists of the Roses promotional cards",
+   "code": "DOR",
+   "released": "2003-02-16",
+   "expected": 6,
+   "ours": 3,
+   "note": "3 codes we lack, 0 of them on TCGplayer (DOR-E001 Alpha The Magnet Warrior; DOR-E002 Beta The Magnet Warrior; DOR-E003 Gamma the Magnet Warrior)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Labyrinth of Nightmare",
+   "code": "LON",
+   "released": "2003-03-01",
+   "expected": 315,
+   "ours": 210,
+   "note": "105 codes we lack, 0 of them on TCGplayer (LON-E032 Amazoness Archer; LON-E008 Amphibian Beast; LON-E068 Aqua Spirit; LON-E096 Bait Doll; LON-E064 Bazoo the Soul-Eater; LON-E043 Bio-Mage)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Magic Ruler",
+   "code": "MRL",
+   "released": "2002-09-16",
+   "expected": 235,
+   "ours": 131,
+   "note": "104 codes we lack, 0 of them on TCGplayer (MRL-E010 Ameba; MRL-E018 Ancient One of the Deep Forest; MRL-E002 Axe of Despair; MRL-E078 Banisher of the Light; MRL-E103 Beaver Warrior; MRL-E051 Black Illusion Ritual)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 15 (POR)",
+   "code": "OP15",
+   "released": "2021-02-18",
+   "expected": 36,
+   "ours": 0,
+   "note": "36 codes we lack, 0 of them on TCGplayer (OP15-PT021 Amorphactor Pain, the Imagination Dracoverlord; OP15-PT022 Amorphous Persona; OP15-PT001 Armed Dragon LV10; OP15-PT016 Armed Dragon LV3; OP15-PT015 Armed Dragon LV5; OP15-PT014 Armed Dragon LV7)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Starter Deck: Yugi",
+   "code": "SDY",
+   "released": "2002-03-29",
+   "expected": 95,
+   "ours": 49,
+   "note": "46 codes we lack, 0 of them on TCGplayer (SDY-E022 Ancient Elf; SDY-E014 Ansatsu; SDY-E033 Baron of the Fiend Sword; SDY-E019 Book of Secret Arts; SDY-E038 Card Destruction; SDY-E045 Castle Walls)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Starter Deck: Kaiba",
+   "code": "SDK",
+   "released": "2002-03-29",
+   "expected": 96,
+   "ours": 50,
+   "note": "46 codes we lack, 0 of them on TCGplayer (SDK-E036 Ancient Telescope; SDK-E004 Battle Ox; SDK-E001 Blue-Eyes White Dragon; SDK-E045 Castle Walls; SDK-E028 D. Human; SDK-E014 Dark Assailant)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny promotional cards",
+   "code": "PCY",
+   "released": "2003-11-18",
+   "expected": 10,
+   "ours": 5,
+   "note": "5 codes we lack, 0 of them on TCGplayer (PCY-E002 Anti-Spell Fragrance; PCY-E004 Dark Magician; PCY-E005 Kuriboh; PCY-E003 Thousand Knives; PCY-E001 Windstorm of Etaqua)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 14 (POR)",
+   "code": "OP14",
+   "released": "2020-10-08",
+   "expected": 35,
+   "ours": 0,
+   "note": "35 codes we lack, 0 of them on TCGplayer (OP14-PT011 Appointer of the Red Lotus; OP14-PT027 Arcana Force 0 - The Fool; OP14-PT028 Arcana Force XIV - Temperance; OP14-PT029 Arcana Force XXI - The World; OP14-PT013 Atlantean Dragoons; OP14-PT020 Cattle Call)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! Power of Chaos: Kaiba the Revenge promotional cards",
+   "code": "PCK",
+   "released": "2004-04-06",
+   "expected": 6,
+   "ours": 3,
+   "note": "3 codes we lack, 0 of them on TCGplayer (PCK-E002 Aqua Chorus; PCK-E001 Blue-Eyes White Dragon; PCK-E003 Seal of the Ancients)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legend of Blue Eyes White Dragon",
+   "code": "LOB",
+   "released": "2002-03-08",
+   "expected": 355,
+   "ours": 252,
+   "note": "103 codes we lack, 0 of them on TCGplayer (LOB-E021 Aqua Madoor; LOB-E062 Armaill; LOB-E086 Armed Ninja; LOB-E094 Armored Starfish; LOB-E006 Basic Insect; LOB-E032 Beast Fangs)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 10 (POR)",
+   "code": "OP10",
+   "released": "2019-04-18",
+   "expected": 35,
+   "ours": 0,
+   "note": "35 codes we lack, 0 of them on TCGplayer (OP10-PT031 Arcane Apprentice; OP10-PT029 Arcanite Magician/Assault Mode; OP10-PT014 Assault Beast; OP10-PT036 Assault Counter; OP10-PT025 Assault Mode Activate; OP10-PT035 Assault Teleport)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 8 (POR)",
+   "code": "OP08",
+   "released": "2018-08-17",
+   "expected": 36,
+   "ours": 0,
+   "note": "36 codes we lack, 0 of them on TCGplayer (OP08-PT016 Artifact Moralltach; OP08-PT022 Axe of Fools; OP08-PT009 Broken Bamboo Sword; OP08-PT025 Cursed Seal of the Forbidden Spell; OP08-PT005 Demise, Supreme King of Armageddon; OP08-PT020 Divine Sword - Phoenix Blade)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Tournament Pack: 1st Season",
+   "code": "TP1",
+   "released": "2002-09-01",
+   "expected": 60,
+   "ours": 30,
+   "note": "30 codes we lack, 0 of them on TCGplayer (TP1-E002 Axe Raider; TP1-E018 Bean Soldier; TP1-E014 Beastking of the Swamps; TP1-E008 Blue Medicine; TP1-E010 Burning Spear; TP1-E029 Cockroach Knight)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 18 (POR)",
+   "code": "OP18",
+   "released": "2022-02-17",
+   "expected": 35,
+   "ours": 0,
+   "note": "35 codes we lack, 0 of them on TCGplayer (OP18-PT005 Babycerasaurus; OP18-PT007 Contact \"C\"; OP18-PT024 Dark Magical Circle; OP18-PT033 Dark Strike Fighter; OP18-PT017 Destiny HERO - Celestial; OP18-PT004 Destiny HERO - Dasher)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 17 (POR)",
+   "code": "OP17",
+   "released": "2021-10-14",
+   "expected": 35,
+   "ours": 0,
+   "note": "35 codes we lack, 0 of them on TCGplayer (OP17-PT012 Basal Rose Shoot; OP17-PT003 Black Luster Soldier - Soldier of Chaos; OP17-PT034 Chronomaly Crystal Bones; OP17-PT033 Chronomaly Golden Jet; OP17-PT006 Cyber Dragon Nova; OP17-PT016 Dark Simorgh)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! GX Card Almanac promotional cards",
+   "code": "YDB1",
+   "released": "2007-11-30",
+   "expected": 3,
+   "ours": 0,
+   "note": "3 codes we lack, 0 of them on TCGplayer (YDB1-EN001 Blizzard Dragon; YDB1-EN003 Des Mosquito; YDB1-EN002 Metal Shooter)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 7 (POR)",
+   "code": "OP07",
+   "released": "2018-04-13",
+   "expected": 34,
+   "ours": 0,
+   "note": "34 codes we lack, 0 of them on TCGplayer (OP07-PT025 Blowback Dragon; OP07-PT017 Book of Life; OP07-PT003 Cosmic Cyclone; OP07-PT032 Crystal Beast Amber Mammoth; OP07-PT031 Crystal Beast Amethyst Cat; OP07-PT035 Crystal Beast Cobalt Eagle)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Legendary Collection 4: Joey's World",
+   "code": "LC04",
+   "released": "2013-10-11",
+   "expected": 6,
+   "ours": 2,
+   "note": "4 codes we lack, 0 of them on TCGplayer (LC04-EN004 Sheep Token; LC04-EN005 Sheep Token; LC04-EN006 Sheep Token; LC04-EN007 Sheep Token)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 12 (POR)",
+   "code": "OP12",
+   "released": "2019-12-05",
+   "expected": 35,
+   "ours": 0,
+   "note": "35 codes we lack, 0 of them on TCGplayer (OP12-PT020 Brotherhood of the Fire Fist - Horse Prince; OP12-PT014 Brotherhood of the Fire Fist - Raven; OP12-PT001 Chaos Dragon Levianeer; OP12-PT024 Contract with the Abyss; OP12-PT005 Crusadia Leonis; OP12-PT022 Dark Hole)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 19 (POR)",
+   "code": "OP19",
+   "released": "2022-06-15",
+   "expected": 39,
+   "ours": 0,
+   "note": "39 codes we lack, 0 of them on TCGplayer (OP19-PT004 Caius the Shadow Monarch; OP19-PT007 D/D Berfomet; OP19-PT009 D/D/D Flame King Genghis; OP19-PT010 D/D/D Oracle King d'Arc; OP19-PT023 Destrudo the Lost Dragon's Frisson; OP19-PT022 Fairy Tail - Snow)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "OTS Tournament Pack 9 (POR)",
+   "code": "OP09",
+   "released": "2018-12-06",
+   "expected": 36,
+   "ours": 0,
+   "note": "36 codes we lack, 0 of them on TCGplayer (OP09-PT008 Card Destruction; OP09-PT027 Cyberdark Dragon; OP09-PT013 Elemental HERO Neos Alius; OP09-PT001 Elemental HERO Stratos; OP09-PT022 Fusion Substitute; OP09-PT010 Galaxy Expedition)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Glorious Victors",
+   "code": "GLVI",
+   "released": "2026-12-03",
+   "expected": 3,
+   "ours": 0,
+   "note": "3 codes we lack, 0 of them on TCGplayer (GLVI-EN016 Cielo, the Veil of Raise Moon; GLVI-EN038 Trirealm Rift Darkness; GLVI-EN003 Zenet-Nakhte Sphinx)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "Yu-Gi-Oh! World Championship Qualifier National Championships 2011 prize cards",
+   "code": "WQ11",
+   "released": "2011-05-01",
+   "expected": 3,
+   "ours": 0,
+   "note": "3 codes we lack, 0 of them on TCGplayer (WQ11-EN001 Meklord Astro Mekanikle; WQ11-EN003 Meklord Emperor Granel; WQ11-EN002 T.G. Hyper Librarian)"
+  },
+  {
+   "source": "YGOPRODeck",
+   "game": "yugioh",
+   "set": "San Diego Comic-Con promotional cards",
+   "code": "TKN1",
+   "released": "2006-07-20",
+   "expected": 4,
+   "ours": 0,
+   "note": "4 codes we lack, 0 of them on TCGplayer (TKN1-EN001 Sheep Token; TKN1-EN002 Sheep Token; TKN1-EN003 Sheep Token; TKN1-EN004 Sheep Token)"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "Premium Booster -The Best-",
+   "code": "P",
+   "released": null,
+   "expected": 335,
+   "ours": 328,
+   "note": "numbers we lack: P-700, P-900, P-800"
+  },
+  {
+   "source": "OPTCG API",
+   "game": "one-piece",
+   "set": "ST-25: Starter Deck 25 BLUE Buggy",
+   "code": "ST25",
+   "released": null,
+   "expected": 8,
+   "ours": 5,
+   "note": "fewer printings than listed"
+  }
+ ],
+ "skippedGroups": [
+  {
+   "game": "magic",
+   "group": "Art Series: Star Trek",
+   "cards": 104
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Reality Fracture",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Hobbit",
+   "cards": 120
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Marvel Super Heroes",
+   "cards": 111
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Secrets of Strixhaven",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Teenage Mutant Ninja Turtles",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Lorwyn Eclipsed",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Avatar: The Last Airbender",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Marvel's Spider-Man",
+   "cards": 109
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Edge of Eternities",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: FINAL FANTASY",
+   "cards": 130
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Tarkir: Dragonstorm",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Aetherdrift",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad Remastered",
+   "cards": 50
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Foundations",
+   "cards": 109
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Duskmourn: House of Horror",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Bloomburrow",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Universes Beyond: Assassin's Creed",
+   "cards": 40
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons 3",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Outlaws of Thunder Junction",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Murders at Karlov Manor",
+   "cards": 98
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Lost Caverns of Ixalan",
+   "cards": 158
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Wilds of Eldraine",
+   "cards": 160
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Commander Masters",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Universes Beyond: The Lord of the Rings: Tales of Middle-earth",
+   "cards": 184
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: March of the Machine",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Phyrexia: All Will Be One",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Brothers' War",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Dominaria United",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Commander Legends: Battle for Baldur's Gate",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Streets of New Capenna",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Kamigawa: Neon Dynasty",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad: Crimson Vow",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad: Midnight Hunt",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Adventures in the Forgotten Realms",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons 2",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Strixhaven",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Kaldheim",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Zendikar Rising",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons",
+   "cards": 54
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional EX Base Tokens",
+   "cards": 30
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional EX Resource Tokens",
+   "cards": 15
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional Resource Tokens",
+   "cards": 65
+  }
+ ],
+ "errors": [
+  "Pokémon independent list: https://api.pokemontcg.io/v2/sets?pageSize=250: HTTP 500",
+  "Scryfall MOC: https://api.scryfall.com/cards/search?format=json&include_extras=true&include_multilingual=false&include_variations=true&order=name&page=3&q=e%3Amoc&unique=prints: HTTP 429",
+  "Scryfall PMOM: https://api.scryfall.com/cards/search?q=e%3Apmom&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall PGRN: https://api.scryfall.com/cards/search?q=e%3Apgrn&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall MED: https://api.scryfall.com/cards/search?q=e%3Amed&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall POGW: https://api.scryfall.com/cards/search?q=e%3Apogw&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall F16: https://api.scryfall.com/cards/search?q=e%3Af16&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall PGTC: https://api.scryfall.com/cards/search?q=e%3Apgtc&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall PDP14: https://api.scryfall.com/cards/search?q=e%3Apdp14&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall PM11: https://api.scryfall.com/cards/search?q=e%3Apm11&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall OARC: https://api.scryfall.com/cards/search?q=e%3Aoarc&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall PLRW: https://api.scryfall.com/cards/search?q=e%3Aplrw&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall 10E: https://api.scryfall.com/cards/search?q=e%3A10e&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall 9ED: https://api.scryfall.com/cards/search?format=json&include_extras=true&include_multilingual=false&include_variations=true&order=name&page=3&q=e%3A9ed&unique=prints: HTTP 429",
+  "Scryfall PSOK: https://api.scryfall.com/cards/search?q=e%3Apsok&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall F03: https://api.scryfall.com/cards/search?q=e%3Af03&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall PONS: https://api.scryfall.com/cards/search?q=e%3Apons&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall PUDS: https://api.scryfall.com/cards/search?q=e%3Apuds&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "Scryfall PPTK: https://api.scryfall.com/cards/search?q=e%3Apptk&unique=prints&include_extras=true&include_variations=true: HTTP 429",
+  "OPTCG API https://optcgapi.com/api/allPromoCards/: https://optcgapi.com/api/allPromoCards/: HTTP 404"
+ ]
+}
