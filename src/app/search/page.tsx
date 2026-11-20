@@ -2,6 +2,7 @@ import { shownGame, shownGames } from "@/lib/store";
 import type { Metadata } from "next";
 import { CardTiles } from "@/components/CardTiles";
 import { searchAll } from "@/lib/search";
+import { SearchBox } from "@/components/SearchBox";
 
 // Search results: never indexed, never crawled (robots.txt), rendered per request.
 export const dynamic = "force-dynamic";
@@ -16,6 +17,9 @@ export default function SearchPage({ searchParams }: { searchParams: { q?: strin
     <div className="page">
       <h1>{q ? `Cards matching “${q}”` : "Search cards"}</h1>
       <p className="lede">{q ? (total ? `${total.toLocaleString("en-US")} cards found${total > hits.length ? `, showing the first ${hits.length}` : ""}.` : "No card matches that. Try the card's name alone, or its set code and number.") : "Type a card name, a set code or a collector number in the box above."}</p>
+      <div className="hero-search">
+        <SearchBox />
+      </div>
       {byGame.map(({ g, cards }) => (
         <section key={g.slug}>
           <h2>{g.name}</h2>

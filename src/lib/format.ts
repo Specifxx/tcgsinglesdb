@@ -14,3 +14,6 @@ export function shortDate(day: string): string {
 }
 
 export const cardPath = (game: string, set: string, card: string) => `/${game}/${set}/${card}`;
+
+/** A game's name short enough for a menu or a chip: "Magic: The Gathering" → "Magic", "One Piece Card Game" → "One Piece". */
+export const shortName = (name: string) => name.split(":")[0].replace(/ (Official )?(Trading )?Card Game$/i, "").replace(/ OFFICIAL CARD GAME$/, "").trim();
