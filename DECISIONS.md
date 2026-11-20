@@ -180,3 +180,25 @@ yesterday's file. The page adds "at a glance" (tracked high and low once the pri
 history reaches that far, rank in set and share of the set's value), plain-English insights (`lib/insights.ts`: each one a
 number the page already shows; never a forecast or advice to buy or sell), a card details table and other printings of the same
 name (exact name, from search.json). Highs and lows are "since we began reading the card": history is never backfilled.
+
+## 2026-11-20: The card coverage guard (owner: every card on every site, promos and new sets included)
+
+Owner, 2026-11-20: "every new set that comes in, we have all the cards on our websites", promos and special printings too,
+for every game, kept true without him (he knows only Riftbound). `coverage.yml` runs `scripts/coverage.ts`:
+
+- **Daily 23:47 UTC, the release watch**: every TCGplayer group published in the last 21 days or dated in the next 45 (TCGplayer's
+  own release calendar), every group TCGplayer modified in the last 3 days (promo and event groups keep a years-old date and gain
+  cards monthly), and any group we lack. **Mondays, the full audit**: every group of all 31 games.
+- Compared with this site's cards and with the sister site of each game (OP Compare's snapshot, MTG Compare's card files,
+  Lorcana / Gundam / Cyberpunk Compare's catalogues; Rift Compare has its own `coverage-audit.yml`), all public data.
+- Independent lists, Mondays: Scryfall (Magic: every short or promo set card by card through Scryfall's TCGplayer ids),
+  YGOPRODeck (every printed code), pokemontcg.io (set sizes, matched by code then name), Lorcast (Lorcana, by TCGplayer id,
+  else by name) and OPTCG API (One Piece numbers and printings). These only report: a card TCGplayer does not sell has no
+  price to show, so it is listed, never invented.
+- A card counts as a gap only after two days missing (`data/coverage/state.json`): a card TCGplayer adds after a site's import
+  is normal for a day. A gap opens or updates the issue "Card coverage gaps" and turns the ops monitor red.
+- Cards Lorcana, Gundam and Cyberpunk Compare leave out under their US$1 floor (owner, 2026-11-07) are counted apart, not
+  as gaps: every one of them has a page here.
+
+First run (20 Nov): TCGplayer's catalogue is mirrored in full here (gaps only cards TCGplayer added after the 19 Nov import);
+MTG Compare lacked 22 numbered "Emblem" cards (fixed, mtgcompare #242).

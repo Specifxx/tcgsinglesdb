@@ -8,9 +8,6 @@ name: Card coverage
 on:
   schedule:
     - cron: "47 23 * * *"
-  push:
-    branches: [claude/project-thread-82ws94]
-    paths: [.github/workflows/coverage.yml, scripts/coverage.ts]
   workflow_dispatch:
     inputs:
       mode:
@@ -65,7 +62,7 @@ jobs:
         run: npx tsx scripts/coverage.ts
         env:
           # Empty on a schedule: Mondays (UTC) full, other days release.
-          COVERAGE_MODE: ${{ inputs.mode || (github.event_name == 'push' && 'full') || '' }}
+          COVERAGE_MODE: ${{ inputs.mode }}
       - name: Open or update the gaps issue
         env:
           GH_TOKEN: ${{ github.token }}

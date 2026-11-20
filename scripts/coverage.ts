@@ -191,7 +191,7 @@ async function scryfall(groups: Map<number, TcgGroupCards>, ours: Ours): Promise
     let url: string | null = `https://api.scryfall.com/cards/search?q=${encodeURIComponent(`e:${gap.code!.toLowerCase()}`)}&unique=prints&include_extras=true&include_variations=true`;
     try {
       while (url) {
-        await sleep(120);
+        await sleep(300); // Scryfall asks for 50-100 ms between requests; 300 ms leaves room for its 429s
         const page: { data: typeof cards; has_more: boolean; next_page?: string } = await getJson(url);
         cards.push(...page.data);
         url = page.has_more && page.next_page ? page.next_page : null;
@@ -326,7 +326,7 @@ async function lorcast(ours: Ours, groups: Map<number, TcgGroupCards>, game: Gam
 
 async function optcg(ours: Ours): Promise<ExternalGap[]> {
   const urls = ["allSetCards", "allSTCards", "allPromos", "allPromoCards"].map((u) => `https://optcgapi.com/api/${u}/`);
-  const cards: { card_set_id?: string; card_image_id?: string; set_name?: string; set_id?: string }[] = [];
+  const cards: { card_set_id?: string; card_image_id?: string; card_name?: string; set_name?: string; set_id?: string }[] = [];
   for (const u of urls) {
     try {
       const got = await getJson<unknown>(u);
@@ -338,13 +338,14 @@ async function optcg(ours: Ours): Promise<ExternalGap[]> {
     await sleep(500);
   }
   // Per set: card numbers (and printings: one image id each) the source lists vs the printings we have of those numbers.
-  const bySet = new Map<string, { name: string; numbers: Map<string, number> }>();
+  const bySet = new Map<string, { name: string; numbers: Map<string, number>; images: Map<string, string[]> }>();
   for (const c of cards) {
     const no = (c.card_set_id ?? "").trim().toUpperCase().replace(/_[A-Z]*\d*$/, "");
     if (!no) continue;
     const key = no.replace(/-\d+$/, "") || "?";
-    const s = bySet.get(key) ?? { name: c.set_name ?? key, numbers: new Map() };
+    const s = bySet.get(key) ?? { name: c.set_name ?? key, numbers: new Map(), images: new Map() };
     s.numbers.set(no, (s.numbers.get(no) ?? 0) + 1);
+    s.images.set(no, [...(s.images.get(no) ?? []), `${c.card_image_id ?? no} ${c.card_name ?? ""}`.trim()]);
     bySet.set(key, s);
   }
   const out: ExternalGap[] = [];
@@ -352,14 +353,16 @@ async function optcg(ours: Ours): Promise<ExternalGap[]> {
     let expected = 0;
     let have = 0;
     const lackNumbers: string[] = [];
+    const short: string[] = [];
     for (const [no, n] of s.numbers) {
       expected += n;
       const ourN = ours.numbers.get(no) ?? 0;
       have += Math.min(n, ourN);
-      if (!ourN) lackNumbers.push(no);
+      if (!ourN) lackNumbers.push(`${no} (${s.images.get(no)?.[0] ?? ""})`);
+      else if (ourN < n) short.push(`${no}: ${ourN} of ${n} printings (${s.images.get(no)?.join(", ")})`);
     }
     if (lackNumbers.length || isShort(expected, have))
-      out.push({ source: "OPTCG API", game: "one-piece", set: s.name, code, released: null, expected, ours: have, note: lackNumbers.length ? `numbers we lack: ${lackNumbers.slice(0, 15).join(", ")}${lackNumbers.length > 15 ? ` (+${lackNumbers.length - 15})` : ""}` : "fewer printings than listed" });
+      out.push({ source: "OPTCG API", game: "one-piece", set: s.name, code, released: null, expected, ours: have, note: [lackNumbers.length ? `numbers we lack: ${lackNumbers.slice(0, 15).join(", ")}${lackNumbers.length > 15 ? ` (+${lackNumbers.length - 15})` : ""}` : "", short.length ? `fewer printings: ${short.slice(0, 8).join("; ")}` : ""].filter(Boolean).join("; ") });
   }
   return out;
 }
