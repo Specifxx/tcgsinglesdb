@@ -1,0 +1,754 @@
+{
+ "generatedAt": "2026-11-21T04:19:48.708Z",
+ "mode": "release",
+ "counts": {
+  "pokemon": {
+   "tcg": 3987,
+   "ours": 28876
+  },
+  "magic": {
+   "tcg": 46865,
+   "ours": 106661,
+   "sister": {
+    "site": "MTG Compare",
+    "cards": 106671
+   }
+  },
+  "yugioh": {
+   "tcg": 678,
+   "ours": 46701
+  },
+  "one-piece": {
+   "tcg": 238,
+   "ours": 7543,
+   "sister": {
+    "site": "OP Compare",
+    "cards": 7552
+   }
+  },
+  "lorcana": {
+   "tcg": 221,
+   "ours": 3794,
+   "sister": {
+    "site": "Lorcana Compare",
+    "cards": 1662
+   }
+  },
+  "riftbound": {
+   "tcg": 265,
+   "ours": 1805
+  },
+  "pokemon-japan": {
+   "tcg": 1138,
+   "ours": 30450
+  },
+  "star-wars-unlimited": {
+   "tcg": 2976,
+   "ours": 9783
+  },
+  "gundam": {
+   "tcg": 0,
+   "ours": 2033,
+   "sister": {
+    "site": "Gundam Compare",
+    "cards": 1435
+   }
+  },
+  "flesh-and-blood": {
+   "tcg": 2481,
+   "ours": 10420
+  },
+  "digimon": {
+   "tcg": 558,
+   "ours": 9580
+  },
+  "dragon-ball-fusion-world": {
+   "tcg": 148,
+   "ours": 4375
+  },
+  "union-arena": {
+   "tcg": 183,
+   "ours": 7233
+  },
+  "weiss-schwarz": {
+   "tcg": 203,
+   "ours": 31866
+  },
+  "cardfight-vanguard": {
+   "tcg": 1608,
+   "ours": 26900
+  },
+  "sorcery": {
+   "tcg": 120,
+   "ours": 3124
+  },
+  "grand-archive": {
+   "tcg": 1123,
+   "ours": 5484
+  },
+  "hololive": {
+   "tcg": 246,
+   "ours": 2304
+  },
+  "godzilla": {
+   "tcg": 0,
+   "ours": 935
+  },
+  "cyberpunk": {
+   "tcg": 242,
+   "ours": 528,
+   "sister": {
+    "site": "Cyberpunk Compare",
+    "cards": 545
+   }
+  },
+  "final-fantasy": {
+   "tcg": 280,
+   "ours": 5746
+  },
+  "dragon-ball-super-masters": {
+   "tcg": 2687,
+   "ours": 11946
+  },
+  "shadowverse-evolve": {
+   "tcg": 509,
+   "ours": 7960
+  },
+  "universus": {
+   "tcg": 343,
+   "ours": 8548
+  },
+  "naruto": {
+   "tcg": 0,
+   "ours": 3
+  },
+  "elestrals": {
+   "tcg": 51,
+   "ours": 3224
+  },
+  "cookierun-braverse": {
+   "tcg": 569,
+   "ours": 2287
+  },
+  "palworld": {
+   "tcg": 0,
+   "ours": 647
+  },
+  "wixoss": {
+   "tcg": 0,
+   "ours": 4448
+  },
+  "battle-spirits-saga": {
+   "tcg": 0,
+   "ours": 1842
+  },
+  "alpha-clash": {
+   "tcg": 0,
+   "ours": 2296
+  }
+ },
+ "sites": [
+  {
+   "site": "TCG Singles DB",
+   "game": "pokemon",
+   "tcgCards": 3987,
+   "ourCards": 28876,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "magic",
+   "tcgCards": 46865,
+   "ourCards": 106661,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "MTG Compare",
+   "game": "magic",
+   "tcgCards": 46865,
+   "ourCards": 106671,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "yugioh",
+   "tcgCards": 678,
+   "ourCards": 46701,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "one-piece",
+   "tcgCards": 238,
+   "ourCards": 7543,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "OP Compare",
+   "game": "one-piece",
+   "tcgCards": 238,
+   "ourCards": 7552,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "lorcana",
+   "tcgCards": 221,
+   "ourCards": 3794,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Lorcana Compare",
+   "game": "lorcana",
+   "tcgCards": 221,
+   "ourCards": 1662,
+   "missing": 2,
+   "stale": 0,
+   "byFloor": 50,
+   "groups": [
+    {
+     "groupId": 23234,
+     "name": "Disney Lorcana Promo Cards",
+     "released": "2023-07-01",
+     "tcg": 221,
+     "ours": 169,
+     "missing": [
+      734009,
+      734014
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "riftbound",
+   "tcgCards": 265,
+   "ourCards": 1805,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "pokemon-japan",
+   "tcgCards": 1138,
+   "ourCards": 30450,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "star-wars-unlimited",
+   "tcgCards": 2976,
+   "ourCards": 9783,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "gundam",
+   "tcgCards": 0,
+   "ourCards": 2033,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Gundam Compare",
+   "game": "gundam",
+   "tcgCards": 0,
+   "ourCards": 1435,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "flesh-and-blood",
+   "tcgCards": 2481,
+   "ourCards": 10420,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "digimon",
+   "tcgCards": 558,
+   "ourCards": 9580,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "dragon-ball-fusion-world",
+   "tcgCards": 148,
+   "ourCards": 4375,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "union-arena",
+   "tcgCards": 183,
+   "ourCards": 7233,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "weiss-schwarz",
+   "tcgCards": 203,
+   "ourCards": 31866,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cardfight-vanguard",
+   "tcgCards": 1608,
+   "ourCards": 26900,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "sorcery",
+   "tcgCards": 120,
+   "ourCards": 3124,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "grand-archive",
+   "tcgCards": 1123,
+   "ourCards": 5484,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "hololive",
+   "tcgCards": 246,
+   "ourCards": 2304,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "godzilla",
+   "tcgCards": 0,
+   "ourCards": 935,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cyberpunk",
+   "tcgCards": 242,
+   "ourCards": 528,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "Cyberpunk Compare",
+   "game": "cyberpunk",
+   "tcgCards": 242,
+   "ourCards": 545,
+   "missing": 1,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": [
+    {
+     "groupId": 24927,
+     "name": "Judge Promos",
+     "released": "2026-11-01",
+     "tcg": 5,
+     "ours": 4,
+     "missing": [
+      735296
+     ]
+    }
+   ]
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "final-fantasy",
+   "tcgCards": 280,
+   "ourCards": 5746,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "dragon-ball-super-masters",
+   "tcgCards": 2687,
+   "ourCards": 11946,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "shadowverse-evolve",
+   "tcgCards": 509,
+   "ourCards": 7960,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "universus",
+   "tcgCards": 343,
+   "ourCards": 8548,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "naruto",
+   "tcgCards": 0,
+   "ourCards": 3,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "elestrals",
+   "tcgCards": 51,
+   "ourCards": 3224,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "cookierun-braverse",
+   "tcgCards": 569,
+   "ourCards": 2287,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "palworld",
+   "tcgCards": 0,
+   "ourCards": 647,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "wixoss",
+   "tcgCards": 0,
+   "ourCards": 4448,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "battle-spirits-saga",
+   "tcgCards": 0,
+   "ourCards": 1842,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  },
+  {
+   "site": "TCG Singles DB",
+   "game": "alpha-clash",
+   "tcgCards": 0,
+   "ourCards": 2296,
+   "missing": 0,
+   "stale": 0,
+   "byFloor": 0,
+   "groups": []
+  }
+ ],
+ "external": [],
+ "skippedGroups": [
+  {
+   "game": "magic",
+   "group": "Art Series: Star Trek",
+   "cards": 104
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Reality Fracture",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Hobbit",
+   "cards": 120
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Marvel Super Heroes",
+   "cards": 111
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Secrets of Strixhaven",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Teenage Mutant Ninja Turtles",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Lorwyn Eclipsed",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Avatar: The Last Airbender",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Marvel's Spider-Man",
+   "cards": 109
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Edge of Eternities",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: FINAL FANTASY",
+   "cards": 130
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Tarkir: Dragonstorm",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Aetherdrift",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad Remastered",
+   "cards": 50
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Foundations",
+   "cards": 109
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Duskmourn: House of Horror",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Bloomburrow",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Universes Beyond: Assassin's Creed",
+   "cards": 40
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons 3",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Outlaws of Thunder Junction",
+   "cards": 108
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Murders at Karlov Manor",
+   "cards": 98
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Lost Caverns of Ixalan",
+   "cards": 158
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Wilds of Eldraine",
+   "cards": 160
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Commander Masters",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Universes Beyond: The Lord of the Rings: Tales of Middle-earth",
+   "cards": 184
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: March of the Machine",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Phyrexia: All Will Be One",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: The Brothers' War",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Dominaria United",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Commander Legends: Battle for Baldur's Gate",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Streets of New Capenna",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Kamigawa: Neon Dynasty",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad: Crimson Vow",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Innistrad: Midnight Hunt",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Adventures in the Forgotten Realms",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons 2",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Strixhaven",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Kaldheim",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Zendikar Rising",
+   "cards": 162
+  },
+  {
+   "game": "magic",
+   "group": "Art Series: Modern Horizons",
+   "cards": 54
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional EX Base Tokens",
+   "cards": 30
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional EX Resource Tokens",
+   "cards": 15
+  },
+  {
+   "game": "gundam",
+   "group": "Promotional Resource Tokens",
+   "cards": 65
+  }
+ ],
+ "errors": []
+}
