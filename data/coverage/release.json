@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-11-21T04:19:48.708Z",
+ "generatedAt": "2026-11-22T03:31:19.623Z",
  "mode": "release",
  "counts": {
   "pokemon": {
-   "tcg": 3987,
+   "tcg": 3875,
    "ours": 28876
   },
   "magic": {
-   "tcg": 46865,
+   "tcg": 21879,
    "ours": 106661,
    "sister": {
     "site": "MTG Compare",
@@ -15,7 +15,7 @@
    }
   },
   "yugioh": {
-   "tcg": 678,
+   "tcg": 963,
    "ours": 46701
   },
   "one-piece": {
@@ -27,11 +27,11 @@
    }
   },
   "lorcana": {
-   "tcg": 221,
+   "tcg": 0,
    "ours": 3794,
    "sister": {
     "site": "Lorcana Compare",
-    "cards": 1662
+    "cards": 1665
    }
   },
   "riftbound": {
@@ -39,11 +39,11 @@
    "ours": 1805
   },
   "pokemon-japan": {
-   "tcg": 1138,
+   "tcg": 536,
    "ours": 30450
   },
   "star-wars-unlimited": {
-   "tcg": 2976,
+   "tcg": 3290,
    "ours": 9783
   },
   "gundam": {
@@ -51,11 +51,11 @@
    "ours": 2033,
    "sister": {
     "site": "Gundam Compare",
-    "cards": 1435
+    "cards": 1259
    }
   },
   "flesh-and-blood": {
-   "tcg": 2481,
+   "tcg": 1936,
    "ours": 10420
   },
   "digimon": {
@@ -63,7 +63,7 @@
    "ours": 9580
   },
   "dragon-ball-fusion-world": {
-   "tcg": 148,
+   "tcg": 0,
    "ours": 4375
   },
   "union-arena": {
@@ -75,15 +75,15 @@
    "ours": 31866
   },
   "cardfight-vanguard": {
-   "tcg": 1608,
+   "tcg": 528,
    "ours": 26900
   },
   "sorcery": {
-   "tcg": 120,
+   "tcg": 593,
    "ours": 3124
   },
   "grand-archive": {
-   "tcg": 1123,
+   "tcg": 64,
    "ours": 5484
   },
   "hololive": {
@@ -95,11 +95,11 @@
    "ours": 935
   },
   "cyberpunk": {
-   "tcg": 242,
+   "tcg": 231,
    "ours": 528,
    "sister": {
     "site": "Cyberpunk Compare",
-    "cards": 545
+    "cards": 546
    }
   },
   "final-fantasy": {
@@ -107,7 +107,7 @@
    "ours": 5746
   },
   "dragon-ball-super-masters": {
-   "tcg": 2687,
+   "tcg": 1754,
    "ours": 11946
   },
   "shadowverse-evolve": {
@@ -115,8 +115,8 @@
    "ours": 7960
   },
   "universus": {
-   "tcg": 343,
-   "ours": 8548
+   "tcg": 351,
+   "ours": 8556
   },
   "naruto": {
    "tcg": 0,
@@ -127,7 +127,7 @@
    "ours": 3224
   },
   "cookierun-braverse": {
-   "tcg": 569,
+   "tcg": 366,
    "ours": 2287
   },
   "palworld": {
@@ -151,7 +151,7 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon",
-   "tcgCards": 3987,
+   "tcgCards": 3875,
    "ourCards": 28876,
    "missing": 0,
    "stale": 0,
@@ -161,7 +161,7 @@
   {
    "site": "TCG Singles DB",
    "game": "magic",
-   "tcgCards": 46865,
+   "tcgCards": 21879,
    "ourCards": 106661,
    "missing": 0,
    "stale": 0,
@@ -171,7 +171,7 @@
   {
    "site": "MTG Compare",
    "game": "magic",
-   "tcgCards": 46865,
+   "tcgCards": 21879,
    "ourCards": 106671,
    "missing": 0,
    "stale": 0,
@@ -181,7 +181,7 @@
   {
    "site": "TCG Singles DB",
    "game": "yugioh",
-   "tcgCards": 678,
+   "tcgCards": 963,
    "ourCards": 46701,
    "missing": 0,
    "stale": 0,
@@ -211,7 +211,7 @@
   {
    "site": "TCG Singles DB",
    "game": "lorcana",
-   "tcgCards": 221,
+   "tcgCards": 0,
    "ourCards": 3794,
    "missing": 0,
    "stale": 0,
@@ -221,24 +221,12 @@
   {
    "site": "Lorcana Compare",
    "game": "lorcana",
-   "tcgCards": 221,
-   "ourCards": 1662,
-   "missing": 2,
+   "tcgCards": 0,
+   "ourCards": 1665,
+   "missing": 0,
    "stale": 0,
-   "byFloor": 50,
-   "groups": [
-    {
-     "groupId": 23234,
-     "name": "Disney Lorcana Promo Cards",
-     "released": "2023-07-01",
-     "tcg": 221,
-     "ours": 169,
-     "missing": [
-      734009,
-      734014
-     ]
-    }
-   ]
+   "byFloor": 0,
+   "groups": []
   },
   {
    "site": "TCG Singles DB",
@@ -253,7 +241,7 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon-japan",
-   "tcgCards": 1138,
+   "tcgCards": 536,
    "ourCards": 30450,
    "missing": 0,
    "stale": 0,
@@ -263,7 +251,7 @@
   {
    "site": "TCG Singles DB",
    "game": "star-wars-unlimited",
-   "tcgCards": 2976,
+   "tcgCards": 3290,
    "ourCards": 9783,
    "missing": 0,
    "stale": 0,
@@ -284,7 +272,7 @@
    "site": "Gundam Compare",
    "game": "gundam",
    "tcgCards": 0,
-   "ourCards": 1435,
+   "ourCards": 1259,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -293,7 +281,7 @@
   {
    "site": "TCG Singles DB",
    "game": "flesh-and-blood",
-   "tcgCards": 2481,
+   "tcgCards": 1936,
    "ourCards": 10420,
    "missing": 0,
    "stale": 0,
@@ -313,7 +301,7 @@
   {
    "site": "TCG Singles DB",
    "game": "dragon-ball-fusion-world",
-   "tcgCards": 148,
+   "tcgCards": 0,
    "ourCards": 4375,
    "missing": 0,
    "stale": 0,
@@ -343,7 +331,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cardfight-vanguard",
-   "tcgCards": 1608,
+   "tcgCards": 528,
    "ourCards": 26900,
    "missing": 0,
    "stale": 0,
@@ -353,7 +341,7 @@
   {
    "site": "TCG Singles DB",
    "game": "sorcery",
-   "tcgCards": 120,
+   "tcgCards": 593,
    "ourCards": 3124,
    "missing": 0,
    "stale": 0,
@@ -363,7 +351,7 @@
   {
    "site": "TCG Singles DB",
    "game": "grand-archive",
-   "tcgCards": 1123,
+   "tcgCards": 64,
    "ourCards": 5484,
    "missing": 0,
    "stale": 0,
@@ -393,7 +381,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cyberpunk",
-   "tcgCards": 242,
+   "tcgCards": 231,
    "ourCards": 528,
    "missing": 0,
    "stale": 0,
@@ -403,23 +391,12 @@
   {
    "site": "Cyberpunk Compare",
    "game": "cyberpunk",
-   "tcgCards": 242,
-   "ourCards": 545,
-   "missing": 1,
+   "tcgCards": 231,
+   "ourCards": 546,
+   "missing": 0,
    "stale": 0,
    "byFloor": 0,
-   "groups": [
-    {
-     "groupId": 24927,
-     "name": "Judge Promos",
-     "released": "2026-11-01",
-     "tcg": 5,
-     "ours": 4,
-     "missing": [
-      735296
-     ]
-    }
-   ]
+   "groups": []
   },
   {
    "site": "TCG Singles DB",
@@ -434,7 +411,7 @@
   {
    "site": "TCG Singles DB",
    "game": "dragon-ball-super-masters",
-   "tcgCards": 2687,
+   "tcgCards": 1754,
    "ourCards": 11946,
    "missing": 0,
    "stale": 0,
@@ -454,8 +431,8 @@
   {
    "site": "TCG Singles DB",
    "game": "universus",
-   "tcgCards": 343,
-   "ourCards": 8548,
+   "tcgCards": 351,
+   "ourCards": 8556,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -484,7 +461,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cookierun-braverse",
-   "tcgCards": 569,
+   "tcgCards": 366,
    "ourCards": 2287,
    "missing": 0,
    "stale": 0,
