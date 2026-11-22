@@ -226,3 +226,14 @@ app screen) brings Rift Compare's auto-detect camera here for Pokémon, Yu-Gi-Oh
   game, set, s, printing, qty, addedAt, src }] }`, one item per (id, printing) with `printing` exactly a key of the card's
   prices ("Normal" when it has none), and an `sdb:collection` window event after each write. The /collection page reads it.
 - DON!! cards and other cards with no printed number cannot be scanned; search finds them.
+
+## 2026-11-22: Bot rules never untag a real person
+
+The owner (22 Nov): "make sure that there are literally zero false negatives when you filter bots, and false positives are okay."
+A buy link sent untagged to a real person is a lost sale; a bot sent tagged costs nothing we can see. `lib/bot-click.ts` had
+untagged anything with no Accept-Language, no Sec-Fetch-Mode, or a Sec-Fetch-Site of "none" or "cross-site". Real people
+send all of those: iOS before 16.4 and some in-app browsers send no Sec-Fetch-*, and a link opened from Discord, an email, a
+pasted URL or a translate proxy is "none" or "cross-site". "yandex" and "baidu" also matched real browsers' UAs (YaBrowser
+builds, baiduboxapp). Now `looksLikeBot` (the one thing that untags) is only an empty User-Agent or a self-named crawler or
+script; the header checks moved to `suspectClick`, which at most leaves a click out of the server-side click log, never the tag.
+The 10-14 Nov crawler with full browser headers will reach the networks tagged again: accepted by the owner's rule.
