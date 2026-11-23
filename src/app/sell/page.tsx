@@ -23,6 +23,9 @@ export default function Sell() {
         The highest cash offers for Magic: The Gathering singles today, from {BUYERS.ck.name}&rsquo;s buylist, beside each card&rsquo;s TCGplayer market price.
         {day ? ` Checked ${shortDate(day)}.` : ""} Open a card to see its offer next to its price history.
       </p>
+      <p className="card" style={{ padding: "14px 16px", marginTop: 16 }}>
+        <b>Selling more than one card, in any game?</b> <a href="/sell/list">Price your whole list</a>: each card&rsquo;s market price, what it nets after TCGplayer and eBay fees, and the best place to sell it.
+      </p>
       {top.length === 0 ? (
         <p>No buylist prices yet: they appear after the next daily update.</p>
       ) : (

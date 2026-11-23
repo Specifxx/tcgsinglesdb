@@ -237,3 +237,24 @@ pasted URL or a translate proxy is "none" or "cross-site". "yandex" and "baidu" 
 builds, baiduboxapp). Now `looksLikeBot` (the one thing that untags) is only an empty User-Agent or a self-named crawler or
 script; the header checks moved to `suspectClick`, which at most leaves a click out of the server-side click log, never the tag.
 The 10-14 Nov crawler with full browser headers will reach the networks tagged again: accepted by the owner's rule.
+
+## 2026-11-24: The Sell desk: where each of a seller's cards nets the most
+
+Owner's yes (19 Nov, after the tcghq.ai assessment, /mnt/project-files/strategy/tcghq-assessment-2026-11-19.html): not a clone of
+seller-listing software, but the one question those tools don't answer: "where should I sell this card for the most?" `/sell/list`
+(linked from `/sell`, in the sitemap) takes a pasted list or a CSV export (ManaBox, Collectr, TCGplayer's app, any sheet), up to
+100 cards, and shows per card the TCGplayer market price of its printing, what it nets after TCGplayer's and eBay's published US
+seller fees (`lib/sell.ts`, `FEES_READ`, sources linked on the page), Card Kingdom's cash offer where we have one, and the best
+route; a spreadsheet out.
+
+- **Nothing stored, no calls.** `/api/sell/price` reads only the committed card and buylist files and answers `no-store`. No eBay
+  call, no model call, no account. Analytics get counts and buckets only (`sell_list`, `sell_export`, `seller_pro`), never text.
+- **A wrong card is worse than a question.** A line settles on a card only when the search finds exactly one, or exactly one
+  candidate carries the printed number it gives ("2/102" and "002/102" read alike); otherwise the seller picks from up to six,
+  and an unpicked line stays out of the totals. A CSV id is read only from a column that says PRODUCT id (TCGplayer's seller
+  export's "TCGplayer Id" is a SKU) and only when the card's name agrees.
+- **No marketplace upload file.** TCGplayer's inventory upload keys on its SKU ids, which we do not hold, and eBay's listing
+  templates need condition and category fields per card: an export that half-works would cost a seller more than a plain sheet.
+- **Seller Pro is a fake door.** "I'd use Seller Pro" (US$7.99 a month, unlimited and saved lists, a weekly email) only counts
+  interest; nothing is charged or promised. Read 10 Dec: 150+ `sell_list` AND 30+ `seller_pro` events build it; fewer, the free
+  page stays as it is.
