@@ -217,3 +217,21 @@ table.list td.r,table.list th.r{text-align:right;font-variant-numeric:tabular-nu
 .insights li::before{content:"";position:absolute;left:13px;top:16px;width:8px;height:8px;border-radius:50%;background:var(--brand)}
 table.details td{white-space:pre-line;line-height:1.5}
 table.details th{width:34%;vertical-align:top}
+
+/* The Sell desk (/sell/list) */
+.sd{margin-top:20px;display:grid;gap:14px}
+.sd-in{padding:14px;display:grid;gap:12px}
+.sd-in textarea{width:100%;font:inherit;font-size:.92rem;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);resize:vertical}
+.sd-in select,.sd-table select,.sd-in input[type=number]{font:inherit;font-size:.88rem;padding:6px 8px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);max-width:16rem}
+.sd-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.sd-file{position:relative;overflow:hidden;cursor:pointer}.sd-file input{position:absolute;inset:0;opacity:0;cursor:pointer}
+.sd-link{background:none;border:0;padding:0;color:var(--brand);font:inherit;font-weight:600;cursor:pointer;text-decoration:underline}
+.sd-err{color:var(--down);margin:0}
+.sd-note{margin:0;font-size:.9rem}
+.sd-totals{margin:0;list-style:none}.sd-totals li{padding:12px 14px;display:grid;gap:2px}.sd-totals b{font-size:1.25rem;font-variant-numeric:tabular-nums}
+.sd-best{border-color:var(--brand)}
+.sd-table td{vertical-align:middle}
+.sd-route{display:inline-block;font-size:.78rem;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--raised)}
+.sd-route.sd-tcgplayer{background:var(--brand-soft);color:var(--brand)}.sd-route.sd-cash{color:var(--up)}.sd-route.sd-bulk{color:var(--mute)}
+.sd-pro{padding:16px;display:grid;gap:8px;justify-items:start;max-width:40rem}
+.sd-thanks{margin:0;color:var(--up);font-weight:600}

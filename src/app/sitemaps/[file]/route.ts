@@ -10,7 +10,7 @@ export function GET(_req: Request, { params }: { params: { file: string } }) {
   const meta = readMeta();
   if (name === "pages") {
     const day = meta.generatedAt.slice(0, 10) || undefined;
-    return xml([{ path: "/", lastmod: day }, ...shownGames().filter((g) => (meta.games[g.slug]?.indexed ?? 0) > 0).map((g) => ({ path: `/${g.slug}`, lastmod: day })), { path: "/about" }, { path: "/sell", lastmod: day }]);
+    return xml([{ path: "/", lastmod: day }, ...shownGames().filter((g) => (meta.games[g.slug]?.indexed ?? 0) > 0).map((g) => ({ path: `/${g.slug}`, lastmod: day })), { path: "/about" }, { path: "/sell", lastmod: day }, { path: "/sell/list" }]);
   }
   const m = /^([a-z0-9-]+?)-(sets|cards-(\d+))$/.exec(name);
   const game = m && shownGame(m[1]);
