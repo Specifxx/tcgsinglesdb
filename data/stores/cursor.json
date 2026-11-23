@@ -20,8 +20,8 @@
   "page": 1
  },
  "accidentallycoolgames": {
-  "h": 4,
-  "page": 5
+  "h": 0,
+  "page": 1
  },
  "awesomeccg": {
   "h": 0,
@@ -32,55 +32,55 @@
   "page": 1
  },
  "animeimports": {
-  "h": 1,
-  "page": 55
+  "h": 0,
+  "page": 1
  },
  "alchemistsrefuge": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "atlantiscomics": {
-  "h": 2,
+  "h": 0,
   "page": 1
  },
  "atomilicollectables": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "bluejayscauldron": {
   "h": 0,
   "page": 1
  },
  "balancegamingfl": {
-  "h": 0,
-  "page": 61
- },
- "bentonville": {
   "h": 1,
   "page": 20
  },
+ "bentonville": {
+  "h": 0,
+  "page": 1
+ },
  "baxtersrealm": {
-  "h": 2,
-  "page": 99
+  "h": 3,
+  "page": 58
  },
  "bardsandcards": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "bytheboardgames": {
   "h": 0,
   "page": 1
  },
  "blackvaultgaming": {
-  "h": 4,
-  "page": 17
+  "h": 0,
+  "page": 1
  },
  "cardandcollectibleguys": {
   "h": 0,
   "page": 1
  },
  "boardwipe": {
-  "h": 5,
+  "h": 0,
   "page": 1
  },
  "cardboardfiat": {
@@ -88,16 +88,16 @@
   "page": 1
  },
  "brickandboardgames": {
-  "h": 1,
-  "page": 20
+  "h": 0,
+  "page": 1
  },
  "cardboyz": {
   "h": 0,
   "page": 1
  },
  "bricksandheroes": {
-  "h": 2,
-  "page": 99
+  "h": 0,
+  "page": 1
  },
  "cardfathertcg": {
   "h": 0,
@@ -116,19 +116,19 @@
   "page": 1
  },
  "burbankcards": {
-  "h": 1,
-  "page": 60
+  "h": 2,
+  "page": 19
  },
  "cardshopnear": {
   "h": 0,
   "page": 1
  },
  "capefearcollectibles": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "cardcavern": {
-  "h": 3,
+  "h": 0,
   "page": 1
  },
  "championtcg": {
@@ -160,24 +160,24 @@
   "page": 1
  },
  "cardsnmo": {
-  "h": 1,
-  "page": 40
+  "h": 0,
+  "page": 1
  },
  "cardhavengames": {
-  "h": 2,
-  "page": 7
+  "h": 0,
+  "page": 1
  },
  "castlegameshoppe": {
-  "h": 2,
-  "page": 99
+  "h": 3,
+  "page": 58
  },
  "collectivecubed": {
-  "h": 2,
-  "page": 20
+  "h": 0,
+  "page": 1
  },
  "constellationcollectivesac": {
-  "h": 2,
-  "page": 99
+  "h": 3,
+  "page": 58
  },
  "digitalheroes": {
   "h": 0,
@@ -185,15 +185,15 @@
  },
  "cosmicgames": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "cosmicbham": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "darkholdgames": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 21
  },
  "dxgamesllc": {
   "h": 0,
@@ -201,7 +201,7 @@
  },
  "dealsndragons": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "dinoscardsandcollectibles": {
   "h": 0,
@@ -232,11 +232,11 @@
   "page": 1
  },
  "dublin": {
-  "h": 3,
-  "page": 4
+  "h": 0,
+  "page": 1
  },
  "dragonegggames": {
-  "h": 5,
+  "h": 0,
   "page": 1
  },
  "evvgamingguild": {
@@ -256,8 +256,8 @@
   "page": 1
  },
  "epikcg": {
-  "h": 2,
-  "page": 99
+  "h": 3,
+  "page": 58
  },
  "foxfablehaven": {
   "h": 0,
@@ -272,12 +272,12 @@
   "page": 1
  },
  "evanstongames": {
-  "h": 1,
-  "page": 20
+  "h": 0,
+  "page": 1
  },
  "eternalgameschesterfield": {
-  "h": 3,
-  "page": 3
+  "h": 0,
+  "page": 1
  },
  "gachaboba": {
   "h": 0,
@@ -285,7 +285,7 @@
  },
  "five6gaming": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "gamelandia": {
   "h": 0,
@@ -296,20 +296,20 @@
   "page": 1
  },
  "forgottenpathgames": {
-  "h": 0,
-  "page": 61
- },
- "galacticgamez": {
-  "h": 2,
-  "page": 99
- },
- "galaxygamesllc": {
   "h": 1,
   "page": 20
  },
+ "galacticgamez": {
+  "h": 0,
+  "page": 1
+ },
+ "galaxygamesllc": {
+  "h": 0,
+  "page": 1
+ },
  "gamecraftgamestore": {
-  "h": 1,
-  "page": 24
+  "h": 0,
+  "page": 1
  },
  "gamersgetawaykc": {
   "h": 0,
@@ -320,24 +320,24 @@
   "page": 1
  },
  "gamegridif": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 29
  },
  "gameostorus": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "gamespacefl": {
   "h": 0,
   "page": 1
  },
  "gamerealm": {
-  "h": 2,
-  "page": 99
+  "h": 3,
+  "page": 58
  },
  "gamersgauntlet": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "gatecitygames": {
   "h": 0,
@@ -352,8 +352,8 @@
   "page": 1
  },
  "gamersgrove": {
-  "h": 2,
-  "page": 99
+  "h": 4,
+  "page": 21
  },
  "ginzamkt": {
   "h": 0,
@@ -364,12 +364,12 @@
   "page": 1
  },
  "gamersparadisela": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "gameskingstore": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "guubuu": {
   "h": 0,
@@ -389,7 +389,7 @@
  },
  "gnomegames": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "hobbyvault": {
   "h": 0,
@@ -408,12 +408,12 @@
   "page": 1
  },
  "gglegends": {
-  "h": 3,
-  "page": 60
+  "h": 4,
+  "page": 19
  },
  "graygauntletgames": {
-  "h": 2,
-  "page": 99
+  "h": 3,
+  "page": 58
  },
  "jarocards": {
   "h": 0,
@@ -429,15 +429,15 @@
  },
  "grognardgames": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "hoarditall": {
-  "h": 1,
-  "page": 15
+  "h": 0,
+  "page": 1
  },
  "jandjgamingfactory": {
-  "h": 1,
-  "page": 56
+  "h": 0,
+  "page": 1
  },
  "kollectiblekings": {
   "h": 0,
@@ -448,8 +448,8 @@
   "page": 1
  },
  "impactgamingcenter": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "landfalloutpost": {
   "h": 0,
@@ -460,8 +460,8 @@
   "page": 1
  },
  "joshscards": {
-  "h": 2,
-  "page": 99
+  "h": 3,
+  "page": 58
  },
  "laytongaming": {
   "h": 0,
@@ -473,7 +473,7 @@
  },
  "journeysendgames": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "lingstergames": {
   "h": 0,
@@ -484,16 +484,16 @@
   "page": 1
  },
  "kngaming": {
-  "h": 5,
-  "page": 15
+  "h": 0,
+  "page": 1
  },
  "legendsfanshop": {
   "h": 0,
   "page": 1
  },
  "knightandday": {
-  "h": 1,
-  "page": 20
+  "h": 0,
+  "page": 1
  },
  "magessanctum": {
   "h": 0,
@@ -504,12 +504,12 @@
   "page": 1
  },
  "larrysgamestore": {
-  "h": 2,
-  "page": 19
+  "h": 0,
+  "page": 1
  },
  "levelupgamesmd": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 31
  },
  "manathril": {
   "h": 0,
@@ -520,12 +520,12 @@
   "page": 1
  },
  "madtownhobby": {
-  "h": 2,
-  "page": 2
+  "h": 0,
+  "page": 1
  },
  "lthobbies": {
-  "h": 1,
-  "page": 20
+  "h": 0,
+  "page": 1
  },
  "mainephasehobbies": {
   "h": 0,
@@ -540,12 +540,12 @@
   "page": 1
  },
  "magicandmonsters": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "manyrealms": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "mintedtcg": {
   "h": 0,
@@ -557,11 +557,11 @@
  },
  "moonshotgamestore": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "mindgamesandmagic": {
-  "h": 1,
-  "page": 40
+  "h": 3,
+  "page": 1
  },
  "mystictcg": {
   "h": 0,
@@ -580,12 +580,12 @@
   "page": 1
  },
  "mothershipatx": {
-  "h": 2,
-  "page": 99
+  "h": 0,
+  "page": 1
  },
  "motorcitygaming": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "northwestcardcompany": {
   "h": 0,
@@ -593,35 +593,35 @@
  },
  "moxiecardshop": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "mysterymtg": {
-  "h": 0,
+  "h": 4,
   "page": 1
  },
  "mythicforgegames": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "nexustabletopgames": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "onestoptcg": {
   "h": 0,
   "page": 1
  },
  "nolatcg": {
-  "h": 1,
-  "page": 20
+  "h": 0,
+  "page": 1
  },
  "papajoeys": {
   "h": 0,
   "page": 1
  },
  "nutmeggames": {
-  "h": 2,
-  "page": 99
+  "h": 0,
+  "page": 1
  },
  "phantasma": {
   "h": 0,
@@ -633,7 +633,7 @@
  },
  "oldschoolgamesandcards": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "pcatoys": {
   "h": 0,
@@ -645,15 +645,15 @@
  },
  "patsgames": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "pokecollect": {
   "h": 0,
   "page": 1
  },
  "onboardgaming": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "progressccg": {
   "h": 0,
@@ -661,27 +661,27 @@
  },
  "phoenixcomicsandgames": {
   "h": 0,
-  "page": 1
- },
- "pokeboxusa": {
-  "h": 0,
   "page": 61
  },
- "pieceofthegame": {
+ "pokeboxusa": {
   "h": 1,
-  "page": 10
+  "page": 20
+ },
+ "pieceofthegame": {
+  "h": 2,
+  "page": 19
  },
  "phatcatzgaming": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "realgoodeal": {
   "h": 0,
   "page": 1
  },
  "pokemonplug": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "reapergamestore": {
   "h": 0,
@@ -705,27 +705,27 @@
  },
  "prosoulgames": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "punkouter": {
-  "h": 2,
-  "page": 9
+  "h": 0,
+  "page": 1
  },
  "skyboxct": {
   "h": 0,
   "page": 1
  },
  "riftgate": {
-  "h": 1,
-  "page": 15
+  "h": 0,
+  "page": 1
  },
  "redfoxgamingonline": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "retrogamingofdenver": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "spacecoast": {
   "h": 0,
@@ -749,27 +749,27 @@
  },
  "stevensongames": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "spankyscardshop": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "shufflenroll": {
-  "h": 1,
-  "page": 59
+  "h": 0,
+  "page": 1
  },
  "superanimestore": {
-  "h": 3,
-  "page": 4
+  "h": 0,
+  "page": 1
  },
  "tabletcg": {
   "h": 0,
   "page": 1
  },
  "sweetsandgeeks": {
-  "h": 1,
-  "page": 46
+  "h": 0,
+  "page": 1
  },
  "tcgom": {
   "h": 0,
@@ -801,7 +801,7 @@
  },
  "stompinggroundstcg": {
   "h": 0,
-  "page": 1
+  "page": 61
  },
  "swordsandspoons": {
   "h": 0,
@@ -820,20 +820,20 @@
   "page": 1
  },
  "syndicategames": {
-  "h": 1,
-  "page": 29
+  "h": 0,
+  "page": 1
  },
  "sydequest": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "thehubtcg": {
-  "h": 1,
-  "page": 34
+  "h": 0,
+  "page": 1
  },
  "thegamecornergames": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "timetravelersonline": {
   "h": 0,
@@ -844,16 +844,16 @@
   "page": 1
  },
  "thesportsshaq": {
-  "h": 4,
-  "page": 4
+  "h": 0,
+  "page": 1
  },
  "topspot": {
   "h": 0,
   "page": 1
  },
  "thetrainercourt": {
-  "h": 2,
-  "page": 15
+  "h": 0,
+  "page": 1
  },
  "totalescapegames": {
   "h": 0,
@@ -868,8 +868,8 @@
   "page": 1
  },
  "thenerdmerchant": {
-  "h": 5,
-  "page": 6
+  "h": 0,
+  "page": 1
  },
  "tradingcardworld": {
   "h": 0,
@@ -880,16 +880,16 @@
   "page": 1
  },
  "tier1games": {
-  "h": 1,
-  "page": 20
+  "h": 0,
+  "page": 1
  },
  "troveofcollectibles": {
   "h": 0,
   "page": 1
  },
  "thewarpgate": {
-  "h": 2,
-  "page": 99
+  "h": 3,
+  "page": 58
  },
  "tothetable": {
   "h": 0,
@@ -920,35 +920,35 @@
   "page": 1
  },
  "vaultgamestore": {
-  "h": 2,
-  "page": 7
+  "h": 0,
+  "page": 1
  },
  "triadgroup": {
-  "h": 2,
-  "page": 13
+  "h": 0,
+  "page": 1
  },
  "us": {
-  "h": 4,
-  "page": 5
+  "h": 0,
+  "page": 1
  },
  "wulfgaming": {
   "h": 0,
-  "page": 61
+  "page": 1
  },
  "wolfdentcg": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  },
  "zamliytcg": {
-  "h": 1,
-  "page": 53
+  "h": 0,
+  "page": 1
  },
  "zcgamestcg": {
-  "h": 3,
-  "page": 19
+  "h": 0,
+  "page": 1
  },
  "zulusgames": {
-  "h": 0,
-  "page": 61
+  "h": 1,
+  "page": 20
  }
 }
