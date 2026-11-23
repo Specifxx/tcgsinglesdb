@@ -1,4 +1,4 @@
-# Card coverage (full, 2026-11-20 03:21 UTC)
+# Card coverage (full, 2026-11-23 04:04 UTC)
 
 A card TCGplayer added since a site's last import shows as missing for a day; only one missing two days or more is a gap.
 
@@ -6,103 +6,68 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 
 | Site | Game | TCGplayer cards | Our cards | Missing | Missing 2+ days | Left out by the US$1 floor |
 |---|---|---:|---:|---:|---:|---:|
-| TCG Singles DB | pokemon | 28876 | 28875 | 1 |  |  |
+| TCG Singles DB | pokemon | 28876 | 28876 | 0 |  |  |
 | TCG Singles DB | magic | 106661 | 106661 | 0 |  |  |
-| MTG Compare | magic | 106661 | 106649 | 22 |  |  |
+| MTG Compare | magic | 106661 | 106671 | 0 |  |  |
 | TCG Singles DB | yugioh | 46701 | 46701 | 0 |  |  |
-| TCG Singles DB | one-piece | 7519 | 7519 | 0 |  |  |
-| OP Compare | one-piece | 7519 | 7528 | 0 |  |  |
+| TCG Singles DB | one-piece | 7543 | 7543 | 0 |  |  |
+| OP Compare | one-piece | 7543 | 7552 | 0 |  |  |
 | TCG Singles DB | lorcana | 3794 | 3794 | 0 |  |  |
-| Lorcana Compare | lorcana | 3794 | 1661 | 1 |  | 2339 |
-| TCG Singles DB | riftbound | 1804 | 1804 | 0 |  |  |
+| Lorcana Compare | lorcana | 3794 | 1667 | 1 |  | 2333 |
+| TCG Singles DB | riftbound | 1805 | 1805 | 0 |  |  |
 | TCG Singles DB | pokemon-japan | 30450 | 30450 | 0 |  |  |
 | TCG Singles DB | star-wars-unlimited | 9783 | 9783 | 0 |  |  |
 | TCG Singles DB | gundam | 2033 | 2033 | 0 |  |  |
-| Gundam Compare | gundam | 2033 | 1435 | 0 |  | 869 |
-| TCG Singles DB | flesh-and-blood | 10403 | 10378 | 25 |  |  |
-| TCG Singles DB | digimon | 9571 | 9559 | 12 |  |  |
+| Gundam Compare | gundam | 2033 | 1259 | 0 |  | 1043 |
+| TCG Singles DB | flesh-and-blood | 10420 | 10420 | 0 |  |  |
+| TCG Singles DB | digimon | 9580 | 9580 | 0 |  |  |
 | TCG Singles DB | dragon-ball-fusion-world | 4375 | 4375 | 0 |  |  |
-| TCG Singles DB | union-arena | 7228 | 7228 | 0 |  |  |
+| TCG Singles DB | union-arena | 7233 | 7233 | 0 |  |  |
 | TCG Singles DB | weiss-schwarz | 31866 | 31866 | 0 |  |  |
-| TCG Singles DB | cardfight-vanguard | 26899 | 26599 | 300 |  |  |
+| TCG Singles DB | cardfight-vanguard | 26900 | 26900 | 0 |  |  |
 | TCG Singles DB | sorcery | 3124 | 3124 | 0 |  |  |
-| TCG Singles DB | grand-archive | 5449 | 5357 | 92 |  |  |
+| TCG Singles DB | grand-archive | 5484 | 5484 | 0 |  |  |
 | TCG Singles DB | hololive | 2304 | 2304 | 0 |  |  |
 | TCG Singles DB | godzilla | 935 | 935 | 0 |  |  |
-| TCG Singles DB | cyberpunk | 527 | 527 | 0 |  |  |
-| Cyberpunk Compare | cyberpunk | 527 | 545 | 0 |  |  |
+| TCG Singles DB | cyberpunk | 528 | 528 | 0 |  |  |
+| Cyberpunk Compare | cyberpunk | 528 | 546 | 0 |  |  |
 | TCG Singles DB | final-fantasy | 5746 | 5746 | 0 |  |  |
 | TCG Singles DB | dragon-ball-super-masters | 11946 | 11946 | 0 |  |  |
 | TCG Singles DB | shadowverse-evolve | 7960 | 7960 | 0 |  |  |
-| TCG Singles DB | universus | 8548 | 8548 | 0 |  |  |
+| TCG Singles DB | universus | 8556 | 8556 | 0 |  |  |
 | TCG Singles DB | naruto | 3 | 3 | 0 |  |  |
 | TCG Singles DB | elestrals | 3224 | 3224 | 0 |  |  |
-| TCG Singles DB | cookierun-braverse | 2287 | 2283 | 4 |  |  |
+| TCG Singles DB | cookierun-braverse | 2287 | 2287 | 0 |  |  |
 | TCG Singles DB | palworld | 647 | 647 | 0 |  |  |
 | TCG Singles DB | wixoss | 4448 | 4448 | 0 |  |  |
 | TCG Singles DB | battle-spirits-saga | 1842 | 1842 | 0 |  |  |
 | TCG Singles DB | alpha-clash | 2296 | 2296 | 0 |  |  |
 
-### TCG Singles DB / pokemon: 1 missing
-
-- ME: Mega Evolution Promo (2025-09-26): 152 of 153; e.g. 734563
-
-### MTG Compare / magic: 22 missing
-
-- Universes Beyond: Jurassic World Collection (2023-11-17): 26 of 45; e.g. 524291, 524293, 524294, 524295, 524297, 524298
-- Eventide (2008-07-25): 179 of 180; e.g. 27148
-- Future Sight (2007-05-04): 179 of 180; e.g. 14881
-- Secret Lair Drop Series (2026-11-19): 3368 of 3369; e.g. 587975
-
 ### Lorcana Compare / lorcana: 1 missing
 
-- Disney Lorcana Promo Cards (2023-07-01): 168 of 221; e.g. 650211
-
-### TCG Singles DB / flesh-and-blood: 25 missing
-
-- Flesh and Blood: Promo Cards (2019-10-11): 1233 of 1257; e.g. 705414, 706918, 723470, 723471, 723472, 723473
-- Outbreak (2027-02-12): 64 of 65; e.g. 734567
-
-### TCG Singles DB / digimon: 12 missing
-
-- Ignition of X (2026-12-11): 113 of 125; e.g. 734589, 734590, 734591, 734592, 734593, 734594
-
-### TCG Singles DB / cardfight-vanguard: 300 missing
-
-- DZ-TB03: Future Card Buddyfight - Disaster Force (2026-11-20): 0 of 279; e.g. 734604, 734605, 734606, 734607, 734608, 734609
-- D Promo Cards (2021-04-02): 1058 of 1079; e.g. 734568, 734569, 734570, 734571, 734572, 734573
-
-### TCG Singles DB / grand-archive: 92 missing
-
-- Pantheon Pack 1 (2026-11-01): 0 of 64; e.g. 734884, 734885, 734886, 734887, 734888, 734889
-- Promotional Cards (2023-04-28): 407 of 433; e.g. 734948, 735023, 735024, 735025, 735026, 735027
-- Mercurial Heart (2024-05-17): 207 of 208; e.g. 735095
-- Phantom Monarchs (2025-12-05): 318 of 319; e.g. 735091
-
-### TCG Singles DB / cookierun-braverse: 4 missing
-
-- Promotion Cards (2026-06-15): 346 of 350; e.g. 735033, 735034, 735036, 735037
+- Disney Lorcana Promo Cards (2023-07-01): 170 of 221; e.g. 732601
 
 ## Against independent card databases
 
 | Source | Game | Set | Code | Released | Listed | Ours | Note |
 |---|---|---|---|---|---:|---:|---|
-| Scryfall | magic | Wizards Play Network 2027 | PW27 | 2027-01-01 | 4 | 0 | 0 with a TCGplayer id we lack; 4 not sold on TCGplayer |
 | Scryfall | magic | MagicFest 2027 | PF27 | 2027-01-01 | 1 | 0 | 0 with a TCGplayer id we lack; 1 not sold on TCGplayer |
+| Scryfall | magic | Wizards Play Network 2027 | PW27 | 2027-01-01 | 4 | 0 | 0 with a TCGplayer id we lack; 4 not sold on TCGplayer |
 | Scryfall | magic | Prismatic Pride | PUNK | 2026-11-13 | 20 | 0 | 0 with a TCGplayer id we lack; 20 not sold on TCGplayer |
 | Scryfall | magic | Year of the Horse 2026 | PL26 | 2026-02-17 | 5 | 4 | 1 with a TCGplayer id we lack (2 Treasure [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
-| Scryfall | magic | Wizards Play Network 2026 | PW26 | 2026-01-01 | 24 | 17 | 0 with a TCGplayer id we lack; 7 not sold on TCGplayer |
 | Scryfall | magic | MagicFest 2026 | PF26 | 2026-01-01 | 19 | 13 | 0 with a TCGplayer id we lack; 6 not sold on TCGplayer |
+| Scryfall | magic | Wizards Play Network 2026 | PW26 | 2026-01-01 | 24 | 17 | 0 with a TCGplayer id we lack; 7 not sold on TCGplayer |
 | Scryfall | magic | Marvel Legends Series Inserts | LMAR | 2025-09-30 | 8 | 4 | 0 with a TCGplayer id we lack; 4 not sold on TCGplayer |
 | Scryfall | magic | 2023 Heroes of the Realm | PH23 | 2025-08-24 | 2 | 0 | 0 with a TCGplayer id we lack; 2 not sold on TCGplayer |
 | Scryfall | magic | The Big Score Promos | PBIG | 2025-08-01 | 30 | 17 | 0 with a TCGplayer id we lack; 13 not sold on TCGplayer |
 | Scryfall | magic | Year of the Snake 2025 | PL25 | 2025-02-14 | 6 | 5 | 1 with a TCGplayer id we lack (2 Snake [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
 | Scryfall | magic | Spotlight Series | PSPL | 2025-01-03 | 15 | 12 | 0 with a TCGplayer id we lack; 3 not sold on TCGplayer |
 | Scryfall | magic | Love Your LGS 2024 | PLG24 | 2024-08-06 | 7 | 5 | 0 with a TCGplayer id we lack; 2 not sold on TCGplayer |
-| Scryfall | magic | Black Lotus Unknown Planechase | OUNK | 2024-02-24 | 52 | 16 | 1 with a TCGplayer id we lack (PLA008 Sky Deck [not in TCGplayer's catalogue]); 35 not sold on TCGplayer |
+| Scryfall | magic | Black Lotus Unknown Planechase | OUNK | 2024-02-24 | 116 | 16 | 1 with a TCGplayer id we lack (20240207 Sky Deck [not in TCGplayer's catalogue]); 99 not sold on TCGplayer |
 | Scryfall | magic | Year of the Dragon 2024 | PL24 | 2024-02-08 | 7 | 6 | 1 with a TCGplayer id we lack (3 Dragon [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
 | Scryfall | magic | 2022 Heroes of the Realm | PH22 | 2023-08-01 | 5 | 0 | 0 with a TCGplayer id we lack; 5 not sold on TCGplayer |
-| Scryfall | magic | Unknown Event | UNK | 2023-02-15 | 557 | 426 | 3 with a TCGplayer id we lack (CA02 A Container of Booster Packs [not in TCGplayer's catalogue]; CR14a My Deck is About a Seven [not in TCGplayer's catalogue]; RW04f Try-My-Deck Elemental [not in TCGplayer's catalogue]); 128 not sold on TCGplayer |
+| Scryfall | magic | March of the Machine Commander | MOC | 2023-04-21 | 450 | 400 | 50 with a TCGplayer id we lack (140 Bloodhill Bastion [not in TCGplayer's catalogue]; 141 Chaotic Aether [not in TCGplayer's catalogue]; 48 Enigma Ridges [not in TCGplayer's catalogue]; 49 Esper [not in TCGplayer's catalogue]; 142 Gavony [not in TCGplayer's catalogue]; 51 Ghirapur [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
+| Scryfall | magic | Unknown Event | UNK | 2023-02-15 | 557 | 426 | 3 with a TCGplayer id we lack (20260531 A Container of Booster Packs [not in TCGplayer's catalogue]; 20230727 My Deck is About a Seven [not in TCGplayer's catalogue]; 20230707 Try-My-Deck Elemental [not in TCGplayer's catalogue]); 128 not sold on TCGplayer |
 | Scryfall | magic | Year of the Rabbit 2023 | PL23 | 2023-02-10 | 6 | 5 | 1 with a TCGplayer id we lack (2 Food [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
 | Scryfall | magic | Eternal Weekend | PEWK | 2022-11-26 | 10 | 8 | 0 with a TCGplayer id we lack; 2 not sold on TCGplayer |
 | Scryfall | magic | The Brothers' War Promos | PBRO | 2022-11-18 | 171 | 166 | 0 with a TCGplayer id we lack; 5 not sold on TCGplayer |
@@ -120,6 +85,7 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 | Scryfall | magic | Friday Night Magic 2017 | F17 | 2017-01-01 | 12 | 9 | 3 with a TCGplayer id we lack (11 Dinosaur // Treasure [not in TCGplayer's catalogue]; 12 Pirate // Treasure [not in TCGplayer's catalogue]; 10 Vampire // Treasure [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
 | Scryfall | magic | Eldritch Moon Promos | PEMN | 2016-07-22 | 77 | 74 | 1 with a TCGplayer id we lack (1Z Zombie // Zombie [not in TCGplayer's catalogue]); 2 not sold on TCGplayer |
 | Scryfall | magic | Friday Night Magic 2012 | F12 | 2012-01-01 | 13 | 12 | 1 with a TCGplayer id we lack (1a Human // Wolf [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
+| Scryfall | magic | Archenemy Schemes | OARC | 2010-06-18 | 45 | 44 | 1 with a TCGplayer id we lack (8★ A Display of My Dark Power [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
 | Scryfall | magic | Rise of the Eldrazi Promos | PROE | 2010-04-23 | 4 | 3 | 0 with a TCGplayer id we lack; 1 not sold on TCGplayer |
 | Scryfall | magic | Worldwake Promos | PWWK | 2010-02-05 | 6 | 5 | 0 with a TCGplayer id we lack; 1 not sold on TCGplayer |
 | Scryfall | magic | URL/Convention Promos | PURL | 2009-02-08 | 18 | 16 | 0 with a TCGplayer id we lack; 2 not sold on TCGplayer |
@@ -129,6 +95,7 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 | Scryfall | magic | Coldsnap Promos | PCSP | 2006-07-21 | 2 | 1 | 1 with a TCGplayer id we lack (1 Marit Lage [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
 | Scryfall | magic | Hachette UK | PHUK | 2006-01-01 | 60 | 0 | 0 with a TCGplayer id we lack; 60 not sold on TCGplayer |
 | Scryfall | magic | DCI Promos | DCI | 2006-01-01 | 80 | 79 | 0 with a TCGplayer id we lack; 1 not sold on TCGplayer |
+| Scryfall | magic | Ninth Edition | 9ED | 2005-07-29 | 710 | 709 | 0 with a TCGplayer id we lack; 1 not sold on TCGplayer |
 | Scryfall | magic | Magic Player Rewards 2004 | P04 | 2004-01-01 | 6 | 1 | 5 with a TCGplayer id we lack (2 Angel [not in TCGplayer's catalogue]; 5 Beast [not in TCGplayer's catalogue]; 4 Myr [not in TCGplayer's catalogue]; 3 Pentavite [not in TCGplayer's catalogue]; 6 Spirit [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
 | Scryfall | magic | Eighth Edition | 8ED | 2003-07-28 | 711 | 707 | 0 with a TCGplayer id we lack; 4 not sold on TCGplayer |
 | Scryfall | magic | Japan Junior Tournament | PJJT | 2003-01-01 | 12 | 11 | 0 with a TCGplayer id we lack; 1 not sold on TCGplayer |
@@ -137,7 +104,6 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 | Scryfall | magic | Magic Player Rewards 2002 | PR2 | 2002-01-01 | 6 | 0 | 6 with a TCGplayer id we lack (7 Dragon [not in TCGplayer's catalogue]; 5 Elephant [not in TCGplayer's catalogue]; 8 Soldier [not in TCGplayer's catalogue]; 3 Squirrel [not in TCGplayer's catalogue]; 6 Wurm [not in TCGplayer's catalogue]; 4 Zombie [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
 | Scryfall | magic | Seventh Edition | 7ED | 2001-04-11 | 708 | 700 | 0 with a TCGplayer id we lack; 8 not sold on TCGplayer |
 | Scryfall | magic | Magic Player Rewards 2001 | MPR | 2001-01-01 | 8 | 1 | 7 with a TCGplayer id we lack (7 Bear [not in TCGplayer's catalogue]; 8 Beast [not in TCGplayer's catalogue]; 4 Bird [not in TCGplayer's catalogue]; 3 Elephant [not in TCGplayer's catalogue]; 6 Goblin Soldier [not in TCGplayer's catalogue]; 2 Saproling [not in TCGplayer's catalogue]); 0 not sold on TCGplayer |
-| Scryfall | magic | Arena League 1999 | PAL99 | 1999-01-01 | 10 | 9 | 0 with a TCGplayer id we lack; 1 not sold on TCGplayer |
 | Scryfall | magic | Multiverse Gift Box | MGB | 1996-11-01 | 10 | 0 | 0 with a TCGplayer id we lack; 10 not sold on TCGplayer |
 | Scryfall | magic | Rivals Quick Start Set | RQS | 1996-07-01 | 65 | 0 | 0 with a TCGplayer id we lack; 65 not sold on TCGplayer |
 | Scryfall | magic | Chronicles Foreign Black Border | BCHR | 1995-07-01 | 125 | 0 | 0 with a TCGplayer id we lack; 125 not sold on TCGplayer |
@@ -172,8 +138,8 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 | YGOPRODeck | yugioh | Glorious Victors | GLVI | 2026-12-03 | 3 | 0 | 3 codes we lack, 0 of them on TCGplayer (GLVI-EN016 Cielo, the Veil of Raise Moon; GLVI-EN038 Trirealm Rift Darkness; GLVI-EN003 Zenet-Nakhte Sphinx) |
 | YGOPRODeck | yugioh | Yu-Gi-Oh! World Championship Qualifier National Championships 2011 prize cards | WQ11 | 2011-05-01 | 3 | 0 | 3 codes we lack, 0 of them on TCGplayer (WQ11-EN001 Meklord Astro Mekanikle; WQ11-EN003 Meklord Emperor Granel; WQ11-EN002 T.G. Hyper Librarian) |
 | YGOPRODeck | yugioh | San Diego Comic-Con promotional cards | TKN1 | 2006-07-20 | 4 | 0 | 4 codes we lack, 0 of them on TCGplayer (TKN1-EN001 Sheep Token; TKN1-EN002 Sheep Token; TKN1-EN003 Sheep Token; TKN1-EN004 Sheep Token) |
-| OPTCG API | one-piece | Premium Booster -The Best- | P |  | 335 | 328 | numbers we lack: P-700, P-900, P-800 |
-| OPTCG API | one-piece | ST-25: Starter Deck 25 BLUE Buggy | ST25 |  | 8 | 5 | fewer printings than listed |
+| OPTCG API | one-piece | Premium Booster -The Best- | P |  | 335 | 328 | numbers we lack: P-700 (P-700 Monkey.D.Luffy (Release Event Leader)), P-900 (P-900 Monkey.D.Luffy (Sealed Battle 2024 Vol. 2)), P-800 (P-800_pr1 Monkey.D.Luffy (Leader Pack - Live Action) (Sealed Battle 2023 Vol. 1)); fewer printings: P-078: 8 of 10 printings (P-078_p6 Adio (Pirate Foil), P-078_r1 Adio, P-078_pr7 Adio (Regional Participation Pack 2025 Vol.1), P-078_pr6 Adio (Regional Finalist Card Set 2025 Vol.1), P-078_pr5 Adio (Regional Champion Card Set 2025 Vol.1), P-078_pr4 Adio (Offline Regional Participation Pack 2025 Vol.1), P-078_pr3 Adio (Online Regional Finalist Card Set 2025 Vol.1), P-078_pr2 Adio (Online Regional Participation Pack 2025 Vol.1), P-078_pr1 Adio (Offline Regional Champion Card Set 2025 Vol.1), P-078 Adio (Online Regional Champion Card Set 2025 Vol.1)); P-072: 1 of 2 printings (P-072_pr1 Ryuma (Premium Card Collection -Best Selection Vol. 3-), P-072 Ryuma (Oda Stamped Signature) (Premium Card Collection -Best Selection Vol. 3-)) |
+| OPTCG API | one-piece | ST-25: Starter Deck 25 BLUE Buggy | ST25 |  | 8 | 5 | fewer printings: ST25-003: 1 of 2 printings (ST25-003 Crocodile & Mihawk, ST25-003 Crocodile & Mihawk); ST25-001: 1 of 2 printings (ST25-001 Alvida, ST25-001 Alvida); ST25-004: 1 of 2 printings (ST25-004 Buggy, ST25-004 Buggy) |
 
 ## Groups skipped on purpose (tokens, art series, supplies)
 
@@ -224,23 +190,21 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 ## Could not read
 
 - Pokémon independent list: https://api.pokemontcg.io/v2/sets?pageSize=250: HTTP 500
-- Scryfall MOC: https://api.scryfall.com/cards/search?format=json&include_extras=true&include_multilingual=false&include_variations=true&order=name&page=3&q=e%3Amoc&unique=prints: HTTP 429
-- Scryfall PMOM: https://api.scryfall.com/cards/search?q=e%3Apmom&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall PGRN: https://api.scryfall.com/cards/search?q=e%3Apgrn&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall MED: https://api.scryfall.com/cards/search?q=e%3Amed&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall POGW: https://api.scryfall.com/cards/search?q=e%3Apogw&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall F16: https://api.scryfall.com/cards/search?q=e%3Af16&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall PGTC: https://api.scryfall.com/cards/search?q=e%3Apgtc&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall PDP14: https://api.scryfall.com/cards/search?q=e%3Apdp14&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall PM11: https://api.scryfall.com/cards/search?q=e%3Apm11&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall OARC: https://api.scryfall.com/cards/search?q=e%3Aoarc&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall PLRW: https://api.scryfall.com/cards/search?q=e%3Aplrw&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall 10E: https://api.scryfall.com/cards/search?q=e%3A10e&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall 9ED: https://api.scryfall.com/cards/search?format=json&include_extras=true&include_multilingual=false&include_variations=true&order=name&page=3&q=e%3A9ed&unique=prints: HTTP 429
-- Scryfall PSOK: https://api.scryfall.com/cards/search?q=e%3Apsok&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall F03: https://api.scryfall.com/cards/search?q=e%3Af03&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall PONS: https://api.scryfall.com/cards/search?q=e%3Apons&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall PUDS: https://api.scryfall.com/cards/search?q=e%3Apuds&unique=prints&include_extras=true&include_variations=true: HTTP 429
-- Scryfall PPTK: https://api.scryfall.com/cards/search?q=e%3Apptk&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall P30H: https://api.scryfall.com/cards/search?q=e%3Ap30h&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PDMU: https://api.scryfall.com/cards/search?q=e%3Apdmu&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PS18: https://api.scryfall.com/cards/search?q=e%3Aps18&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PM19: https://api.scryfall.com/cards/search?q=e%3Apm19&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall CP2: https://api.scryfall.com/cards/search?q=e%3Acp2&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall F15: https://api.scryfall.com/cards/search?q=e%3Af15&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall F10: https://api.scryfall.com/cards/search?q=e%3Af10&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PZEN: https://api.scryfall.com/cards/search?q=e%3Apzen&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall 10E: https://api.scryfall.com/cards/search?format=json&include_extras=true&include_multilingual=false&include_variations=true&order=name&page=2&q=e%3A10e&unique=prints: HTTP 429
+- Scryfall P10E: https://api.scryfall.com/cards/search?q=e%3Ap10e&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PAL05: https://api.scryfall.com/cards/search?q=e%3Apal05&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PJSE: https://api.scryfall.com/cards/search?q=e%3Apjse&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PAL02: https://api.scryfall.com/cards/search?q=e%3Apal02&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall F02: https://api.scryfall.com/cards/search?q=e%3Af02&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PULG: https://api.scryfall.com/cards/search?q=e%3Apulg&unique=prints&include_extras=true&include_variations=true: HTTP 429
+- Scryfall PAL99: https://api.scryfall.com/cards/search?q=e%3Apal99&unique=prints&include_extras=true&include_variations=true: HTTP 429
 - OPTCG API https://optcgapi.com/api/allPromoCards/: https://optcgapi.com/api/allPromoCards/: HTTP 404
 
