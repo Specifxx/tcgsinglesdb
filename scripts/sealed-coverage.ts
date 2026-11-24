@@ -7,7 +7,7 @@ import path from "node:path";
 import zlib from "node:zlib";
 import type { TcgcsvGroup, TcgcsvProduct } from "../src/lib/cards";
 import { LIVE_GAMES, SITE } from "../src/site.config";
-import { ageSealed, idsInText, isSealedProduct, recentGroup, slugOf } from "../src/lib/sealed-coverage";
+import { FIRST_NEW_ID, ageSealed, idsInText, isSealedProduct, recentGroup, recentProduct, slugOf } from "../src/lib/sealed-coverage";
 
 const DATA = process.env.DATA_DIR || path.join(process.cwd(), "data");
 const SISTERS = process.env.SISTER_DIR || path.join(process.cwd(), "sisters");
@@ -70,13 +70,15 @@ const SITES: Site[] = [
 
 interface Product { id: number; name: string; group: string; groupId: number; published: string | null; usd: number | null; category: number }
 
-async function recentSealed(category: number): Promise<{ products: Product[]; groupIds: Set<number> }> {
+async function recentSealed(category: number, newFrom: number): Promise<{ products: Product[]; groupIds: Set<number>; maxId: number }> {
   const groups = (await tcgcsv<{ results: TcgcsvGroup[] }>(category, "groups")).results ?? [];
   const products: Product[] = [];
+  let maxId = 0;
   for (const g of groups.filter((g) => recentGroup(g, now))) {
     try {
       const ps = (await tcgcsv<{ results: TcgcsvProduct[] }>(category, `${g.groupId}/products`)).results ?? [];
-      const sealed = ps.filter(isSealedProduct);
+      for (const p of ps) maxId = Math.max(maxId, p.productId);
+      const sealed = ps.filter((p) => isSealedProduct(p) && recentProduct(p.productId, g, newFrom, now));
       if (!sealed.length) continue;
       const prices = (await tcgcsv<{ results: { productId: number; marketPrice: number | null }[] }>(category, `${g.groupId}/prices`)).results ?? [];
       const usd = new Map<number, number>();
@@ -86,14 +88,20 @@ async function recentSealed(category: number): Promise<{ products: Product[]; gr
       errors.push(`TCGplayer ${category}/${g.groupId}: ${(e as Error).message}`);
     }
   }
-  return { products, groupIds: new Set(groups.map((g) => g.groupId)) };
+  return { products, groupIds: new Set(groups.map((g) => g.groupId)), maxId };
 }
 
 async function main() {
-  const cats = new Map<number, { products: Product[]; groupIds: Set<number> }>();
+  // "New" is above the highest id the run 14 days ago saw (sealed-ids.json keeps one per day), else FIRST_NEW_ID.
+  const idsFile = path.join(DATA, "coverage/sealed-ids.json");
+  const idLog = JSON.parse(read(idsFile) ?? "{}") as Record<string, number>;
+  const cutoff = new Date(now.getTime() - 14 * 86_400_000).toISOString().slice(0, 10);
+  const older = Object.keys(idLog).filter((d) => d <= cutoff).sort();
+  const newFrom = older.length ? idLog[older[older.length - 1]] + 1 : FIRST_NEW_ID;
+  const cats = new Map<number, { products: Product[]; groupIds: Set<number>; maxId: number }>();
   for (const g of LIVE_GAMES) {
     try {
-      cats.set(g.category, await recentSealed(g.category));
+      cats.set(g.category, await recentSealed(g.category, newFrom));
     } catch (e) {
       errors.push(`TCGplayer ${g.slug}: ${(e as Error).message}`);
     }
@@ -148,15 +156,19 @@ async function main() {
     out.push({ site: s.site, checked: pool.length, missing, culled: culledN });
   }
   const state = ageSealed(prevState, missingKeys, today);
+  const maxId = Math.max(0, ...[...cats.values()].map((c) => c.maxId));
+  if (maxId) idLog[today] = maxId;
+  const keep = Object.keys(idLog).sort().slice(-40);
   const dir = path.join(DATA, "coverage");
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "sealed-state.json"), JSON.stringify(state, null, 0) + "\n");
+  fs.writeFileSync(idsFile, JSON.stringify(Object.fromEntries(keep.map((k) => [k, idLog[k]])), null, 1) + "\n");
   fs.writeFileSync(path.join(dir, "sealed.json"), JSON.stringify({ generatedAt: now.toISOString(), sites: out, errors }, null, 1) + "\n");
   const days = (since?: string) => (since ? Math.round((Date.parse(today) - Date.parse(since)) / 86_400_000) : 0);
   const md: string[] = [
     `# Sealed coverage (${now.toISOString().slice(0, 16).replace("T", " ")} UTC)`,
     "",
-    "Sealed products TCGplayer lists in a recent group (published in the last or next 120 days, or changed in the last 14) that a site's public data does not name. Report only: the site's own focus rules decide what keeps a page, so each line is a lead, and a product missing for under two days is still the import's to pick up. TCG Prices is checked from US$5 (its focus floor).",
+    `Sealed products TCGplayer added lately (a group published in the last 45 or next 120 days, or a product id from ${newFrom}, the newest id of 14 days ago) that a site's public data does not name. Report only: the site's own focus rules decide what keeps a page, so each line is a lead, and a product missing for under two days is still the import's to pick up. TCG Prices is checked from US$5 (its focus floor).`,
     "",
     "| Site | Recent sealed products | Missing | Missing 2+ days | Culled by the site's focus |",
     "|---|---:|---:|---:|---:|",

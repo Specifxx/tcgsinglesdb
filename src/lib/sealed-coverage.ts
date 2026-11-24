@@ -11,14 +11,32 @@ const NOT_SEALED = /\b(?:sleeves?|playmat|binder|portfolio|deck ?box|dice|card ?
 
 const ext = (p: TcgcsvProduct, key: string) => p.extendedData?.find((e) => e.name === key)?.value?.trim() || null;
 
-/** A sealed product: no card number, a sealed-product word in its name, and not an accessory. */
+const STRONG_SEALED = /\b(?:booster|box|bundle|deck|tin|collection|case|display|blister|kit|chest)\b/i;
+
+/** A sealed product: no card number, a sealed-product word in its name, and not an accessory. A product with a card
+ *  rarity is a single (a "Prize Pack" energy) unless its name says box, booster, deck and the like. */
 export function isSealedProduct(p: TcgcsvProduct): boolean {
   if (ext(p, "Number")) return false;
-  return SEALED_WORDS.test(p.name) && !NOT_SEALED.test(p.name);
+  if (!SEALED_WORDS.test(p.name) || NOT_SEALED.test(p.name)) return false;
+  const rarity = ext(p, "Rarity");
+  return !rarity || /^(?:none|sealed)$/i.test(rarity) || STRONG_SEALED.test(p.name);
 }
 
-/** A group worth checking: published in the last `pastDays` or the next `aheadDays`, or changed in the last `touchedDays`. */
-export function recentGroup(g: Pick<TcgcsvGroup, "publishedOn" | "modifiedOn">, now: Date, pastDays = 120, aheadDays = 120, touchedDays = 14): boolean {
+/** The first TCGplayer product id this check treats as new when it has no memory yet (late October 2026). Ids rise over
+ *  time across every game, so "added since the last run" is an id above the highest one the last run saw. */
+export const FIRST_NEW_ID = 715_000;
+
+/** A product worth checking: in a group published in the last `pastDays` or the next `aheadDays`, or newer than `newFrom`
+ *  (a new product in an old group, such as a promo or a reprint of a box). */
+export function recentProduct(id: number, g: Pick<TcgcsvGroup, "publishedOn">, newFrom: number, now: Date, pastDays = 45, aheadDays = 120): boolean {
+  if (id >= newFrom) return true;
+  const day = 86_400_000;
+  const pub = g.publishedOn ? Date.parse(g.publishedOn) : NaN;
+  return Number.isFinite(pub) && pub >= now.getTime() - pastDays * day && pub <= now.getTime() + aheadDays * day;
+}
+
+/** A group worth reading: published in the last `pastDays` or the next `aheadDays`, or changed in the last `touchedDays`. */
+export function recentGroup(g: Pick<TcgcsvGroup, "publishedOn" | "modifiedOn">, now: Date, pastDays = 45, aheadDays = 120, touchedDays = 14): boolean {
   const day = 86_400_000;
   const pub = g.publishedOn ? Date.parse(g.publishedOn) : NaN;
   const mod = g.modifiedOn ? Date.parse(g.modifiedOn) : NaN;
