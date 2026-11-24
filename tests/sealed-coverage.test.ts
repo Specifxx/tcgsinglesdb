@@ -43,5 +43,6 @@ test("a product is new when its group is recent or its id is past the last fortn
   const now = new Date("2026-11-24T00:00:00Z");
   assert.equal(recentProduct(500_000, { publishedOn: "1996-10-07T00:00:00" }, 715_000, now), false, "Mirage's booster box is not new");
   assert.equal(recentProduct(732_601, { publishedOn: "2023-07-01T00:00:00" }, 715_000, now), true, "a new promo in an old group is");
-  assert.equal(recentProduct(712_095, { publishedOn: "2026-11-06T00:00:00" }, 715_000, now), true, "a set out this month is");
+  assert.equal(recentProduct(712_095, { publishedOn: "2026-11-06T00:00:00" }, 715_000, now, 45, 120, 711_000), true, "a set out this month is");
+  assert.equal(recentProduct(158_287, { publishedOn: "2026-11-23T00:00:00" }, 715_000, now, 45, 120, 300_000), false, "an old product in a catch-all group that got a fresh date is not");
 });

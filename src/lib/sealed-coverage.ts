@@ -25,11 +25,22 @@ export function isSealedProduct(p: TcgcsvProduct): boolean {
 /** The first TCGplayer product id this check treats as new when it has no memory yet (late October 2026). Ids rise over
  *  time across every game, so "added since the last run" is an id above the highest one the last run saw. */
 export const FIRST_NEW_ID = 715_000;
+/** A group whose median product id is this far below the new-id line is a long-running group, not a recent set. */
+export const LONG_RUNNING_IDS = 60_000;
+
+export function medianId(ids: readonly number[]): number {
+  if (!ids.length) return 0;
+  const s = [...ids].sort((a, b) => a - b);
+  return s[Math.floor(s.length / 2)];
+}
 
 /** A product worth checking: in a group published in the last `pastDays` or the next `aheadDays`, or newer than `newFrom`
  *  (a new product in an old group, such as a promo or a reprint of a box). */
-export function recentProduct(id: number, g: Pick<TcgcsvGroup, "publishedOn">, newFrom: number, now: Date, pastDays = 45, aheadDays = 120): boolean {
+export function recentProduct(id: number, g: Pick<TcgcsvGroup, "publishedOn">, newFrom: number, now: Date, pastDays = 45, aheadDays = 120, groupMedianId = id): boolean {
   if (id >= newFrom) return true;
+  // A catch-all group ("Miscellaneous Cards & Products", "Secret Lair Drop Series") keeps getting a fresh publish date;
+  // its old products are not new. A real set's products were all listed within a few months of each other.
+  if (groupMedianId < newFrom - LONG_RUNNING_IDS) return false;
   const day = 86_400_000;
   const pub = g.publishedOn ? Date.parse(g.publishedOn) : NaN;
   return Number.isFinite(pub) && pub >= now.getTime() - pastDays * day && pub <= now.getTime() + aheadDays * day;

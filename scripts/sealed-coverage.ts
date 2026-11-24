@@ -7,7 +7,7 @@ import path from "node:path";
 import zlib from "node:zlib";
 import type { TcgcsvGroup, TcgcsvProduct } from "../src/lib/cards";
 import { LIVE_GAMES, SITE } from "../src/site.config";
-import { FIRST_NEW_ID, ageSealed, idsInText, isSealedProduct, recentGroup, recentProduct, slugOf } from "../src/lib/sealed-coverage";
+import { FIRST_NEW_ID, ageSealed, medianId, idsInText, isSealedProduct, recentGroup, recentProduct, slugOf } from "../src/lib/sealed-coverage";
 
 const DATA = process.env.DATA_DIR || path.join(process.cwd(), "data");
 const SISTERS = process.env.SISTER_DIR || path.join(process.cwd(), "sisters");
@@ -78,7 +78,8 @@ async function recentSealed(category: number, newFrom: number): Promise<{ produc
     try {
       const ps = (await tcgcsv<{ results: TcgcsvProduct[] }>(category, `${g.groupId}/products`)).results ?? [];
       for (const p of ps) maxId = Math.max(maxId, p.productId);
-      const sealed = ps.filter((p) => isSealedProduct(p) && recentProduct(p.productId, g, newFrom, now));
+      const median = medianId(ps.map((p) => p.productId));
+      const sealed = ps.filter((p) => isSealedProduct(p) && recentProduct(p.productId, g, newFrom, now, 45, 120, median));
       if (!sealed.length) continue;
       const prices = (await tcgcsv<{ results: { productId: number; marketPrice: number | null }[] }>(category, `${g.groupId}/prices`)).results ?? [];
       const usd = new Map<number, number>();
