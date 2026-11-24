@@ -1,4 +1,4 @@
-# Card coverage (release, 2026-11-24 03:44 UTC)
+# Card coverage (release, 2026-11-24 03:54 UTC)
 
 A card TCGplayer added since a site's last import shows as missing for a day; only one missing two days or more is a gap.
 
