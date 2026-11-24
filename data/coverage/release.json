@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T04:02:22.634Z",
+ "generatedAt": "2026-11-24T07:08:29.705Z",
  "mode": "release",
  "counts": {
   "pokemon": {
@@ -8,7 +8,7 @@
   },
   "magic": {
    "tcg": 45165,
-   "ours": 106661,
+   "ours": 106662,
    "sister": {
     "site": "MTG Compare",
     "cards": 106672
@@ -20,10 +20,10 @@
   },
   "one-piece": {
    "tcg": 1616,
-   "ours": 7543,
+   "ours": 7555,
    "sister": {
     "site": "OP Compare",
-    "cards": 7552
+    "cards": 7564
    }
   },
   "lorcana": {
@@ -51,7 +51,7 @@
    "ours": 2033,
    "sister": {
     "site": "Gundam Compare",
-    "cards": 1259
+    "cards": 1258
    }
   },
   "flesh-and-blood": {
@@ -60,7 +60,7 @@
   },
   "digimon": {
    "tcg": 254,
-   "ours": 9580
+   "ours": 9586
   },
   "dragon-ball-fusion-world": {
    "tcg": 0,
@@ -68,7 +68,7 @@
   },
   "union-arena": {
    "tcg": 351,
-   "ours": 7233
+   "ours": 7229
   },
   "weiss-schwarz": {
    "tcg": 203,
@@ -88,11 +88,11 @@
   },
   "hololive": {
    "tcg": 488,
-   "ours": 2304
+   "ours": 2285
   },
   "godzilla": {
    "tcg": 247,
-   "ours": 935
+   "ours": 942
   },
   "cyberpunk": {
    "tcg": 226,
@@ -162,22 +162,11 @@
    "site": "TCG Singles DB",
    "game": "magic",
    "tcgCards": 45165,
-   "ourCards": 106661,
-   "missing": 1,
+   "ourCards": 106662,
+   "missing": 0,
    "stale": 0,
    "byFloor": 0,
-   "groups": [
-    {
-     "groupId": 2715,
-     "name": "The List Reprints",
-     "released": "2026-11-23",
-     "tcg": 5726,
-     "ours": 5725,
-     "missing": [
-      735339
-     ]
-    }
-   ]
+   "groups": []
   },
   {
    "site": "MTG Compare",
@@ -203,65 +192,21 @@
    "site": "TCG Singles DB",
    "game": "one-piece",
    "tcgCards": 1616,
-   "ourCards": 7543,
-   "missing": 12,
+   "ourCards": 7555,
+   "missing": 0,
    "stale": 0,
    "byFloor": 0,
-   "groups": [
-    {
-     "groupId": 17675,
-     "name": "One Piece Promotion Cards",
-     "released": "2022-09-30",
-     "tcg": 1378,
-     "ours": 1366,
-     "missing": [
-      735311,
-      735312,
-      735313,
-      735314,
-      735315,
-      735316,
-      735317,
-      735318,
-      735319,
-      735320,
-      735328,
-      735329
-     ]
-    }
-   ]
+   "groups": []
   },
   {
    "site": "OP Compare",
    "game": "one-piece",
    "tcgCards": 1616,
-   "ourCards": 7552,
-   "missing": 12,
+   "ourCards": 7564,
+   "missing": 0,
    "stale": 0,
    "byFloor": 0,
-   "groups": [
-    {
-     "groupId": 17675,
-     "name": "One Piece Promotion Cards",
-     "released": "2022-09-30",
-     "tcg": 1378,
-     "ours": 1366,
-     "missing": [
-      735311,
-      735312,
-      735313,
-      735314,
-      735315,
-      735316,
-      735317,
-      735318,
-      735319,
-      735320,
-      735328,
-      735329
-     ]
-    }
-   ]
+   "groups": []
   },
   {
    "site": "TCG Singles DB",
@@ -327,7 +272,7 @@
    "site": "Gundam Compare",
    "game": "gundam",
    "tcgCards": 0,
-   "ourCards": 1259,
+   "ourCards": 1258,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -347,27 +292,11 @@
    "site": "TCG Singles DB",
    "game": "digimon",
    "tcgCards": 254,
-   "ourCards": 9580,
-   "missing": 6,
+   "ourCards": 9586,
+   "missing": 0,
    "stale": 0,
    "byFloor": 0,
-   "groups": [
-    {
-     "groupId": 24865,
-     "name": "Ignition of X",
-     "released": "2026-12-11",
-     "tcg": 135,
-     "ours": 129,
-     "missing": [
-      735321,
-      735322,
-      735323,
-      735324,
-      735325,
-      735338
-     ]
-    }
-   ]
+   "groups": []
   },
   {
    "site": "TCG Singles DB",
@@ -383,22 +312,11 @@
    "site": "TCG Singles DB",
    "game": "union-arena",
    "tcgCards": 351,
-   "ourCards": 7233,
-   "missing": 1,
+   "ourCards": 7229,
+   "missing": 0,
    "stale": 0,
    "byFloor": 0,
-   "groups": [
-    {
-     "groupId": 24942,
-     "name": "UEX08BT: BLEACH: Thousand-Year Blood War Vol.3 Release Event Cards",
-     "released": "2026-11-06",
-     "tcg": 19,
-     "ours": 18,
-     "missing": [
-      735308
-     ]
-    }
-   ]
+   "groups": []
   },
   {
    "site": "TCG Singles DB",
@@ -444,7 +362,7 @@
    "site": "TCG Singles DB",
    "game": "hololive",
    "tcgCards": 488,
-   "ourCards": 2304,
+   "ourCards": 2285,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -454,28 +372,11 @@
    "site": "TCG Singles DB",
    "game": "godzilla",
    "tcgCards": 247,
-   "ourCards": 935,
-   "missing": 7,
+   "ourCards": 942,
+   "missing": 0,
    "stale": 0,
    "byFloor": 0,
-   "groups": [
-    {
-     "groupId": 24431,
-     "name": "Promo Cards",
-     "released": "2025-08-27",
-     "tcg": 63,
-     "ours": 56,
-     "missing": [
-      735330,
-      735331,
-      735332,
-      735333,
-      735334,
-      735335,
-      735336
-     ]
-    }
-   ]
+   "groups": []
   },
   {
    "site": "TCG Singles DB",

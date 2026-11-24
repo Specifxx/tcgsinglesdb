@@ -1,4 +1,4 @@
-# Card coverage (release, 2026-11-24 04:02 UTC)
+# Card coverage (release, 2026-11-24 07:08 UTC)
 
 A card TCGplayer added since a site's last import shows as missing for a day; only one missing two days or more is a gap.
 
@@ -7,28 +7,28 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 | Site | Game | TCGplayer cards | Our cards | Missing | Missing 2+ days | Left out by the US$1 floor |
 |---|---|---:|---:|---:|---:|---:|
 | TCG Singles DB | pokemon | 4353 | 28876 | 0 |  |  |
-| TCG Singles DB | magic | 45165 | 106661 | 1 |  |  |
+| TCG Singles DB | magic | 45165 | 106662 | 0 |  |  |
 | MTG Compare | magic | 45165 | 106672 | 0 |  |  |
 | TCG Singles DB | yugioh | 709 | 46701 | 0 |  |  |
-| TCG Singles DB | one-piece | 1616 | 7543 | 12 |  |  |
-| OP Compare | one-piece | 1616 | 7552 | 12 |  |  |
+| TCG Singles DB | one-piece | 1616 | 7555 | 0 |  |  |
+| OP Compare | one-piece | 1616 | 7564 | 0 |  |  |
 | TCG Singles DB | lorcana | 0 | 3794 | 0 |  |  |
 | Lorcana Compare | lorcana | 0 | 1667 | 0 |  |  |
 | TCG Singles DB | riftbound | 5 | 1805 | 0 |  |  |
 | TCG Singles DB | pokemon-japan | 397 | 30450 | 0 |  |  |
 | TCG Singles DB | star-wars-unlimited | 4053 | 9783 | 0 |  |  |
 | TCG Singles DB | gundam | 0 | 2033 | 0 |  |  |
-| Gundam Compare | gundam | 0 | 1259 | 0 |  |  |
+| Gundam Compare | gundam | 0 | 1258 | 0 |  |  |
 | TCG Singles DB | flesh-and-blood | 1464 | 10420 | 0 |  |  |
-| TCG Singles DB | digimon | 254 | 9580 | 6 |  |  |
+| TCG Singles DB | digimon | 254 | 9586 | 0 |  |  |
 | TCG Singles DB | dragon-ball-fusion-world | 0 | 4375 | 0 |  |  |
-| TCG Singles DB | union-arena | 351 | 7233 | 1 |  |  |
+| TCG Singles DB | union-arena | 351 | 7229 | 0 |  |  |
 | TCG Singles DB | weiss-schwarz | 203 | 31866 | 0 |  |  |
 | TCG Singles DB | cardfight-vanguard | 856 | 26900 | 0 |  |  |
 | TCG Singles DB | sorcery | 120 | 3124 | 0 |  |  |
 | TCG Singles DB | grand-archive | 252 | 5484 | 0 |  |  |
-| TCG Singles DB | hololive | 488 | 2304 | 0 |  |  |
-| TCG Singles DB | godzilla | 247 | 935 | 7 |  |  |
+| TCG Singles DB | hololive | 488 | 2285 | 0 |  |  |
+| TCG Singles DB | godzilla | 247 | 942 | 0 |  |  |
 | TCG Singles DB | cyberpunk | 226 | 528 | 0 |  |  |
 | Cyberpunk Compare | cyberpunk | 226 | 546 | 0 |  |  |
 | TCG Singles DB | final-fantasy | 280 | 5746 | 0 |  |  |
@@ -42,30 +42,6 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 | TCG Singles DB | wixoss | 0 | 4448 | 0 |  |  |
 | TCG Singles DB | battle-spirits-saga | 0 | 1842 | 0 |  |  |
 | TCG Singles DB | alpha-clash | 0 | 2296 | 0 |  |  |
-
-### TCG Singles DB / magic: 1 missing
-
-- The List Reprints (2026-11-23): 5725 of 5726; e.g. 735339
-
-### TCG Singles DB / one-piece: 12 missing
-
-- One Piece Promotion Cards (2022-09-30): 1366 of 1378; e.g. 735311, 735312, 735313, 735314, 735315, 735316
-
-### OP Compare / one-piece: 12 missing
-
-- One Piece Promotion Cards (2022-09-30): 1366 of 1378; e.g. 735311, 735312, 735313, 735314, 735315, 735316
-
-### TCG Singles DB / digimon: 6 missing
-
-- Ignition of X (2026-12-11): 129 of 135; e.g. 735321, 735322, 735323, 735324, 735325, 735338
-
-### TCG Singles DB / union-arena: 1 missing
-
-- UEX08BT: BLEACH: Thousand-Year Blood War Vol.3 Release Event Cards (2026-11-06): 18 of 19; e.g. 735308
-
-### TCG Singles DB / godzilla: 7 missing
-
-- Promo Cards (2025-08-27): 56 of 63; e.g. 735330, 735331, 735332, 735333, 735334, 735335
 
 ## Groups skipped on purpose (tokens, art series, supplies)
 

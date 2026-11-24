@@ -1,4 +1,4 @@
-# Sealed coverage (2026-11-24 04:04 UTC)
+# Sealed coverage (2026-11-24 07:10 UTC)
 
 Sealed products TCGplayer added lately (a group published in the last 45 or next 120 days, or a product id from 715000, the newest id of 14 days ago) that a site's public data does not name. Report only: the site's own focus rules decide what keeps a page, so each line is a lead, and a product missing for under two days is still the import's to pick up. TCG Prices is checked from US$5 (its focus floor).
 
