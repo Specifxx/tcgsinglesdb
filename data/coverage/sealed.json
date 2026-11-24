@@ -1,0 +1,917 @@
+{
+ "generatedAt": "2026-11-24T04:04:11.682Z",
+ "sites": [
+  {
+   "site": "DexCompare",
+   "checked": 65,
+   "missing": [
+    {
+     "id": 735044,
+     "name": "Flowing Fists Booster Box Case",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735047,
+     "name": "Flowing Fists Sleeved Booster Pack",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735049,
+     "name": "Flowing Fists Pokemon Center Elite Trainer Box (Exclusive)",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735052,
+     "name": "Flowing Fists Elite Trainer Box Case",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735053,
+     "name": "Flowing Fists Half Booster Box",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735055,
+     "name": "Flowing Fists Booster Pack Art Bundle [Set of 4]",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735056,
+     "name": "Flowing Fists Sleeved Booster Pack Art Bundle [Set of 4]",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735057,
+     "name": "Flowing Fists Sleeved Booster Case",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735059,
+     "name": "Flowing Fists 3-Pack Blister Case",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735064,
+     "name": "Flowing Fists Premium Checklane Blister [Armarouge Line] (Target Exclusive)",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735065,
+     "name": "Flowing Fists Premium Checklane Blister [Silvally Line] (Target Exclusive)",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735067,
+     "name": "Flowing Fists Booster Bundle Case",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735070,
+     "name": "Flowing Fists Build & Battle Box Display",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 712095,
+     "name": "Delta Reign Half Booster Box",
+     "group": "ME06: Delta Reign",
+     "groupId": 24831,
+     "published": "2026-11-06",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 715706,
+     "name": "Mega Evolution Fun Pack",
+     "group": "ME01: Mega Evolution",
+     "groupId": 24380,
+     "published": "2025-09-26",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 732728,
+     "name": "Stellar Crown Booster Bundle (Retail)",
+     "group": "SV07: Stellar Crown",
+     "groupId": 23537,
+     "published": "2024-09-13",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 734558,
+     "name": "Obsidian Flames Fun Pack",
+     "group": "SV03: Obsidian Flames",
+     "groupId": 23228,
+     "published": "2023-08-11",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 734560,
+     "name": "Obsidian Flames Half Booster Box",
+     "group": "SV03: Obsidian Flames",
+     "groupId": 23228,
+     "published": "2023-08-11",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 718644,
+     "name": "League Battle Deck Case [Mega Greninja ex]",
+     "group": "Miscellaneous Cards & Products",
+     "groupId": 2374,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721885,
+     "name": "Checklane 2-Pack Blister [Archaludon] (1-tab)",
+     "group": "Miscellaneous Cards & Products",
+     "groupId": 2374,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 731226,
+     "name": "Melmetal ex Box &. Black Kyurem ex Box [Set of 2]",
+     "group": "Miscellaneous Cards & Products",
+     "groupId": 2374,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735298,
+     "name": "Valentine’s Day Box Case",
+     "group": "Miscellaneous Cards & Products",
+     "groupId": 2374,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-24"
+    }
+   ],
+   "culled": 1
+  },
+  {
+   "site": "MTG Compare",
+   "checked": 95,
+   "missing": [
+    {
+     "id": 733598,
+     "name": "Nauctis: The Sunken Realm Commander Deck Case (Premium Edition)",
+     "group": "Commander: Nauctis: The Sunken Realm",
+     "groupId": 24948,
+     "published": "2027-02-05",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733550,
+     "name": "Nauctis: The Sunken Realm - Booster Pack",
+     "group": "Nauctis: The Sunken Realm",
+     "groupId": 24947,
+     "published": "2027-02-05",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733556,
+     "name": "Nauctis: The Sunken Realm - Collector Booster Display Master Case",
+     "group": "Nauctis: The Sunken Realm",
+     "groupId": 24947,
+     "published": "2027-02-05",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733558,
+     "name": "Nauctis: The Sunken Realm - Prerelease Pack Case",
+     "group": "Nauctis: The Sunken Realm",
+     "groupId": 24947,
+     "published": "2027-02-05",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733576,
+     "name": "Nauctis: The Sunken Realm - Bundle Case",
+     "group": "Nauctis: The Sunken Realm",
+     "groupId": 24947,
+     "published": "2027-02-05",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733580,
+     "name": "Nauctis: The Sunken Realm - Draft Night Case",
+     "group": "Nauctis: The Sunken Realm",
+     "groupId": 24947,
+     "published": "2027-02-05",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733603,
+     "name": "Nauctis: The Sunken Realm - Secret Lair Bundle Case",
+     "group": "Nauctis: The Sunken Realm",
+     "groupId": 24947,
+     "published": "2027-02-05",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735337,
+     "name": "Star Trek - Collector Booster Omega Pack",
+     "group": "Star Trek",
+     "groupId": 24766,
+     "published": "2026-11-13",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 716801,
+     "name": "Marvel Super Heroes - Collector Booster Pack (Minimal Packaging)",
+     "group": "Marvel Super Heroes",
+     "groupId": 24553,
+     "published": "2026-06-26",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 723302,
+     "name": "Marvel Super Heroes - Quick Play Collection Box",
+     "group": "Marvel Super Heroes",
+     "groupId": 24553,
+     "published": "2026-06-26",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735310,
+     "name": "Magic: The Gathering Foundations - Prerelease Pack Case",
+     "group": "Foundations",
+     "groupId": 23556,
+     "published": "2024-11-15",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733762,
+     "name": "Duskmourn: House of Horror - Haunts and Horrors Commander Pack (Jump Scare)",
+     "group": "Commander: Duskmourn: House of Horror",
+     "groupId": 23551,
+     "published": "2024-09-27",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733765,
+     "name": "Duskmourn: House of Horror - Haunts and Horrors Commander Pack (Death Toll)",
+     "group": "Commander: Duskmourn: House of Horror",
+     "groupId": 23551,
+     "published": "2024-09-27",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733766,
+     "name": "Duskmourn: House of Horror - Haunts and Horrors Commander Pack (Endless Punishment)",
+     "group": "Commander: Duskmourn: House of Horror",
+     "groupId": 23551,
+     "published": "2024-09-27",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733768,
+     "name": "Duskmourn: House of Horror - Haunts and Horrors Commander Pack (Miracle Worker)",
+     "group": "Commander: Duskmourn: House of Horror",
+     "groupId": 23551,
+     "published": "2024-09-27",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 722617,
+     "name": "The Lost Caverns of Ixalan - Sleeved Set Booster Pack",
+     "group": "The Lost Caverns of Ixalan",
+     "groupId": 23312,
+     "published": "2023-11-17",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735309,
+     "name": "Wilds of Eldraine - Sleeved Drafted Booster Pack",
+     "group": "Wilds of Eldraine",
+     "groupId": 23163,
+     "published": "2023-09-08",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 732602,
+     "name": "Unfinity - Collector Booster Omega Pack",
+     "group": "Unfinity",
+     "groupId": 2958,
+     "published": "2022-07-29",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721855,
+     "name": "Secret Lair: Corn Maze Superdrop: A-Maize-Ing Everything Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721856,
+     "name": "Secret Lair: Corn Maze Superdrop: Full Moon Foil Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721857,
+     "name": "Secret Lair: Corn Maze Superdrop: Pumpkin Spiced Non-Foil Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 731787,
+     "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: The Final Frontier Everything Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 731788,
+     "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: Warp Core Foil Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 731789,
+     "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: Captain's Log Non-Foil Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 731790,
+     "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: Rival Powers Non-Federation Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 731791,
+     "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: United Federation Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 717408,
+     "name": "3-Pack Draft Blister Pack With Spindown Life Counter",
+     "group": "Unique and Miscellaneous Promos",
+     "groupId": 1163,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 717415,
+     "name": "Booster Three Pack With Exclusive Promo Card",
+     "group": "Unique and Miscellaneous Promos",
+     "groupId": 1163,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721781,
+     "name": "Liliana Vess (M12) Sample Deck",
+     "group": "Unique and Miscellaneous Promos",
+     "groupId": 1163,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721782,
+     "name": "Jace Beleren (M13) Sample Deck",
+     "group": "Unique and Miscellaneous Promos",
+     "groupId": 1163,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721783,
+     "name": "Ajani Goldmane (M13) Sample Deck",
+     "group": "Unique and Miscellaneous Promos",
+     "groupId": 1163,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721784,
+     "name": "Chandra Nalaar (M13) Sample Deck",
+     "group": "Unique and Miscellaneous Promos",
+     "groupId": 1163,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721785,
+     "name": "Garuuk Wildspeaker (M13) Sample Deck",
+     "group": "Unique and Miscellaneous Promos",
+     "groupId": 1163,
+     "published": "2026-11-23",
+     "usd": null,
+     "category": 1,
+     "since": "2026-11-24"
+    }
+   ],
+   "culled": 0
+  },
+  {
+   "site": "YGO Compare",
+   "checked": 11,
+   "missing": [],
+   "culled": 0
+  },
+  {
+   "site": "OP Compare",
+   "checked": 36,
+   "missing": [],
+   "culled": 0
+  },
+  {
+   "site": "Lorcana Compare",
+   "checked": 19,
+   "missing": [],
+   "culled": 0
+  },
+  {
+   "site": "Gundam Compare",
+   "checked": 4,
+   "missing": [],
+   "culled": 0
+  },
+  {
+   "site": "Cyberpunk Compare",
+   "checked": 8,
+   "missing": [],
+   "culled": 0
+  },
+  {
+   "site": "TCG Prices",
+   "checked": 272,
+   "missing": [
+    {
+     "id": 725378,
+     "name": "One Piece Mini Case Set Vol. 3 Display Case",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 1289.99,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 715726,
+     "name": "Secret Lair: The Most Powerful Superdrop in the Universe: The Most Powerful Everything Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": 790.35,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 722934,
+     "name": "Secret Lair Drop: Festival in a Box Atlanta 2026 Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": 547.53,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 727130,
+     "name": "Gift Collection -ONE PIECE Heroines- Set Display",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 506.65,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 706181,
+     "name": "Star Trek Commander Deck Case (Collector's Edition)",
+     "group": "Commander: Star Trek",
+     "groupId": 24770,
+     "published": "2026-11-13",
+     "usd": 450.14,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 715728,
+     "name": "Secret Lair: The Most Powerful Superdrop in the Universe: For the Honor of Grayskull Foil Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": 286.21,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 725379,
+     "name": "One Piece Mini Case Set Vol. 3 Display",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 277.73,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733597,
+     "name": "Nauctis: The Sunken Realm Commander Deck Case",
+     "group": "Commander: Nauctis: The Sunken Realm",
+     "groupId": 24948,
+     "published": "2027-02-05",
+     "usd": 266.95,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 715729,
+     "name": "Secret Lair: The Most Powerful Superdrop in the Universe: I Have the Power Non-Foil Bundle",
+     "group": "Secret Lair Drop Series",
+     "groupId": 2576,
+     "published": "2026-11-23",
+     "usd": 262.97,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 706179,
+     "name": "Star Trek Commander Deck Case",
+     "group": "Commander: Star Trek",
+     "groupId": 24770,
+     "published": "2026-11-13",
+     "usd": 195.1,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 723301,
+     "name": "Ascended Heroes Elite Trainer Box and Pokeball (Sam's Club)",
+     "group": "Miscellaneous Cards & Products",
+     "groupId": 2374,
+     "published": "2026-11-23",
+     "usd": 134.89,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735151,
+     "name": "Costco Pokemon Perfect Order 2-Pack Elite Trainer Box and Booster Bundle",
+     "group": "Miscellaneous Cards & Products",
+     "groupId": 2374,
+     "published": "2026-11-23",
+     "usd": 87.35,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733447,
+     "name": "The Lord of the Rings: The Hobbit Middle-Earth Booster Kit",
+     "group": "Unique and Miscellaneous Promos",
+     "groupId": 1163,
+     "published": "2026-11-23",
+     "usd": 80.31,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 717026,
+     "name": "Premium Card Collection -Flame-Flame Fruit Coliseum Edition-",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 77.6,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735297,
+     "name": "Valentine’s Day Box",
+     "group": "Miscellaneous Cards & Products",
+     "groupId": 2374,
+     "published": "2026-11-23",
+     "usd": 68.33,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 733557,
+     "name": "Nauctis: The Sunken Realm - Prerelease Pack",
+     "group": "Nauctis: The Sunken Realm",
+     "groupId": 24947,
+     "published": "2027-02-05",
+     "usd": 67.38,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 721004,
+     "name": "Disney Lorcana: Wonder Bundle",
+     "group": "Disney Lorcana Promo Cards",
+     "groupId": 23234,
+     "published": "2023-07-01",
+     "usd": 66.77,
+     "category": 71,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735058,
+     "name": "Flowing Fists 3-Pack Blister [Wimpod]",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": 35.92,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 722702,
+     "name": "Beginners Deck Party [ST-31] - [ST-36] Winner Pack",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 29.97,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 725386,
+     "name": "One Piece Mini Case Set Vol. 3 Boa Hancock (Ryuda Artwork)",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 25.94,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 725382,
+     "name": "One Piece Mini Case Set Vol. 3 -Boa Hancock- (Sunohara Artwork)",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 25.69,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 725381,
+     "name": "One Piece Mini Case Set Vol. 3 -Monkey.D.Luffy- (Sunohara Artwork)",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 25.21,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 725380,
+     "name": "One Piece Mini Case Set Vol. 3 -Shanks- (Sunohara Artwork)",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 23.18,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 725385,
+     "name": "One Piece Mini Case Set Vol. 3 -Monkey.D.Luffy- (Ryuda Artwork)",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 23.12,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 725384,
+     "name": "One Piece Mini Case Set Vol. 3 -Shanks- (Ryuda Artwork)",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 21.81,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 735060,
+     "name": "Flowing Fists Single Pack Blister [Tynamo]",
+     "group": "ME07: Flowing Fists",
+     "groupId": 24955,
+     "published": "2027-02-06",
+     "usd": 19.98,
+     "category": 3,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 722629,
+     "name": "Winner Pack 2026 Vol. 4",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 16.99,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 717406,
+     "name": "Judge Pack Vol. 8",
+     "group": "One Piece Promotion Cards",
+     "groupId": 17675,
+     "published": "2022-09-30",
+     "usd": 15,
+     "category": 68,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 722615,
+     "name": "The Lost Caverns of Ixalan - Sleeved Draft Booster Pack",
+     "group": "The Lost Caverns of Ixalan",
+     "groupId": 23312,
+     "published": "2023-11-17",
+     "usd": 11.65,
+     "category": 1,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 724682,
+     "name": "Union Arena Event Pack PRECIOUS BOOSTER PACK GODDESS OF VICTORY: NIKKE",
+     "group": "Union Arena Promotion Cards",
+     "groupId": 23739,
+     "published": "2024-08-01",
+     "usd": 10.95,
+     "category": 81,
+     "since": "2026-11-24"
+    },
+    {
+     "id": 719782,
+     "name": "Tournament Pack 12",
+     "group": "Tournament and Championship Promos",
+     "groupId": 23429,
+     "published": "2024-02-14",
+     "usd": 9.74,
+     "category": 80,
+     "since": "2026-11-24"
+    }
+   ],
+   "culled": 2
+  }
+ ],
+ "errors": []
+}

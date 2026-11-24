@@ -31,13 +31,17 @@ jobs:
           repository: Specifxx/OpCompare
           ref: snapshot
           path: sisters/OpCompare-snapshot
-          sparse-checkout: /cards.json.gz
+          sparse-checkout: |
+            /cards.json.gz
+            /sealed.json.gz
           sparse-checkout-cone-mode: false
       - uses: actions/checkout@v4
         with:
           repository: Specifxx/mtgcompare
           path: sisters/mtgcompare
-          sparse-checkout: data/cards/sets
+          sparse-checkout: |
+            data/cards/sets
+            data/public
       - uses: actions/checkout@v4
         with:
           repository: Specifxx/lorcanacompare
@@ -53,6 +57,25 @@ jobs:
           repository: Specifxx/cyberpunkcompare
           path: sisters/cyberpunkcompare
           sparse-checkout: data/public
+      # The sealed sites, for the sealed check (scripts/sealed-coverage.ts): their public product data only.
+      - uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: Specifxx/CompareEmpire
+          path: sisters/CompareEmpire
+          sparse-checkout: apps/dexcompare-sealed/data/public
+      - uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: Specifxx/ygocompare
+          path: sisters/ygocompare
+          sparse-checkout: data/public
+      - uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          repository: Specifxx/tcgcompare
+          path: sisters/tcgcompare
+          sparse-checkout: data/public
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -63,6 +86,10 @@ jobs:
         env:
           # Empty on a schedule: Mondays (UTC) full, other days release.
           COVERAGE_MODE: ${{ inputs.mode }}
+      # Report only (data/coverage/sealed.md): new sealed products TCGplayer lists that a sealed site lacks.
+      - name: Sealed coverage
+        continue-on-error: true
+        run: npx tsx scripts/sealed-coverage.ts
       - name: Open or update the gaps issue
         env:
           GH_TOKEN: ${{ github.token }}

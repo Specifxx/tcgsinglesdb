@@ -6,7 +6,7 @@
 //      OPTCG API (One Piece, card numbers incl. promos).
 // COVERAGE_MODE=full (Mondays) reads every group and every source; release (daily) reads only the groups TCGplayer
 // published in the last 21 days or dates in the next 45 (the release calendar), so a new set is checked the day it lands.
-// Writes data/coverage/{report,release}.json and .md. Never fails on a source it cannot read: that source is listed in
+// Writes data/coverage/{report,release}.json and .md. (Sealed products: scripts/sealed-coverage.ts, the step after.) Never fails on a source it cannot read: that source is listed in
 // `errors` and the ops monitor shows it. Read-only everywhere: it changes no card file.
 import fs from "node:fs";
 import path from "node:path";

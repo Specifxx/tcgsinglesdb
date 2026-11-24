@@ -1,25 +1,25 @@
 {
- "generatedAt": "2026-11-22T03:31:19.623Z",
+ "generatedAt": "2026-11-24T04:02:22.634Z",
  "mode": "release",
  "counts": {
   "pokemon": {
-   "tcg": 3875,
+   "tcg": 4353,
    "ours": 28876
   },
   "magic": {
-   "tcg": 21879,
+   "tcg": 45165,
    "ours": 106661,
    "sister": {
     "site": "MTG Compare",
-    "cards": 106671
+    "cards": 106672
    }
   },
   "yugioh": {
-   "tcg": 963,
+   "tcg": 709,
    "ours": 46701
   },
   "one-piece": {
-   "tcg": 238,
+   "tcg": 1616,
    "ours": 7543,
    "sister": {
     "site": "OP Compare",
@@ -31,19 +31,19 @@
    "ours": 3794,
    "sister": {
     "site": "Lorcana Compare",
-    "cards": 1665
+    "cards": 1667
    }
   },
   "riftbound": {
-   "tcg": 265,
+   "tcg": 5,
    "ours": 1805
   },
   "pokemon-japan": {
-   "tcg": 536,
+   "tcg": 397,
    "ours": 30450
   },
   "star-wars-unlimited": {
-   "tcg": 3290,
+   "tcg": 4053,
    "ours": 9783
   },
   "gundam": {
@@ -55,11 +55,11 @@
    }
   },
   "flesh-and-blood": {
-   "tcg": 1936,
+   "tcg": 1464,
    "ours": 10420
   },
   "digimon": {
-   "tcg": 558,
+   "tcg": 254,
    "ours": 9580
   },
   "dragon-ball-fusion-world": {
@@ -67,7 +67,7 @@
    "ours": 4375
   },
   "union-arena": {
-   "tcg": 183,
+   "tcg": 351,
    "ours": 7233
   },
   "weiss-schwarz": {
@@ -75,27 +75,27 @@
    "ours": 31866
   },
   "cardfight-vanguard": {
-   "tcg": 528,
+   "tcg": 856,
    "ours": 26900
   },
   "sorcery": {
-   "tcg": 593,
+   "tcg": 120,
    "ours": 3124
   },
   "grand-archive": {
-   "tcg": 64,
+   "tcg": 252,
    "ours": 5484
   },
   "hololive": {
-   "tcg": 246,
+   "tcg": 488,
    "ours": 2304
   },
   "godzilla": {
-   "tcg": 0,
+   "tcg": 247,
    "ours": 935
   },
   "cyberpunk": {
-   "tcg": 231,
+   "tcg": 226,
    "ours": 528,
    "sister": {
     "site": "Cyberpunk Compare",
@@ -127,7 +127,7 @@
    "ours": 3224
   },
   "cookierun-braverse": {
-   "tcg": 366,
+   "tcg": 323,
    "ours": 2287
   },
   "palworld": {
@@ -151,7 +151,7 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon",
-   "tcgCards": 3875,
+   "tcgCards": 4353,
    "ourCards": 28876,
    "missing": 0,
    "stale": 0,
@@ -161,18 +161,29 @@
   {
    "site": "TCG Singles DB",
    "game": "magic",
-   "tcgCards": 21879,
+   "tcgCards": 45165,
    "ourCards": 106661,
-   "missing": 0,
+   "missing": 1,
    "stale": 0,
    "byFloor": 0,
-   "groups": []
+   "groups": [
+    {
+     "groupId": 2715,
+     "name": "The List Reprints",
+     "released": "2026-11-23",
+     "tcg": 5726,
+     "ours": 5725,
+     "missing": [
+      735339
+     ]
+    }
+   ]
   },
   {
    "site": "MTG Compare",
    "game": "magic",
-   "tcgCards": 21879,
-   "ourCards": 106671,
+   "tcgCards": 45165,
+   "ourCards": 106672,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -181,7 +192,7 @@
   {
    "site": "TCG Singles DB",
    "game": "yugioh",
-   "tcgCards": 963,
+   "tcgCards": 709,
    "ourCards": 46701,
    "missing": 0,
    "stale": 0,
@@ -191,22 +202,66 @@
   {
    "site": "TCG Singles DB",
    "game": "one-piece",
-   "tcgCards": 238,
+   "tcgCards": 1616,
    "ourCards": 7543,
-   "missing": 0,
+   "missing": 12,
    "stale": 0,
    "byFloor": 0,
-   "groups": []
+   "groups": [
+    {
+     "groupId": 17675,
+     "name": "One Piece Promotion Cards",
+     "released": "2022-09-30",
+     "tcg": 1378,
+     "ours": 1366,
+     "missing": [
+      735311,
+      735312,
+      735313,
+      735314,
+      735315,
+      735316,
+      735317,
+      735318,
+      735319,
+      735320,
+      735328,
+      735329
+     ]
+    }
+   ]
   },
   {
    "site": "OP Compare",
    "game": "one-piece",
-   "tcgCards": 238,
+   "tcgCards": 1616,
    "ourCards": 7552,
-   "missing": 0,
+   "missing": 12,
    "stale": 0,
    "byFloor": 0,
-   "groups": []
+   "groups": [
+    {
+     "groupId": 17675,
+     "name": "One Piece Promotion Cards",
+     "released": "2022-09-30",
+     "tcg": 1378,
+     "ours": 1366,
+     "missing": [
+      735311,
+      735312,
+      735313,
+      735314,
+      735315,
+      735316,
+      735317,
+      735318,
+      735319,
+      735320,
+      735328,
+      735329
+     ]
+    }
+   ]
   },
   {
    "site": "TCG Singles DB",
@@ -222,7 +277,7 @@
    "site": "Lorcana Compare",
    "game": "lorcana",
    "tcgCards": 0,
-   "ourCards": 1665,
+   "ourCards": 1667,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -231,7 +286,7 @@
   {
    "site": "TCG Singles DB",
    "game": "riftbound",
-   "tcgCards": 265,
+   "tcgCards": 5,
    "ourCards": 1805,
    "missing": 0,
    "stale": 0,
@@ -241,7 +296,7 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon-japan",
-   "tcgCards": 536,
+   "tcgCards": 397,
    "ourCards": 30450,
    "missing": 0,
    "stale": 0,
@@ -251,7 +306,7 @@
   {
    "site": "TCG Singles DB",
    "game": "star-wars-unlimited",
-   "tcgCards": 3290,
+   "tcgCards": 4053,
    "ourCards": 9783,
    "missing": 0,
    "stale": 0,
@@ -281,7 +336,7 @@
   {
    "site": "TCG Singles DB",
    "game": "flesh-and-blood",
-   "tcgCards": 1936,
+   "tcgCards": 1464,
    "ourCards": 10420,
    "missing": 0,
    "stale": 0,
@@ -291,12 +346,28 @@
   {
    "site": "TCG Singles DB",
    "game": "digimon",
-   "tcgCards": 558,
+   "tcgCards": 254,
    "ourCards": 9580,
-   "missing": 0,
+   "missing": 6,
    "stale": 0,
    "byFloor": 0,
-   "groups": []
+   "groups": [
+    {
+     "groupId": 24865,
+     "name": "Ignition of X",
+     "released": "2026-12-11",
+     "tcg": 135,
+     "ours": 129,
+     "missing": [
+      735321,
+      735322,
+      735323,
+      735324,
+      735325,
+      735338
+     ]
+    }
+   ]
   },
   {
    "site": "TCG Singles DB",
@@ -311,12 +382,23 @@
   {
    "site": "TCG Singles DB",
    "game": "union-arena",
-   "tcgCards": 183,
+   "tcgCards": 351,
    "ourCards": 7233,
-   "missing": 0,
+   "missing": 1,
    "stale": 0,
    "byFloor": 0,
-   "groups": []
+   "groups": [
+    {
+     "groupId": 24942,
+     "name": "UEX08BT: BLEACH: Thousand-Year Blood War Vol.3 Release Event Cards",
+     "released": "2026-11-06",
+     "tcg": 19,
+     "ours": 18,
+     "missing": [
+      735308
+     ]
+    }
+   ]
   },
   {
    "site": "TCG Singles DB",
@@ -331,7 +413,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cardfight-vanguard",
-   "tcgCards": 528,
+   "tcgCards": 856,
    "ourCards": 26900,
    "missing": 0,
    "stale": 0,
@@ -341,7 +423,7 @@
   {
    "site": "TCG Singles DB",
    "game": "sorcery",
-   "tcgCards": 593,
+   "tcgCards": 120,
    "ourCards": 3124,
    "missing": 0,
    "stale": 0,
@@ -351,7 +433,7 @@
   {
    "site": "TCG Singles DB",
    "game": "grand-archive",
-   "tcgCards": 64,
+   "tcgCards": 252,
    "ourCards": 5484,
    "missing": 0,
    "stale": 0,
@@ -361,7 +443,7 @@
   {
    "site": "TCG Singles DB",
    "game": "hololive",
-   "tcgCards": 246,
+   "tcgCards": 488,
    "ourCards": 2304,
    "missing": 0,
    "stale": 0,
@@ -371,17 +453,34 @@
   {
    "site": "TCG Singles DB",
    "game": "godzilla",
-   "tcgCards": 0,
+   "tcgCards": 247,
    "ourCards": 935,
-   "missing": 0,
+   "missing": 7,
    "stale": 0,
    "byFloor": 0,
-   "groups": []
+   "groups": [
+    {
+     "groupId": 24431,
+     "name": "Promo Cards",
+     "released": "2025-08-27",
+     "tcg": 63,
+     "ours": 56,
+     "missing": [
+      735330,
+      735331,
+      735332,
+      735333,
+      735334,
+      735335,
+      735336
+     ]
+    }
+   ]
   },
   {
    "site": "TCG Singles DB",
    "game": "cyberpunk",
-   "tcgCards": 231,
+   "tcgCards": 226,
    "ourCards": 528,
    "missing": 0,
    "stale": 0,
@@ -391,7 +490,7 @@
   {
    "site": "Cyberpunk Compare",
    "game": "cyberpunk",
-   "tcgCards": 231,
+   "tcgCards": 226,
    "ourCards": 546,
    "missing": 0,
    "stale": 0,
@@ -461,7 +560,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cookierun-braverse",
-   "tcgCards": 366,
+   "tcgCards": 323,
    "ourCards": 2287,
    "missing": 0,
    "stale": 0,
