@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-season={xmas ? "christmas" : undefined} data-festive={xmas ? "" : undefined}>
       <body>
-        <header className="hdr xmas-garland">
+        <header className="hdr">
           <div className="hdr-in">
             <a className="logo xmas-cap" href="/" aria-label={SITE.name}>
               <img src="/logo.svg" alt="" width={30} height={30} />

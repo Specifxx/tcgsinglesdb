@@ -258,3 +258,9 @@ route; a spreadsheet out.
 - **Seller Pro is a fake door.** "I'd use Seller Pro" (US$7.99 a month, unlimited and saved lists, a weekly email) only counts
   interest; nothing is charged or promised. Read 10 Dec: 150+ `sell_list` AND 30+ `seller_pro` events build it; fewer, the free
   page stays as it is.
+
+## 2026-11-26: The header's string of Christmas lights is removed (owner)
+
+Owner, 2026-11-26: "I don't really like the Christmas lights on the very top." The string of lights hanging under the header
+(2026-11-20) is removed on every Compare site: the `.xmas-garland::after` rule is gone from the `xmas-logo` block in `globals.css`
+and the class is off the header. The Santa hat on the logo stays, and nothing else of the Christmas layer changes.
