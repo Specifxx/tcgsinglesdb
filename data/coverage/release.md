@@ -1,4 +1,4 @@
-# Card coverage (release, 2026-11-24 07:08 UTC)
+# Card coverage (release, 2026-11-25 05:43 UTC)
 
 A card TCGplayer added since a site's last import shows as missing for a day; only one missing two days or more is a gap.
 
@@ -7,24 +7,24 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 | Site | Game | TCGplayer cards | Our cards | Missing | Missing 2+ days | Left out by the US$1 floor |
 |---|---|---:|---:|---:|---:|---:|
 | TCG Singles DB | pokemon | 4353 | 28876 | 0 |  |  |
-| TCG Singles DB | magic | 45165 | 106662 | 0 |  |  |
-| MTG Compare | magic | 45165 | 106672 | 0 |  |  |
-| TCG Singles DB | yugioh | 709 | 46701 | 0 |  |  |
+| TCG Singles DB | magic | 47608 | 106665 | 0 |  |  |
+| MTG Compare | magic | 47608 | 106676 | 0 |  |  |
+| TCG Singles DB | yugioh | 885 | 46701 | 0 |  |  |
 | TCG Singles DB | one-piece | 1616 | 7555 | 0 |  |  |
 | OP Compare | one-piece | 1616 | 7564 | 0 |  |  |
 | TCG Singles DB | lorcana | 0 | 3794 | 0 |  |  |
-| Lorcana Compare | lorcana | 0 | 1667 | 0 |  |  |
+| Lorcana Compare | lorcana | 0 | 1666 | 0 |  |  |
 | TCG Singles DB | riftbound | 5 | 1805 | 0 |  |  |
 | TCG Singles DB | pokemon-japan | 397 | 30450 | 0 |  |  |
-| TCG Singles DB | star-wars-unlimited | 4053 | 9783 | 0 |  |  |
-| TCG Singles DB | gundam | 0 | 2033 | 0 |  |  |
-| Gundam Compare | gundam | 0 | 1258 | 0 |  |  |
+| TCG Singles DB | star-wars-unlimited | 2863 | 9783 | 0 |  |  |
+| TCG Singles DB | gundam | 214 | 2033 | 0 |  |  |
+| Gundam Compare | gundam | 214 | 1261 | 0 |  | 75 |
 | TCG Singles DB | flesh-and-blood | 1464 | 10420 | 0 |  |  |
-| TCG Singles DB | digimon | 254 | 9586 | 0 |  |  |
+| TCG Singles DB | digimon | 258 | 9590 | 0 |  |  |
 | TCG Singles DB | dragon-ball-fusion-world | 0 | 4375 | 0 |  |  |
 | TCG Singles DB | union-arena | 351 | 7229 | 0 |  |  |
 | TCG Singles DB | weiss-schwarz | 203 | 31866 | 0 |  |  |
-| TCG Singles DB | cardfight-vanguard | 856 | 26900 | 0 |  |  |
+| TCG Singles DB | cardfight-vanguard | 2744 | 26900 | 0 |  |  |
 | TCG Singles DB | sorcery | 120 | 3124 | 0 |  |  |
 | TCG Singles DB | grand-archive | 252 | 5484 | 0 |  |  |
 | TCG Singles DB | hololive | 488 | 2285 | 0 |  |  |
@@ -37,7 +37,7 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 | TCG Singles DB | universus | 351 | 8556 | 0 |  |  |
 | TCG Singles DB | naruto | 0 | 3 | 0 |  |  |
 | TCG Singles DB | elestrals | 51 | 3224 | 0 |  |  |
-| TCG Singles DB | cookierun-braverse | 323 | 2287 | 0 |  |  |
+| TCG Singles DB | cookierun-braverse | 673 | 2287 | 0 |  |  |
 | TCG Singles DB | palworld | 0 | 647 | 0 |  |  |
 | TCG Singles DB | wixoss | 0 | 4448 | 0 |  |  |
 | TCG Singles DB | battle-spirits-saga | 0 | 1842 | 0 |  |  |
