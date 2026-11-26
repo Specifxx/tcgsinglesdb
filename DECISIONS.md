@@ -275,3 +275,16 @@ card page already shows: TCGplayer market price per printing, the catalogue's ow
 the catalogue serves every sister site, with no card file on theirs. History answers only the asked ids (at most 200, sorted,
 so one collection is one cache key). A sister page names this site as the source in words; it never links here from every
 row (the one-footer-link rule).
+
+## 2026-11-26: Graded card values: the engine first, sold data next
+
+The owner buys PSA 10 slabs and wants a price people can trust, with eBay sold prices weighted most. eBay's sold
+data (Marketplace Insights) is Limited Release and our keys cannot reach it; scraping eBay's sold pages breaks its
+terms; the free graded APIs either forbid redistribution (PokeInvest) or license public use only on a paid plan
+(PokemonPriceTracker Business, US$99 a month). The owner chose to ask eBay for access first and pay only if refused.
+
+So `src/lib/graded-price.ts` lands now, pure and tested, with no page and no data: recent sales at the exact
+grader and grade lead (90 days, half weight after 30, accepted Best Offers half), outliers dropped by MAD on log
+price and listed, the cheapest three live asks less 10% as a weak signal and the cheapest ask as a ceiling, a
+PSA 10 ÷ raw multiple only when measured from 3+ similar cards' sales, population as context that never moves the
+number. No signal → `null`, never a guess. The page, the collection values and any Reddit post wait for sold data.
