@@ -42,3 +42,12 @@ test("only live games are routed, and a set can never take a page's slug", () =>
   assert.match(text(join(ROOT, "scripts/import.ts")), /const RESERVED = \["movers", "search", "sets"\]/);
   assert.match(text(join(ROOT, "src/lib/store.ts")), /gameBySlug\(game\)/);
 });
+
+test("links to noindex cards are nofollow, so crawlers are not walked down the long tail (2026-11-27)", async () => {
+  const { cardLinkRel } = await import("../src/lib/cards");
+  assert.equal(cardLinkRel({ p: { Normal: 500 }, ix: 0 }), "nofollow");
+  const set = text(join(ROOT, "src/app/[game]/[set]/page.tsx"));
+  const card = text(join(ROOT, "src/app/[game]/[set]/[card]/page.tsx"));
+  assert.match(set, /rel=\{cardLinkRel\(c\)\}/);
+  for (const re of [/rel=\{cardLinkRel\(prev\)\}/, /rel=\{cardLinkRel\(next\)\}/, /rel: cardLinkRel\(o\)/, /rel=\{r\[5\] \? undefined : "nofollow"\}/]) assert.match(card, re);
+});

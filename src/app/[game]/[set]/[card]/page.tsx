@@ -5,7 +5,7 @@ import { CardTiles } from "@/components/CardTiles";
 import { PriceHistory } from "@/components/PriceHistory";
 import { historyLines } from "@/lib/history-chart";
 import { AFFILIATE_NOTE, GRADED_TEST_GAMES, REL_SPONSORED, ebayCardSearchUrl, storeProductUrl, tcgplayerOutUrl } from "@/lib/affiliate";
-import { cardIndexable, cardStats, cardTitle, cardValue, dayIndex, dayOfIndex, reprintsOf, setRank, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
+import { cardIndexable, cardLinkRel, cardStats, cardTitle, cardValue, dayIndex, dayOfIndex, reprintsOf, setRank, tcgplayerCardUrl, type CardRow, type CardSet } from "@/lib/cards";
 import { cardInsights } from "@/lib/insights";
 import { cardImage, cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
@@ -309,7 +309,7 @@ export default async function CardPage({ params }: { params: { game: string; set
                   {reprints.map((r) => (
                     <tr key={r[6]}>
                       <th scope="row">
-                        <a href={cardPath(g.slug, r[0], r[1])}>{setNames.get(r[0]) ?? r[0]}</a>
+                        <a href={cardPath(g.slug, r[0], r[1])} rel={r[5] ? undefined : "nofollow"}>{setNames.get(r[0]) ?? r[0]}</a>
                         {r[3] ? <span className="small"> #{r[3]}</span> : null}
                       </th>
                       <td className="r">{r[4] > 0 ? <b>{usd(r[4])}</b> : <span className="small">no recent sales</span>}</td>
@@ -323,13 +323,13 @@ export default async function CardPage({ params }: { params: { game: string; set
           {(prev || next) && (
             <nav aria-label="Next and previous card" className="pager">
               {prev && (
-                <a className="btn" href={cardPath(g.slug, set.slug, prev.s)}>
+                <a className="btn" href={cardPath(g.slug, set.slug, prev.s)} rel={cardLinkRel(prev)}>
                   ← {prev.no ? `#${prev.no} ` : ""}
                   {prev.n}
                 </a>
               )}
               {next && (
-                <a className="btn" href={cardPath(g.slug, set.slug, next.s)}>
+                <a className="btn" href={cardPath(g.slug, set.slug, next.s)} rel={cardLinkRel(next)}>
                   {next.no ? `#${next.no} ` : ""}
                   {next.n} →
                 </a>
@@ -343,7 +343,7 @@ export default async function CardPage({ params }: { params: { game: string; set
           <h2>
             More <a href={`/${g.slug}/${set.slug}`}>{set.name}</a> card prices
           </h2>
-          <CardTiles game={g.slug} cards={others.map((o) => ({ set: set.slug, s: o.s, n: o.n, no: o.no, r: o.r, id: o.id, v: cardValue(o.p) ?? 0 }))} />
+          <CardTiles game={g.slug} cards={others.map((o) => ({ set: set.slug, s: o.s, n: o.n, no: o.no, r: o.r, id: o.id, v: cardValue(o.p) ?? 0, rel: cardLinkRel(o) }))} />
         </section>
       )}
     </div>

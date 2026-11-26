@@ -83,6 +83,11 @@ export function cardValue(p: Prices): number | null {
 export function cardIndexable(c: Pick<CardRow, "p" | "ix">): boolean {
   return c.ix === 1 && (cardValue(c.p) ?? 0) >= MIN_INDEX_CENTS;
 }
+/** Links to a card Google is not given yet (noindex) carry rel="nofollow", so a crawler walking set lists and the pager is
+ *  not sent down the ~300k-card long tail (each render a billed, uncached request; 2026-11-27). People follow them as before. */
+export function cardLinkRel(c: Pick<CardRow, "p" | "ix">): "nofollow" | undefined {
+  return cardIndexable(c) ? undefined : "nofollow";
+}
 export function slugify(s: string): string {
   return s
     .replace(/æ/gi, "ae").replace(/œ/gi, "oe")
