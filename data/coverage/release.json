@@ -1,25 +1,25 @@
 {
- "generatedAt": "2026-11-25T05:43:06.392Z",
+ "generatedAt": "2026-11-26T05:30:40.417Z",
  "mode": "release",
  "counts": {
   "pokemon": {
-   "tcg": 4353,
-   "ours": 28876
+   "tcg": 5473,
+   "ours": 28850
   },
   "magic": {
-   "tcg": 47608,
-   "ours": 106665,
+   "tcg": 27750,
+   "ours": 106667,
    "sister": {
     "site": "MTG Compare",
-    "cards": 106676
+    "cards": 106678
    }
   },
   "yugioh": {
-   "tcg": 885,
+   "tcg": 754,
    "ours": 46701
   },
   "one-piece": {
-   "tcg": 1616,
+   "tcg": 238,
    "ours": 7555,
    "sister": {
     "site": "OP Compare",
@@ -31,7 +31,7 @@
    "ours": 3794,
    "sister": {
     "site": "Lorcana Compare",
-    "cards": 1666
+    "cards": 1668
    }
   },
   "riftbound": {
@@ -39,23 +39,23 @@
    "ours": 1805
   },
   "pokemon-japan": {
-   "tcg": 397,
-   "ours": 30450
+   "tcg": 1315,
+   "ours": 30468
   },
   "star-wars-unlimited": {
-   "tcg": 2863,
-   "ours": 9783
+   "tcg": 574,
+   "ours": 9787
   },
   "gundam": {
-   "tcg": 214,
+   "tcg": 0,
    "ours": 2033,
    "sister": {
     "site": "Gundam Compare",
-    "cards": 1261
+    "cards": 1259
    }
   },
   "flesh-and-blood": {
-   "tcg": 1464,
+   "tcg": 190,
    "ours": 10420
   },
   "digimon": {
@@ -67,15 +67,15 @@
    "ours": 4375
   },
   "union-arena": {
-   "tcg": 351,
-   "ours": 7229
+   "tcg": 352,
+   "ours": 7230
   },
   "weiss-schwarz": {
-   "tcg": 203,
+   "tcg": 10468,
    "ours": 31866
   },
   "cardfight-vanguard": {
-   "tcg": 2744,
+   "tcg": 730,
    "ours": 26900
   },
   "sorcery": {
@@ -83,15 +83,15 @@
    "ours": 3124
   },
   "grand-archive": {
-   "tcg": 252,
+   "tcg": 64,
    "ours": 5484
   },
   "hololive": {
-   "tcg": 488,
+   "tcg": 246,
    "ours": 2285
   },
   "godzilla": {
-   "tcg": 247,
+   "tcg": 0,
    "ours": 942
   },
   "cyberpunk": {
@@ -127,7 +127,7 @@
    "ours": 3224
   },
   "cookierun-braverse": {
-   "tcg": 673,
+   "tcg": 569,
    "ours": 2287
   },
   "palworld": {
@@ -151,8 +151,8 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon",
-   "tcgCards": 4353,
-   "ourCards": 28876,
+   "tcgCards": 5473,
+   "ourCards": 28850,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -161,8 +161,8 @@
   {
    "site": "TCG Singles DB",
    "game": "magic",
-   "tcgCards": 47608,
-   "ourCards": 106665,
+   "tcgCards": 27750,
+   "ourCards": 106667,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -171,8 +171,8 @@
   {
    "site": "MTG Compare",
    "game": "magic",
-   "tcgCards": 47608,
-   "ourCards": 106676,
+   "tcgCards": 27750,
+   "ourCards": 106678,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -181,7 +181,7 @@
   {
    "site": "TCG Singles DB",
    "game": "yugioh",
-   "tcgCards": 885,
+   "tcgCards": 754,
    "ourCards": 46701,
    "missing": 0,
    "stale": 0,
@@ -191,7 +191,7 @@
   {
    "site": "TCG Singles DB",
    "game": "one-piece",
-   "tcgCards": 1616,
+   "tcgCards": 238,
    "ourCards": 7555,
    "missing": 0,
    "stale": 0,
@@ -201,7 +201,7 @@
   {
    "site": "OP Compare",
    "game": "one-piece",
-   "tcgCards": 1616,
+   "tcgCards": 238,
    "ourCards": 7564,
    "missing": 0,
    "stale": 0,
@@ -222,7 +222,7 @@
    "site": "Lorcana Compare",
    "game": "lorcana",
    "tcgCards": 0,
-   "ourCards": 1666,
+   "ourCards": 1668,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -241,8 +241,8 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon-japan",
-   "tcgCards": 397,
-   "ourCards": 30450,
+   "tcgCards": 1315,
+   "ourCards": 30468,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -251,8 +251,8 @@
   {
    "site": "TCG Singles DB",
    "game": "star-wars-unlimited",
-   "tcgCards": 2863,
-   "ourCards": 9783,
+   "tcgCards": 574,
+   "ourCards": 9787,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -261,7 +261,7 @@
   {
    "site": "TCG Singles DB",
    "game": "gundam",
-   "tcgCards": 214,
+   "tcgCards": 0,
    "ourCards": 2033,
    "missing": 0,
    "stale": 0,
@@ -271,17 +271,17 @@
   {
    "site": "Gundam Compare",
    "game": "gundam",
-   "tcgCards": 214,
-   "ourCards": 1261,
+   "tcgCards": 0,
+   "ourCards": 1259,
    "missing": 0,
    "stale": 0,
-   "byFloor": 75,
+   "byFloor": 0,
    "groups": []
   },
   {
    "site": "TCG Singles DB",
    "game": "flesh-and-blood",
-   "tcgCards": 1464,
+   "tcgCards": 190,
    "ourCards": 10420,
    "missing": 0,
    "stale": 0,
@@ -311,8 +311,8 @@
   {
    "site": "TCG Singles DB",
    "game": "union-arena",
-   "tcgCards": 351,
-   "ourCards": 7229,
+   "tcgCards": 352,
+   "ourCards": 7230,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -321,7 +321,7 @@
   {
    "site": "TCG Singles DB",
    "game": "weiss-schwarz",
-   "tcgCards": 203,
+   "tcgCards": 10468,
    "ourCards": 31866,
    "missing": 0,
    "stale": 0,
@@ -331,7 +331,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cardfight-vanguard",
-   "tcgCards": 2744,
+   "tcgCards": 730,
    "ourCards": 26900,
    "missing": 0,
    "stale": 0,
@@ -351,7 +351,7 @@
   {
    "site": "TCG Singles DB",
    "game": "grand-archive",
-   "tcgCards": 252,
+   "tcgCards": 64,
    "ourCards": 5484,
    "missing": 0,
    "stale": 0,
@@ -361,7 +361,7 @@
   {
    "site": "TCG Singles DB",
    "game": "hololive",
-   "tcgCards": 488,
+   "tcgCards": 246,
    "ourCards": 2285,
    "missing": 0,
    "stale": 0,
@@ -371,7 +371,7 @@
   {
    "site": "TCG Singles DB",
    "game": "godzilla",
-   "tcgCards": 247,
+   "tcgCards": 0,
    "ourCards": 942,
    "missing": 0,
    "stale": 0,
@@ -461,7 +461,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cookierun-braverse",
-   "tcgCards": 673,
+   "tcgCards": 569,
    "ourCards": 2287,
    "missing": 0,
    "stale": 0,
