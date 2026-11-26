@@ -276,7 +276,7 @@ the catalogue serves every sister site, with no card file on theirs. History ans
 so one collection is one cache key). A sister page names this site as the source in words; it never links here from every
 row (the one-footer-link rule).
 
-## 2026-11-26 — Graded card values: the engine first, sold data next
+## 2026-11-26: Graded card values: the engine first, sold data next
 
 The owner buys PSA 10 slabs and wants a price people can trust, with eBay sold prices weighted most. eBay's sold
 data (Marketplace Insights) is Limited Release and our keys cannot reach it; scraping eBay's sold pages breaks its
