@@ -264,3 +264,14 @@ route; a spreadsheet out.
 Owner, 2026-11-26: "I don't really like the Christmas lights on the very top." The string of lights hanging under the header
 (2026-11-20) is removed on every Compare site: the `.xmas-garland::after` rule is gone from the `xmas-logo` block in `globals.css`
 and the class is off the header. The Santa hat on the logo stays, and nothing else of the Christmas layer changes.
+
+## 2026-11-26: An open card API for our own collection apps
+
+Owner, 2026-11-26: a collection app "better than Collectr", on the web, nothing to install. TCG Prices (sealed only) now lets a
+member keep single cards in My collection, and it values them from here: `/api/open/search`, `/api/open/sets/<game>`,
+`/api/open/set/<game>/<set>` and `/api/open/history/<game>/<set>?ids=` (lib/open-api.ts). Public card data only (what every
+card page already shows: TCGplayer market price per printing, the catalogue's own names and numbers), GET only, CORS-open,
+`noindex`, CDN-cached a day like the pages, nothing stored and no request header read (tests/open-api.test.ts). One copy of
+the catalogue serves every sister site, with no card file on theirs. History answers only the asked ids (at most 200, sorted,
+so one collection is one cache key). A sister page names this site as the source in words; it never links here from every
+row (the one-footer-link rule).
