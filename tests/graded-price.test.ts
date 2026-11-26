@@ -114,3 +114,14 @@ test("weightedQuantile: equal weights give the plain median", () => {
   assert.equal(weightedQuantile([1, 2, 3], [1, 1, 1], 0.5), 2);
   assert.equal(weightedQuantile([1, 3], [1, 1], 0.5), 2);
 });
+
+test("open API shape: integer cents, sales count, confidence, date; grade keys like 'PSA 10' / 'BGS 9.5'", async () => {
+  const { toOpenGraded, gradeKey } = await import("../src/lib/graded-price");
+  const e = estimateGraded({ grader: "PSA", grade: "10", sales: [psa10(20000, 3), psa10(21000, 6), psa10(20500, 9)], now })!;
+  const o = toOpenGraded(e, "2026-11-26");
+  assert.deepEqual(Object.keys(o), ["c", "lo", "hi", "n", "conf", "at"]);
+  for (const v of [o.c, o.lo, o.hi]) assert.ok(Number.isInteger(v));
+  assert.equal(o.n, 3);
+  assert.equal(gradeKey("PSA", "10.0"), "PSA 10");
+  assert.equal(gradeKey("BGS", "9.5"), "BGS 9.5");
+});

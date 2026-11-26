@@ -257,3 +257,13 @@ export function peerMultiple(pairs: { gradedCents: number; rawCents: number }[])
   if (r.length < 3) return null;
   return { value: median(r), cards: r.length };
 }
+
+/** One grade's value as the open card API publishes it (collection apps read this; agreed 2026-11-26). Integer US
+ *  cents; `n` is the sales behind it. Keyed on the card as `graded[printing]["PSA 10"]`, present only with data. */
+export type OpenGraded = { c: number; lo: number; hi: number; n: number; conf: Confidence; at: string };
+
+export const gradeKey = (grader: Grader, grade: string) => `${grader} ${Number(grade)}`;
+
+export function toOpenGraded(e: GradedEstimate, at: string): OpenGraded {
+  return { c: e.cents, lo: e.lowCents, hi: e.highCents, n: e.salesUsed, conf: e.confidence, at };
+}
