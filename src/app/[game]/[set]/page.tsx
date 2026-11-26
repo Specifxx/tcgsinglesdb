@@ -1,7 +1,7 @@
 import { ShareButton } from "@/components/ShareButton";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { cardValue, type CardRow } from "@/lib/cards";
+import { cardLinkRel, cardValue, type CardRow } from "@/lib/cards";
 import { cardPath, shortDate, usd } from "@/lib/format";
 import { breadcrumbLd, jsonLd, pageMeta } from "@/lib/seo";
 import { readSet, readSets, setBySlug, shownGame, shownGames } from "@/lib/store";
@@ -69,7 +69,7 @@ export default function SetPage({ params, searchParams }: { params: { game: stri
               <tr key={c.id}>
                 <td>{c.no}</td>
                 <td>
-                  <a href={cardPath(g.slug, set.slug, c.s)} style={{ fontWeight: 600 }}>
+                  <a href={cardPath(g.slug, set.slug, c.s)} rel={cardLinkRel(c)} style={{ fontWeight: 600 }}>
                     {c.n}
                   </a>
                 </td>

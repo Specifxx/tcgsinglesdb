@@ -4,12 +4,12 @@ import type { CardLite, Mover } from "@/lib/cards";
 const pct = (m: Mover) => Math.round(((m.v - m.was) / m.was) * 100);
 
 /** Card tiles. Plain <a>: no prefetch, so a list of tiles never warms a page nobody opens. */
-export function CardTiles({ game, cards, eager = 0 }: { game: string; cards: (CardLite | Mover)[]; eager?: number }) {
+export function CardTiles({ game, cards, eager = 0 }: { game: string; cards: ((CardLite | Mover) & { rel?: string })[]; eager?: number }) {
   return (
     <ul className="tiles">
       {cards.map((c, i) => (
         <li key={c.id}>
-          <a className="card tile" href={cardPath(game, c.set, c.s)}>
+          <a className="card tile" href={cardPath(game, c.set, c.s)} rel={c.rel}>
             <span className="img">
               <img src={cardImage(c.id)} alt={c.n} width={200} height={280} loading={i < eager ? "eager" : "lazy"} decoding="async" />
             </span>

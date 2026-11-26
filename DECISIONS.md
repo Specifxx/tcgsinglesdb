@@ -288,3 +288,18 @@ grader and grade lead (90 days, half weight after 30, accepted Best Offers half)
 price and listed, the cheapest three live asks less 10% as a weak signal and the cheapest ask as a ceiling, a
 PSA 10 ÷ raw multiple only when measured from 3+ similar cards' sales, population as context that never moves the
 number. No signal → `null`, never a guess. The page, the collection values and any Reddit post wait for sold data.
+
+## 2026-11-27: Crawlers are not walked down the noindex long tail
+
+From 17 to 23 Nov the site went from no requests to about 200k a day, mostly crawlers, and Vercel's included CDN
+requests ran out on 22 Nov (each extra million is billed until the cycle resets). The card route had 32k requests in
+12 hours at 0.1% cached, and `/out/tcgplayer` 7.7k. What was already in place: card pages carry a one-day CDN header,
+robots.txt disallows `/out/`, and every paid link is `sponsored nofollow`. A day-long cache cannot help here: about
+330k card pages, each fetched once by a crawler between two releases (a release empties the CDN), is a miss every time.
+
+The fix is fewer crawler fetches, not a longer cache. About 90% of cards are noindex (not released to Google yet), but
+set lists, the card page's previous/next pager, "Other printings" and the set's other cards linked them all as plain
+links, so a crawler could walk every card in a set one by one. Those links now carry `rel="nofollow"` when the target
+card is noindex (`cardLinkRel` in `lib/cards.ts`); links to released cards stay followed, and the sitemap is unchanged.
+People see and use every link as before. Nothing is blocked or rate-limited (the owner's rule: zero false negatives on
+humans; only self-declared crawlers are ever refused), and no affiliate tag changes.
