@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-11-26T05:30:40.417Z",
+ "generatedAt": "2026-11-27T05:26:21.894Z",
  "mode": "release",
  "counts": {
   "pokemon": {
-   "tcg": 5473,
+   "tcg": 4708,
    "ours": 28850
   },
   "magic": {
-   "tcg": 27750,
+   "tcg": 23647,
    "ours": 106667,
    "sister": {
     "site": "MTG Compare",
@@ -15,11 +15,11 @@
    }
   },
   "yugioh": {
-   "tcg": 754,
+   "tcg": 748,
    "ours": 46701
   },
   "one-piece": {
-   "tcg": 238,
+   "tcg": 338,
    "ours": 7555,
    "sister": {
     "site": "OP Compare",
@@ -31,19 +31,19 @@
    "ours": 3794,
    "sister": {
     "site": "Lorcana Compare",
-    "cards": 1668
+    "cards": 1666
    }
   },
   "riftbound": {
-   "tcg": 5,
-   "ours": 1805
+   "tcg": 253,
+   "ours": 1806
   },
   "pokemon-japan": {
-   "tcg": 1315,
-   "ours": 30468
+   "tcg": 1324,
+   "ours": 30477
   },
   "star-wars-unlimited": {
-   "tcg": 574,
+   "tcg": 572,
    "ours": 9787
   },
   "gundam": {
@@ -67,16 +67,16 @@
    "ours": 4375
   },
   "union-arena": {
-   "tcg": 352,
+   "tcg": 125,
    "ours": 7230
   },
   "weiss-schwarz": {
-   "tcg": 10468,
+   "tcg": 143,
    "ours": 31866
   },
   "cardfight-vanguard": {
-   "tcg": 730,
-   "ours": 26900
+   "tcg": 1610,
+   "ours": 26901
   },
   "sorcery": {
    "tcg": 120,
@@ -95,7 +95,7 @@
    "ours": 942
   },
   "cyberpunk": {
-   "tcg": 226,
+   "tcg": 0,
    "ours": 528,
    "sister": {
     "site": "Cyberpunk Compare",
@@ -115,7 +115,7 @@
    "ours": 7960
   },
   "universus": {
-   "tcg": 351,
+   "tcg": 106,
    "ours": 8556
   },
   "naruto": {
@@ -127,7 +127,7 @@
    "ours": 3224
   },
   "cookierun-braverse": {
-   "tcg": 569,
+   "tcg": 219,
    "ours": 2287
   },
   "palworld": {
@@ -151,7 +151,7 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon",
-   "tcgCards": 5473,
+   "tcgCards": 4708,
    "ourCards": 28850,
    "missing": 0,
    "stale": 0,
@@ -161,7 +161,7 @@
   {
    "site": "TCG Singles DB",
    "game": "magic",
-   "tcgCards": 27750,
+   "tcgCards": 23647,
    "ourCards": 106667,
    "missing": 0,
    "stale": 0,
@@ -171,7 +171,7 @@
   {
    "site": "MTG Compare",
    "game": "magic",
-   "tcgCards": 27750,
+   "tcgCards": 23647,
    "ourCards": 106678,
    "missing": 0,
    "stale": 0,
@@ -181,7 +181,7 @@
   {
    "site": "TCG Singles DB",
    "game": "yugioh",
-   "tcgCards": 754,
+   "tcgCards": 748,
    "ourCards": 46701,
    "missing": 0,
    "stale": 0,
@@ -191,7 +191,7 @@
   {
    "site": "TCG Singles DB",
    "game": "one-piece",
-   "tcgCards": 238,
+   "tcgCards": 338,
    "ourCards": 7555,
    "missing": 0,
    "stale": 0,
@@ -201,7 +201,7 @@
   {
    "site": "OP Compare",
    "game": "one-piece",
-   "tcgCards": 238,
+   "tcgCards": 338,
    "ourCards": 7564,
    "missing": 0,
    "stale": 0,
@@ -222,7 +222,7 @@
    "site": "Lorcana Compare",
    "game": "lorcana",
    "tcgCards": 0,
-   "ourCards": 1668,
+   "ourCards": 1666,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -231,8 +231,8 @@
   {
    "site": "TCG Singles DB",
    "game": "riftbound",
-   "tcgCards": 5,
-   "ourCards": 1805,
+   "tcgCards": 253,
+   "ourCards": 1806,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -241,8 +241,8 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon-japan",
-   "tcgCards": 1315,
-   "ourCards": 30468,
+   "tcgCards": 1324,
+   "ourCards": 30477,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -251,7 +251,7 @@
   {
    "site": "TCG Singles DB",
    "game": "star-wars-unlimited",
-   "tcgCards": 574,
+   "tcgCards": 572,
    "ourCards": 9787,
    "missing": 0,
    "stale": 0,
@@ -311,7 +311,7 @@
   {
    "site": "TCG Singles DB",
    "game": "union-arena",
-   "tcgCards": 352,
+   "tcgCards": 125,
    "ourCards": 7230,
    "missing": 0,
    "stale": 0,
@@ -321,7 +321,7 @@
   {
    "site": "TCG Singles DB",
    "game": "weiss-schwarz",
-   "tcgCards": 10468,
+   "tcgCards": 143,
    "ourCards": 31866,
    "missing": 0,
    "stale": 0,
@@ -331,8 +331,8 @@
   {
    "site": "TCG Singles DB",
    "game": "cardfight-vanguard",
-   "tcgCards": 730,
-   "ourCards": 26900,
+   "tcgCards": 1610,
+   "ourCards": 26901,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -381,7 +381,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cyberpunk",
-   "tcgCards": 226,
+   "tcgCards": 0,
    "ourCards": 528,
    "missing": 0,
    "stale": 0,
@@ -391,7 +391,7 @@
   {
    "site": "Cyberpunk Compare",
    "game": "cyberpunk",
-   "tcgCards": 226,
+   "tcgCards": 0,
    "ourCards": 546,
    "missing": 0,
    "stale": 0,
@@ -431,7 +431,7 @@
   {
    "site": "TCG Singles DB",
    "game": "universus",
-   "tcgCards": 351,
+   "tcgCards": 106,
    "ourCards": 8556,
    "missing": 0,
    "stale": 0,
@@ -461,7 +461,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cookierun-braverse",
-   "tcgCards": 569,
+   "tcgCards": 219,
    "ourCards": 2287,
    "missing": 0,
    "stale": 0,

@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-26T05:32:28.820Z",
+ "generatedAt": "2026-11-27T05:27:49.815Z",
  "sites": [
   {
    "site": "DexCompare",
-   "checked": 64,
+   "checked": 69,
    "missing": [
     {
      "id": 735044,
@@ -176,21 +176,61 @@
      "since": "2026-11-24"
     },
     {
-     "id": 718644,
-     "name": "League Battle Deck Case [Mega Greninja ex]",
-     "group": "Miscellaneous Cards & Products",
-     "groupId": 2374,
-     "published": "2026-11-25",
+     "id": 735463,
+     "name": "Great Encounters Theme Deck - Eternal Time",
+     "group": "Great Encounters",
+     "groupId": 1405,
+     "published": "2008-02-13",
      "usd": null,
      "category": 3,
-     "since": "2026-11-24"
+     "since": "2026-11-27"
+    },
+    {
+     "id": 735464,
+     "name": "Great Encounters Theme Deck - Infinite Space",
+     "group": "Great Encounters",
+     "groupId": 1405,
+     "published": "2008-02-13",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-27"
+    },
+    {
+     "id": 735467,
+     "name": "Great Encounters Theme Deck - Endless Night",
+     "group": "Great Encounters",
+     "groupId": 1405,
+     "published": "2008-02-13",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-27"
+    },
+    {
+     "id": 735465,
+     "name": "Secret Wonders Theme Deck - Powerhouse",
+     "group": "Secret Wonders",
+     "groupId": 1380,
+     "published": "2007-11-07",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-27"
+    },
+    {
+     "id": 735466,
+     "name": "Secret Wonders Theme Deck - Lavaflow",
+     "group": "Secret Wonders",
+     "groupId": 1380,
+     "published": "2007-11-07",
+     "usd": null,
+     "category": 3,
+     "since": "2026-11-27"
     },
     {
      "id": 721885,
      "name": "Checklane 2-Pack Blister [Archaludon] (1-tab)",
      "group": "Miscellaneous Cards & Products",
      "groupId": 2374,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 3,
      "since": "2026-11-24"
@@ -200,7 +240,7 @@
      "name": "Melmetal ex Box &. Black Kyurem ex Box [Set of 2]",
      "group": "Miscellaneous Cards & Products",
      "groupId": 2374,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 3,
      "since": "2026-11-24"
@@ -210,7 +250,7 @@
      "name": "Valentine’s Day Box Case",
      "group": "Miscellaneous Cards & Products",
      "groupId": 2374,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 3,
      "since": "2026-11-24"
@@ -377,7 +417,7 @@
      "name": "The Mystery Booster",
      "group": "Un-Known Event Playtest Cards",
      "groupId": 23025,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-25"
@@ -387,7 +427,7 @@
      "name": "Secret Lair: Corn Maze Superdrop: A-Maize-Ing Everything Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -397,7 +437,7 @@
      "name": "Secret Lair: Corn Maze Superdrop: Full Moon Foil Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -407,7 +447,7 @@
      "name": "Secret Lair: Corn Maze Superdrop: Pumpkin Spiced Non-Foil Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -417,7 +457,7 @@
      "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: The Final Frontier Everything Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -427,7 +467,7 @@
      "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: Warp Core Foil Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -437,7 +477,7 @@
      "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: Captain's Log Non-Foil Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -447,7 +487,7 @@
      "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: Rival Powers Non-Federation Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -457,7 +497,7 @@
      "name": "Secret Lair Drop: Secret Lair x Star Trek Set Phasers to Superdrop: United Federation Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -467,7 +507,7 @@
      "name": "3-Pack Draft Blister Pack With Spindown Life Counter",
      "group": "Unique and Miscellaneous Promos",
      "groupId": 1163,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -477,7 +517,7 @@
      "name": "Booster Three Pack With Exclusive Promo Card",
      "group": "Unique and Miscellaneous Promos",
      "groupId": 1163,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -487,7 +527,7 @@
      "name": "Liliana Vess (M12) Sample Deck",
      "group": "Unique and Miscellaneous Promos",
      "groupId": 1163,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -497,7 +537,7 @@
      "name": "Jace Beleren (M13) Sample Deck",
      "group": "Unique and Miscellaneous Promos",
      "groupId": 1163,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -507,7 +547,7 @@
      "name": "Ajani Goldmane (M13) Sample Deck",
      "group": "Unique and Miscellaneous Promos",
      "groupId": 1163,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -517,7 +557,7 @@
      "name": "Chandra Nalaar (M13) Sample Deck",
      "group": "Unique and Miscellaneous Promos",
      "groupId": 1163,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -527,7 +567,7 @@
      "name": "Garuuk Wildspeaker (M13) Sample Deck",
      "group": "Unique and Miscellaneous Promos",
      "groupId": 1163,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": null,
      "category": 1,
      "since": "2026-11-24"
@@ -537,14 +577,35 @@
   },
   {
    "site": "YGO Compare",
-   "checked": 12,
+   "checked": 11,
    "missing": [],
    "culled": 0
   },
   {
    "site": "OP Compare",
-   "checked": 40,
-   "missing": [],
+   "checked": 42,
+   "missing": [
+    {
+     "id": 735458,
+     "name": "The Dominance of God Sleeved Booster Pack Art Bundle [Set of 4]",
+     "group": "The Dominance of God",
+     "groupId": 24833,
+     "published": "2026-11-20",
+     "usd": null,
+     "category": 68,
+     "since": "2026-11-27"
+    },
+    {
+     "id": 735457,
+     "name": "Extra Booster: One Piece Heroines Edition Vol.2 - Sleeved Booster Pack [Set of 4]",
+     "group": "Extra Booster: One Piece Heroines Edition Vol. 2",
+     "groupId": 24820,
+     "published": "2026-10-30",
+     "usd": null,
+     "category": 68,
+     "since": "2026-11-27"
+    }
+   ],
    "culled": 0
   },
   {
@@ -567,7 +628,7 @@
   },
   {
    "site": "TCG Prices",
-   "checked": 271,
+   "checked": 274,
    "missing": [
     {
      "id": 725378,
@@ -584,7 +645,7 @@
      "name": "Secret Lair: The Most Powerful Superdrop in the Universe: The Most Powerful Everything Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": 790.35,
      "category": 1,
      "since": "2026-11-24"
@@ -594,8 +655,8 @@
      "name": "Secret Lair Drop: Festival in a Box Atlanta 2026 Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
-     "usd": 552.93,
+     "published": "2026-11-26",
+     "usd": 551.86,
      "category": 1,
      "since": "2026-11-24"
     },
@@ -605,7 +666,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 474.65,
+     "usd": 459.11,
      "category": 68,
      "since": "2026-11-24"
     },
@@ -614,7 +675,7 @@
      "name": "Secret Lair Chaos Vault: Reality Fracture Secret Lair Bundle Bundle - Foil Edition",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": 307,
      "category": 1,
      "since": "2026-11-25"
@@ -624,8 +685,8 @@
      "name": "Secret Lair: The Most Powerful Superdrop in the Universe: For the Honor of Grayskull Foil Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
-     "usd": 286.21,
+     "published": "2026-11-26",
+     "usd": 284.34,
      "category": 1,
      "since": "2026-11-24"
     },
@@ -635,7 +696,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 276.51,
+     "usd": 275.92,
      "category": 68,
      "since": "2026-11-24"
     },
@@ -644,7 +705,7 @@
      "name": "Secret Lair: The Most Powerful Superdrop in the Universe: I Have the Power Non-Foil Bundle",
      "group": "Secret Lair Drop Series",
      "groupId": 2576,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": 262.97,
      "category": 1,
      "since": "2026-11-24"
@@ -655,7 +716,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 164.99,
+     "usd": 162.49,
      "category": 68,
      "since": "2026-11-25"
     },
@@ -665,7 +726,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 164.99,
+     "usd": 162.49,
      "category": 68,
      "since": "2026-11-25"
     },
@@ -674,8 +735,8 @@
      "name": "Ascended Heroes Elite Trainer Box and Pokeball (Sam's Club)",
      "group": "Miscellaneous Cards & Products",
      "groupId": 2374,
-     "published": "2026-11-25",
-     "usd": 135.49,
+     "published": "2026-11-26",
+     "usd": 134.93,
      "category": 3,
      "since": "2026-11-24"
     },
@@ -694,8 +755,8 @@
      "name": "Costco Pokemon Perfect Order 2-Pack Elite Trainer Box and Booster Bundle",
      "group": "Miscellaneous Cards & Products",
      "groupId": 2374,
-     "published": "2026-11-25",
-     "usd": 83.68,
+     "published": "2026-11-26",
+     "usd": 83.55,
      "category": 3,
      "since": "2026-11-24"
     },
@@ -704,7 +765,7 @@
      "name": "The Lord of the Rings: The Hobbit Middle-Earth Booster Kit",
      "group": "Unique and Miscellaneous Promos",
      "groupId": 1163,
-     "published": "2026-11-25",
+     "published": "2026-11-26",
      "usd": 81.48,
      "category": 1,
      "since": "2026-11-24"
@@ -715,7 +776,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 76.44,
+     "usd": 73.6,
      "category": 68,
      "since": "2026-11-24"
     },
@@ -744,8 +805,8 @@
      "name": "Valentine’s Day Box",
      "group": "Miscellaneous Cards & Products",
      "groupId": 2374,
-     "published": "2026-11-25",
-     "usd": 55.23,
+     "published": "2026-11-26",
+     "usd": 52.23,
      "category": 3,
      "since": "2026-11-24"
     },
@@ -775,7 +836,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 26.03,
+     "usd": 26.56,
      "category": 68,
      "since": "2026-11-24"
     },
@@ -805,7 +866,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 23.07,
+     "usd": 23.36,
      "category": 68,
      "since": "2026-11-24"
     },
@@ -815,7 +876,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 22.91,
+     "usd": 22.82,
      "category": 68,
      "since": "2026-11-24"
     },
@@ -825,7 +886,7 @@
      "group": "One Piece Promotion Cards",
      "groupId": 17675,
      "published": "2022-09-30",
-     "usd": 21.77,
+     "usd": 21.65,
      "category": 68,
      "since": "2026-11-24"
     },
@@ -895,7 +956,7 @@
      "group": "Gundam Promotional Cards",
      "groupId": 24340,
      "published": "2025-03-01",
-     "usd": 7.29,
+     "usd": 6.9,
      "category": 86,
      "since": "2026-11-25"
     }

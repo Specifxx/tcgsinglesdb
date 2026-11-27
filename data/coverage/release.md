@@ -1,4 +1,4 @@
-# Card coverage (release, 2026-11-26 05:30 UTC)
+# Card coverage (release, 2026-11-27 05:26 UTC)
 
 A card TCGplayer added since a site's last import shows as missing for a day; only one missing two days or more is a gap.
 
@@ -6,38 +6,38 @@ A card TCGplayer added since a site's last import shows as missing for a day; on
 
 | Site | Game | TCGplayer cards | Our cards | Missing | Missing 2+ days | Left out by the US$1 floor |
 |---|---|---:|---:|---:|---:|---:|
-| TCG Singles DB | pokemon | 5473 | 28850 | 0 |  |  |
-| TCG Singles DB | magic | 27750 | 106667 | 0 |  |  |
-| MTG Compare | magic | 27750 | 106678 | 0 |  |  |
-| TCG Singles DB | yugioh | 754 | 46701 | 0 |  |  |
-| TCG Singles DB | one-piece | 238 | 7555 | 0 |  |  |
-| OP Compare | one-piece | 238 | 7564 | 0 |  |  |
+| TCG Singles DB | pokemon | 4708 | 28850 | 0 |  |  |
+| TCG Singles DB | magic | 23647 | 106667 | 0 |  |  |
+| MTG Compare | magic | 23647 | 106678 | 0 |  |  |
+| TCG Singles DB | yugioh | 748 | 46701 | 0 |  |  |
+| TCG Singles DB | one-piece | 338 | 7555 | 0 |  |  |
+| OP Compare | one-piece | 338 | 7564 | 0 |  |  |
 | TCG Singles DB | lorcana | 0 | 3794 | 0 |  |  |
-| Lorcana Compare | lorcana | 0 | 1668 | 0 |  |  |
-| TCG Singles DB | riftbound | 5 | 1805 | 0 |  |  |
-| TCG Singles DB | pokemon-japan | 1315 | 30468 | 0 |  |  |
-| TCG Singles DB | star-wars-unlimited | 574 | 9787 | 0 |  |  |
+| Lorcana Compare | lorcana | 0 | 1666 | 0 |  |  |
+| TCG Singles DB | riftbound | 253 | 1806 | 0 |  |  |
+| TCG Singles DB | pokemon-japan | 1324 | 30477 | 0 |  |  |
+| TCG Singles DB | star-wars-unlimited | 572 | 9787 | 0 |  |  |
 | TCG Singles DB | gundam | 0 | 2033 | 0 |  |  |
 | Gundam Compare | gundam | 0 | 1259 | 0 |  |  |
 | TCG Singles DB | flesh-and-blood | 190 | 10420 | 0 |  |  |
 | TCG Singles DB | digimon | 258 | 9590 | 0 |  |  |
 | TCG Singles DB | dragon-ball-fusion-world | 0 | 4375 | 0 |  |  |
-| TCG Singles DB | union-arena | 352 | 7230 | 0 |  |  |
-| TCG Singles DB | weiss-schwarz | 10468 | 31866 | 0 |  |  |
-| TCG Singles DB | cardfight-vanguard | 730 | 26900 | 0 |  |  |
+| TCG Singles DB | union-arena | 125 | 7230 | 0 |  |  |
+| TCG Singles DB | weiss-schwarz | 143 | 31866 | 0 |  |  |
+| TCG Singles DB | cardfight-vanguard | 1610 | 26901 | 0 |  |  |
 | TCG Singles DB | sorcery | 120 | 3124 | 0 |  |  |
 | TCG Singles DB | grand-archive | 64 | 5484 | 0 |  |  |
 | TCG Singles DB | hololive | 246 | 2285 | 0 |  |  |
 | TCG Singles DB | godzilla | 0 | 942 | 0 |  |  |
-| TCG Singles DB | cyberpunk | 226 | 528 | 0 |  |  |
-| Cyberpunk Compare | cyberpunk | 226 | 546 | 0 |  |  |
+| TCG Singles DB | cyberpunk | 0 | 528 | 0 |  |  |
+| Cyberpunk Compare | cyberpunk | 0 | 546 | 0 |  |  |
 | TCG Singles DB | final-fantasy | 280 | 5746 | 0 |  |  |
 | TCG Singles DB | dragon-ball-super-masters | 1754 | 11946 | 0 |  |  |
 | TCG Singles DB | shadowverse-evolve | 509 | 7960 | 0 |  |  |
-| TCG Singles DB | universus | 351 | 8556 | 0 |  |  |
+| TCG Singles DB | universus | 106 | 8556 | 0 |  |  |
 | TCG Singles DB | naruto | 0 | 3 | 0 |  |  |
 | TCG Singles DB | elestrals | 51 | 3224 | 0 |  |  |
-| TCG Singles DB | cookierun-braverse | 569 | 2287 | 0 |  |  |
+| TCG Singles DB | cookierun-braverse | 219 | 2287 | 0 |  |  |
 | TCG Singles DB | palworld | 0 | 647 | 0 |  |  |
 | TCG Singles DB | wixoss | 0 | 4448 | 0 |  |  |
 | TCG Singles DB | battle-spirits-saga | 0 | 1842 | 0 |  |  |
