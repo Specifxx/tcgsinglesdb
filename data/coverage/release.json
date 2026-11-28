@@ -1,13 +1,13 @@
 {
- "generatedAt": "2026-11-27T05:26:21.894Z",
+ "generatedAt": "2026-11-28T05:00:31.888Z",
  "mode": "release",
  "counts": {
   "pokemon": {
-   "tcg": 4708,
+   "tcg": 1251,
    "ours": 28850
   },
   "magic": {
-   "tcg": 23647,
+   "tcg": 18846,
    "ours": 106667,
    "sister": {
     "site": "MTG Compare",
@@ -15,11 +15,11 @@
    }
   },
   "yugioh": {
-   "tcg": 748,
+   "tcg": 529,
    "ours": 46701
   },
   "one-piece": {
-   "tcg": 338,
+   "tcg": 238,
    "ours": 7555,
    "sister": {
     "site": "OP Compare",
@@ -31,16 +31,16 @@
    "ours": 3794,
    "sister": {
     "site": "Lorcana Compare",
-    "cards": 1666
+    "cards": 1663
    }
   },
   "riftbound": {
-   "tcg": 253,
+   "tcg": 5,
    "ours": 1806
   },
   "pokemon-japan": {
-   "tcg": 1324,
-   "ours": 30477
+   "tcg": 748,
+   "ours": 30591
   },
   "star-wars-unlimited": {
    "tcg": 572,
@@ -51,7 +51,7 @@
    "ours": 2033,
    "sister": {
     "site": "Gundam Compare",
-    "cards": 1259
+    "cards": 1257
    }
   },
   "flesh-and-blood": {
@@ -71,11 +71,11 @@
    "ours": 7230
   },
   "weiss-schwarz": {
-   "tcg": 143,
+   "tcg": 0,
    "ours": 31866
   },
   "cardfight-vanguard": {
-   "tcg": 1610,
+   "tcg": 528,
    "ours": 26901
   },
   "sorcery": {
@@ -127,7 +127,7 @@
    "ours": 3224
   },
   "cookierun-braverse": {
-   "tcg": 219,
+   "tcg": 16,
    "ours": 2287
   },
   "palworld": {
@@ -151,7 +151,7 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon",
-   "tcgCards": 4708,
+   "tcgCards": 1251,
    "ourCards": 28850,
    "missing": 0,
    "stale": 0,
@@ -161,7 +161,7 @@
   {
    "site": "TCG Singles DB",
    "game": "magic",
-   "tcgCards": 23647,
+   "tcgCards": 18846,
    "ourCards": 106667,
    "missing": 0,
    "stale": 0,
@@ -171,7 +171,7 @@
   {
    "site": "MTG Compare",
    "game": "magic",
-   "tcgCards": 23647,
+   "tcgCards": 18846,
    "ourCards": 106678,
    "missing": 0,
    "stale": 0,
@@ -181,7 +181,7 @@
   {
    "site": "TCG Singles DB",
    "game": "yugioh",
-   "tcgCards": 748,
+   "tcgCards": 529,
    "ourCards": 46701,
    "missing": 0,
    "stale": 0,
@@ -191,7 +191,7 @@
   {
    "site": "TCG Singles DB",
    "game": "one-piece",
-   "tcgCards": 338,
+   "tcgCards": 238,
    "ourCards": 7555,
    "missing": 0,
    "stale": 0,
@@ -201,7 +201,7 @@
   {
    "site": "OP Compare",
    "game": "one-piece",
-   "tcgCards": 338,
+   "tcgCards": 238,
    "ourCards": 7564,
    "missing": 0,
    "stale": 0,
@@ -222,7 +222,7 @@
    "site": "Lorcana Compare",
    "game": "lorcana",
    "tcgCards": 0,
-   "ourCards": 1666,
+   "ourCards": 1663,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -231,7 +231,7 @@
   {
    "site": "TCG Singles DB",
    "game": "riftbound",
-   "tcgCards": 253,
+   "tcgCards": 5,
    "ourCards": 1806,
    "missing": 0,
    "stale": 0,
@@ -241,8 +241,8 @@
   {
    "site": "TCG Singles DB",
    "game": "pokemon-japan",
-   "tcgCards": 1324,
-   "ourCards": 30477,
+   "tcgCards": 748,
+   "ourCards": 30591,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -272,7 +272,7 @@
    "site": "Gundam Compare",
    "game": "gundam",
    "tcgCards": 0,
-   "ourCards": 1259,
+   "ourCards": 1257,
    "missing": 0,
    "stale": 0,
    "byFloor": 0,
@@ -321,7 +321,7 @@
   {
    "site": "TCG Singles DB",
    "game": "weiss-schwarz",
-   "tcgCards": 143,
+   "tcgCards": 0,
    "ourCards": 31866,
    "missing": 0,
    "stale": 0,
@@ -331,7 +331,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cardfight-vanguard",
-   "tcgCards": 1610,
+   "tcgCards": 528,
    "ourCards": 26901,
    "missing": 0,
    "stale": 0,
@@ -461,7 +461,7 @@
   {
    "site": "TCG Singles DB",
    "game": "cookierun-braverse",
-   "tcgCards": 219,
+   "tcgCards": 16,
    "ourCards": 2287,
    "missing": 0,
    "stale": 0,
